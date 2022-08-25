@@ -22,7 +22,7 @@ const SecurityPatrols = () => {
             <div class="absolute inset-0 object-top z-1">
               <StaticImage
                 class="h-full w-full object-cover"
-                src="../../assets/images/hero-services.png"
+                src="../../assets/images/prius.jpg"
                 alt=""
               />
               <div class="absolute inset-0 "></div>
@@ -52,15 +52,19 @@ const SecurityPatrols = () => {
               our clients are extremely flexible and customised to each
               individual client’s security needs.
             </p>
+            <Link
+              to="/contact"
+              className="flex gap-2 justify-center w-60 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+            >
+              {" "}
+              Contact a Professional <ArrowRight className="hidden lg:block" />
+            </Link>
           </div>
-          <StaticImage
-            src="../../assets/images/right-column-security.png"
-            className=""
-          />
+          <StaticImage src="../../assets/images/snow.jpg" className="" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <StaticImage
-            src="../../assets/images/left-column-security.png"
+            src="https://images.pexels.com/photos/532001/pexels-photo-532001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             className="hidden lg:block object-cover"
           />
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

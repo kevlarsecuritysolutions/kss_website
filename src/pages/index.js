@@ -6,11 +6,13 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
+import HeroAlt from '../components/HeroAlt'
 const Home = () => {
   return (
     <Layout>
-      <Hero/>
-      <About/>
+      {/* <Hero/> */}
+      <HeroAlt/>
+      {/* <About/> */}
       <Services/>
     </Layout>
   )

@@ -6,7 +6,6 @@ import {Link} from 'gatsby'
 
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 
-import { CheckIcon } from "@heroicons/react/outline";
 
 const EmploymentInformation = () => {
   return (

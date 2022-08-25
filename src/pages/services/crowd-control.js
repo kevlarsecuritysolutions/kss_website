@@ -22,7 +22,7 @@ const CrowdControl = () => {
             <div class="absolute inset-0 object-top z-1">
               <StaticImage
                 class="h-full w-full object-cover"
-                src="../../assets/images/hero-services.png"
+                src="https://images.pexels.com/photos/4799242/pexels-photo-4799242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="Crystals"
               />
               <div class="absolute inset-0 "></div>
@@ -51,6 +51,13 @@ const CrowdControl = () => {
               high risk events, concerts and sporting events, events at pubs and
               clubs and private functions.
             </p>
+            <Link
+              to="/contact"
+              className="flex gap-2 justify-center w-60 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+            >
+              {" "}
+              Contact a Professional <ArrowRight className="hidden lg:block" />
+            </Link>
           </div>
           <StaticImage
             src="../../assets/images/right-column-security.png"

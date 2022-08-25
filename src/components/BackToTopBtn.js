@@ -49,7 +49,7 @@ const BackToTopBtn = () => {
               <Popover.Button
                 className={`
                 ${open ? "" : "text-opacity-90"}
-                inline-block rounded-full p-3 bg-black text-white font-medium text-xs leading-tight uppercase shadow-md hover:shadow-lg focus:bg-black focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-kss-blue focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-16 right-3 md:bottom-28 md:right-8 fixed z-10 hover:bg-black`}
+                inline-block rounded-full p-3 bg-black text-white font-medium text-xs leading-tight uppercase shadow-md hover:shadow-lg focus:bg-black focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-kss-blue focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-16 right-3 md:bottom-24 md:right-8 fixed z-10 hover:bg-black`}
               >
                 <Chat
                   className={`${open ? "" : "text-opacity-70"}

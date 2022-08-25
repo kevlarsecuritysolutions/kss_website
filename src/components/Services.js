@@ -126,7 +126,7 @@ const Services = () => {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-0 left-0">
+      {/* <div className="absolute bottom-0 left-0">
         <svg
           width="1309"
           height="556"
@@ -152,7 +152,7 @@ const Services = () => {
             </radialGradient>
           </defs>
         </svg>
-      </div>
+      </div> */}
       <div className="absolute bottom-0 right-0">
         <svg
           width="1309"
