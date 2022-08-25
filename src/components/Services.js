@@ -15,8 +15,6 @@ import jacksons from "../assets/images/jacksons.png";
 import kalisProperty from "../assets/images/kalis-property.png";
 import { StaticImage } from "gatsby-plugin-image";
 
-import Animasection from "../utils/AnimaSection";
-
 const services = [
   {
     name: "Security Patrols",
