@@ -7,6 +7,7 @@ import About from '../components/About'
 import Services from '../components/Services'
 import Contact from '../components/Contact'
 import HeroAlt from '../components/HeroAlt'
+import ContactSection from '../components/ContactSection'
 const Home = () => {
   return (
     <Layout>
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroAlt/>
       {/* <About/> */}
       <Services/>
+      <ContactSection/>
     </Layout>
   )
 }

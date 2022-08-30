@@ -196,13 +196,14 @@ const Navigation = () => {
                         </>
                       )}
                     </Disclosure>
-                          <Link to="/company"
-                            className={`${
-                              open ? "shadow-b-lg" : ""
-                            } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
-                          >
-                            <span>Company</span>
-                          </Link>
+                    <Link
+                      to="/company"
+                      className={`${
+                        open ? "shadow-b-lg" : ""
+                      } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
+                    >
+                      <span>Company</span>
+                    </Link>
                     <Disclosure>
                       {({ open }) => (
                         <>
@@ -440,7 +441,10 @@ const Navigation = () => {
                                   />
 
                                   <div className="relative bg-white p-6 grid grid-cols-4">
-                                    <AnchorLink to="#services" className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-[225px] w-60 p-4">
+                                    <AnchorLink
+                                      to="#services"
+                                      className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-[225px] w-60 p-4"
+                                    >
                                       <StaticImage
                                         src="../assets/images/services.png"
                                         className="w-36 mb-2"
@@ -450,7 +454,10 @@ const Navigation = () => {
                                       </p>
                                     </AnchorLink>
                                     <div className="flex flex-col justify-between px-2 py-4">
-                                      <Link  to="/services/security-patrols" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/security-patrols"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black group-hover:text-black">
@@ -462,7 +469,10 @@ const Navigation = () => {
                                           </p>
                                         </div>
                                       </Link>
-                                      <Link to="/services/alarm-response" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/alarm-response"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -476,7 +486,10 @@ const Navigation = () => {
                                       </Link>
                                     </div>
                                     <div className="flex flex-col justify-between px-2 py-4">
-                                      <Link to="/services/alarm-system-monitoring" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/alarm-system-monitoring"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -489,7 +502,10 @@ const Navigation = () => {
                                           </p>
                                         </div>
                                       </Link>
-                                      <Link to="/services/armed-cash" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/armed-cash"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -504,7 +520,10 @@ const Navigation = () => {
                                       </Link>
                                     </div>
                                     <div className="flex flex-col justify-between px-2 py-4">
-                                      <Link to="/services/static-guards" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/static-guards"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -517,7 +536,10 @@ const Navigation = () => {
                                           </p>
                                         </div>
                                       </Link>
-                                      <Link to="/services/crowd-control" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/services/crowd-control"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -583,7 +605,10 @@ const Navigation = () => {
                                   />
 
                                   <div className="relative bg-white p-6 grid grid-cols-4 gap-12">
-                                    <Link to="/company" className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-50 w-60 p-4">
+                                    <Link
+                                      to="/company"
+                                      className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-50 w-60 p-4"
+                                    >
                                       <StaticImage
                                         src="../assets/images/company-about.png"
                                         className="w-36 mb-2"
@@ -593,7 +618,10 @@ const Navigation = () => {
                                       </p>
                                     </Link>
                                     <div className="flex flex-col justify-between">
-                                      <Link to="/company" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/company"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="flex flex-col">
                                           <StaticImage
                                             src="../assets/images/snow.jpg"
@@ -607,7 +635,10 @@ const Navigation = () => {
                                       </Link>
                                     </div>
                                     <div className="flex flex-col justify-between">
-                                      <Link to="/company" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/company"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="flex flex-col">
                                           <StaticImage
                                             src="../assets/images/prius.jpg"
@@ -621,7 +652,10 @@ const Navigation = () => {
                                       </Link>
                                     </div>
                                     <div className="flex flex-col justify-between">
-                                      <Link to="/company" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/company"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="flex flex-col">
                                           <StaticImage
                                             src="../assets/images/sign.jpg"
@@ -685,7 +719,10 @@ const Navigation = () => {
                                   />
 
                                   <div className="relative bg-white p-6 grid grid-cols-4 gap-12 ">
-                                    <Link to="/employment/information" className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-50 w-60 p-4">
+                                    <Link
+                                      to="/employment/information"
+                                      className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-50 w-60 p-4"
+                                    >
                                       <StaticImage
                                         src="../assets/images/careers.png"
                                         className="w-36 mb-2"
@@ -695,7 +732,10 @@ const Navigation = () => {
                                       </p>
                                     </Link>
                                     <div className="flex flex-col justify-between py-4">
-                                      <Link to="/employment/information" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/employment/information"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -707,7 +747,10 @@ const Navigation = () => {
                                           </p>
                                         </div>
                                       </Link>
-                                      <Link to="/employment/expression-of-interest" className="flex gap-4 group pb-2">
+                                      <Link
+                                        to="/employment/expression-of-interest"
+                                        className="flex gap-4 group pb-2"
+                                      >
                                         <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
@@ -754,6 +797,17 @@ const Navigation = () => {
                             </>
                           )}
                         </Popover>
+                        <Link
+                          to="/contact"
+                          className={classNames(
+                            open
+                              ? "border-kss-blue/60 text-kss-blue/60 font-semibold"
+                              : "border-transparent text-kss-text-dark hover:text-white",
+                            "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                          )}
+                        >
+                          Contact
+                        </Link>
                       </div>
                     </Popover.Group>
                   </div>

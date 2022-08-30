@@ -304,7 +304,7 @@ const Services = () => {
             return (
               <Link to={service.link} className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-black/10">
                 <div className="col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-40 h-40 flex justify-center items-center">
-                  <img src={service.icon} alt="" className="w-36" />
+                  <img src={service.icon} alt="" className="w-[148px]" />
                 </div>
                 <div className="col-span-5 flex flex-col">
                   <h3 className="text-kss-text-dark uppercase text-4xl font-bold pb-4 lg:pb-0">

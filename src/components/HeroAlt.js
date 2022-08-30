@@ -78,59 +78,105 @@ function BackgroundIllustration(props) {
 
 const HeroAlt = () => {
   return (
-    <section className="relative overflow-hidden bg-[#f2f2f2]">
-      {/* <div className="absolute left-0 top-48 opacity-25">
-        <StaticImage src="../assets/images/data-left.png" />
-      </div>
-      <div className="absolute right-0 top-48 opacity-25">
-        <StaticImage src="../assets/images/data-right.png" />
-      </div>
-      <div className="absolute right-96 top-48">
-        <StaticImage src="../assets/images/fingerprint.png" />
-      </div> */}
-      {/* <div className="hidden lg:block absolute -right-44 top-3 opacity-40">
-        <StaticImage src="../assets/images/home-main-graphic.png" />
-      </div> */}
-      <div className="relative grid grid-cols-1 px-4 lg:grid-cols-2 max-w-7xl mx-auto pt-60">
-      <BackgroundIllustration className="absolute left-3/4 top-20 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-translate-x-1/2 lg:ml-12 xl:ml-0" />
-        <div className="col-span-1 pr-24">
-          <h1 class="text-left tracking-tight sm:text-6xl lg:text-7xl">
-            <span class="block font-bold text-[#c3c9ce] uppercase font-heading text-5xl">
-              PROTECTION
-            </span>
-            <span class="block text-kss-text font-heading uppercase text-5xl">
-              AT EVERY ANGLE
-            </span>
-          </h1>
-          <div className="h-1 my-12 w-full bg-gradient-to-r from-[#0064a3] via-[#0064a3] to-[#001f32]"></div>
-          <h3 className="text-kss-text text-semibold text-xl">
-            Kevlar Security Solutions is a proudly Tasmanian owned and operated
-            company specialising in the provision of physical security services,
-            including concierge, security patrol, alarm response, alarm system
-            monitoring and static guard services.{" "}
-          </h3>
-          <div className="flex gap-8 mt-12">
-            <AnchorLink
-              to="/#services"
-              className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-4 lg:px-10"
-            >
-              {" "}
-              Our Services <ArrowRight className="hidden lg:block" />
-            </AnchorLink>
-            <AnchorLink
-              to="/#contact"
-              className="flex gap-2 items-center bg-transparent hover:bg-black border-black border transition text-black hover:text-white text-sm py-3 px-4 lg:px-10"
-            >
-              {" "}
-              Contact a Professional <ArrowRight className="hidden lg:block" />
-            </AnchorLink>
+    <>
+      {/* <section className="relative overflow-hidden bg-gray-200">
+        <div className="relative grid grid-cols-1 px-4 lg:grid-cols-2 max-w-7xl mx-auto pt-60">
+          <BackgroundIllustration className="absolute left-3/4 top-20 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:-translate-x-1/2 lg:ml-12 xl:ml-0" />
+          <div className="col-span-1 pr-24">
+            <h1 class="text-left tracking-tight sm:text-6xl lg:text-7xl">
+              <span class="block font-bold text-[#c3c9ce] uppercase font-heading text-5xl">
+                PROTECTION
+              </span>
+              <span class="block text-kss-text font-heading uppercase text-5xl">
+                AT EVERY ANGLE
+              </span>
+            </h1>
+            <div className="h-1 my-12 w-full bg-gradient-to-r from-[#0064a3] via-[#0064a3] to-[#001f32]"></div>
+            <h3 className="text-kss-text text-semibold text-xl">
+              Kevlar Security Solutions is a proudly Tasmanian owned and
+              operated company specialising in the provision of physical
+              security services, including concierge, security patrol, alarm
+              response, alarm system monitoring and static guard services.{" "}
+            </h3>
+            <div className="flex gap-8 mt-12">
+              <AnchorLink
+                to="/#services"
+                className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-4 lg:px-10"
+              >
+                {" "}
+                Our Services <ArrowRight className="hidden lg:block" />
+              </AnchorLink>
+              <AnchorLink
+                to="/#contact"
+                className="flex gap-2 items-center bg-transparent hover:bg-black border-black border transition text-black hover:text-white text-sm py-3 px-4 lg:px-10"
+              >
+                {" "}
+                Contact a Professional{" "}
+                <ArrowRight className="hidden lg:block" />
+              </AnchorLink>
+            </div>
+          </div>
+          <div className="col-span-1  ">
+            <StaticImage
+              src="../assets/images/hero-icon.png"
+              className="w-[650px]"
+            />
           </div>
         </div>
-        <div className="col-span-1 pt-10 pl-12 -mb-24">
-          <StaticImage src="../assets/images/hero-lock.png" className="w-[750px]"/>
-        </div>
+      </section> */}
+
+      <div className="overflow-hidden py-20 pt-40 sm:py-32 lg:pb-32 xl:pb-36 bg-gray-200">
+        <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-x-24 lg:gap-y-20">
+            <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
+              <div className="">
+                <h1 class="text-left tracking-tight sm:text-6xl lg:text-7xl">
+                  <span class="block font-bold text-[#c3c9ce] uppercase font-heading text-5xl">
+                    PROTECTION
+                  </span>
+                  <span class="block text-kss-text font-heading uppercase text-5xl">
+                    AT EVERY ANGLE
+                  </span>
+                </h1>
+                <div className="h-1 my-12 w-full bg-gradient-to-r from-[#0064a3] via-[#0064a3] to-[#001f32]"></div>
+                <h3 className="text-kss-text text-semibold text-xl">
+                  <strong>Kevlar Security Solutions</strong> is a proudly Tasmanian owned and
+                  operated company specialising in the provision of physical
+                  security services, including concierge, security patrol, alarm
+                  response, alarm system monitoring and static guard services.{" "}
+                </h3>
+                <div className="flex gap-8 mt-12">
+                  <AnchorLink
+                    to="/#services"
+                    className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-4 lg:px-10"
+                  >
+                    {" "}
+                    Our Services <ArrowRight className="hidden lg:block" />
+                  </AnchorLink>
+                  <Link
+                    to="/contact"
+                    className="flex gap-2 items-center bg-transparent hover:bg-black border-black border transition text-black hover:text-white text-sm py-3 px-4 lg:px-10"
+                  >
+                    {" "}
+                    Contact a Professional{" "}
+                    <ArrowRight className="hidden lg:block" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+              <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
+              <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-6 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-32 xl:-bottom-32">
+                <StaticImage
+                  src="../assets/images/hero-icon.png"
+                  className="w-[600px]"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </>
   );
 };
 
