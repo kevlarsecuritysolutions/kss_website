@@ -13,7 +13,7 @@ import SEO from "../../components/Seo";
 const SecurityPatrols = () => {
   return (
     <Layout>
-      <SEO title= "Security Patrols" slug="/services/security-patrols"/>
+      <SEO title="Security Patrols" slug="/services/security-patrols" />
       <section class="relative hidden lg:block">
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">
@@ -83,10 +83,14 @@ const SecurityPatrols = () => {
           <StaticImage src="../../assets/images/snow.jpg" className="" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="https://images.pexels.com/photos/532001/pexels-photo-532001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            className="hidden lg:block object-cover"
-          />
+          <div className="hidden lg:block">
+            {" "}
+            <StaticImage
+              src="https://images.pexels.com/photos/532001/pexels-photo-532001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="hidden lg:block object-cover"
+            />
+          </div>
+
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h3 className="text-white text-xl font-semibold pt-2 pb-2">
               Lock-up and Un-lock Services

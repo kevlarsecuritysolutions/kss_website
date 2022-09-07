@@ -13,7 +13,10 @@ import SEO from "../../components/Seo";
 const AlarmSystemMonitoring = () => {
   return (
     <Layout>
-      <SEO title= "Alarm System Monitoring" slug="/services/alarm-system-monitoring"/>
+      <SEO
+        title="Alarm System Monitoring"
+        slug="/services/alarm-system-monitoring"
+      />
       <section class="relative hidden lg:block">
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">
@@ -69,10 +72,13 @@ const AlarmSystemMonitoring = () => {
               </Link>
             </div>
           </div>
-          <StaticImage
-            src="../../assets/images/snow.jpg"
-            className="hidden lg:block"
-          />
+          <div className="hidden lg:block">
+            {" "}
+            <StaticImage
+              src="../../assets/images/snow.jpg"
+              className="hidden lg:block"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <StaticImage

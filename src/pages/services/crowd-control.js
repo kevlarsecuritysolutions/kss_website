@@ -13,7 +13,7 @@ import SEO from "../../components/Seo";
 const CrowdControl = () => {
   return (
     <Layout>
-      <SEO title= "Crowd Control" slug="/services/crowd-control"/>
+      <SEO title="Crowd Control" slug="/services/crowd-control" />
       <section class="relative hidden lg:block">
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">
@@ -69,10 +69,14 @@ const CrowdControl = () => {
           />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="../../assets/images/left-column-security.png"
-            className="hidden lg:block object-cover"
-          />
+          <div className="hidden lg:block">
+            {" "}
+            <StaticImage
+              src="../../assets/images/left-column-security.png"
+              className="hidden lg:block object-cover"
+            />
+          </div>
+
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <p className="text-md text-white pb-2">
               Our experienced team can assist you with every stage of your next

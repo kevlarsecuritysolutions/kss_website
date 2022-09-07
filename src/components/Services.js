@@ -383,8 +383,8 @@ const Services = () => {
               </li>
               <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
                 <StaticImage
-                  src="../assets/images/logos/GE4.png"
-                  className="w-52"
+                  src="../assets/images/logos/hesoffwhite2.png"
+                  className="w-24"
                 />
               </li>
             </ul>

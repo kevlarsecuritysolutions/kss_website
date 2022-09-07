@@ -13,7 +13,7 @@ import SEO from "../../components/Seo";
 const AlarmResponse = () => {
   return (
     <Layout>
-      <SEO title= "Alarm Response" slug="/services/alarm-response"/>
+      <SEO title="Alarm Response" slug="/services/alarm-response" />
       <section class="relative hidden lg:block">
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">
@@ -67,12 +67,16 @@ const AlarmResponse = () => {
                 className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
               >
                 {" "}
-                Contact a Security Professional{" "}
-                <ArrowRight className="" />
+                Contact a Security Professional <ArrowRight className="" />
               </Link>
             </div>
           </div>
-          <StaticImage src="../../assets/images/snow.jpg" className="hidden lg:block" />
+          <div className="hidden lg:block">
+            <StaticImage
+              src="../../assets/images/snow.jpg"
+              className="hidden lg:block"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <StaticImage

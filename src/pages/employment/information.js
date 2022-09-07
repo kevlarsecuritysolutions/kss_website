@@ -2,10 +2,9 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import HeroAngle from "../../assets/svg/hero-angle2";
-import {Link} from 'gatsby'
+import { Link } from "gatsby";
 
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
-
 
 const EmploymentInformation = () => {
   return (
@@ -94,16 +93,20 @@ const EmploymentInformation = () => {
           />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="../../assets/images/employment-left.png"
-            className="hidden lg:block"
-          />
+          <div className="hidden lg:block">
+            <StaticImage
+              src="../../assets/images/employment-left.png"
+              className="hidden lg:block"
+            />
+          </div>
+
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
               INTERESTED IN JOINING THE KEVLAR TEAM?
             </h2>
             <p className="text-md text-white pb-4">
-              Use the link below to search available positions and to register your interest in joining the KSS team.
+              Use the link below to search available positions and to register
+              your interest in joining the KSS team.
             </p>
             <div className="flex justify-center items-center max-w-lg mx-auto pt-24 items-center">
               <div className="w-24">
@@ -115,8 +118,7 @@ const EmploymentInformation = () => {
                 className="flex gap-2 items-center bg-transparent hover:bg-white hover:text-black border-white border transition text-white text-sm h-12 w-48 px-4 justify-center"
               >
                 {" "}
-                Search & Apply{" "}
-                <ArrowRight className="hidden lg:block" />
+                Search & Apply <ArrowRight className="hidden lg:block" />
               </Link>
             </div>
           </div>
