@@ -196,14 +196,6 @@ const Navigation = () => {
                         </>
                       )}
                     </Disclosure>
-                    <Link
-                      to="/company"
-                      className={`${
-                        open ? "shadow-b-lg" : ""
-                      } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
-                    >
-                      <span>Company</span>
-                    </Link>
                     <Disclosure>
                       {({ open }) => (
                         <>
@@ -230,8 +222,8 @@ const Navigation = () => {
                                   Employment Information
                                 </h4>
                                 <p className="text-kss-text text-md">
-                                  We have the largest security patrol car
-                                  operation in Tasmania.
+                                  We have built our reputation as a leading
+                                  employer in the Tasmanian security industry.
                                 </p>
                               </div>
                             </Link>
@@ -245,8 +237,8 @@ const Navigation = () => {
                                   Work with Kevlar Form
                                 </h4>
                                 <p className="text-kss-text text-md">
-                                  24 hour alarm response services for over 600
-                                  sites in Southern Tasmania.
+                                  Search positions and express your interest in
+                                  joining the team.
                                 </p>
                               </div>
                             </Link>
@@ -254,7 +246,23 @@ const Navigation = () => {
                         </>
                       )}
                     </Disclosure>
-                    <Disclosure>
+                    <Link
+                      to="/company"
+                      className={`${
+                        open ? "shadow-b-lg" : ""
+                      } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
+                    >
+                      <span>Company</span>
+                    </Link>
+                    <Link
+                      to="/contact"
+                      className={`${
+                        open ? "shadow-b-lg" : ""
+                      } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
+                    >
+                      <span>Contact</span>
+                    </Link>
+                    {/* <Disclosure>
                       {({ open }) => (
                         <>
                           <Disclosure.Button
@@ -358,7 +366,7 @@ const Navigation = () => {
                           </Disclosure.Panel>
                         </>
                       )}
-                    </Disclosure>
+                    </Disclosure> */}
                   </div>
                 </div>
               </Dialog.Panel>
@@ -628,7 +636,9 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            KSS are your Tassie owned and operated security service professionals
+                                            KSS are your Tassie owned and
+                                            operated security service
+                                            professionals
                                           </p>
                                         </div>
                                       </Link>
@@ -644,7 +654,8 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            Our fleet of security patrol vehicles are 100% carbon neutral 
+                                            Our fleet of security patrol
+                                            vehicles are 100% carbon neutral
                                           </p>
                                         </div>
                                       </Link>
@@ -660,7 +671,8 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            Currently servicing more than 1800 sites across Tasmania.
+                                            Currently servicing more than 1800
+                                            sites across Tasmania.
                                           </p>
                                         </div>
                                       </Link>
@@ -739,8 +751,9 @@ const Navigation = () => {
                                             Employment Information
                                           </h4>
                                           <p className="text-kss-text text-md">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            We have built our reputation as a
+                                            leading employer in the Tasmanian
+                                            security industry
                                           </p>
                                         </div>
                                       </Link>
@@ -754,7 +767,8 @@ const Navigation = () => {
                                             Work with Kevlar
                                           </h4>
                                           <p className="text-kss-text text-md">
-                                          Search positions and express your interest in joing the team.
+                                            Search positions and express your
+                                            interest in joing the team.
                                           </p>
                                         </div>
                                       </Link>
@@ -767,7 +781,8 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            A leading employer in the Tasmanian security industry
+                                            A leading employer in the Tasmanian
+                                            security industry
                                           </p>
                                         </div>
                                       </Link>
@@ -780,7 +795,8 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            Upskill with ongoing support and employee training
+                                            Upskill with ongoing support and
+                                            employee training
                                           </p>
                                         </div>
                                       </Link>

@@ -145,7 +145,7 @@ const HeroAlt = () => {
                   security services, including concierge, security patrol, alarm
                   response, alarm system monitoring and static guard services.{" "}
                 </h3>
-                <div className="flex gap-8 mt-12">
+                <div className="flex flex-col lg:flex-row gap-8 mt-12">
                   <AnchorLink
                     to="/#services"
                     className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-6 lg:px-10"
@@ -164,12 +164,12 @@ const HeroAlt = () => {
                 </div>
               </div>
             </div>
-            <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
-              <BackgroundIllustration className="absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
+            <div className="hidden lg:block relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
+              <BackgroundIllustration className="absolute left-1/2 top-0 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0" />
               <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-6 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-32 xl:-bottom-32">
                 <StaticImage
                   src="../assets/images/hero-icon.png"
-                  className="lg:w-[600px]"
+                  className="w-[600px] hidden lg:block"
                 />
               </div>
             </div>

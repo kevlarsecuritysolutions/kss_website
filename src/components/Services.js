@@ -318,7 +318,7 @@ const Services = () => {
             );
           })}
         </div>
-        <section className="bg-gray-200">
+        <section className="bg-gray-200" id="clients">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto px-4 max-w-2xl sm:text-center pt-24">
               <h2 className="text-5xl text-kss-text font-heading font-bold pb-8 tracking-tight">

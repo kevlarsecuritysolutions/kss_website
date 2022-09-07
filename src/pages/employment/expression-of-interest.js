@@ -22,7 +22,7 @@ const Form = () => {
             have any availabilities that match your skillset.
           </p>
         </div>
-        <section className="max-w-5xl mx-auto py-12 px-12 bg-white">
+        <section className="max-w-5xl mx-auto py-12 px-4 lg:px-12 bg-white">
           <form className="space-y-8 divide-y divide-gray-200">
             <div className="space-y-8 divide-y divide-gray-200">
               <div className="pt-8">

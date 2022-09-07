@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section className="bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden">
       <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto py-8">
-        <div className="flex gap-2 justify-center lg:justify-start">
+        <Link to="/" className="flex gap-2 justify-center lg:justify-start">
           <StaticImage
             src="../assets/images/kss-logo-white.png"
             className="w-10 h-12"
@@ -16,7 +16,7 @@ const Footer = () => {
             <p className="text-2xl text-white">KEVLAR</p>
             <p className="text-sm text-white -mt-2">SECURITY SOLUTIONS</p>
           </div>
-        </div>
+        </Link>
         <div className="hidden lg:grid grid grid-cols-2">
           <div className="flex flex-col">
             <Link to="/" className="text-kss-text-dark hover:text-white text-sm pb-2">
@@ -33,10 +33,10 @@ const Footer = () => {
             <Link to="/employment/information" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Careers
             </Link>
-            <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <Link to="/contact" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Contact
             </Link>
-            <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <Link to="/privacy-policy" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Privacy Policy
             </Link>
           </div>

@@ -2,12 +2,14 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://kevlarsecuritysolutions.com.au",
     title: "Kevlar Security Solutions",
+    titleTemplate: `%s | Kevlar Security Solutions`,
+    description: `Kevlar Security Solutions is a proudly Tasmanian owned and operated company specialising in the provision of physical security services, including concierge, security patrol, alarm response, alarm system monitoring and static guard services.`,
+    author: `@kevlarsecuritysolutions`,
+    image: `src/assets/images/prius.jpg`,
     isSearchEnabled: "true",
     navigationStyle: "",
     isServiceWorkerEnabled: "false",
     isSwitcherEnabled: "true",
-    description:
-      "Kevlar Security Solutions is a proudly Tasmanian owned and operated company specialising in the provision of physical security services, including concierge, security patrol, alarm response, alarm system monitoring and static guard services.",
     keywords: "kevlar,security,solutions",
     lang: "en",
   },
@@ -21,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/assets/images/kss-logo-white.png",
+        icon: "src/assets/images/kss-logo.png",
       },
     },
     "gatsby-plugin-image",

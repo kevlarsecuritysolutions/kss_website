@@ -6,10 +6,12 @@ import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 import { Link } from "gatsby";
 
 import { CheckIcon } from "@heroicons/react/outline";
+import SEO from "../components/Seo";
 
 const Company = () => {
   return (
     <Layout>
+      <SEO title="Company Information" slug="/company"/>
       <section>
         <section class="relative hidden lg:block">
           <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
@@ -79,7 +81,7 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <StaticImage src="../assets/images/prius.jpg" className="hidden lg:block" />
+          <StaticImage src="../assets/images/prius.jpg" className="hidden sm:hidden lg:block" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="">

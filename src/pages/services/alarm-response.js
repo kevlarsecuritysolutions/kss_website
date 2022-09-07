@@ -8,10 +8,12 @@ import HeroAngle from "../../assets/svg/hero-angle2";
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 
 import Layout from "../../components/Layout";
+import SEO from "../../components/Seo";
 
 const AlarmResponse = () => {
   return (
     <Layout>
+      <SEO title= "Alarm Response" slug="/services/alarm-response"/>
       <section class="relative hidden lg:block">
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">

@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import { Email, Phone } from "@carbon/icons-react";
+import SEO from "../components/Seo";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -11,6 +12,7 @@ const Contact = () => {
   const [agreed, setAgreed] = useState(false);
   return (
     <Layout>
+      <SEO title= "Contact" slug="/contact"/>
       <div className="bg-gray-100 py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24 lg:pt-36">
         <div className="relative mx-auto max-w-screen-2xl lg:grid lg:grid-cols-5">
           <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
