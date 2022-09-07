@@ -11,7 +11,7 @@ import SEO from "../components/Seo";
 const Company = () => {
   return (
     <Layout>
-      <SEO title="Company Information" slug="/company"/>
+      <SEO title="Company Information" slug="/company" />
       <section>
         <section class="relative hidden lg:block">
           <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
@@ -40,7 +40,10 @@ const Company = () => {
         </section>
       </section>
 
-      <section className="bg-gradient-to-bl from-[#002034] to-black" id="environment">
+      <section
+        className="bg-gradient-to-bl from-[#002034] to-black"
+        id="environment"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
@@ -81,7 +84,10 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <StaticImage src="../assets/images/prius.jpg" className="xs:hidden sm:hidden lg:block" />
+          <div className="hidden lg:block">
+            {" "}
+            <StaticImage src="../assets/images/prius.jpg" className="" />
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="">
@@ -108,30 +114,53 @@ const Company = () => {
             </p>
             <div className="max-w-xl mx-auto pt-4 px-4">
               <div className="relative border border-white py-8 pl-12 bg-[#516400]">
-                <div className="bg-white rounded-full absolute w-12 bottom-4 -left-6"><CheckIcon className="text-[#8dc73f]"/></div>
-                <p className="text-white text-md">All of our security patrol vehicles are completely carbon neutral.</p>
+                <div className="bg-white rounded-full absolute w-12 bottom-4 -left-6">
+                  <CheckIcon className="text-[#8dc73f]" />
+                </div>
+                <p className="text-white text-md">
+                  All of our security patrol vehicles are completely carbon
+                  neutral.
+                </p>
               </div>
               <div className="relative border border-white py-8 pl-12 bg-[#738e00]">
-                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6"><CheckIcon className="text-[#8dc73f]"/></div>
-                <p className="text-white text-md">Our offices utilise solar power and always aim to purchase biodiverse reforestation carbon offsets.</p>
+                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
+                  <CheckIcon className="text-[#8dc73f]" />
+                </div>
+                <p className="text-white text-md">
+                  Our offices utilise solar power and always aim to purchase
+                  biodiverse reforestation carbon offsets.
+                </p>
               </div>
               <div className="relative border border-white py-8 pl-12 bg-[#516400]">
-                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6"><CheckIcon className="text-[#8dc73f]"/></div>
-                <p className="text-white text-md">We are developing electronic patrol sheets and alarm response dockets so our patrol vehivle operation will be completely paper-free.</p>
+                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
+                  <CheckIcon className="text-[#8dc73f]" />
+                </div>
+                <p className="text-white text-md">
+                  We are developing electronic patrol sheets and alarm response
+                  dockets so our patrol vehivle operation will be completely
+                  paper-free.
+                </p>
               </div>
               <div className="relative border border-white py-8 pl-12 bg-[#738e00]">
-                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6"><CheckIcon className="text-[#8dc73f]"/></div>
-                <p className="text-white text-md">Our offices endeavour to always use recycled products such as toner cartridges, coffee pods and textiles (e.g. old uniforms).</p>
+                <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
+                  <CheckIcon className="text-[#8dc73f]" />
+                </div>
+                <p className="text-white text-md">
+                  Our offices endeavour to always use recycled products such as
+                  toner cartridges, coffee pods and textiles (e.g. old
+                  uniforms).
+                </p>
               </div>
             </div>
             <div className="flex justify-center ">
-            <Link
-              to="/contact"
-              className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
-            >
-              {" "}
-              Contact a Security Professional <ArrowRight className="hidden lg:block" />
-            </Link>
+              <Link
+                to="/contact"
+                className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+              >
+                {" "}
+                Contact a Security Professional{" "}
+                <ArrowRight className="hidden lg:block" />
+              </Link>
             </div>
           </div>
         </div>
