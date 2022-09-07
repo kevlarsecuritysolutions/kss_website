@@ -104,7 +104,7 @@ const Navigation = () => {
                               to="/services/security-patrols"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black group-hover:text-black">
                                   Security Patrols
@@ -119,7 +119,7 @@ const Navigation = () => {
                               to="/services/alarm-response"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Alarm Duress / Response
@@ -134,7 +134,7 @@ const Navigation = () => {
                               to="/services/alarm-system-monitoring"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Alarm System Monitoring
@@ -150,7 +150,7 @@ const Navigation = () => {
                               to="/services/armed-cash"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Armed Cash In Transit
@@ -165,7 +165,7 @@ const Navigation = () => {
                               to="/services/static-guards"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Static Guards
@@ -180,7 +180,7 @@ const Navigation = () => {
                               to="/services/crowd-control"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Crowd Control / Event Security
@@ -224,7 +224,7 @@ const Navigation = () => {
                               to="/employment/information"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                   Employment Information
@@ -239,10 +239,10 @@ const Navigation = () => {
                               to="/employment/expression-of-interest"
                               className="flex gap-4 group pb-2"
                             >
-                              <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                              <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                               <div className="flex flex-col">
                                 <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                  Expression of Interest Form
+                                  Work with Kevlar Form
                                 </h4>
                                 <p className="text-kss-text text-md">
                                   24 hour alarm response services for over 600
@@ -403,7 +403,7 @@ const Navigation = () => {
                                 <Popover.Button
                                   className={classNames(
                                     open
-                                      ? "border-kss-blue/60 text-kss-blue/60 font-semibold"
+                                      ? "border-none text-white font-semibold"
                                       : "border-transparent text-kss-text-dark hover:text-white",
                                     "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
                                   )}
@@ -442,7 +442,7 @@ const Navigation = () => {
 
                                   <div className="relative bg-white p-6 grid grid-cols-4">
                                     <AnchorLink
-                                      to="#services"
+                                      to="/#services"
                                       className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-[225px] w-60 p-4"
                                     >
                                       <StaticImage
@@ -458,7 +458,7 @@ const Navigation = () => {
                                         to="/services/security-patrols"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black group-hover:text-black">
                                             Security Patrols
@@ -473,7 +473,7 @@ const Navigation = () => {
                                         to="/services/alarm-response"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Alarm Duress / Response
@@ -490,7 +490,7 @@ const Navigation = () => {
                                         to="/services/alarm-system-monitoring"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Alarm System Monitoring
@@ -506,7 +506,7 @@ const Navigation = () => {
                                         to="/services/armed-cash"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Armed Cash In Transit
@@ -524,7 +524,7 @@ const Navigation = () => {
                                         to="/services/static-guards"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Static Guards
@@ -540,7 +540,7 @@ const Navigation = () => {
                                         to="/services/crowd-control"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Crowd Control / Event Security
@@ -567,7 +567,7 @@ const Navigation = () => {
                                 <Popover.Button
                                   className={classNames(
                                     open
-                                      ? "border-kss-blue/60 text-kss-blue/60 font-semibold"
+                                      ? "border-none text-white font-semibold"
                                       : "border-transparent text-kss-text-dark hover:text-white",
                                     "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
                                   )}
@@ -628,8 +628,7 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            KSS are your Tassie owned and operated security service professionals
                                           </p>
                                         </div>
                                       </Link>
@@ -645,8 +644,7 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            Our fleet of security patrol vehicles are 100% carbon neutral 
                                           </p>
                                         </div>
                                       </Link>
@@ -662,8 +660,7 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            Currently servicing more than 1800 sites across Tasmania.
                                           </p>
                                         </div>
                                       </Link>
@@ -681,7 +678,7 @@ const Navigation = () => {
                                 <Popover.Button
                                   className={classNames(
                                     open
-                                      ? "border-kss-blue/60 text-kss-blue/60 font-semibold"
+                                      ? "border-none text-white font-semibold"
                                       : "border-transparent text-kss-text-dark hover:text-white",
                                     "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
                                   )}
@@ -736,7 +733,7 @@ const Navigation = () => {
                                         to="/employment/information"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                             Employment Information
@@ -751,14 +748,13 @@ const Navigation = () => {
                                         to="/employment/expression-of-interest"
                                         className="flex gap-4 group pb-2"
                                       >
-                                        <div className="pl-[2px] bg-gradient-to-b from-kss-blue to-black"></div>
+                                        <div className="pl-[2px] bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                         <div className="flex flex-col">
                                           <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                            Expression of Interest
+                                            Work with Kevlar
                                           </h4>
                                           <p className="text-kss-text text-md">
-                                            24 hour alarm response services for
-                                            over 600 sites in Southern Tasmania.
+                                          Search positions and express your interest in joing the team.
                                           </p>
                                         </div>
                                       </Link>
@@ -771,8 +767,7 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            A leading employer in the Tasmanian security industry
                                           </p>
                                         </div>
                                       </Link>
@@ -785,8 +780,7 @@ const Navigation = () => {
                                             className="mb-2 h-40 group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-lg">
-                                            We have the largest security patrol
-                                            car operation in Tasmania.
+                                            Upskill with ongoing support and employee training
                                           </p>
                                         </div>
                                       </Link>
@@ -801,7 +795,7 @@ const Navigation = () => {
                           to="/contact"
                           className={classNames(
                             open
-                              ? "border-kss-blue/60 text-kss-blue/60 font-semibold"
+                              ? "border-none text-white font-semibold"
                               : "border-transparent text-kss-text-dark hover:text-white",
                             "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
                           )}

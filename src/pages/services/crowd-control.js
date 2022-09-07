@@ -27,7 +27,7 @@ const CrowdControl = () => {
               />
               <div class="absolute inset-0 "></div>
             </div>
-            <div className="pt-60 pb-24 px-24">
+            <div className="pt-36 pb-24 px-24">
               <StaticImage
                 className="h-48 w-48 z-10"
                 src="../../assets/images/crowd-control.png"
@@ -40,7 +40,7 @@ const CrowdControl = () => {
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
               CROWD CONTROL / EVENT SECURITY
             </h2>
@@ -51,13 +51,15 @@ const CrowdControl = () => {
               high risk events, concerts and sporting events, events at pubs and
               clubs and private functions.
             </p>
-            <Link
-              to="/contact"
-              className="flex gap-2 justify-center w-60 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
-            >
-              {" "}
-              Contact a Professional <ArrowRight className="hidden lg:block" />
-            </Link>
+            <div className="flex">
+              <Link
+                to="/contact"
+                className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+              >
+                {" "}
+                Contact a Security Professional <ArrowRight className="" />
+              </Link>
+            </div>
           </div>
           <StaticImage
             src="../../assets/images/right-column-security.png"
@@ -87,16 +89,16 @@ const CrowdControl = () => {
               staff members including security officers, first aid officers,
               traffic control officers and supervisory staff as needed.
             </p>
-            <h2 className="text-white font-bold text-2xl pb-8 pt-8">
+            <h2 className="text-white font-bold text-2xl pb-2 lg:pb-8 pt-8">
               Our team can manage all aspects of your security and safety needs
               including:
             </h2>
             <div className="flex flex-col lg:flex-row gap-12 px-4 lg:px-0 py-8">
               <StaticImage
                 src="../../assets/images/key-points-check.png"
-                className="h-32 w-32"
+                className="h-32 w-32 hidden lg:block"
               />
-              <ul className="text-white list-disc">
+              <ul className="text-white list-disc pl-4">
                 <li>guest list management</li>
                 <li>providing advice and direction to patrons</li>
                 <li>providing first aid assessment and response</li>

@@ -26,7 +26,7 @@ const EmploymentInformation = () => {
                 />
                 <div class="absolute inset-0 "></div>
               </div>
-              <div className="pt-60 pb-24 px-24">
+              <div className="pt-36 pb-24 px-24">
                 <StaticImage
                   className="w-36 z-10"
                   src="../../assets/images/careers.png"
@@ -43,7 +43,7 @@ const EmploymentInformation = () => {
         id="environment"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               CAREERS WITH KEVLAR
             </h2>
@@ -103,8 +103,7 @@ const EmploymentInformation = () => {
               INTERESTED IN JOINING THE KEVLAR TEAM?
             </h2>
             <p className="text-md text-white pb-4">
-              Use the link below to search appropriate positions and upload the
-              required documents to begin the process.
+              Use the link below to search available positions and to register your interest in joining the KSS team.
             </p>
             <div className="flex justify-center items-center max-w-lg mx-auto pt-24 items-center">
               <div className="w-24">

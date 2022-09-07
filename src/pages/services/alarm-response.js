@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image";
 
-import HeroAngle from "../../assets/svg/hero-angle";
+import HeroAngle from "../../assets/svg/hero-angle2";
 
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 
@@ -16,7 +16,7 @@ const AlarmResponse = () => {
         <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
         <div class="mx-auto">
           <div class="relative overflow-hidden">
-            <div className="lg:block absolute bottom-0 -left-[600px] z-10 w-[2000px] h-auto">
+            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
               <HeroAngle className="w-full h-full" />
             </div>
             <div class="absolute inset-0 object-top z-1">
@@ -27,7 +27,7 @@ const AlarmResponse = () => {
               />
               <div class="absolute inset-0 "></div>
             </div>
-            <div className="pt-60 pb-24 px-24">
+            <div className="pt-36 pb-24 px-24">
               <StaticImage
                 className="h-48 w-48 z-10"
                 src="../../assets/images/alarm-duress-response.png"
@@ -40,7 +40,7 @@ const AlarmResponse = () => {
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
               ALARM / DURESS RESPONSE
             </h2>
@@ -59,20 +59,23 @@ const AlarmResponse = () => {
               minutes (in accordance with the Australian Standard (AS/NZS
               4421:2011)).
             </p>
-            <Link
-              to="/contact"
-              className="flex gap-2 justify-center w-60 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
-            >
-              {" "}
-              Contact a Professional <ArrowRight className="hidden lg:block" />
-            </Link>
+            <div className="flex">
+              <Link
+                to="/contact"
+                className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+              >
+                {" "}
+                Contact a Security Professional{" "}
+                <ArrowRight className="" />
+              </Link>
+            </div>
           </div>
-          <StaticImage src="../../assets/images/snow.jpg" className="" />
+          <StaticImage src="../../assets/images/snow.jpg" className="hidden lg:block" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <StaticImage
             src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
-            className="hidden lg:block object-cover"
+            className="object-cover"
           />
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <p className="text-md text-white pb-2">
@@ -126,30 +129,6 @@ const AlarmResponse = () => {
               quotes for our standalone response services or a complete alarm
               system setup and response service to suit your needs.
             </p>
-            {/* <h2 className="text-white font-bold text-2xl pb-8 pt-8">
-              Our team can manage all aspects of your security and safety needs
-              including:
-            </h2>
-            <div className="flex flex-col lg:flex-row gap-12 px-4 lg:px-0 py-8">
-              <StaticImage
-                src="../../assets/images/key-points-check.png"
-                className="h-32 w-32"
-              />
-              <ul className="text-white list-disc">
-                <li>guest list management</li>
-                <li>providing advice and direction to patrons</li>
-                <li>providing first aid assessment and response</li>
-                <li>monitor and identifying behaviour of concern</li>
-                <li>
-                  quickly responding to unexpected situations, disturbances or
-                  aggressive anti-social behaviour
-                </li>
-              </ul>
-            </div>
-            <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager can provide advice and a quote for
-              our crowd control services to suit your needs.
-            </p> */}
           </div>
         </div>
       </section>

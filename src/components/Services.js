@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'gatsby';
+import { Link } from "gatsby";
 import securityPatrols from "../assets/images/services/ravcrop.jpg";
 import alarmDuress from "../assets/images/services/duressbutton.png";
 import alarmSystemMonitoring from "../assets/images/services/monitoringcentre.png";
@@ -89,7 +89,6 @@ const clients = [
     logo: kalisProperty,
   },
 ];
-
 
 const Services = () => {
   return (
@@ -262,14 +261,13 @@ const Services = () => {
           </defs>
         </svg>
       </div>
-
-      <div className="max-w-screen-2xl mx-auto py-24 relative z-10">
-        <div className="grid grid-cols-1 px-4 lg:grid-cols-2">
-          <div className="pb-24">
-            <h2 className="text-5xl text-white font-bold pb-8">
+      <div className="py-24 relative z-10">
+        <div className=" max-w-screen-2xl mx-auto grid grid-cols-1 px-4">
+          <div className="pb-24 mx-auto max-w-5xl sm:text-center">
+            <h2 className="text-5xl text-kss-text-dark font-bold pb-8">
               Our Services Set Us Apart
             </h2>
-            <p className="text-white text-md pb-4">
+            <p className="text-kss-text-dark text-lg pb-4">
               We have earned a reputation as a market leader in providing a wide
               range of security services including vehicle-based security
               patrols, 24 hour alarm / duress response, static guards, armed
@@ -277,20 +275,20 @@ const Services = () => {
               and maintenance, event security, concierge guard services, risk
               assessments.
             </p>
-            <p className="text-white text-md pb-4">
+            <p className="text-kss-text-dark text-lg pb-4">
               We set ourselves apart by providing services which are responsive
               and flexible to our clients’ needs, and security personnel who are
               highly trained, reliable and skilled in a wide range of security
               and related roles.
             </p>
-            <p className="text-white text-md pb-4">
+            <p className="text-kss-text-dark text-lg pb-4">
               We pride ourselves on ensuring that our services are responsive,
               cost-effective and flexible. We conduct regular client services
               reviews to ensure that our services are continuing to meet our
               clients’ needs and incorporate the latest industry best practice
               standards.
             </p>
-            <p className="text-white text-md pb-4">
+            <p className="text-kss-text-dark text-lg pb-4">
               Our industry-leading use of technology, including secure
               tablet-based information storage, Fleetmatics demonstrates our
               commitment to using the latest and best practice protocols in our
@@ -299,10 +297,13 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col max-w-7xl gap-8">
+        <div className="max-w-screen-2xl mx-auto flex flex-col max-w-7xl gap-8 pb-12">
           {services.map((service) => {
             return (
-              <Link to={service.link} className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-black/10">
+              <Link
+                to={service.link}
+                className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-black/10"
+              >
                 <div className="col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-40 h-40 flex justify-center items-center">
                   <img src={service.icon} alt="" className="w-[148px]" />
                 </div>
@@ -317,96 +318,127 @@ const Services = () => {
             );
           })}
         </div>
-        <div className="flex flex-col pt-36 px-4">
-          <h2 className="text-5xl text-white font-bold pb-8">
-            Compliance Standards
-          </h2>
-          <div className="max-w-5xl">
-            <p className="text-white text-md pb-4">
-              We have earned a reputation as a market leader in providing a wide
-              range of security services including vehicle-based security
-              patrols, 24 hour alarm / duress response, static guards, armed
-              cash-in-transit and Automatic Teller Machine first-line response
-              and maintenance, event security, concierge guard services, risk
-              assessments.
-            </p>
-            <p className="text-white text-md pb-4">
-              We set ourselves apart by providing services which are responsive
-              and flexible to our clients’ needs, and security personnel who are
-              highly trained, reliable and skilled in a wide range of security
-              and related roles.
-            </p>
+        <section className="bg-gray-200">
+          <div className="mx-auto max-w-7xl">
+            <div className="mx-auto px-4 max-w-2xl sm:text-center pt-24">
+              <h2 className="text-5xl text-kss-text font-heading font-bold pb-8 tracking-tight">
+                Our Clients
+              </h2>
+              <p className="mt-2 text-lg text-kss-text">
+                We have more than 150 clients, and service more than 1800 sites
+                in Tasmania. Some of our clients are listed below
+              </p>
+            </div>
+            <ul
+              role="list"
+              className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3 pb-12"
+            >
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/Tasnetworks.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/Fernwood.png"
+                  className="w-68 "
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/HCC-wht-txt.png"
+                  className="w-32 lg:w-42"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/kalis.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/Hazell.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/GE4.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/hockeytas.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/onecare.png"
+                  className="w-52"
+                />
+              </li>
+              <li className="rounded-2xl border border-gray-200 p-8 mx-auto">
+                <StaticImage
+                  src="../assets/images/logos/GE4.png"
+                  className="w-52"
+                />
+              </li>
+            </ul>
           </div>
+        </section>
+        <section className="max-w-screen-2xl mx-auto">
+          <div className="flex flex-col pt-24 px-4">
+            <div className="mx-auto max-w-3xl sm:text-center">
+            <h2 className="text-5xl text-kss-text-dark font-bold pb-8">
+              Compliance Standards
+            </h2>
+            <div className="max-w-5xl">
+              <p className="mt-2 text-lg text-kss-text-dark pb-4">
+                We have earned a reputation as a market leader in providing a
+                wide range of security services including vehicle-based security
+                patrols, 24 hour alarm / duress response, static guards, armed
+                cash-in-transit and Automatic Teller Machine first-line response
+                and maintenance, event security, concierge guard services, risk
+                assessments.
+              </p>
+              <p className="mt-2 text-lg text-kss-text-dark">
+                We set ourselves apart by providing services which are
+                responsive and flexible to our clients’ needs, and security
+                personnel who are highly trained, reliable and skilled in a wide
+                range of security and related roles.
+              </p>
+            </div>
 
-          <div className="py-12 flex flex-wrap gap-8">
-            <StaticImage
-              src="../assets/images/logos/ASIAL-logo.png"
-              className="w-24 lg:w-48 h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/ISO9001-logo.png"
-              className="w-24 lg:w-48 h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/ISO45001-logo.png"
-              className="w-24 lg:w-48 h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/Carbon-logo.png"
-              className="w-24 lg:w-48 h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/JAS-logo.png"
-              className="w-24 lg:w-48 h-auto"
-            />
+            </div>
+
+            <div className="py-12 grid grid-cols-3 lg:grid-cols-5 items-center justify-center max-w-7xl lg:mx-auto gap-8">
+              <StaticImage
+                src="../assets/images/logos/ASIAL-logo.png"
+                className="w-24 lg:w-48 h-auto"
+              />
+              <StaticImage
+                src="../assets/images/logos/ISO9001-logo.png"
+                className="w-24 lg:w-48 h-auto"
+              />
+              <StaticImage
+                src="../assets/images/logos/ISO45001-logo.png"
+                className="w-24 lg:w-48 h-auto"
+              />
+              <StaticImage
+                src="../assets/images/logos/Carbon-logo.png"
+                className="w-24 lg:w-48 h-auto"
+              />
+              <StaticImage
+                src="../assets/images/logos/JAS-logo.png"
+                className="w-24 lg:w-48 h-auto"
+              />
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col py-24 px-4">
-          <h2 className="text-5xl text-white font-bold pb-8">
-            Affiliated Clients
-          </h2>
-          <p className="text-white text-md pb-4">
-            We have more than 150 clients, and service more than 1800 sites in
-            Tasmania.
-          </p>
-          <p className="text-white text-md pb-4">
-            Some of our clients listed below
-          </p>
-          <div className="py-12 grid grid-cols-2 lg:flex gap-8 flex-wrap items-center">
-            <StaticImage
-              src="../assets/images/logos/Tasnetworks.png"
-              className="w-52"
-            />
-            <StaticImage
-              src="../assets/images/logos/Fernwood.png"
-              className="w-68 "
-            />
-            <StaticImage
-              src="../assets/images/logos/HCC-wht-txt.png"
-              className="w-32 lg:w-42"
-            />
-            <StaticImage
-              src="../assets/imageslogos/kalis.png"
-              className="w-52"
-            />
-            <StaticImage
-              src="../assets/images/logos/Hazell.png"
-              className="w-52"
-            />
-            <StaticImage
-              src="../assets/images/logos/GE4.png"
-              className="w-52"
-            />
-            <StaticImage
-              src="../assets/images/logos/hockeytas.png"
-              className="w-52"
-            />
-            <StaticImage
-              src="../assets/images/logos/onecare.png"
-              className="w-52"
-            />
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   );

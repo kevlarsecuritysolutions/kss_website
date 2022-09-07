@@ -15,7 +15,6 @@ const Home = () => {
       <HeroAlt/>
       {/* <About/> */}
       <Services/>
-      <ContactSection/>
     </Layout>
   )
 }

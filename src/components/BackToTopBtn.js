@@ -43,17 +43,17 @@ const BackToTopBtn = () => {
   return (
     <div>
       {showButton && (
-        <Popover className="relative hidden lg:block">
+        <Popover className="relative lg:block">
           {({ open }) => (
             <>
               <Popover.Button
                 className={`
                 ${open ? "" : "text-opacity-90"}
-                inline-block rounded-full p-3 bg-black text-white font-medium text-xs leading-tight uppercase shadow-md hover:shadow-lg focus:bg-black focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-kss-blue focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-16 right-3 md:bottom-24 md:right-8 fixed z-10 hover:bg-black`}
+                inline-block rounded-full p-3 bg-black text-white font-medium text-xs leading-tight uppercase shadow-md hover:shadow-lg focus:bg-black focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-kss-blue focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-20 right-5 fixed z-10 hover:bg-black`}
               >
                 <Chat
                   className={`${open ? "" : "text-opacity-70"}
-                  h-6 w-6`}
+                  h-5 w-5`}
                   aria-hidden="true"
                 />
               </Popover.Button>
@@ -66,7 +66,7 @@ const BackToTopBtn = () => {
                 leaveFrom="opacity-100 translate-y-0"
                 leaveTo="opacity-0 translate-y-1"
               >
-                <Popover.Panel className="[z-index:100] fixed w-full bottom-0 md:right-8 md:bottom-48 z-10 mt-3 max-w-md transform md:px-4 sm:px-0">
+                <Popover.Panel className="[z-index:100] fixed bottom-0 w-full md:right-8 md:bottom-40 z-10 mt-3 md:w-96 md:max-w-md transform md:px-4 sm:px-0 lg:max-w-3xl">
                   <div className="overflow-x-hidden overflow-y-scroll max-h-[600px] shadow-lg contact rounded-md">
                     <div className="bg-gradient-to-br from-[#002a45] to-[#03070a] px-4 flex flex-col items-center">
                       <div className="flex gap-2 py-6 justify-center lg:justify-start">
@@ -81,10 +81,10 @@ const BackToTopBtn = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="flex justify-center gap-4 pb-4">
-                        <Link><Phone className="h-6 w-6 text-white"/></Link>
-                        <Link><Email className="h-6 w-6 text-white"/></Link>
-                        <Link><LocationCompany className="h-6 w-6 text-white"/></Link>
+                      <div className="flex justify-center gap-6 pb-4">
+                        <a href="0408303603"><Phone className="h-6 w-6 text-white"/></a>
+                        <a href="mailto:info@kevlarsecuritysolutions.com.au"><Email className="h-6 w-6 text-white"/></a>
+                        <a href="https://www.google.com/maps/place/Kevlar+Security+Solutions+Pty+Ltd/@-42.8435445,147.2880071,17z/data=!3m1!4b1!4m5!3m4!1s0xaa6e74954dbad463:0x5fed1effc80b79a2!8m2!3d-42.8435678!4d147.290211"><LocationCompany className="h-6 w-6 text-white"/></a>
                       </div>
                     </div>
                     <div className="bg-white">
@@ -187,7 +187,7 @@ const BackToTopBtn = () => {
           type="button"
           data-mdb-ripple="true"
           data-mdb-ripple-color="light"
-          className="inline-block rounded-full p-3 bg-black  text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-black hover:shadow-lg focus:bg-gma-dd-hover focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-gma-red focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-3 right-3 md:bottom-10 md:right-8 fixed z-10"
+          className="inline-block rounded-full p-3 bg-black  text-white font-medium text-xs leading-tight uppercase shadow-md hover:bg-black hover:shadow-lg focus:bg-gma-dd-hover focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-gma-red focus:ring-offset-2 active:bg-gma-dd-hover active:shadow-lg transition ease-in-out bottom-5 right-5 fixed z-10"
           id="btn-back-to-top"
           aria-label="back to top"
           onClick={() =>
@@ -197,7 +197,7 @@ const BackToTopBtn = () => {
             })
           }
         >
-          <UpToTop className="h-6 w-6" />
+          <UpToTop className="h-5 w-5" />
         </button>
       )}
     </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { Link } from "gatsby";
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
+import { Email, Phone } from "@carbon/icons-react";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -9,17 +11,68 @@ const Contact = () => {
   const [agreed, setAgreed] = useState(false);
   return (
     <Layout>
-      <div className="bg-gray-100 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-        <div className="relative max-w-3xl mx-auto">
-          <div className="">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className="bg-gray-100 py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24 lg:pt-36">
+        <div className="relative mx-auto max-w-screen-2xl lg:grid lg:grid-cols-5">
+          <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
+            <h2 className="text-3xl font-bold tracking-tight text-kss-text sm:text-4xl">
               Contact KSS
             </h2>
-            <p className="mt-4 text-lg leading-6 text-gray-500">
-              Complete the form below to 
+            <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
+              We provide security services 24 hours per day, every day of the
+              year. This means that you can contact us any time to discuss your
+              security needs.
+            </p>
+            <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
+              Our CEO or Operations Manager will generally answer the 24 hour
+              response phone number between 7am and 6pm. At all other times, you
+              will be able to speak to one of our patrol drivers who can take
+              your details and provide them to our CEO and Operations Manager.
+            </p>
+            <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
+              Any urgent enquiries from new clients will receive a response from
+              our CEO or Operations Manager within an hour of us receiving your
+              call.
+            </p>
+            <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
+              All non-urgent enquiries from new clients will receive a response
+              from our CEO or Operations Manager within 24 hours.
+            </p>
+            <div className="pt-12">
+              <dt className="sr-only">Postal address</dt>
+              <dd>
+                <p className="text-kss-text text-lg">GPO Box 550</p>
+                <p className="text-kss-text text-lg">Hobart, 7001</p>
+              </dd>
+            </div>
+            <div className="mt-6">
+              <dt className="sr-only">Phone number</dt>
+              <dd className="flex">
+                <Phone
+                  className="h-6 w-6 flex-shrink-0 text-gray-400"
+                  aria-hidden="true"
+                />
+                <a href="tel:0408303603" className="ml-3 text-kss-text text-lg">0408 303 603</a>
+              </dd>
+            </div>
+            <div className="mt-3">
+              <dt className="sr-only">Email</dt>
+              <dd className="flex">
+                <Email
+                  className="h-6 w-6 flex-shrink-0 text-gray-400"
+                  aria-hidden="true"
+                />
+                <a href="mailto:info@kevlarsecuritysolutions.com.au" className="ml-3 text-kss-text text-lg">info@kevlarsecuritysolutions.com.au</a>
+              </dd>
+            </div>
+            <p className="mt-6 text-base text-kss-text">
+              Looking for careers?{' '}
+              <Link to="/employment/expression-of-interest" className="font-medium text-gray-700 underline">
+                View all job openings
+              </Link>
+              .
             </p>
           </div>
-          <div className="mt-12">
+          <div className="bg-white py-12 px-4 sm:px-6 lg:col-span-3 lg:py-16 lg:px-8 xl:pl-12">
             <form
               action="#"
               method="POST"
@@ -150,7 +203,7 @@ const Contact = () => {
                     </Switch>
                   </div>
                   <div className="ml-3">
-                    <p className="text-base text-gray-500">
+                    <p className="text-base text-kss-text">
                       By selecting this, you agree to the{" "}
                       <a
                         href="#"
@@ -163,7 +216,7 @@ const Contact = () => {
                         href="#"
                         className="font-medium text-gray-700 underline"
                       >
-                        Cookie Policy
+                        Terms of Use
                       </a>
                       .
                     </p>

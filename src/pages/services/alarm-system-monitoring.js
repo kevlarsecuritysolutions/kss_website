@@ -22,12 +22,12 @@ const AlarmSystemMonitoring = () => {
             <div class="absolute inset-0 object-top z-1">
               <StaticImage
                 class="h-full w-full object-cover"
-                src="https://images.pexels.com/photos/4799242/pexels-photo-4799242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Crystals"
+                src="../../assets/images/prius.jpg"
+                alt=""
               />
               <div class="absolute inset-0 "></div>
             </div>
-            <div className="pt-60 pb-24 px-24">
+            <div className="pt-36 pb-24 px-24">
               <StaticImage
                 className="h-48 w-48 z-10"
                 src="../../assets/images/alarm-system-monitoring.png"
@@ -40,11 +40,11 @@ const AlarmSystemMonitoring = () => {
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
               ALARM SYSTEM MONITORING
             </h2>
-            <p className="text-md text-white">
+            <p className="text-md text-white pb-4">
               All alarm monitoring services are provided by a Tasmanian based
               ASIAL accredited A Grade control room which can monitor all
               security and related alarms including residential monitored alarm
@@ -52,33 +52,35 @@ const AlarmSystemMonitoring = () => {
               alarms, medical monitoring alarms, mains power failure alarms and
               low battery alarms.
             </p>
-            <Link
-              to="/contact"
-              className="flex gap-2 justify-center w-60 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
-            >
-              {" "}
-              Contact a Professional <ArrowRight className="hidden lg:block" />
-            </Link>
-          </div>
-          <StaticImage
-            src="../../assets/images/right-column-security.png"
-            className=""
-          />
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="../../assets/images/left-column-security.png"
-            className="hidden lg:block object-cover"
-          />
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               The control room utilises the latest alarm monitoring room
               technology, allowing us to provide our clients with record storage
               and archiving, reporting, and still image verification services.
             </p>
-            <h4 className="text-white font-body font-semibold pb-4 pt-2">
+            <div className="flex">
+              <Link
+                to="/contact"
+                className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+              >
+                {" "}
+                Contact a Security Professional <ArrowRight className="" />
+              </Link>
+            </div>
+          </div>
+          <StaticImage
+            src="../../assets/images/snow.jpg"
+            className="hidden lg:block"
+          />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <StaticImage
+            src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
+            className="object-cover"
+          />
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
+            <h2 className="text-white font-bold text-2xl pb-8 pt-8">
               The NBN and your alarm system
-            </h4>
+            </h2>
             <p className="text-md text-white pb-2">
               The NBN network utilises technology that is not compatible with
               many existing alarm systems. It is therefore essential to contact
@@ -92,9 +94,9 @@ const AlarmSystemMonitoring = () => {
               secure, and if necessary, arrange for the purchase and
               installation of a new alarm system.
             </p>
-            <h4 className="text-white font-body font-semibold pb-4 pt-2">
+            <h2 className="text-white font-bold text-2xl pb-8 pt-8">
               4G Alarm System Installation and Upgrades
-            </h4>
+            </h2>
             <p className="text-md text-white pb-2">
               We can now provide our clients wit the latest 4G alarm monitoring
               technology, including Permaconn, Multipath and SCSI Direct

@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import HeroAngle from "../assets/svg/hero-angle2";
+import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
+import { Link } from "gatsby";
 
 import { CheckIcon } from "@heroicons/react/outline";
 
@@ -24,7 +26,7 @@ const Company = () => {
                 />
                 <div class="absolute inset-0 "></div>
               </div>
-              <div className="pt-60 pb-24 px-24">
+              <div className="pt-36 pb-24 px-24">
                 <StaticImage
                   className="w-36 z-10"
                   src="../assets/images/company-about.png"
@@ -38,7 +40,7 @@ const Company = () => {
 
       <section className="bg-gradient-to-bl from-[#002034] to-black" id="environment">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
               COMPANY PROFILE
             </h2>
@@ -77,7 +79,7 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <StaticImage src="../assets/images/prius.jpg" className="" />
+          <StaticImage src="../assets/images/prius.jpg" className="hidden lg:block" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="">
@@ -119,6 +121,15 @@ const Company = () => {
                 <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6"><CheckIcon className="text-[#8dc73f]"/></div>
                 <p className="text-white text-md">Our offices endeavour to always use recycled products such as toner cartridges, coffee pods and textiles (e.g. old uniforms).</p>
               </div>
+            </div>
+            <div className="flex justify-center ">
+            <Link
+              to="/contact"
+              className="flex gap-2 justify-center px-6 items-center bg-transparent hover:bg-white border-white border transition text-white mt-8 hover:text-black text-sm py-3"
+            >
+              {" "}
+              Contact a Security Professional <ArrowRight className="hidden lg:block" />
+            </Link>
             </div>
           </div>
         </div>

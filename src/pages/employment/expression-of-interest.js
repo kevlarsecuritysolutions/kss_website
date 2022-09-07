@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Layout from "../../components/Layout";
 import { Switch } from "@headlessui/react";
 function classNames(...classes) {
@@ -9,8 +9,8 @@ const Form = () => {
   const [agreed, setAgreed] = useState(false);
   return (
     <Layout>
-      <section className="bg-gray-100">
-        <section className="max-w-3xl mx-auto py-12 px-4">
+      <section className="bg-gray-100 pb-12">
+        <div className="max-w-5xl mx-auto pt-24 pb-12 px-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-12 pb-4">
             Join the Kevlar Team
           </h2>
@@ -21,6 +21,8 @@ const Form = () => {
             Complete all required fields below and we will contact you should we
             have any availabilities that match your skillset.
           </p>
+        </div>
+        <section className="max-w-5xl mx-auto py-12 px-12 bg-white">
           <form className="space-y-8 divide-y divide-gray-200">
             <div className="space-y-8 divide-y divide-gray-200">
               <div className="pt-8">

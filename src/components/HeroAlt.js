@@ -148,18 +148,18 @@ const HeroAlt = () => {
                 <div className="flex gap-8 mt-12">
                   <AnchorLink
                     to="/#services"
-                    className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-4 lg:px-10"
+                    className="flex gap-2 items-center bg-black hover:bg-opacity-80 border-black border transition text-white text-sm py-3 px-6 lg:px-10"
                   >
                     {" "}
-                    Our Services <ArrowRight className="hidden lg:block" />
+                    Our Services <ArrowRight className="" />
                   </AnchorLink>
                   <Link
                     to="/contact"
-                    className="flex gap-2 items-center bg-transparent hover:bg-black border-black border transition text-black hover:text-white text-sm py-3 px-4 lg:px-10"
+                    className="flex gap-2 items-center bg-transparent hover:bg-black border-black border transition text-black hover:text-white text-sm py-3 px-6 lg:px-10"
                   >
                     {" "}
                     Contact a Professional{" "}
-                    <ArrowRight className="hidden lg:block" />
+                    <ArrowRight className="" />
                   </Link>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const HeroAlt = () => {
               <div className="-mx-4 h-[448px] px-9 [mask-image:linear-gradient(to_bottom,white_60%,transparent)] sm:mx-0 lg:absolute lg:-inset-x-6 lg:-top-10 lg:-bottom-20 lg:h-auto lg:px-0 lg:pt-32 xl:-bottom-32">
                 <StaticImage
                   src="../assets/images/hero-icon.png"
-                  className="w-[600px]"
+                  className="lg:w-[600px]"
                 />
               </div>
             </div>
