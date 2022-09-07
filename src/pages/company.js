@@ -81,7 +81,7 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <StaticImage src="../assets/images/prius.jpg" className="hidden sm:hidden lg:block" />
+          <StaticImage src="../assets/images/prius.jpg" className="xs:hidden sm:hidden lg:block" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="">
