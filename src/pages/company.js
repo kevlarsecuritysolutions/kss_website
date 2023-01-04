@@ -84,15 +84,15 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block h-full">
             {" "}
-            <StaticImage src="../assets/images/prius.jpg" className="" />
+            <StaticImage src="../assets/images/prius.jpg" className="h-full w-full object-contain" />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="">
             {" "}
-            <StaticImage src="../assets/images/Environment.png" className="" />
+            <StaticImage src="../assets/images/Environment.png" className="h-full w-full object-contain" />
           </div>
           <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">

@@ -208,14 +208,16 @@ const Contact = () => {
                     <p className="text-base text-kss-text">
                       By selecting this, you agree to the{" "}
                       <a
-                        href="#"
+                        href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                        target="blank"
                         className="font-medium text-gray-700 underline"
                       >
                         Privacy Policy
                       </a>{" "}
                       and{" "}
                       <a
-                        href="#"
+                        href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                        target="blank"
                         className="font-medium text-gray-700 underline"
                       >
                         Terms of Use

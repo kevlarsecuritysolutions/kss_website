@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/assets/images/kss-logo.png",
+        icon: "src/assets/images/favicon.png",
       },
     },
     "gatsby-plugin-image",

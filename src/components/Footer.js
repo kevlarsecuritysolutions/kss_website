@@ -6,7 +6,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section className="bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden">
-      <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto py-8">
+      <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-7xl mx-auto py-8">
         <Link to="/" className="flex gap-2 justify-center lg:justify-start">
           <StaticImage
             src="../assets/images/kss-logo-white.png"
@@ -36,9 +36,9 @@ const Footer = () => {
             <Link to="/contact" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Contact
             </Link>
-            <Link to="/privacy-policy" className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <a target="blank" href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Privacy Policy
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex justify-center">
@@ -56,8 +56,8 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className=" flex items-center px-4 max-w-screen-2xl mx-auto">
-        <div class="mt-8 md:mt-0 md:order-1">
+      <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl mx-auto border-t border-gray-50/40 ">
+        <div class="mt-2 md:mt-0 md:order-1">
           <p class="text-xs py-2 tracking-tight text-kss-text-dark">
             &copy; 2022 Kevlar Security Services. All rights reserved. | Master
             Licence No. 19859

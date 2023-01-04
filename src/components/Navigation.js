@@ -412,8 +412,8 @@ const Navigation = () => {
                                   className={classNames(
                                     open
                                       ? "border-none text-white font-semibold"
-                                      : "border-transparent text-kss-text-dark hover:text-white",
-                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                                      : "border-transparent text-white hover:text-white",
+                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0 "
                                   )}
                                 >
                                   Services <ChevronDown />
@@ -576,8 +576,8 @@ const Navigation = () => {
                                   className={classNames(
                                     open
                                       ? "border-none text-white font-semibold"
-                                      : "border-transparent text-kss-text-dark hover:text-white",
-                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                                      : "border-transparent text-white hover:text-white",
+                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0"
                                   )}
                                 >
                                   Company <ChevronDown />
@@ -691,8 +691,8 @@ const Navigation = () => {
                                   className={classNames(
                                     open
                                       ? "border-none text-white font-semibold"
-                                      : "border-transparent text-kss-text-dark hover:text-white",
-                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                                      : "border-transparent text-white hover:text-white",
+                                    "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0"
                                   )}
                                 >
                                   Careers <ChevronDown />
@@ -812,7 +812,7 @@ const Navigation = () => {
                           className={classNames(
                             open
                               ? "border-none text-white font-semibold"
-                              : "border-transparent text-kss-text-dark hover:text-white",
+                              : "border-transparent text-white hover:text-white",
                             "relative z-10 flex items-center transition-colors ease-out duration-200 text-md font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
                           )}
                         >
@@ -849,9 +849,34 @@ const Navigation = () => {
                       >
                         <span className="sr-only">Open menu</span>
                         {open ? (
-                          <Close className="block h-8 w-8" aria-hidden="true" />
+                          <button
+                            type="button"
+                            className=""
+                            onClick={() => setOpen(true)}
+                          >
+                            {" "}
+                            <svg
+                              className="fill-white h-8 w-8 block"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                            </svg>
+                          </button>
                         ) : (
-                          <Menu className="block h-8 w-8" aria-hidden="true" />
+                          <svg
+                            className="fill-white h-8 w-8"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M18 18v2H6v-2h12zm3-7v2H3v-2h18zm-3-7v2H6V4h12z" />
+                          </svg>
                         )}
                       </button>
                     </div>

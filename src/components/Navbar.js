@@ -88,7 +88,7 @@ const Navbar = () => {
                                   active
                                     ? "bg-gma-dd-hover text-white"
                                     : "text-kss-text-dark",
-                                  "block px-4 py-2 pt-3 text-md  transition"
+                                  "block px-4 py-2 pt-3 text-md  transition focus-visible:outline-0"
                                 )}
                               >
                                 Local Advertising
@@ -103,7 +103,7 @@ const Navbar = () => {
                                   active
                                     ? "bg-gma-dd-hover text-white"
                                     : "text-kss-text-dark",
-                                  "block px-4 py-2 text-md  transition"
+                                  "block px-4 py-2 text-md  transition focus-visible:outline-0"
                                 )}
                               >
                                 Digital Advertising
@@ -118,7 +118,7 @@ const Navbar = () => {
                                   active
                                     ? "bg-gma-dd-hover text-white"
                                     : "text-kss-text-dark",
-                                  "block px-4 py-2 pb-3 text-md  transition"
+                                  "block px-4 py-2 pb-3 text-md  transition focus-visible:outline-0"
                                 )}
                               >
                                 Branding
@@ -133,7 +133,7 @@ const Navbar = () => {
                                   active
                                     ? "bg-gma-dd-hover text-white"
                                     : "text-kss-text-dark",
-                                  "block px-4 py-2 text-md  transition"
+                                  "block px-4 py-2 text-md  transition focus-visible:outline-0"
                                 )}
                               >
                                 Web Applications
@@ -148,7 +148,7 @@ const Navbar = () => {
                                   active
                                     ? "bg-gma-dd-hover text-white"
                                     : "text-kss-text-dark",
-                                  "block px-4 py-2 pb-3 text-md  transition"
+                                  "block px-4 py-2 pb-3 text-md  transition focus-visible:outline-0"
                                 )}
                               >
                                 Public Relations

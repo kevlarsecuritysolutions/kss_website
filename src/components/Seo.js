@@ -14,7 +14,7 @@ const SEO = ({title, description, image, slug, children}) => {
                     siteUrl
                 }
             }
-            favicon: file(name: {eq: "kss-logo-white"}){
+            favicon: file(name: {eq: "favicon"}){
                 publicURL
             }
             social: file(name: {eq: "prius"}){
