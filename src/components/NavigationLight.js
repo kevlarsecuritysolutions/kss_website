@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import {
   Dialog,
   Popover,
@@ -54,7 +54,10 @@ const NavigationLight = () => {
     }
   };
 
-  window.addEventListener("scroll", changeColor);
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  });
+
   return (
     <div className="bg-white">
       {/* Mobile menu */}
