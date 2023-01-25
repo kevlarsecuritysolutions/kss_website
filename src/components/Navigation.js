@@ -43,18 +43,25 @@ function classNames(...classes) {
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const isBrowser = typeof window !== "undefined"
 
   // change nav color when scrolling
   const [color, setColor] = useState(false);
+
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (!isBrowser) {
+      return;
+    } else if (window.scrollY >= 90) {
       setColor(true);
     } else {
       setColor(false);
     }
   };
 
-  window.addEventListener("scroll", changeColor);
+  if (!isBrowser) {
+    return;
+  } else {window.addEventListener("scroll", changeColor);}
+  
   return (
     <div className="bg-white">
       {/* Mobile menu */}
