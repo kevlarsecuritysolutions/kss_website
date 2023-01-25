@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import {
   Dialog,
   Popover,
@@ -43,24 +43,20 @@ function classNames(...classes) {
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  const isBrowser = typeof window !== "undefined"
 
   // change nav color when scrolling
   const [color, setColor] = useState(false);
-
   const changeColor = () => {
-    if (!isBrowser) {
-      return;
-    } else if (window.scrollY >= 90) {
+    if (window.scrollY >= 90) {
       setColor(true);
     } else {
       setColor(false);
     }
   };
 
-  if (!isBrowser) {
-    return;
-  } else {window.addEventListener("scroll", changeColor);}
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+  });
   
   return (
     <div className="bg-white">
@@ -90,7 +86,13 @@ const Navigation = () => {
               leaveTo="translate-x-full"
             >
               <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto [z-index:2000]">
-                <div className="px-4 pt-5 pb-5 flex" style={{backgroundImage : "linear-gradient(to top, #000000, #002340, #002340)"}}>
+                <div
+                  className="px-4 pt-5 pb-5 flex"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(to top, #000000, #002340, #002340)",
+                  }}
+                >
                   <p className="opacity-0">kss</p>
                 </div>
 
@@ -441,7 +443,14 @@ const Navigation = () => {
                 ? " header bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full [z-index:1000] transition-all"
                 : " header bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full [z-index:1000] transition-all"
             }
-            style= {open && !color ? {backgroundImage : "linear-gradient(to top, #000000, #002340, #002340)"} : {}}
+            style={
+              open && !color
+                ? {
+                    backgroundImage:
+                      "linear-gradient(to top, #000000, #002340, #002340)",
+                  }
+                : {}
+            }
           >
             <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="">
