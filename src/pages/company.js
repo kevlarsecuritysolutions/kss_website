@@ -84,7 +84,7 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <div className="relative aspect-video lg:aspect-auto mx-4 mb-6 lg:mx-0 lg:mb-0">
+          <div className="relative aspect-video lg:aspect-auto h-full mx-4 mb-6 lg:mx-0 lg:mb-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
               className="object-cover absolute inset-0"
@@ -92,7 +92,7 @@ const Company = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="h-full relative">
+          <div className="h-full relative overflow-hidden">
             {" "}
             <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg" className="inset-0 bottom-0 top-0 absolute" objectPosition="50% 75%"/>
           </div>
