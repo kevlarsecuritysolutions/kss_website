@@ -14,35 +14,10 @@ const StaticGuards = () => {
   return (
     <Layout>
       <SEO title="Static Guards" slug="/services/static-guards" />
-      <section class="relative hidden lg:block">
-        <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-        <div class="mx-auto">
-          <div class="relative overflow-hidden">
-            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-              <HeroAngle className="w-full h-full" />
-            </div>
-            <div class="absolute inset-0 object-top z-1">
-              <StaticImage
-                class="h-full w-full object-cover"
-                src="../../assets/images/prius.jpg"
-                alt=""
-              />
-              <div class="absolute inset-0 "></div>
-            </div>
-            <div className="pt-36 pb-24 px-24">
-              <StaticImage
-                className="h-48 w-48 z-10"
-                src="../../assets/images/static-guards.png"
-                alt="Crowd Control"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               STATIC GUARDS
             </h2>
@@ -52,8 +27,7 @@ const StaticGuards = () => {
               fixed periods.
             </p>
             <p className="text-md text-white pb-4">
-              We can provide static guards at affordable prices for almost any
-              purpose.
+              We can provide static guards for almost any purpose.
             </p>
             <div className="flex">
               <Link
@@ -65,19 +39,22 @@ const StaticGuards = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block relative">
             {" "}
             <StaticImage
-              src="../../assets/images/snow.jpg"
-              className="hidden lg:block"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg"
+              className="absolute bottom-0"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
-            className="object-cover"
-          />
+          <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/7KaNa4XRrd0DQaqrXcYL7c/df4cf6a9bd05d91d05962ff1f58b18ae/kss_website2022-59.jpg"
+              className="object-cover absolute inset-0"
+            />
+          </div>
+
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h3 className="text-white text-xl font-semibold pt-2 pb-2">
               Regular Concierge or visitor monitoring Services

@@ -10,26 +10,20 @@ import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 import Layout from "../../components/Layout";
 import SEO from "../../components/Seo";
 
-const RiskAssessment = () => {
+const BodyGuard = () => {
   return (
     <Layout>
-      <SEO
-        title="Risk Assessments & Analysis"
-        slug="/services/risk-assessments"
-      />
+      <SEO title="Body Guard Services" slug="/services/body-guard-services" />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
-              RISK ASSESSMENTS & ANALYSIS
+              BODY GUARD SERVICES
             </h2>
             <p className="text-md text-white pb-4">
-              Many businesses require risk assessments to be completed in order
-              to identify security flows, vulnerabilities, staff safety risks
-              and risks to members of the public. We specialise in providing
-              comprehensive and cost-effective risk assessments for businesses,
-              private residences, individuals, and events.
+              Kevlar Security Solutions can provide close personal protection,
+              asset / valuables protection services.
             </p>
             <div className="flex">
               <Link
@@ -44,37 +38,37 @@ const RiskAssessment = () => {
           <div className="hidden lg:block relative">
             {" "}
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
               className="absolute bottom-0"
+              objectPosition="50% 40%"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XMf968JXrYhnAHmvvkI0q/ca1384e267d431e923273fe56b411b5a/kss_website2022-50.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/20v3Z6lC8rcBPGqigcImby/da423907d8e62f618e9f50ddee219fc5/kss_website2022-109.jpg"
               className="object-cover absolute inset-0"
             />
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Personal Protection
+            </h3>
             <p className="text-md text-white pb-2">
-              Using Australian Standards and Industry Specific requirements we
-              can tailor and develop risk assessment and analysis to provide a
-              report in line with your business objectives.
+              Close personal protection is a critical area that requires
+              meticulous planning and delicate execution. Our guards will
+              exercise professionalism and judgement to ensure that the
+              individual is as safe as practical in the environment.
             </p>
+            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+              Asset Protection
+            </h3>
             <p className="text-md text-white pb-2">
-              Our engagement with ASIAL to understand the current counter
-              terrorism guidelines will ensure that an objective view of your
-              site-specific security requirements is analysed and
-              recommendations for improvement or mitigation of risks are
-              documented.
-            </p>
-            <p className="text-md text-white pb-2">
-              In the areas of risk assessment and analysis we can provide
-              comprehensive security risk analysis, development of a risk
-              matrix, a risk report based on current standard operation
-              procedures and recommendations for the mitigation of liability
+              We will travel with your asset, develop risk assessments for
+              travel routes and manifest developed to ensure that your asset is
+              taken from and given to the right people.
             </p>
             <p className="text-md text-white pb-2">
               Please use our contact page if you are interested in seeking out
@@ -87,4 +81,4 @@ const RiskAssessment = () => {
   );
 };
 
-export default RiskAssessment;
+export default BodyGuard;

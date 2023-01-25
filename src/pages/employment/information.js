@@ -10,7 +10,7 @@ const EmploymentInformation = () => {
   return (
     <Layout>
       <section>
-        <section class="relative hidden lg:block">
+        <section class="relative hidden">
           <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
           <div class="mx-auto">
             <div class="relative overflow-hidden">
@@ -42,7 +42,7 @@ const EmploymentInformation = () => {
         id="environment"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-24">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               CAREERS WITH KEVLAR
             </h2>
@@ -87,15 +87,17 @@ const EmploymentInformation = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <StaticImage
-            src="../../assets/images/employment-right.png"
-            className=""
-          />
+          <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/Y3C1W7kZUmJJ28ZBCaAzU/bf6e31299bbf5f7ff61368ab05e8a83c/kss_website2022-183.jpg"
+              className="object-cover absolute inset-0"
+            />
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="hidden lg:block">
             <StaticImage
-              src="../../assets/images/employment-left.png"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
               className="hidden lg:block"
             />
           </div>
@@ -110,7 +112,7 @@ const EmploymentInformation = () => {
             </p>
             <div className="flex justify-center items-center max-w-lg mx-auto pt-24 items-center">
               <div className="w-24">
-                <StaticImage src="../../assets/images/employment-icon.png" />
+                <StaticImage src="../../assets/images/employment-icon.png" className="object-fit"/>
               </div>
               <div className="h-36 w-[1px] bg-white mx-20 "></div>
               <Link

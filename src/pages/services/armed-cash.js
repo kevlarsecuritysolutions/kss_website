@@ -14,37 +14,12 @@ const ArmedCash = () => {
   return (
     <Layout>
       <SEO title="Armed Cash in Transit" slug="/services/armed-cash" />
-      <section class="relative hidden lg:block">
-        <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-        <div class="mx-auto">
-          <div class="relative overflow-hidden">
-            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-              <HeroAngle className="w-full h-full" />
-            </div>
-            <div class="absolute inset-0 object-top z-1">
-              <StaticImage
-                class="h-full w-full object-cover"
-                src="../../assets/images/prius.jpg"
-                alt=""
-              />
-              <div class="absolute inset-0 "></div>
-            </div>
-            <div className="pt-36 pb-24 px-24">
-              <StaticImage
-                className="h-48 w-48 z-10"
-                src="../../assets/images/armed-cash-in-transit.png"
-                alt="Crowd Control"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
-              ARMED CASH IN TRANSIT
+              CASH IN TRANSIT SERVICES
             </h2>
             <p className="text-md text-white pb-4">
               Many businesses, both large and small, are required to transport
@@ -65,46 +40,54 @@ const ArmedCash = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block relative overflow-hidden">
+            {" "}
             <StaticImage
-              src="../../assets/images/snow.jpg"
-              className="hidden lg:block"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/2fUxlGvGXIsFuOPs5LRSdr/23b3d37b343e97d2f48ffab099cd42f7/kss_website2022-85.jpg"
+              className="absolute -bottom-48"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
-            className="object-cover"
-          />
+        <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/7mMwKwV9x2NrdssWHbhIv2/20b61b759a629bebcf5fca6da31c0832/kss_website2022-62.jpg"
+              className="object-cover absolute inset-0"
+            />
+          </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h2 className="text-white font-bold text-2xl pb-2 lg:pb-8 pt-8">
-              Our team can manage all aspects of your security and safety needs
-              including:
-            </h2>
-            <div className="flex flex-col lg:flex-row gap-12 px-4 lg:px-0 py-8">
-              <StaticImage
-                src="../../assets/images/key-points-check.png"
-                className="h-32 w-32 hidden lg:block"
-              />
-              <ul className="text-white list-disc pl-4">
-                <li>
-                  Transport of end of day or end of week cash deposits to your
-                  financial institution
-                </li>
-                <li>
-                  Pick up daily or weekly change floats from your financial
-                  institution, or provide a return service
-                </li>
-                <li>
-                  Provide ad-hoc cash-in-transit services for events or
-                  businesses with variable cash-in-transit needs
-                </li>
-              </ul>
-            </div>
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Overt
+            </h3>
             <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager can provide advice and a quote for
-              cash-in-transit service to suit your needs.
+              Our highly visible security officers will make your day-to-day
+              banking secure and efficient for your business. We currently
+              operate services 7 days a week in Southern Tasmania and your
+              collection and change orders can be tailored to suit your business
+              requirements.
+            </p>
+            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+              Covert
+            </h3>
+            <p className="text-md text-white pb-2">
+              When you want to ensure that business revenue is moved discreetly,
+              our Covert officers can provide this service whilst providing the
+              safety and security of your staff and customers and ensuring they
+              are not exposed to unnecessary risks associated with movement of
+              assets.
+            </p>
+            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+              Armed Cash Movement
+            </h3>
+            <p className="text-md text-white pb-2">
+              Visual presence is a powerful tool in deterring unwanted
+              behaviour. Backed up by the ability to defend your assets our
+              Armed guards are trained to a high standard and will ensure the
+              security of your assets.
+            </p>
+            <p className="text-md text-white pb-2">
+              Please contact us for a confidential discussion on how we can
+              provide solutions for your business needs.
             </p>
           </div>
         </div>

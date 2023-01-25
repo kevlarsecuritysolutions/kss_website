@@ -10,26 +10,21 @@ import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 import Layout from "../../components/Layout";
 import SEO from "../../components/Seo";
 
-const RiskAssessment = () => {
+const ConciergeGuards = () => {
   return (
     <Layout>
-      <SEO
-        title="Risk Assessments & Analysis"
-        slug="/services/risk-assessments"
-      />
+      <SEO title="Concierge Guards" slug="/services/concierge-guards" />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
-              RISK ASSESSMENTS & ANALYSIS
+              CONCIERGE GUARDS
             </h2>
             <p className="text-md text-white pb-4">
-              Many businesses require risk assessments to be completed in order
-              to identify security flows, vulnerabilities, staff safety risks
-              and risks to members of the public. We specialise in providing
-              comprehensive and cost-effective risk assessments for businesses,
-              private residences, individuals, and events.
+              Concierge security officers are assigned to give support to the
+              guests and visitors, whilst providing the company an additional
+              level of protection.
             </p>
             <div className="flex">
               <Link
@@ -44,7 +39,7 @@ const RiskAssessment = () => {
           <div className="hidden lg:block relative">
             {" "}
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg"
               className="absolute bottom-0"
             />
           </div>
@@ -52,33 +47,36 @@ const RiskAssessment = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XMf968JXrYhnAHmvvkI0q/ca1384e267d431e923273fe56b411b5a/kss_website2022-50.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/7KaNa4XRrd0DQaqrXcYL7c/df4cf6a9bd05d91d05962ff1f58b18ae/kss_website2022-59.jpg"
               className="object-cover absolute inset-0"
             />
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <p className="text-md text-white pb-2">
-              Using Australian Standards and Industry Specific requirements we
-              can tailor and develop risk assessment and analysis to provide a
-              report in line with your business objectives.
+              Our officers are trained to the highest security standard and are
+              continually updating their qualifications to remain security
+              industry compliant providing high-level administrative skills and
+              exceptional front-facing customer service in conjunction with
+              security for your facility.
             </p>
             <p className="text-md text-white pb-2">
-              Our engagement with ASIAL to understand the current counter
-              terrorism guidelines will ensure that an objective view of your
-              site-specific security requirements is analysed and
-              recommendations for improvement or mitigation of risks are
-              documented.
+              Our officers are adaptable to software programs, we employ
+              technical experts who will immerse themselves in your systems to
+              train our officers.
             </p>
             <p className="text-md text-white pb-2">
-              In the areas of risk assessment and analysis we can provide
-              comprehensive security risk analysis, development of a risk
-              matrix, a risk report based on current standard operation
-              procedures and recommendations for the mitigation of liability
+              We will provide uniforms suitable for your business environment
+              and will work to ensure that we operate within your companies’
+              policies and procedures.
             </p>
             <p className="text-md text-white pb-2">
-              Please use our contact page if you are interested in seeking out
-              more information about the services we can deliver.
+              Time on site and length of shift is adaptable to business
+              requirements.
+            </p>
+            <p className="text-md text-white pb-2">
+              Please contact us for a confidential discussion on how we can
+              provide solutions for your business needs
             </p>
           </div>
         </div>
@@ -87,4 +85,4 @@ const RiskAssessment = () => {
   );
 };
 
-export default RiskAssessment;
+export default ConciergeGuards;

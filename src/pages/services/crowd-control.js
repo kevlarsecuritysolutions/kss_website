@@ -14,44 +14,21 @@ const CrowdControl = () => {
   return (
     <Layout>
       <SEO title="Crowd Control" slug="/services/crowd-control" />
-      <section class="relative hidden lg:block">
-        <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-        <div class="mx-auto">
-          <div class="relative overflow-hidden">
-            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-              <HeroAngle className="w-full h-full" />
-            </div>
-            <div class="absolute inset-0 object-top z-1">
-              <StaticImage
-                class="h-full w-full object-cover"
-                src="https://images.pexels.com/photos/4799242/pexels-photo-4799242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Crystals"
-              />
-              <div class="absolute inset-0 "></div>
-            </div>
-            <div className="pt-36 pb-24 px-24">
-              <StaticImage
-                className="h-48 w-48 z-10"
-                src="../../assets/images/crowd-control.png"
-                alt="Crowd Control"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               CROWD CONTROL / EVENT SECURITY
             </h2>
             <p className="text-md text-white">
-              We have significant experience in providing crowd control and
-              related security services for a wide range of events and venues
-              including large scale multi-day public events, high profile and
-              high risk events, concerts and sporting events, events at pubs and
-              clubs and private functions.
+              The requirement for negotiation-based crowd controllers has never
+              been higher. We train and educate our staff to develop their
+              conflict resolutions skills to be able to provide venues, events,
+              and individuals with a safe environment using conflict mitigation
+              techniques to minimise physical altercations, ensuring the use of
+              an appropriate level of force in accordance with legislative
+              requirements, if required.
             </p>
             <div className="flex">
               <Link
@@ -63,21 +40,37 @@ const CrowdControl = () => {
               </Link>
             </div>
           </div>
-          <StaticImage
-            src="../../assets/images/right-column-security.png"
-            className=""
-          />
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="hidden lg:block">
+          <div className="hidden lg:block relative overflow-hidden">
             {" "}
             <StaticImage
-              src="../../assets/images/left-column-security.png"
-              className="hidden lg:block object-cover"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
+              className="absolute bottom-0 object-cover w-full h-full"
+              objectPosition="50% 75%"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
+              className="object-cover absolute inset-0"
             />
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Licensed Venues
+            </h3>
+            <p className="text-md text-white pb-2">
+              The key to successfully operating a licenced venue relies on the
+              cohesion of the security team and the communication of the
+              security team and venue staff. We have considerable experience in
+              providing crowd control and related security service at pubs,
+              clubs, and private functions.
+            </p>
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Events
+            </h3>
             <p className="text-md text-white pb-2">
               Our experienced team can assist you with every stage of your next
               event.
@@ -99,11 +92,13 @@ const CrowdControl = () => {
               Our team can manage all aspects of your security and safety needs
               including:
             </h2>
-            <div className="flex flex-col lg:flex-row gap-12 px-4 lg:px-0 py-8">
-              <StaticImage
-                src="../../assets/images/key-points-check.png"
-                className="h-32 w-32 hidden lg:block"
-              />
+            <div className="flex flex-col lg:flex-row items-center gap-12 px-4 lg:px-0 py-8">
+              <div className="w-32 h-32 hidden lg:block relative flex items-center justify-center">
+                <StaticImage
+                  src="../../assets/images/key-points-check.png"
+                  className="w-28 h-28 absolute inset-0"
+                />
+              </div>
               <ul className="text-white list-disc pl-4">
                 <li>guest list management</li>
                 <li>providing advice and direction to patrons</li>

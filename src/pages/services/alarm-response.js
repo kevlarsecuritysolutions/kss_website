@@ -14,35 +14,10 @@ const AlarmResponse = () => {
   return (
     <Layout>
       <SEO title="Alarm Response" slug="/services/alarm-response" />
-      <section class="relative hidden lg:block">
-        <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-        <div class="mx-auto">
-          <div class="relative overflow-hidden">
-            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-              <HeroAngle className="w-full h-full" />
-            </div>
-            <div class="absolute inset-0 object-top z-1">
-              <StaticImage
-                class="h-full w-full object-cover"
-                src="../../assets/images/prius.jpg"
-                alt=""
-              />
-              <div class="absolute inset-0 "></div>
-            </div>
-            <div className="pt-36 pb-24 px-24">
-              <StaticImage
-                className="h-48 w-48 z-10"
-                src="../../assets/images/alarm-duress-response.png"
-                alt="Crowd Control"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               ALARM / DURESS RESPONSE
             </h2>
@@ -71,69 +46,59 @@ const AlarmResponse = () => {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block relative">
+            {" "}
             <StaticImage
-              src="../../assets/images/snow.jpg"
-              className="hidden lg:block"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/49hNqpOdSyf5KKwxsN86sz/551184bd215847b7e7834fd8b47e865e/kss_website2022-108.jpg"
+              className="absolute bottom-0 object-cover w-full h-full"
+              objectPosition="50% 70%"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <StaticImage
-            src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
-            className="object-cover"
-          />
+          <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1kb4M0bBUNY5NcNLjuT16N/eda358fe18e5e4851842539bdfdeff80/kss_website2022-117.jpg"
+              className="object-cover absolute inset-0"
+            />
+          </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <p className="text-md text-white pb-2">
-              With three patrol vehicles on the road each night, our average
-              alarm response time is currently less than 17 minutes for clients
-              within 20km of the CBD.
+              Alarm activations can come at the most inconvenient time. Kevlar
+              Security Solutions will function as an intermediary so you can
+              spend more of your time focusing on your business and leaving the
+              security of your site to security professionals. We are always
+              expanding our patrol operation, currently the largest in Tasmania
+              we have five cars operating 365 days of the year (24/7) in
+              Southern Tasmania alone.
             </p>
             <p className="text-md text-white pb-2">
-              If you already have an installed and monitored alarm system, we
-              can work with your existing monitoring service to provide fast,
-              cost-effective and professional response services for your home or
-              business alarm system.
+              To keep you informed about the security of your asset &/or
+              business our team of Security Officers are trained to provide
+              accurate and timely reports. Alarms are a cornerstone of ensuring
+              your peace of mind when away from your asset. Our drivers will
+              action an alarm immediately providing response in accordance with
+              AS/NZS 4421:2011, and we will tailor a solution that is suitable
+              for your requirements.
             </p>
             <p className="text-md text-white pb-2">
-              We are the preferred supplier of alarm and duress response
-              services for sites monitored by Golden Electronics, however we
-              also regularly work with a number of other alarm monitoring
-              service providers both in Tasmania and interstate.
+              Duress Response is also tailored to suit a variety of clients,
+              with our officers trained in stand-alone and team responses,
+              offering services to businesses and individuals. Business is
+              offered the assistance of a security officer in a confronting
+              situation, non-compliant customer or even a disgruntled employee.
+              Individuals can choose from a range of services including
+              residential response to medical responses, our team are qualified
+              to provide a variety of services as required.
             </p>
             <p className="text-md text-white pb-2">
-              For businesses and homes that do not currently have an alarm
-              system installed, or where a system upgrade is required, we can
-              provide a complete security package in conjunction with our
-              partners at Golden Electronics which includes planning,
-              installing, monitoring and responding to your alarm system.
+              All services are documented and reporting available, compliance
+              for incident reports to be written and reviewed by our senior
+              officers.
             </p>
             <p className="text-md text-white pb-2">
-              Our clients will often also require duress alarm technology and
-              response services, particularly where those clients have a duty of
-              care for their staff and / or their clients.
-            </p>
-            <p className="text-md text-white pb-2">
-              As with alarm systems, we can provide complete packages to plan,
-              install, monitor and respond to a duress system, or provide duress
-              response services for existing systems.
-            </p>
-            <p className="text-md text-white pb-2">
-              All duress alarms are given the highest priority and are handled
-              by our most experienced staff members. We will liaise with onsite
-              staff, offsite staff and / or Tasmania Police as appropriate
-              whilst we travel to the site.
-            </p>
-            <p className="text-md text-white pb-2">
-              A response docket is completed by the relevant patrol driver for
-              each alarm / duress event. These dockets can be left in a
-              designated location on-site, or emailed to the client during the
-              next business day.
-            </p>
-            <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager can provide you with advice and
-              quotes for our standalone response services or a complete alarm
-              system setup and response service to suit your needs.
+              Please use our contact page if you are interested in seeking out
+              more information about the services we can deliver.
             </p>
           </div>
         </div>

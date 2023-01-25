@@ -14,35 +14,10 @@ const SecurityPatrols = () => {
   return (
     <Layout>
       <SEO title="Security Patrols" slug="/services/security-patrols" />
-      <section class="relative hidden lg:block">
-        <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-        <div class="mx-auto">
-          <div class="relative overflow-hidden">
-            <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-              <HeroAngle className="w-full h-full" />
-            </div>
-            <div class="absolute inset-0 object-top z-1">
-              <StaticImage
-                class="h-full w-full object-cover"
-                src="../../assets/images/prius.jpg"
-                alt=""
-              />
-              <div class="absolute inset-0 "></div>
-            </div>
-            <div className="pt-36 pb-24 px-24">
-              <StaticImage
-                className="h-48 w-48 z-10"
-                src="../../assets/images/security-patrols.png"
-                alt="Crowd Control"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-12 lg:pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               SECURITY PATROLS
             </h2>
@@ -80,17 +55,21 @@ const SecurityPatrols = () => {
               </Link>
             </div>
           </div>
-          <StaticImage src="../../assets/images/snow.jpg" className="" />
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="hidden lg:block">
+          <div className="hidden lg:block relative">
             {" "}
             <StaticImage
-              src="https://images.pexels.com/photos/532001/pexels-photo-532001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              className="hidden lg:block object-cover"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/5lKSBZF68FWUafuPhRBJ3h/b014ee488693b0da60f12f3ffc095109/kss_website2022-149.jpg"
+              className="absolute bottom-0 object-cover w-full h-full"
             />
           </div>
-
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+        <div className="relative overflow-hidden aspect-video lg:aspect-auto mx-4 lg:mx-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/3TgYgiJQgqqWj4TYMNxUZa/a15177b7e3fd64e8aa1aac4cb8885f7f/kss_website2022-148.jpg"
+              className="object-cover absolute -bottom-24 lg:inset-0"
+            />
+          </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h3 className="text-white text-xl font-semibold pt-2 pb-2">
               Lock-up and Un-lock Services
@@ -141,11 +120,13 @@ const SecurityPatrols = () => {
               We can also provide the following compliance and reporting options
               to our clients:
             </h2>
-            <div className="flex flex-col lg:flex-row gap-12 px-4 lg:px-0 py-8">
-              <StaticImage
-                src="../../assets/images/key-points-check.png"
-                className="w-32 h-32 hidden lg:block"
-              />
+            <div className="flex flex-col lg:flex-row items-center gap-12 px-4 lg:px-0 py-8">
+              <div className="w-32 h-32 hidden lg:block relative">
+                <StaticImage
+                  src="../../assets/images/key-points-check.png"
+                  className="w-full h-full absolute inset-0"
+                />
+              </div>
               <ul className="text-white list-disc pl-4">
                 <li>Proof cards</li>
                 <li>Nightly patrol reports</li>

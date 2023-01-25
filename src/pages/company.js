@@ -13,7 +13,7 @@ const Company = () => {
     <Layout>
       <SEO title="Company Information" slug="/company" />
       <section>
-        <section class="relative hidden lg:block">
+        <section class="relative hidden">
           <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
           <div class="mx-auto">
             <div class="relative overflow-hidden">
@@ -45,7 +45,7 @@ const Company = () => {
         id="environment"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 lg:pt-24 pb-8">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               COMPANY PROFILE
             </h2>
@@ -84,15 +84,17 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <div className="hidden lg:block h-full">
-            {" "}
-            <StaticImage src="../assets/images/prius.jpg" className="h-full w-full object-contain" />
+          <div className="relative aspect-video lg:aspect-auto mx-4 mb-6 lg:mx-0 lg:mb-0">
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
+              className="object-cover absolute inset-0"
+            />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="">
+          <div className="h-full relative">
             {" "}
-            <StaticImage src="../assets/images/Environment.png" className="h-full w-full object-contain" />
+            <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg" className="inset-0 bottom-0 top-0 absolute" objectPosition="50% 75%"/>
           </div>
           <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">

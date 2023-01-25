@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden">
+    <section className="bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden pt-8">
       <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-7xl mx-auto py-8">
         <Link to="/" className="flex gap-2 justify-center lg:justify-start">
           <StaticImage
@@ -59,10 +59,11 @@ const Footer = () => {
       <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl mx-auto border-t border-gray-50/40 ">
         <div class="mt-2 md:mt-0 md:order-1">
           <p class="text-xs py-2 tracking-tight text-kss-text-dark">
-            &copy; 2022 Kevlar Security Services. All rights reserved. | Master
+            &copy; 2022 Kevlar Security Solutions Pty Ltd. All rights reserved. | Master
             Licence No. 19859
           </p>
         </div>
+        
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Navigation = () => {
+const NavigationLight = () => {
   const [open, setOpen] = useState(false);
 
   // change nav color when scrolling
@@ -83,8 +83,15 @@ const Navigation = () => {
               leaveTo="translate-x-full"
             >
               <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto [z-index:2000]">
-                <div className="px-4 pt-5 pb-5 flex" style={{backgroundImage : "linear-gradient(to top, #000000, #002340, #002340)"}}>
-                  <p className="opacity-0">kss</p>
+                <div className="px-4 pt-5 pb-2 flex">
+                  <button
+                    type="button"
+                    className="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-300"
+                    onClick={() => setOpen(false)}
+                  >
+                    <span className="sr-only">Close menu</span>
+                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                  </button>
                 </div>
 
                 <div className="border-t border-gray-200 py-6 space-y-6">
@@ -428,14 +435,7 @@ const Navigation = () => {
       <header className="relative transition">
         <nav aria-label="Top">
           {/* Secondary navigation */}
-          <div
-            className={
-              color
-                ? " header bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full [z-index:1000] transition-all"
-                : " header bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full [z-index:1000] transition-all"
-            }
-            style= {open && !color ? {backgroundImage : "linear-gradient(to top, #000000, #002340, #002340)"} : {}}
-          >
+          <div className=" header bg-gradient-to-t from-black to-[#002340] fixed w-full [z-index:1000] transition-all">
             <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="">
                 <div className="h-16 flex items-center justify-between">
@@ -689,7 +689,7 @@ const Navigation = () => {
                                     <div className="col-span-5 flex justify-end pt-4">
                                       <Link
                                         to="/contact"
-                                        className="flex gap-2 items-center bg-transparent transition text-kss-text text-sm font-semibold py-3 hover:underline"
+                                        className="flex gap-2 items-center bg-transparent transition text-kss-text text-sm font-semibold py-3 px-6 lg:px-10 hover:underline"
                                       >
                                         {" "}
                                         Contact a Security Professional{" "}
@@ -1074,4 +1074,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default NavigationLight;

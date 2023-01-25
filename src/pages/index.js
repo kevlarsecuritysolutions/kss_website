@@ -9,14 +9,18 @@ import Contact from "../components/Contact";
 import HeroAlt from "../components/HeroAlt";
 import ContactSection from "../components/ContactSection";
 import SEO from "../components/Seo";
+import HeroSection from "../components/HeroSection";
+import Clients from "../components/Clients";
 const Home = () => {
   return (
     <Layout>
       <SEO title="Protection at every Angle" slug="/" />
       {/* <Hero/> */}
-      <HeroAlt />
+      {/* <HeroAlt /> */}
+      <HeroSection/>
       {/* <About/> */}
       <Services />
+      <Clients/>
     </Layout>
   );
 };
