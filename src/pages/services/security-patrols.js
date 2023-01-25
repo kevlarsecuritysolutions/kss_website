@@ -59,7 +59,7 @@ const SecurityPatrols = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/5lKSBZF68FWUafuPhRBJ3h/b014ee488693b0da60f12f3ffc095109/kss_website2022-149.jpg"
-              className="absolute bottom-0 object-cover w-full h-full"
+              className="!absolute !bottom-0 !object-cover !w-full !h-full"
             />
           </div>
         </div>
@@ -67,7 +67,7 @@ const SecurityPatrols = () => {
         <div className="relative overflow-hidden aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3TgYgiJQgqqWj4TYMNxUZa/a15177b7e3fd64e8aa1aac4cb8885f7f/kss_website2022-148.jpg"
-              className="object-cover absolute -bottom-24 lg:inset-0"
+              className="!object-cover !absolute !-bottom-24 !lg:inset-0"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
@@ -124,7 +124,7 @@ const SecurityPatrols = () => {
               <div className="w-32 h-32 hidden lg:block relative">
                 <StaticImage
                   src="../../assets/images/key-points-check.png"
-                  className="w-full h-full absolute inset-0"
+                  className="!w-full !h-full !absolute !inset-0"
                 />
               </div>
               <ul className="text-white list-disc pl-4">

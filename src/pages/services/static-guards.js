@@ -43,7 +43,7 @@ const StaticGuards = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg"
-              className="absolute bottom-0"
+              className="!absolute !bottom-0"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ const StaticGuards = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7KaNa4XRrd0DQaqrXcYL7c/df4cf6a9bd05d91d05962ff1f58b18ae/kss_website2022-59.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
 

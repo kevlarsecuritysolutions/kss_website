@@ -44,7 +44,7 @@ const ArmedCash = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/2fUxlGvGXIsFuOPs5LRSdr/23b3d37b343e97d2f48ffab099cd42f7/kss_website2022-85.jpg"
-              className="absolute -bottom-48"
+              className="!absolute !-bottom-48"
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const ArmedCash = () => {
         <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7mMwKwV9x2NrdssWHbhIv2/20b61b759a629bebcf5fca6da31c0832/kss_website2022-62.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

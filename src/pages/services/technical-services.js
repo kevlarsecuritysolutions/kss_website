@@ -40,7 +40,7 @@ const TechnicalServices = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/g7aewvLNihfNqjmqzVcAe/08c8279d7dc1c3f4ffd5aae8d01b6081/kss_website2022-44.jpg"
-              className="absolute bottom-0"
+              className="!absolute !bottom-0"
             />
           </div>
         </div>
@@ -48,7 +48,7 @@ const TechnicalServices = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
 

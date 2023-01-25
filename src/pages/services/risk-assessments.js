@@ -45,7 +45,7 @@ const RiskAssessment = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
-              className="absolute bottom-0"
+              className="!absolute !bottom-0"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ const RiskAssessment = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3XMf968JXrYhnAHmvvkI0q/ca1384e267d431e923273fe56b411b5a/kss_website2022-50.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
 

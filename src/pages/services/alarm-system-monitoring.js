@@ -26,7 +26,7 @@ const AlarmSystemMonitoring = () => {
             </div>
             <div class="absolute inset-0 object-top z-1">
               <StaticImage
-                class="h-full w-full object-cover"
+                class="!h-full !w-full !object-cover"
                 src="../../assets/images/prius.jpg"
                 alt=""
               />
@@ -34,7 +34,7 @@ const AlarmSystemMonitoring = () => {
             </div>
             <div className="pt-36 pb-24 px-24">
               <StaticImage
-                className="h-48 w-48 z-10"
+                className="!h-48 !w-48 !z-10"
                 src="../../assets/images/alarm-system-monitoring.png"
                 alt="Crowd Control"
               />
@@ -76,14 +76,14 @@ const AlarmSystemMonitoring = () => {
             {" "}
             <StaticImage
               src="../../assets/images/snow.jpg"
-              className="hidden lg:block"
+              className="!hidden !lg:block"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <StaticImage
             src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
-            className="object-cover"
+            className="!object-cover"
           />
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h2 className="text-white font-bold text-2xl pb-8 pt-8">

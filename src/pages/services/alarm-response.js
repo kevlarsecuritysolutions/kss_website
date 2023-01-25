@@ -50,7 +50,7 @@ const AlarmResponse = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/49hNqpOdSyf5KKwxsN86sz/551184bd215847b7e7834fd8b47e865e/kss_website2022-108.jpg"
-              className="absolute bottom-0 object-cover w-full h-full"
+              className="!absolute !bottom-0 !object-cover !w-full !h-full"
               objectPosition="50% 70%"
             />
           </div>
@@ -59,7 +59,7 @@ const AlarmResponse = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1kb4M0bBUNY5NcNLjuT16N/eda358fe18e5e4851842539bdfdeff80/kss_website2022-117.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

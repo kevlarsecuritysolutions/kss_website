@@ -39,7 +39,7 @@ const BodyGuard = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
-              className="absolute bottom-0"
+              className="!absolute !bottom-0"
               objectPosition="50% 40%"
             />
           </div>
@@ -48,7 +48,7 @@ const BodyGuard = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/20v3Z6lC8rcBPGqigcImby/da423907d8e62f618e9f50ddee219fc5/kss_website2022-109.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
 

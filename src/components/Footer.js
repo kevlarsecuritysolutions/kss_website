@@ -10,7 +10,7 @@ const Footer = () => {
         <Link to="/" className="flex gap-2 justify-center lg:justify-start">
           <StaticImage
             src="../assets/images/kss-logo-white.png"
-            className="w-10 h-12"
+            className="!w-10 !h-12"
           />
           <div className="flex flex-col justify-start">
             <p className="text-2xl text-white">KEVLAR</p>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <StaticImage src="../assets/images/accreditations-color.png" className="w-60 h-10"/>
+          <StaticImage src="../assets/images/accreditations-color.png" className="!w-60 !h-10"/>
         </div>
         <div className="hidden lg:flex flex flex-col">
           <Link className="text-kss-text-dark hover:text-white text-sm pb-2">

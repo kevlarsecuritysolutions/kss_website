@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="relative pt-12 pb-32 shadow-xl">
       <div className="absolute inset-0 xl:-bottom-36 xl:top-auto">
         <StaticImage
-          className="h-full w-full object-cover"
+          className="!h-full !w-full !object-cover"
           src="https://images.ctfassets.net/lfrbwr0lmnkj/5qUBREtADDhinVjjNYgEW/5ef4274ff9149c1198e5cadd4545e583/kss_website2022-113.jpg"
           alt="Kevlar Security Solutions Fleet"
         />

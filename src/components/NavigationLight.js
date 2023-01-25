@@ -449,7 +449,7 @@ const NavigationLight = () => {
                       <StaticImage
                         src="../assets/images/kss-logo-white.png"
                         alt=""
-                        className="w-8 h-auto"
+                        className="!w-8 !h-auto"
                       />
                       <div className="flex flex-col justify-start">
                         <p className="text-2xl text-white font-bold">KEVLAR</p>
@@ -794,7 +794,7 @@ const NavigationLight = () => {
                                           <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
                                             <StaticImage
                                               src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
-                                              className="w-full absolute bottom-0"
+                                              className="!w-full !absolute !bottom-0"
                                               objectFit="scale-down"
                                             />
                                           </div>
@@ -815,7 +815,7 @@ const NavigationLight = () => {
                                           <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
                                             <StaticImage
                                               src="https://images.ctfassets.net/lfrbwr0lmnkj/7oBsXku2unNUJNZCGnbh3l/be1c669d78ab1de0c937796393699570/kss_website2022-110.jpg"
-                                              className="w-full absolute bottom-0"
+                                              className="!w-full !absolute !bottom-0"
                                               objectFit="scale-down"
                                             />
                                           </div>
@@ -834,7 +834,7 @@ const NavigationLight = () => {
                                         <div className="flex flex-col">
                                           <StaticImage
                                             src="../assets/images/sign.jpg"
-                                            className="mb-2 h-40 group-hover:opacity-90"
+                                            className="!mb-2 !h-40 !group-hover:opacity-90"
                                           />
                                           <p className="text-kss-text text-sm">
                                             Currently servicing more than 1800
@@ -936,7 +936,7 @@ const NavigationLight = () => {
                                           <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
                                             <StaticImage
                                               src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
-                                              className="w-full absolute bottom-0"
+                                              className="!w-full !absolute !bottom-0"
                                               objectFit="scale-down"
                                             />
                                           </div>
@@ -956,7 +956,7 @@ const NavigationLight = () => {
                                           <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
                                             <StaticImage
                                               src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
-                                              className="w-full absolute bottom-0"
+                                              className="!w-full !absolute !bottom-0"
                                               objectFit="scale-down"
                                             />
                                           </div>
@@ -976,7 +976,7 @@ const NavigationLight = () => {
                                           <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
                                             <StaticImage
                                               src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-                                              className="w-full absolute bottom-0"
+                                              className="!w-full !absolute !bottom-0"
                                               objectFit="scale-down"
                                             />
                                           </div>
@@ -1016,7 +1016,7 @@ const NavigationLight = () => {
                     <StaticImage
                       src="../assets/images/kss-logo-white.png"
                       alt=""
-                      className="w-8 h-auto"
+                      className="!w-8 !h-auto"
                     />
                     <div className="flex flex-col justify-start">
                       <p className="text-2xl text-white font-bold">KEVLAR</p>

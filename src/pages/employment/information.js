@@ -19,7 +19,7 @@ const EmploymentInformation = () => {
               </div>
               <div class="absolute inset-0 object-top z-1">
                 <StaticImage
-                  class="h-full w-full object-cover"
+                  class="!h-full !w-full !object-cover"
                   src="../../assets/images/employment-top.png"
                   alt="Company"
                 />
@@ -27,7 +27,7 @@ const EmploymentInformation = () => {
               </div>
               <div className="pt-36 pb-24 px-24">
                 <StaticImage
-                  className="w-36 z-10"
+                  className="!w-36 !z-10"
                   src="../../assets/images/careers.png"
                   alt="Crowd Control"
                 />
@@ -90,7 +90,7 @@ const EmploymentInformation = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/Y3C1W7kZUmJJ28ZBCaAzU/bf6e31299bbf5f7ff61368ab05e8a83c/kss_website2022-183.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const EmploymentInformation = () => {
           <div className="hidden lg:block">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
-              className="hidden lg:block"
+              className="!hidden !lg:block"
             />
           </div>
 
@@ -114,7 +114,7 @@ const EmploymentInformation = () => {
               <div className="w-24">
                 <StaticImage src="../../assets/images/employment-icon.png" className="object-fit"/>
               </div>
-              <div className="h-36 w-[1px] bg-white mx-20 "></div>
+              <div className="!h-36 !w-[1px] !bg-white !mx-20 "></div>
               <Link
                 to="/employment/expression-of-interest"
                 className="flex gap-2 items-center bg-transparent hover:bg-white hover:text-black border-white border transition text-white text-sm h-12 w-48 px-4 justify-center"

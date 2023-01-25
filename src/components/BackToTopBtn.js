@@ -80,7 +80,7 @@ const BackToTopBtn = () => {
                       <div className="flex gap-2 py-6 justify-center lg:justify-start">
                         <StaticImage
                           src="../assets/images/kss-logo-white.png"
-                          className="w-10 h-12"
+                          className="!w-10 !h-12"
                         />
                         <div className="flex flex-col justify-start">
                           <p className="text-2xl text-white">KEVLAR</p>

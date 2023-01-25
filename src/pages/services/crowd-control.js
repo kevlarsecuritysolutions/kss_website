@@ -44,7 +44,7 @@ const CrowdControl = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
-              className="absolute bottom-0 object-cover w-full h-full"
+              className="!absolute !bottom-0 !object-cover !w-full !h-full"
               objectPosition="50% 75%"
             />
           </div>
@@ -53,7 +53,7 @@ const CrowdControl = () => {
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
 
@@ -96,7 +96,7 @@ const CrowdControl = () => {
               <div className="w-32 h-32 hidden lg:block relative flex items-center justify-center">
                 <StaticImage
                   src="../../assets/images/key-points-check.png"
-                  className="w-28 h-28 absolute inset-0"
+                  className="!w-28 !h-28 !absolute !inset-0"
                 />
               </div>
               <ul className="text-white list-disc pl-4">

@@ -12,33 +12,6 @@ const Company = () => {
   return (
     <Layout>
       <SEO title="Company Information" slug="/company" />
-      <section>
-        <section class="relative hidden">
-          <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-          <div class="mx-auto">
-            <div class="relative overflow-hidden">
-              <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-                <HeroAngle className="w-full h-full" />
-              </div>
-              <div class="absolute inset-0 object-top z-1">
-                <StaticImage
-                  class="h-full w-full object-cover"
-                  src="https://images.unsplash.com/photo-1653614223023-c1f0cb18e2db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                  alt="Company"
-                />
-                <div class="absolute inset-0 "></div>
-              </div>
-              <div className="pt-36 pb-24 px-24">
-                <StaticImage
-                  className="w-36 z-10"
-                  src="../assets/images/company-about.png"
-                  alt="Crowd Control"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
 
       <section
         className="bg-gradient-to-bl from-[#002034] to-black"
@@ -84,17 +57,17 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
           </div>
-          <div className="relative aspect-video lg:aspect-auto h-full mx-4 mb-6 lg:mx-0 lg:mb-0">
+          <div className="relative mx-4 mb-6 lg:mx-0 lg:mb-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
-              className="object-cover absolute inset-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="h-full relative overflow-hidden">
+          <div className="hidden xl:block relative overflow-hidden">
             {" "}
-            <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg" className="inset-0 bottom-0 top-0 absolute" objectPosition="50% 75%"/>
+            <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg" className="!inset-0 !bottom-0 !top-0 !absolute" objectPosition="50% 75%"/>
           </div>
           <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
