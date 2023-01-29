@@ -43,7 +43,7 @@ const Clients = () => {
   };
 
   return (
-    <section className="bg-gray-100 pb-12" id="clients">
+    <section className="bg-gray-100 pb-12 py-24" id="clients">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col pt-12 pb-12 px-4">
           <div className="max-w-3xl sm:text-left">
@@ -62,65 +62,90 @@ const Clients = () => {
         <Slider {...settings}>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-8 !left-36"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/4cZ046544bQNzkDxuLfU0O/fb7c8e6a655e8ca5cf33a7ededcf5843/csiro.png"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/22CS7zfdsPxeTN02WSNvxT/7166d4de024953660bdb4aa5fb57735c/CSIRO__1_.png"
               alt="CSIRO"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-6 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/39kdInSHTQizfAvuw0b8Fc/5489adf7bde40f101d1ae697264bb35c/Tasnetworks.png"
-              alt="Tas Networks"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/oR384KmkLWW68QhTNvL6w/74b47bca76c44694ac6977625980a620/TasNetworks.png"
+              alt="TasNetworks"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-0 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/56ScwbSiJk5cuE68uq0O1V/1e4f79b7d7c9f406e1d67f01a3605028/hcc.png"
-              alt="Hobart City Council"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/V0JFL7cChc9P2wLH0QdEX/248327cdf7c14b6b6562706987eb1356/HCC.png"
+              alt="HCC"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-12 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/43DQG8r6RxwyynXtSeRK33/3e4e8091b7e4e6908ab3c33f56d4dba8/Fernwood.png"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1nDjx5LGo7rUBmhjSRv0UX/46060553f3ac4d09f4efd9709d655b48/Fernwood.png"
               alt="Fernwood"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-10 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/4oTwiYYQS5KZJ2uzEQvVJD/844a1e2397d546bb845ea3d09f1b744d/kalis.png"
-              alt="Kalis Property"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/2ohSCbz7BqWPjbtymPPott/4db300407e11ebb7427b298e1576a7d4/Kalis.png"
+              alt="Kalis"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-12 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/5Zztf94qryJIMZP501330H/c4b053aa175fba1cc8c76b6d4dd7ee09/gcc.png"
-              alt="Glenorchy City Council"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/7hw6HCTOgmeggP35hUQw3N/e943da8ad08376018b2151b51fe7bd80/Hazell.png"
+              alt="Hazell"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-14 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3jIYhtL02xD6Nyr9jXbh1m/fa7ce0b6ece50a12de94805e0e2e2ab6/mitre-10.png"
-              alt="Clennets Mitre 10"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/7pH7CGz4Dztu2yAHW9smPv/f6e2214abae0cf7ee1826e4edba7c7b0/HockeyTas.png"
+              alt="HockeyTas"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-14 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/4kSFF7sopbMshLzp4txTHE/33e9ae27e3b3244d4c76682c86663c16/mystate-bank-arena.png"
-              alt="Mystate Bank Arena"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/59iyNKXoVdnXJl2ntlhWfI/d25f3b1d38e6689c8c710aa0fa8a8960/GCC.png"
+              alt="GCC"
+              loading="eager"
             />
           </div>
           <div className="px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
-              className="!absolute !top-10 !left-20"
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/7qEGcyISN0hvrwEiFMw6LP/d29ae57160ec1a74413dfb7ddd68fdce/blundstone-arena.png"
-              alt="Blundstone Arena"
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/6SQBu6xsVWuFrUsv4gScu1/5ff73514858e4987299c56f0b4198745/Mitre10.png"
+              alt="Mitre10"
+              loading="eager"
+            />
+          </div>
+          <div className="px-6  flex justify-center items-center h-36 w-36 relative">
+            <StaticImage
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1jSgmJDqI37dKSzd1VHd8j/3b81dc49dae32ad1760fdb4e782e5d82/MyState.png"
+              alt="MyState"
+              loading="eager"
+            />
+          </div>
+          <div className="px-6  flex justify-center items-center h-36 w-36 relative">
+            <StaticImage
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/5zS9W16qsYi8C9eWzwvXSc/fc6a9be6132fc102d07c076bf10d390a/Blundstone.png"
+              alt="Blundstone"
+              loading="eager"
             />
           </div>
         </Slider>

@@ -277,10 +277,10 @@ const Services = () => {
               to="services/static-guards"
               className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
             >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center overflow-hidden p-2">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/1Ik0iKyzN495Jeo7GCi5dD/136de41c3b9df91242eb1164328fc18e/kss_website2022-24.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -303,7 +303,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/7F36QEDok9yBSQVkoTbAek/d39ebe2bc0ab2ad7374dccbefc09c932/kss_website2022-55.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -325,7 +325,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/1ESY9sJTFtg4Kf0dqgBlUQ/cda5abb63f45a3b9f8ef7e9da1e90c1d/kss_website2022-92.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -347,7 +347,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/5KZrumT2CaCtic1cfsvRE0/6adf86506f4af406d7b390023838a8e6/kss_website_20_22-1.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -374,7 +374,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/6LSuXjDHJqtxK3xsujTwyo/dbbcc5c3f581a9224307e001a23f28c7/kss_website2022-129.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -399,7 +399,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://downloads.ctfassets.net/lfrbwr0lmnkj/46WJBhbNTCib46p3XaUD4M/8c85bce22711040e8db1143782540b4b/kss_website_2022-70.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -426,7 +426,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -450,7 +450,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -471,7 +471,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -493,7 +493,7 @@ const Services = () => {
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/7dqQJKVb6Ya1oc6UfiVc69/b4d0fa784cc8a56720127c61d61c5ec7/kss_website2022-39.jpg"
-                  className="!lg:w-[155px] !aspect-video !lg:aspect-square !object-cover"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
               <div className="col-span-5 flex flex-col">

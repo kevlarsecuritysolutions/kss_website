@@ -85,7 +85,7 @@ const Navigation = () => {
               leaveFrom="translate-x-0"
               leaveTo="translate-x-full"
             >
-              <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto [z-index:2000]">
+              <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto [z-index:800]">
                 <div
                   className="px-4 pt-5 pb-5 flex"
                   style={{

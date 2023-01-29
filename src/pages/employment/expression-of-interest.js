@@ -141,7 +141,7 @@ const Form = () => {
                         <input
                           id="phone"
                           name="phone"
-                          type="phone"
+                          type="text"
                           autoComplete="phone"
                           className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300"
                         />
