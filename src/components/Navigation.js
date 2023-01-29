@@ -793,8 +793,8 @@ const Navigation = () => {
         <header
           className={
             color
-              ? "bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
-              : "bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
+              ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
+              : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
           }
           style={
             open && !color

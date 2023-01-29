@@ -737,7 +737,7 @@ const NavigationLight = () => {
           </Dialog>
         </Transition.Root>
 
-        <header className="bg-gradient-to-t from-black to-[#002340] fixed w-full z-[1000] transition-all">
+        <header className="bg-gradient-to-t from-black to-[#002340] fixed top-0 h-auto w-full z-[1000] transition-all">
           <nav aria-label="Top">
             {/* Secondary navigation */}
             <div className="">
