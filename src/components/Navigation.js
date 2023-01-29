@@ -799,14 +799,14 @@ const Navigation = () => {
                   ? " header bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
                   : " header bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
               }
-              style={
-                open && !color
-                  ? {
-                      backgroundImage:
-                        "linear-gradient(to top, #000000, #002340, #002340)",
-                    }
-                  : {}
-              }
+              // style={
+              //   open && !color
+              //     ? {
+              //         backgroundImage:
+              //           "linear-gradient(to top, #000000, #002340, #002340)",
+              //       }
+              //     : {}
+              // }
             >
               <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="">
