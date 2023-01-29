@@ -280,11 +280,7 @@ const Navigation = () => {
               >
                 <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
                   <div
-                    className="px-4 pt-5 pb-5 flex z-[800]"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(to top, #000000, #002340, #002340)",
-                    }}
+                    className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full"
                   >
                     <p className="opacity-0">kss</p>
                   </div>
@@ -796,14 +792,14 @@ const Navigation = () => {
               ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
               : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
           }
-          style={
-            open && !color
-              ? {
-                  backgroundImage:
-                    "linear-gradient(to top, #000000, #002340, #002340)",
-                }
-              : {}
-          }
+          // style={
+          //   open && !color
+          //     ? {
+          //         backgroundImage:
+          //           "linear-gradient(to top, #000000, #002340, #002340)",
+          //       }
+          //     : {}
+          // }
         >
           <nav aria-label="Top">
             {/* Secondary navigation */}
