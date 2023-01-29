@@ -45,20 +45,6 @@ const NavigationLight = () => {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
-  // change nav color when scrolling
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeColor);
-  });
-
   return (
     <>
       <Transition.Root show={openModal} as={Fragment}>
@@ -279,7 +265,7 @@ const NavigationLight = () => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto z-[2000]">
-                <div
+                  <div
                     className="px-4 pt-5 pb-5 flex z-[800]"
                     style={{
                       backgroundImage:
@@ -751,10 +737,10 @@ const NavigationLight = () => {
           </Dialog>
         </Transition.Root>
 
-        <header className="relative transition">
+        <header className="bg-gradient-to-t from-black to-[#002340] fixed w-full z-[1000] transition-all">
           <nav aria-label="Top">
             {/* Secondary navigation */}
-            <div className=" header bg-gradient-to-t from-black to-[#002340] fixed w-full z-[1000] transition-all">
+            <div className="">
               <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="">
                   <div className="h-16 flex items-center justify-between">
@@ -1363,31 +1349,31 @@ const NavigationLight = () => {
 
                     <div className="flex-1 flex items-center justify-end md:hidden z-[1000]">
                       <div className="flex items-center lg:ml-8">
-                        <button
-                          type="button"
-                          className="-ml-2 p-2 rounded-md text-white md:hidden"
-                          onClick={() => setOpen(true)}
-                        >
-                          <span className="sr-only">Open menu</span>
-                          {open ? (
-                            <button
-                              type="button"
-                              className=""
-                              onClick={() => setOpen(true)}
+                        <span className="sr-only">Open menu</span>
+                        {open ? (
+                          <button
+                            type="button"
+                            className="-ml-2 p-2 rounded-md text-white md:hidden"
+                            onClick={() => setOpen(false)}
+                          >
+                            {" "}
+                            <svg
+                              className="fill-white h-8 w-8 block"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
                             >
-                              {" "}
-                              <svg
-                                className="fill-white h-8 w-8 block"
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                width="24"
-                                height="24"
-                              >
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
-                              </svg>
-                            </button>
-                          ) : (
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                            </svg>
+                          </button>
+                        ) : (
+                          <button
+                            type="button"
+                            className="-ml-2 p-2 rounded-md text-white md:hidden"
+                            onClick={() => setOpen(true)}
+                          >
                             <svg
                               className="fill-white h-8 w-8"
                               xmlns="http://www.w3.org/2000/svg"
@@ -1398,8 +1384,8 @@ const NavigationLight = () => {
                               <path fill="none" d="M0 0h24v24H0z" />
                               <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
                             </svg>
-                          )}
-                        </button>
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>
