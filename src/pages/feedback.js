@@ -13,7 +13,7 @@ import { useForm } from "@formspree/react";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
-const Contact = () => {
+const Feedback = () => {
   const [state, handleSubmit] = useForm("mnqynzap");
   const [agreed, setAgreed] = useState(false);
   return (
@@ -25,75 +25,20 @@ const Contact = () => {
           <div className="relative mx-auto max-w-screen-2xl lg:grid lg:grid-cols-5">
             <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
               <h2 className="text-3xl font-bold tracking-tight text-kss-text sm:text-4xl">
-                Contact KSS
+                KSS Feedback
               </h2>
               <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
-                We provide security services 24 hours per day, every day of the
-                year. This means that you can contact us any time to discuss
-                your security needs.
-              </p>
-              <div className="mt-6">
-                <dt className="sr-only">Postal Address</dt>
-                <dd className="flex">
-                  <Location
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <a
-                    href="tel:0408303603"
-                    className="ml-3 text-kss-text text-lg"
-                  >
-                    GPO Box 550 Hobart, 7001
-                  </a>
-                </dd>
-              </div>
-              <div className="mt-6">
-                <dt className="sr-only">Phone number</dt>
-                <dd className="flex">
-                  <Phone
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <a
-                    href="tel:0408303603"
-                    className="ml-3 text-kss-text text-lg"
-                  >
-                    0408 303 603
-                  </a>
-                </dd>
-              </div>
-              <div className="mt-3">
-                <dt className="sr-only">Email</dt>
-                <dd className="flex">
-                  <Email
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
-                    aria-hidden="true"
-                  />
-                  <a
-                    href="mailto:info@kevlarsecuritysolutions.com.au"
-                    className="ml-3 text-kss-text text-lg"
-                  >
-                    info@kevlarsecuritysolutions.com.au
-                  </a>
-                </dd>
-              </div>
-              <p className="mt-6 text-base text-kss-text">
-                Looking for careers?{" "}
-                <Link
-                  to="/employment/expression-of-interest"
-                  className="font-medium text-gray-700 underline"
-                >
-                  View all job openings
-                </Link>
-                .
+                We would love to hear what you think of our services. Your
+                feedback will help us determine how we can improve our services
+                to better support our clients.
               </p>
               <p className="mt-6 text-base text-kss-text">
-                We'd love to hear from you.{" "}
+                Want to discuss our services?{" "}
                 <Link
-                  to="/feedback"
+                  to="/contact"
                   className="font-medium text-gray-700 underline"
                 >
-                  Provide feedback on our services
+                  Talk to a security professional
                 </Link>
                 .
               </p>
@@ -195,7 +140,7 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Brief description of services
+                    Comments
                   </label>
                   <div className="mt-1">
                     <textarea
@@ -281,7 +226,7 @@ const Contact = () => {
                         type="submit"
                         className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                       >
-                        Talk to a Security Professional
+                        Thank you for your feedback
                       </button>
                     </div>
                   )}
@@ -331,4 +276,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Feedback;
