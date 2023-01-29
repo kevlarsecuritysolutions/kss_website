@@ -98,7 +98,7 @@ const EmploymentInformation = () => {
           <div className="hidden lg:block">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
-              className="!hidden !lg:block"
+              className=""
             />
           </div>
 

@@ -242,7 +242,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center hidden lg:flex">
             <StaticImage
               src="../assets/images/accreditations-color.png"
               className="!w-60 !h-10"

@@ -39,7 +39,7 @@ const SiteEntry = () => {
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7F36QEDok9yBSQVkoTbAek/d39ebe2bc0ab2ad7374dccbefc09c932/kss_website2022-55.jpg"
-              className="!hidden !lg:block !absolute !-bottom-60"
+              className="!absolute !-bottom-60"
             />
           </div>
         </div>

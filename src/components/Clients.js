@@ -174,26 +174,10 @@ const Clients = () => {
             </div>
           </div>
 
-          <div className="py-12 flex items-center max-w-7xl gap-8">
+          <div className="py-12 flex items-center w-full lg:w-[750px] max-w-7xl gap-8">
             <StaticImage
-              src="../assets/images/logos/ASIAL-logo.png"
-              className="!w-24 !h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/ISO9001-logo.png"
-              className="!w-24 !h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/ISO45001-logo.png"
-              className="!w-24 !h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/Carbon-logo.png"
-              className="!w-24 !h-auto"
-            />
-            <StaticImage
-              src="../assets/images/logos/JAS-logo.png"
-              className="!w-24 !h-auto"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/2Xs2bRQBl50QbSRXqPDzYg/251ae23ff80cd80b51e99faf7988f00e/kss-signature.png"
+              className=""
             />
           </div>
         </div>
