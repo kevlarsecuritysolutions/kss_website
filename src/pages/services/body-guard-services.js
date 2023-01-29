@@ -13,13 +13,13 @@ import SEO from "../../components/Seo";
 const BodyGuard = () => {
   return (
     <Layout>
-      <SEO title="Body Guard Services" slug="/services/body-guard-services" />
+      <SEO title="Bodyguard Services" slug="/services/body-guard-services" />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
-              BODY GUARD SERVICES
+              BODYGUARD SERVICES
             </h2>
             <p className="text-md text-white pb-4">
               Kevlar Security Solutions can provide close personal protection,

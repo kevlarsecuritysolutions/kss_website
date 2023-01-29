@@ -402,7 +402,7 @@ const NavigationLight = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Body Guard Services
+                                    Bodyguard Services
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Close and personal protection, asset
@@ -946,7 +946,7 @@ const NavigationLight = () => {
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Body Guard Services
+                                              Bodyguard Services
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Providing close and personal

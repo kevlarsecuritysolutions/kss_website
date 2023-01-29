@@ -440,7 +440,7 @@ const Navigation = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Body Guard Services
+                                    Bodyguard Services
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Close and personal protection, asset
@@ -792,14 +792,14 @@ const Navigation = () => {
               ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
               : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
           }
-          // style={
-          //   open && !color
-          //     ? {
-          //         backgroundImage:
-          //           "linear-gradient(to top, #000000, #002340, #002340)",
-          //       }
-          //     : {}
-          // }
+          style={
+            open && !color
+              ? {
+                  backgroundImage:
+                    "linear-gradient(to top, #000000, #002340, #002340)",
+                }
+              : {}
+          }
         >
           <nav aria-label="Top">
             {/* Secondary navigation */}
@@ -1014,7 +1014,7 @@ const Navigation = () => {
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Body Guard Services
+                                              Bodyguard Services
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Providing close and personal

@@ -9,9 +9,9 @@ const Clients = () => {
   const settings = {
     className: "flex justify-center items-center px-4",
     infinite: true,
-    autoplay:true,
+    autoplay: true,
     autoplaySpeed: 0,
-    speed:5000,
+    speed: 5000,
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -43,7 +43,7 @@ const Clients = () => {
   };
 
   return (
-    <section className="bg-gray-100 pb-12 py-24" id="clients">
+    <section className="bg-gray-100 pb-12 py-12 lg:py-24" id="clients">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col pt-12 pb-12 px-4">
           <div className="max-w-3xl sm:text-left">
@@ -148,7 +148,37 @@ const Clients = () => {
               loading="eager"
             />
           </div>
+          <div className="px-6  flex justify-center items-center h-36 w-36 relative">
+            <StaticImage
+              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/79bLyCzUD0boZUHQP6B7Ih/95e88bbab4f5167c27d6b8b3afb4f471/Hutchinson.png"
+              alt="Hutchinson Builders"
+              loading="eager"
+            />
+          </div>
         </Slider>
+
+        <div className="max-w-5xl px-4 lg:pb-12">
+          <p className="mt-12 text-lg text-kss-text pb-4">
+            We work closely with the Tasmanian Government to provide leading
+            security services to the following departments
+          </p>
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 pt-12">
+            <div className="flex items-center">
+              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6iPr67RWU5cjw3g27KRAiU/646a00b97c6d24e10ca5cd3e4b6186c7/Tas-Gov-logo__2_.png" />
+            </div>
+            <ul className="list-disc text-lg text-kss-text px-4">
+              <li className="pb-2">Department for Education, Children and Young People</li>
+              <li className="pb-2">Department of State Growth</li>
+              <li className="pb-2">Department of Parks, Wildlife and Environment</li>
+              <li className="pb-2">Department of Treasury and Finance</li>
+              <li className="pb-2">Department of Police, Fire & Emergency Management</li>
+              <li className="pb-2">Department of Health</li>
+            </ul>
+          </div>
+        </div>
+
+
 
         <div className="flex flex-col pt-24 px-4">
           <div className="max-w-3xl sm:text-left">
