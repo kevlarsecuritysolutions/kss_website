@@ -280,7 +280,7 @@ const Navigation = () => {
               >
                 <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
                   <div
-                    className="px-4 pt-5 pb-5 flex z-[800]"
+                    className="px-4 pt-5 pb-5 flex z-40"
                     style={{
                       backgroundImage:
                         "linear-gradient(to top, #000000, #002340, #002340)",
@@ -799,14 +799,6 @@ const Navigation = () => {
                   ? " header bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
                   : " header bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
               }
-              // style={
-              //   open && !color
-              //     ? {
-              //         backgroundImage:
-              //           "linear-gradient(to top, #000000, #002340, #002340)",
-              //       }
-              //     : {}
-              // }
             >
               <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="">
@@ -1416,11 +1408,11 @@ const Navigation = () => {
                       </div>
                     </Link>
 
-                    <div className="flex-1 flex items-center justify-end md:hidden z-[1000]">
+                    <div className="flex-1 flex items-center justify-end lg:hidden z-[1000]">
                       <div className="flex items-center lg:ml-8">
                         <button
                           type="button"
-                          className="-ml-2 p-2 rounded-md text-white md:hidden"
+                          className="-ml-2 p-2 rounded-md text-white lg:hidden"
                           onClick={() => setOpen(true)}
                         >
                           <span className="sr-only">Open menu</span>
