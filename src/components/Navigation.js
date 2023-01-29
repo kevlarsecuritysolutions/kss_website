@@ -812,13 +812,14 @@ const Navigation = () => {
                 <div className="">
                   <div className="h-16 flex items-center justify-between">
                     {/* Logo (lg+) */}
-                    <div className="hidden lg:flex lg:items-center">
+                    <div className="hidden lg:flex lg:items-center z-[1000]">
                       <Link to="/" className="flex items-center gap-4">
                         <span className="sr-only">KSS</span>
                         <StaticImage
                           src="../assets/images/kss-logo-white.png"
                           alt=""
                           className="!w-8 !h-auto"
+                          loading="eager"
                         />
                         <div className="flex flex-col justify-start">
                           <p className="text-2xl text-white font-bold">
@@ -1405,6 +1406,7 @@ const Navigation = () => {
                         src="../assets/images/kss-logo-white.png"
                         alt=""
                         className="!w-8 !h-auto"
+                        loading="eager"
                       />
                       <div className="flex flex-col justify-start">
                         <p className="text-2xl text-white font-bold">KEVLAR</p>
