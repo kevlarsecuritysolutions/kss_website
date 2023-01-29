@@ -306,6 +306,129 @@ const NavigationLight = () => {
                         </>
                       )}
                     </Disclosure>
+                    <Disclosure>
+                      {({ open }) => (
+                        <>
+                          <Disclosure.Button
+                            className={`${
+                              open ? "shadow-b-lg" : ""
+                            } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
+                          >
+                            <span>Links</span>
+                            <ChevronDown
+                              className={`${
+                                open ? "rotate-180 transform" : ""
+                              } h-5 w-5 text-kss-text`}
+                            />
+                          </Disclosure.Button>
+                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500 bg-[#f2f2f2] flex flex-col gap-6">
+                            <a
+                              href="https://www.facebook.com/ksshobart/"
+                              target="_blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  Find Us On Facebook
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  Stay up to date with Kevlar Security Solutions
+                                  on Facebook
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="http://securityalarmshobart.com.au/"
+                              target="blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  Golden Electronics
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  Golden Electronics is Tasmania's longest
+                                  established A grade ASIAL accredited
+                                  monitoring centre.
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="https://www.asial.com.au//"
+                              target="blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  ASIAL
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  Golden Electronics is Tasmania's longest
+                                  established A grade ASIAL accredited
+                                  monitoring centre.
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="http://securityalarmshobart.com.au/"
+                              target="blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  Carbon Neutral
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  We're proudly offsetting our fleet vehicle
+                                  carbon emmissions through Carbon Neutral Pty
+                                  Ltd.
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="https://crimestoppers.com.au/"
+                              target="blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  Crime Stoppers
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  Crime Stoppers is an integral part of policing
+                                  with the information gathered and supplied by
+                                  the community essential to crime fighting and
+                                  crime prevention.
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="https://www.facebook.com/Tas.Police"
+                              target="blank"
+                              className="flex gap-4 group pb-2"
+                            >
+                              <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                              <div className="flex flex-col">
+                                <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                  Tasmania Police
+                                </h4>
+                                <p className="text-kss-text text-md">
+                                  Tasmania Police aims to reduce the impact of
+                                  crime, improve the level of public safety and
+                                  traffic law compliance, and enhance emergency
+                                  management and security capabilities.
+                                </p>
+                              </div>
+                            </a>
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
                     <Link
                       to="/company"
                       className={`${
@@ -1011,7 +1134,7 @@ const NavigationLight = () => {
                   {/* Mobile menu and search (lg-) */}
 
                   {/* Logo (lg-) */}
-                  <Link to="/" className="lg:hidden flex items-center gap-4">
+                  <Link to="/" className="lg:hidden flex items-center gap-4 z-[1000]">
                     <span className="sr-only">KSS</span>
                     <StaticImage
                       src="../assets/images/kss-logo-white.png"
@@ -1026,7 +1149,7 @@ const NavigationLight = () => {
                     </div>
                   </Link>
 
-                  <div className="flex-1 flex items-center justify-end md:hidden">
+                  <div className="flex-1 flex items-center justify-end md:hidden z-[1000]">
                     <div className="flex items-center lg:ml-8">
                       <button
                         type="button"

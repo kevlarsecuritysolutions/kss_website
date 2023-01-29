@@ -60,7 +60,7 @@ const Footer = () => {
         <div class="mt-2 md:mt-0 md:order-1">
           <p class="text-xs py-2 tracking-tight text-kss-text-dark">
             &copy; 2022 Kevlar Security Solutions Pty Ltd. All rights reserved. | Master
-            Licence No. 19859
+            Licence No. 19859 | ABN: <a className="hover:underline" target="blank" href="https://abr.business.gov.au/ABN/View?id=51154971641">51 154 971 641</a>
           </p>
         </div>
         

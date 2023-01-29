@@ -22,20 +22,20 @@ const Clients = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -60,7 +60,7 @@ const Clients = () => {
           </div>
         </div>
         <Slider {...settings}>
-          <div className="px-6  flex justify-center items-center h-36 w-36 relative">
+          <div className="px-0 lg:px-6  flex justify-center items-center h-36 w-36 relative">
             <StaticImage
               className=""
               src="https://images.ctfassets.net/lfrbwr0lmnkj/22CS7zfdsPxeTN02WSNvxT/7166d4de024953660bdb4aa5fb57735c/CSIRO__1_.png"
