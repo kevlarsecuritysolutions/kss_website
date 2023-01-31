@@ -271,6 +271,14 @@ const Form = () => {
                               <path fill="none" d="M0 0h24v24H0z" />
                               <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
                             </svg>
+                            <input
+                                id="resume"
+                                name="resume"
+                                type="file"
+                                className="sr-only"
+                                onChange={handleFileChange}
+                                value={file}
+                              />
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
                               onClick={handleRemoveFile}
@@ -541,7 +549,7 @@ const Form = () => {
                       type="submit"
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                     >
-                      Talk to a Security Professional
+                      Submit
                     </button>
                   </div>
                 )}
