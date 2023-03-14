@@ -1,11 +1,15 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
+import NavigationLight from "../components/NavigationLight";
+import Footer from "../components/Footer";
+import BackToTopBtn from "../components/BackToTopBtn";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <>
+    <NavigationLight/>
       <div className="min-h-screen bg-white px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
         <div className="mx-auto max-w-max">
           <main className="sm:flex">
@@ -24,13 +28,13 @@ const NotFoundPage = () => {
               <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
                 <Link
                   to="/"
-                  className="inline-flex items-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="inline-flex items-center border border-transparent bg-black px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-black focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Go back home
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center rounded-md border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-black hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  className="inline-flex items-center border border-transparent bg-gray-200 px-4 py-2 text-sm font-medium text-black hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Contact a Security Professional
                 </Link>
@@ -39,7 +43,9 @@ const NotFoundPage = () => {
           </main>
         </div>
       </div>
-    </Layout>
+      <Footer/>
+      <BackToTopBtn/>
+      </>
   );
 };
 

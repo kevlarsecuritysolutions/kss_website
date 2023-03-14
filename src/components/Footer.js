@@ -250,7 +250,7 @@ const Footer = () => {
           </div>
           <div className="hidden lg:flex flex flex-col">
             <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
-              GPO Box 5550, HOBART 7001
+              GPO Box 550, HOBART 7001
             </Link>
             <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
               Phone: 0408 303 603

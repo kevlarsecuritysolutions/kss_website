@@ -44,6 +44,9 @@ const Form = () => {
     setFile(event.dataTransfer.files[0]);
     setDragOver(false);
   };
+
+  const [noCert, handleNoCert] = useState(false);
+
   return (
     <>
       <NavigationLight />
@@ -272,13 +275,13 @@ const Form = () => {
                               <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
                             </svg>
                             <input
-                                id="resume"
-                                name="resume"
-                                type="file"
-                                className="sr-only"
-                                onChange={handleFileChange}
-                                value={file}
-                              />
+                              id="resume"
+                              name="resume"
+                              type="file"
+                              className="sr-only"
+                              onChange={handleFileChange}
+                              value={file}
+                            />
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
                               onClick={handleRemoveFile}
@@ -349,6 +352,28 @@ const Form = () => {
                         type="text"
                         className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300"
                       />
+                    </div>
+                  </div>
+                  <div className="sm:col-span-4 pt-12">
+                    <label
+                      htmlFor="escurity-licence-number"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Do you currently have a Certificate II in Security
+                      Operations?
+                    </label>
+                    <div className="mt-1">
+                      <select
+                        id="cert2"
+                        name="cert2"
+                        className="py-3 px-4 block w-24 shadow-sm focus:ring-black focus:border-black border-gray-300"
+                        defaultValue="Yes"
+                        onChange={() => handleNoCert(!noCert)}
+                      >
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                      {noCert ? <div  className="pt-2"><p className="text-red-500">To Work in the security Industry a Security Licence is required. Please see <a href="https://asset-training.com.au/" className="underline hover:opacity-75" target='blank'>this link</a> to engage a local training provider</p></div> : <></>}
                     </div>
                   </div>
                   <div className="mt-6">
@@ -548,6 +573,7 @@ const Form = () => {
                     <button
                       type="submit"
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                      disabled= {noCert}
                     >
                       Submit
                     </button>

@@ -92,6 +92,7 @@ const Navigation = () => {
                       href="https://www.facebook.com/ksshobart/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
@@ -112,24 +113,26 @@ const Navigation = () => {
                       </div>
                     </a>
                     <a
-                      href="http://securityalarmshobart.com.au/"
+                      href="https://asset-training.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/5QirSErq7Qv3NxHN3O3Hkk/614c37b52766e2e9dc33b6fa315cdf7b/golden-electronics.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" />
                       </div>
                       <div className="">
                         <Dialog.Title
                           as="h3"
                           className="text-lg font-medium leading-6 text-gray-900"
                         >
-                          Golden Electronics
+                          Asset Training
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            Golden Electronics is Tasmania's longest established
-                            A grade ASIAL accredited monitoring centre.
+                            Asset Training is committed to providing nationally
+                            recognised, contemporary and industry-led training
+                            to our Tasmanian community and beyond.
                           </p>
                         </div>
                       </div>
@@ -138,6 +141,7 @@ const Navigation = () => {
                       href="https://www.asial.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" />
@@ -162,6 +166,7 @@ const Navigation = () => {
                       href="https://carbonneutral.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" />
@@ -185,6 +190,7 @@ const Navigation = () => {
                       href="https://crimestoppers.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" />
@@ -210,6 +216,7 @@ const Navigation = () => {
                       href="https://www.facebook.com/Tas.Police"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" />
@@ -268,7 +275,7 @@ const Navigation = () => {
               <div className="fixed inset-0 bg-black bg-opacity-25" />
             </Transition.Child>
 
-            <div className="fixed inset-0 flex z-40">
+            <div className="fixed inset-0 flex">
               <Transition.Child
                 as={Fragment}
                 enter="transition ease-in-out duration-300 transform"
@@ -279,9 +286,7 @@ const Navigation = () => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto">
-                  <div
-                    className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full"
-                  >
+                  <div className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full">
                     <p className="opacity-0">kss</p>
                   </div>
 
@@ -358,7 +363,7 @@ const Navigation = () => {
                                 </div>
                               </Link>
                               <Link
-                                to="/services/armed-cash"
+                                to="/services/cash-in-transit"
                                 className="flex gap-4 group pb-2"
                                 onClick={() => {
                                   setOpen(false);
@@ -560,19 +565,20 @@ const Navigation = () => {
                                 </div>
                               </a>
                               <a
-                                href="http://securityalarmshobart.com.au/"
+                                href="http://asset-training.com.au/"
                                 target="blank"
                                 className="flex gap-4 group pb-2"
                               >
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Golden Electronics
+                                    Asset Training
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Golden Electronics is Tasmania's longest
-                                    established A grade ASIAL accredited
-                                    monitoring centre.
+                                    Asset Training is committed to providing
+                                    nationally recognised, contemporary and
+                                    industry-led training to our Tasmanian
+                                    community and beyond.
                                   </p>
                                 </div>
                               </a>
@@ -673,111 +679,6 @@ const Navigation = () => {
                       >
                         <span>Contact</span>
                       </Link>
-                      {/* <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button
-                            className={`${
-                              open ? "shadow-b-lg" : ""
-                            } flex w-full justify-between px-4 py-4 text-left text-lg font-semibold text-kss-text focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
-                          >
-                            <span>Contact</span>
-                            <ChevronDown
-                              className={`${
-                                open ? "rotate-180 transform" : ""
-                              } h-5 w-5 text-kss-text`}
-                            />
-                          </Disclosure.Button>
-                          <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500 bg-[#f2f2f2] flex flex-col gap-6">
-                            <div className="">
-                              <h4 className="py-4 mx-4 text-kss-text pb-2">
-                                Submit the form below to hear from one of our
-                                security professionals:
-                              </h4>
-                              <div className="px-4 py-2">
-                                <div className="h-[2px] w-full bg-gradient-to-r from-kss-blue to-black"></div>
-                              </div>
-
-                              <form action="" className="pt-2">
-                                <div className="px-4 pt-6 pb-2">
-                                  <label
-                                    htmlFor="comment"
-                                    className="block text-sm font-medium text-kss-text"
-                                  >
-                                    Name:
-                                  </label>
-                                  <div className="mt-1">
-                                    <input
-                                      rows={4}
-                                      name="comment"
-                                      id="comment"
-                                      className="shadow-sm bg-[#f2f2f2] border-b border-gray-300 block w-full sm:text-sm focus:outline-none focus:border focus:border-black text-kss-text p-2 "
-                                      defaultValue={""}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="px-4 pt-6 pb-2">
-                                  <label
-                                    htmlFor="comment"
-                                    className="block text-sm font-medium text-kss-text"
-                                  >
-                                    Email:
-                                  </label>
-                                  <div className="mt-1">
-                                    <input
-                                      rows={4}
-                                      name="comment"
-                                      id="comment"
-                                      className="shadow-sm bg-[#f2f2f2] border-b border-gray-300 block w-full sm:text-sm focus:outline-none focus:border focus:border-black text-kss-text p-2 "
-                                      defaultValue={""}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="px-4 pt-6 pb-2">
-                                  <label
-                                    htmlFor="comment"
-                                    className="block text-sm font-medium text-kss-text"
-                                  >
-                                    Company:
-                                  </label>
-                                  <div className="mt-1">
-                                    <input
-                                      rows={4}
-                                      name="comment"
-                                      id="comment"
-                                      className="shadow-sm bg-[#f2f2f2] border-b border-gray-300 block w-full sm:text-sm focus:outline-none focus:border focus:border-black text-kss-text p-2 "
-                                      defaultValue={""}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="px-4 py-6">
-                                  <label
-                                    htmlFor="comment"
-                                    className="block text-sm font-medium text-kss-text"
-                                  >
-                                    Description of services:
-                                  </label>
-                                  <div className="mt-1">
-                                    <textarea
-                                      rows={4}
-                                      name="comment"
-                                      id="comment"
-                                      className="shadow-sm bg-[#f2f2f2] border-b border-gray-300 block w-full sm:text-sm focus:outline-none focus:border focus:border-black text-kss-text p-2 "
-                                      defaultValue={""}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="flex items-center px-4 pb-4">
-                                  <button className="w-1/2 text-center text-white hover:bg-opacity-80 py-3 bg-black">
-                                    Submit
-                                  </button>
-                                </div>
-                              </form>
-                            </div>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure> */}
                     </div>
                   </div>
                 </Dialog.Panel>
@@ -785,7 +686,7 @@ const Navigation = () => {
             </div>
           </Dialog>
         </Transition.Root>
-
+ 
         <header
           className={
             color
@@ -808,7 +709,7 @@ const Navigation = () => {
                 <div className="">
                   <div className="h-16 flex items-center justify-between">
                     {/* Logo (lg+) */}
-                    <div className="hidden lg:flex lg:items-center z-[1000]">
+                    <div className="relative hidden lg:flex lg:items-center z-[1000]">
                       <Link to="/" className="flex items-center gap-4">
                         <span className="sr-only">KSS</span>
                         <StaticImage
@@ -941,7 +842,7 @@ const Navigation = () => {
                                           </div>
                                         </Link>
                                         <Link
-                                          to="/services/armed-cash"
+                                          to="/services/cash-in-transit"
                                           className="flex gap-4 group"
                                         >
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
@@ -1165,6 +1066,7 @@ const Navigation = () => {
                                                 src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
                                                 className="!w-full !absolute !bottom-0"
                                                 objectFit="scale-down"
+                                                loading="eager"
                                               />
                                             </div>
                                             <p className="text-kss-text text-sm">
@@ -1186,6 +1088,7 @@ const Navigation = () => {
                                                 src="https://images.ctfassets.net/lfrbwr0lmnkj/7oBsXku2unNUJNZCGnbh3l/be1c669d78ab1de0c937796393699570/kss_website2022-110.jpg"
                                                 className="!w-full !absolute !bottom-0"
                                                 objectFit="scale-down"
+                                                loading="eager"
                                               />
                                             </div>
                                             <p className="text-kss-text text-sm">
@@ -1204,6 +1107,7 @@ const Navigation = () => {
                                             <StaticImage
                                               src="../assets/images/sign.jpg"
                                               className="!mb-2 !h-40 !group-hover:opacity-90"
+                                              loading="eager"
                                             />
                                             <p className="text-kss-text text-sm">
                                               Currently servicing more than 1800
@@ -1307,6 +1211,7 @@ const Navigation = () => {
                                                 src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
                                                 className="!w-full !absolute !bottom-0"
                                                 objectFit="scale-down"
+                                                loading="eager"
                                               />
                                             </div>
                                             <p className="text-kss-text text-sm">
@@ -1327,6 +1232,7 @@ const Navigation = () => {
                                                 src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
                                                 className="!w-full !absolute !bottom-0"
                                                 objectFit="scale-down"
+                                                loading="eager"
                                               />
                                             </div>
                                             <p className="text-kss-text text-sm">
@@ -1347,6 +1253,7 @@ const Navigation = () => {
                                                 src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
                                                 className="!w-full !absolute !bottom-0"
                                                 objectFit="scale-down"
+                                                loading="eager"
                                               />
                                             </div>
                                             <p className="text-kss-text text-sm">
@@ -1395,7 +1302,7 @@ const Navigation = () => {
                     {/* Logo (lg-) */}
                     <Link
                       to="/"
-                      className="lg:hidden flex items-center gap-4 z-[1000]"
+                      className="relative lg:hidden flex items-center gap-4 z-[1000]"
                     >
                       <span className="sr-only">KSS</span>
                       <StaticImage
@@ -1412,13 +1319,13 @@ const Navigation = () => {
                       </div>
                     </Link>
 
-                    <div className="flex-1 flex items-center justify-end md:hidden z-[1000]">
+                    <div className="relative flex-1 flex items-center justify-end lg:hidden z-[1000]">
                       <div className="flex items-center lg:ml-8">
                         <span className="sr-only">Open menu</span>
                         {open ? (
                           <button
                             type="button"
-                            className="-ml-2 p-2 rounded-md text-white md:hidden"
+                            className="-ml-2 p-2 rounded-md text-white lg:hidden"
                             onClick={() => setOpen(false)}
                           >
                             {" "}
@@ -1436,7 +1343,7 @@ const Navigation = () => {
                         ) : (
                           <button
                             type="button"
-                            className="-ml-2 p-2 rounded-md text-white md:hidden"
+                            className="-ml-2 p-2 rounded-md text-white lg:hidden"
                             onClick={() => setOpen(true)}
                           >
                             <svg

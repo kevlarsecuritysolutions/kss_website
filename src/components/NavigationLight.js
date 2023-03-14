@@ -78,6 +78,7 @@ const NavigationLight = () => {
                       href="https://www.facebook.com/ksshobart/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
@@ -98,24 +99,26 @@ const NavigationLight = () => {
                       </div>
                     </a>
                     <a
-                      href="http://securityalarmshobart.com.au/"
+                      href="https://asset-training.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/5QirSErq7Qv3NxHN3O3Hkk/614c37b52766e2e9dc33b6fa315cdf7b/golden-electronics.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" />
                       </div>
                       <div className="">
                         <Dialog.Title
                           as="h3"
                           className="text-lg font-medium leading-6 text-gray-900"
                         >
-                          Golden Electronics
+                          Asset Training
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            Golden Electronics is Tasmania's longest established
-                            A grade ASIAL accredited monitoring centre.
+                            Asset Training is committed to providing nationally
+                            recognised, contemporary and industry-led training
+                            to our Tasmanian community and beyond.
                           </p>
                         </div>
                       </div>
@@ -124,6 +127,7 @@ const NavigationLight = () => {
                       href="https://www.asial.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" />
@@ -148,6 +152,7 @@ const NavigationLight = () => {
                       href="https://carbonneutral.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" />
@@ -171,6 +176,7 @@ const NavigationLight = () => {
                       href="https://crimestoppers.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" />
@@ -196,6 +202,7 @@ const NavigationLight = () => {
                       href="https://www.facebook.com/Tas.Police"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" />
@@ -265,9 +272,7 @@ const NavigationLight = () => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto z-[2000]">
-                  <div
-                    className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full"
-                  >
+                  <div className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full">
                     <p className="opacity-0">kss</p>
                   </div>
 
@@ -335,7 +340,7 @@ const NavigationLight = () => {
                                 </div>
                               </Link>
                               <Link
-                                to="/services/armed-cash"
+                                to="/services/cash-in-transit"
                                 className="flex gap-4 group pb-2"
                               >
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
@@ -513,19 +518,20 @@ const NavigationLight = () => {
                                 </div>
                               </a>
                               <a
-                                href="http://securityalarmshobart.com.au/"
+                                href="http://asset-training.com.au/"
                                 target="blank"
                                 className="flex gap-4 group pb-2"
                               >
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Golden Electronics
+                                    Asset Training
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Golden Electronics is Tasmania's longest
-                                    established A grade ASIAL accredited
-                                    monitoring centre.
+                                    Asset Training is committed to providing
+                                    nationally recognised, contemporary and
+                                    industry-led training to our Tasmanian
+                                    community and beyond.
                                   </p>
                                 </div>
                               </a>
@@ -873,7 +879,7 @@ const NavigationLight = () => {
                                           </div>
                                         </Link>
                                         <Link
-                                          to="/services/armed-cash"
+                                          to="/services/cash-in-transit"
                                           className="flex gap-4 group"
                                         >
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>

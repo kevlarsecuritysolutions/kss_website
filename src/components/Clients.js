@@ -45,9 +45,9 @@ const Clients = () => {
   return (
     <section className="bg-gray-100 pb-12 py-12 lg:py-24" id="clients">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col pt-12 pb-12 px-4">
+        {/* <div className="flex flex-col pt-12 pb-12 px-4">
           <div className="max-w-3xl sm:text-left">
-            <div className="h-1 my-4 w-full bg-kss-text w-12"></div>
+            <div className="h-1 my-4 bg-kss-text w-12"></div>
             <h2 className="text-3xl xl:text-4xl text-kss-text font-bold pb-8 uppercase">
               Our Clients
             </h2>
@@ -156,7 +156,7 @@ const Clients = () => {
               loading="eager"
             />
           </div>
-        </Slider>
+        </Slider> */}
 
         <div className="max-w-7xl px-4 lg:pb-12">
           <p className="mt-12 text-lg text-kss-text pb-4 font-semibold">
@@ -225,7 +225,7 @@ const Clients = () => {
 
         <div className="flex flex-col pt-24 px-4">
           <div className="max-w-3xl sm:text-left">
-            <div className="h-1 my-4 w-full bg-kss-text w-12"></div>
+            <div className="h-1 my-4 bg-kss-text w-12"></div>
             <h2 className="text-3xl xl:text-4xl text-kss-text font-bold pb-8 uppercase">
               Compliance Standards
             </h2>

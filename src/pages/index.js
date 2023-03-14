@@ -11,6 +11,7 @@ import ContactSection from "../components/ContactSection";
 import SEO from "../components/Seo";
 import HeroSection from "../components/HeroSection";
 import Clients from "../components/Clients";
+import NewClientsBar from "../components/NewClientsBar";
 const Home = () => {
   return (
     <Layout>
@@ -18,6 +19,7 @@ const Home = () => {
       {/* <Hero/> */}
       {/* <HeroAlt /> */}
       <HeroSection/>
+      <NewClientsBar/>
       {/* <About/> */}
       <Services />
       <Clients/>

@@ -131,6 +131,7 @@ const SecurityPatrols = () => {
                 <li>Proof cards</li>
                 <li>Nightly patrol reports</li>
                 <li>Photographic records and reports</li>
+                <li>Electronic tagging</li>
               </ul>
             </div>
             <p className="text-md text-white pb-2">

@@ -39,7 +39,7 @@ const services = [
   },
   {
     name: "Cash in transit services",
-    link: "services/armed-cash",
+    link: "services/cash-in-transit",
     description:
       "Many businesses, both large and small, are required to transport cash to and from their banking institution. Unfortunately, staff members transporting cash to and from a business are at risk of both targeted attacks or random opportunistic thefts and violence. Our armed cash-in-transit service provides business owners with peace of mind, both for the welfare of their staff, and the protection of their hard-earned money.",
     icon: "https://images.ctfassets.net/lfrbwr0lmnkj/5KZrumT2CaCtic1cfsvRE0/6adf86506f4af406d7b390023838a8e6/kss_website_20_22-1.jpg",
@@ -238,7 +238,7 @@ const Services = () => {
         <div className="py-24 relative z-10">
           <div className=" max-w-7xl mx-auto grid grid-cols-1 px-4">
             <div className="pb-24 max-w-5xl sm:text-left">
-              <div className="h-1 my-4 w-full bg-white w-12"></div>
+              <div className="h-1 my-4 bg-white w-12"></div>
               <h2 className="text-3xl xl:text-4xl text-white font-bold pb-8 uppercase">
                 Our Services Set Us Apart
               </h2>
@@ -272,7 +272,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-screen-2xl mx-auto flex flex-col max-w-7xl gap-8 pb-12">
+          <div className="mx-auto flex flex-col max-w-7xl gap-8 pb-12">
             <Link
               to="services/static-guards"
               className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
@@ -341,7 +341,7 @@ const Services = () => {
               </div>
             </Link>
             <Link
-              to="services/armed-cash"
+              to="services/cash-in-transit"
               className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
