@@ -271,10 +271,7 @@ const NavigationLight = () => {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto z-[2000]">
-                  <div className="px-4 pt-5 pb-5 flex z-[800] bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full">
-                    <p className="opacity-0">kss</p>
-                  </div>
+                <Dialog.Panel className="relative max-w-full w-full bg-white shadow-xl pb-12 flex flex-col overflow-y-auto z-[2000] mt-12">
 
                   <div className="border-t border-gray-200 py-6 space-y-6">
                     <div className="flow-root">
