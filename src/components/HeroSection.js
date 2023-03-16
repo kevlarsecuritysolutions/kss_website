@@ -19,7 +19,7 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-black/50 lg:bg-black/30 mix-blend-multiply" />
       </div>
-      <div className="max-w-screen-2xl px-4 mx-auto relative pt-24 pb-6 lg:py-36 z-[800]">
+      <div className="max-w-screen-2xl px-4 mx-auto relative pt-24 pb-6 lg:py-36 z-[20]">
         <div className="h-1 my-4 bg-white w-12"></div>
         <h1 className=" text-4xl font-bold tracking-tight">
           <span className="block text-white uppercase xl:max-w-lg">
@@ -28,7 +28,7 @@ const HeroSection = () => {
         </h1>
         <p className=" mt-6 max-w-lg  text-xl text-white sm:max-w-xl">
           <strong>Kevlar Security Solutions</strong> is a proudly Tasmanian
-          owned and operated company specialising in the provision of physical
+          owned and operated security services provider, specialising in the provision of physical
           security services, including concierge, security patrol, alarm
           response, alarm system monitoring and static guard services.{" "}
         </p>
