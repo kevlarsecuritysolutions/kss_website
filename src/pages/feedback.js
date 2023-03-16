@@ -58,6 +58,7 @@ const Feedback = () => {
                   </label>
                   <div className="mt-1">
                     <input
+                      required
                       type="text"
                       name="first-name"
                       id="first-name"
@@ -75,6 +76,7 @@ const Feedback = () => {
                   </label>
                   <div className="mt-1">
                     <input
+                      required
                       type="text"
                       name="last-name"
                       id="last-name"
@@ -109,6 +111,7 @@ const Feedback = () => {
                   </label>
                   <div className="mt-1">
                     <input
+                      required
                       id="email"
                       name="email"
                       type="email"
@@ -126,6 +129,7 @@ const Feedback = () => {
                   </label>
                   <div className="mt-1">
                     <input
+                      required
                       type="text"
                       name="phone-number"
                       id="phone-number"
@@ -144,6 +148,7 @@ const Feedback = () => {
                   </label>
                   <div className="mt-1">
                     <textarea
+                      required
                       id="message"
                       name="message"
                       rows={4}
@@ -223,6 +228,7 @@ const Feedback = () => {
                     <div>
                       {" "}
                       <button
+                        disabled= {agreed === false}
                         type="submit"
                         className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
                       >

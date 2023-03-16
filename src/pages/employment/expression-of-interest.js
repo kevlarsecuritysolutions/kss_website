@@ -89,6 +89,7 @@ const Form = () => {
                       </label>
                       <div className="mt-1">
                         <input
+                          required
                           type="text"
                           name="first-name"
                           id="first-name"
@@ -107,6 +108,7 @@ const Form = () => {
                       </label>
                       <div className="mt-1">
                         <input
+                          required
                           type="text"
                           name="last-name"
                           id="last-name"
@@ -125,6 +127,7 @@ const Form = () => {
                       </label>
                       <div className="mt-1">
                         <input
+                          required
                           id="email"
                           name="email"
                           type="email"
@@ -142,6 +145,7 @@ const Form = () => {
                       </label>
                       <div className="mt-1">
                         <input
+                          required
                           id="phone"
                           name="phone"
                           type="text"
@@ -181,6 +185,7 @@ const Form = () => {
                       </label>
                       <div className="mt-1">
                         <input
+                          required
                           type="text"
                           name="street-address"
                           id="street-address"
@@ -275,6 +280,7 @@ const Form = () => {
                               <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
                             </svg>
                             <input
+                              required
                               id="resume"
                               name="resume"
                               type="file"
@@ -347,6 +353,7 @@ const Form = () => {
                     </label>
                     <div className="mt-1">
                       <input
+                        required
                         id="escurity-licence-number"
                         name="escurity-licence-number"
                         type="text"

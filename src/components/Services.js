@@ -97,7 +97,7 @@ const Services = () => {
         className="relative bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden overflow-y-hidden"
         id="services"
       >
-        <div className="absolute right-0">
+        <div className="hidden xl:block absolute right-0">
           <svg
             width="1402"
             height="564"
@@ -124,7 +124,7 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute -bottom-32 right-0">
+        <div className="hidden xl:block absolute -bottom-32 right-0">
           <svg
             width="1309"
             height="556"
@@ -152,7 +152,7 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute top-[1200px] right-0">
+        <div className="hidden xl:block absolute top-[1200px] right-0">
           <svg
             className="w-[2200px] h-auto"
             width="1918"
@@ -180,7 +180,7 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute top-[1775px] left-0">
+        <div className="hidden xl:block absolute top-[1775px] left-0">
           <svg
             className="w-[2200px] h-auto"
             width="1918"
@@ -208,7 +208,7 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute top-[2500px] left-0">
+        <div className="hidden xl:block absolute top-[2500px] left-0">
           <svg
             width="1402"
             height="564"

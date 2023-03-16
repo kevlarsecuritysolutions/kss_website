@@ -126,6 +126,7 @@ const BackToTopBtn = () => {
                           </label>
                           <div className="mt-1">
                             <input
+                              required
                               rows={4}
                               name="name"
                               id="name"
@@ -143,6 +144,7 @@ const BackToTopBtn = () => {
                           </label>
                           <div className="mt-1">
                             <input
+                              required
                               rows={4}
                               name="email"
                               id="email"
@@ -177,6 +179,7 @@ const BackToTopBtn = () => {
                           </label>
                           <div className="mt-1">
                             <textarea
+                              required
                               rows={4}
                               name="message"
                               id="message"

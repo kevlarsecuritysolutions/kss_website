@@ -16,6 +16,7 @@ const NewClientsBar = () => {
     slidesToScroll: 1,
     arrows: false,
     pauseOnHover: false,
+    touchMove: false,
     responsive: [
       {
         breakpoint: 1024,

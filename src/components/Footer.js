@@ -260,7 +260,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl mx-auto border-t border-gray-50/40 ">
+        <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl border-t border-gray-50/40 ">
           <div class="mt-2 md:mt-0 md:order-1">
             <p class="text-xs py-2 tracking-tight text-kss-text-dark">
               &copy; 2022 Kevlar Security Solutions Pty Ltd. All rights
