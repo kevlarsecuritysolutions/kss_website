@@ -286,7 +286,7 @@ const Form = () => {
                               type="file"
                               className="sr-only"
                               onChange={handleFileChange}
-                              value={file}
+                              
                             />
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
