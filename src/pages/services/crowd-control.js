@@ -22,13 +22,15 @@ const CrowdControl = () => {
               CROWD CONTROL / EVENT SECURITY
             </h2>
             <p className="text-md text-white">
-              The requirement for negotiation-based crowd controllers has never
-              been higher. We train and educate our staff to develop their
-              conflict resolutions skills to be able to provide venues, events,
-              and individuals with a safe environment using conflict mitigation
-              techniques to minimise physical altercations, ensuring the use of
-              an appropriate level of force in accordance with legislative
-              requirements, if required.
+              We have significant experience in providing crowd control and
+              related security services for a wide range of events and venues
+              including large scale multi-day public events, high profile and
+              high risk events, concerts and sporting events, events at pubs and
+              clubs and private functions.
+            </p>
+            <p className="text-md text-white">
+              Our experienced team can assist you with every stage of your next
+              event.
             </p>
             <div className="flex">
               <Link
@@ -58,23 +60,6 @@ const CrowdControl = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Licensed Venues
-            </h3>
-            <p className="text-md text-white pb-2">
-              The key to successfully operating a licenced venue relies on the
-              cohesion of the security team and the communication of the
-              security team and venue staff. We have considerable experience in
-              providing crowd control and related security service at pubs,
-              clubs, and private functions.
-            </p>
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Events
-            </h3>
-            <p className="text-md text-white pb-2">
-              Our experienced team can assist you with every stage of your next
-              event.
-            </p>
             <p className="text-md text-white pb-2">
               In the planning stage of your event, our management team can
               advise and assist you with the preparation of event security plans
@@ -88,32 +73,26 @@ const CrowdControl = () => {
               staff members including security officers, first aid officers,
               traffic control officers and supervisory staff as needed.
             </p>
-            <h2 className="text-white font-bold text-2xl pb-2 lg:pb-8 pt-8">
-              Our team can manage all aspects of your security and safety needs
-              including:
-            </h2>
-            <div className="flex flex-col lg:flex-row items-center gap-12 px-4 lg:px-0 py-8">
-              <div className="w-32 h-32 hidden lg:block relative flex items-center justify-center">
-                <StaticImage
-                  src="../../assets/images/key-points-check.png"
-                  className="!w-28 !h-28 !absolute !inset-0"
-                />
-              </div>
-              <ul className="text-white list-disc pl-4">
-                <li>guest list management</li>
-                <li>providing advice and direction to patrons</li>
-                <li>providing first aid assessment and response</li>
-                <li>monitor and identifying behaviour of concern</li>
-                <li>
-                  quickly responding to unexpected situations, disturbances or
-                  aggressive anti-social behaviour
-                </li>
-              </ul>
-            </div>
             <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager can provide advice and a quote for
-              our crowd control services to suit your needs.
+              Our dedicated crowd control team completes regular in-house
+              training sessions to ensure that critical skillsets are developed
+              and maintained. Some of these skillsets include:
             </p>
+            <ul className="text-md pb-2 text-white list-disc pl-4">
+              <li>Verbal de-escalation techniques</li>
+              <li>
+                Best practice physical response techniques, including
+                determining when a physical response is necessary, the
+                appropriate type of physical response and risk associated with
+                physical responses such as positional asphyxia
+              </li>
+              <li>
+                Awareness, identification and management of situations involving
+                people with different needs and circumstances, including
+                language barriers, disabilities, medical conditions and cultural
+                differences.{" "}
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -23,13 +23,35 @@ const ArmedCash = () => {
             </h2>
             <p className="text-md text-white pb-4">
               Many businesses, both large and small, are required to transport
-              cash to and from their banking institution. Unfortunately, staff
-              members transporting cash to and from a business are at risk of
-              both targeted attacks or random opportunistic thefts and violence.
-              Our armed cash-in-transit service provides business owners with
+              cash to and from their banking institution.
+            </p>
+            <p className="text-md text-white pb-4">
+              Unfortunately, staff members transporting cash to and from a
+              business are at risk of both targeted attacks or random
+              opportunistic thefts and violence.
+            </p>
+            <p className="text-md text-white pb-4">
+              Our cash-in-transit security officers provide business owners with
               peace of mind, both for the welfare of their staff, and the
               protection of their hard-earned money.
             </p>
+            <p className="text-md text-white pb-4">
+              We can transport end of day or end of week cash deposits to your
+              financial institution, pick up daily or weekly change floats from
+              your financial institution, or provide a return service.
+            </p>
+            <p className="text-md text-white pb-4">
+              We can also provide ad-hoc services for events or businesses with
+              variable cash-in-transit needs, and services specifically catering
+              for the transport of valuable non-cash items.
+            </p>
+            <p className="text-md text-white pb-4">
+              The specific services we provide can be adjusted to accommodate
+              for the nature and location of your business, total value of cash
+              or other items to be transported and various other factors. Learn
+              more about our specific Cash in Transit services below.
+            </p>
+
             <div className="flex">
               <Link
                 to="/contact"
@@ -49,7 +71,7 @@ const ArmedCash = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+          <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7mMwKwV9x2NrdssWHbhIv2/20b61b759a629bebcf5fca6da31c0832/kss_website2022-62.jpg"
               className="!object-cover !absolute !inset-0"
@@ -57,37 +79,46 @@ const ArmedCash = () => {
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Overt
+              Overt Services
             </h3>
             <p className="text-md text-white pb-2">
-              Our highly visible security officers will make your day-to-day
-              banking secure and efficient for your business. We currently
-              operate services 7 days a week in Southern Tasmania and your
-              collection and change orders can be tailored to suit your business
-              requirements.
+              We utilise highly visible security vehicles and uniformed security
+              officers to provide overt cash transport services. Overt services
+              are often preferred for cash transport services in shopping
+              centres and other public places, as the visibility and attention
+              acts as a strong deterrent for opportunistic thieves.
             </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-2">
-              Covert
+              Covert Services
             </h3>
             <p className="text-md text-white pb-2">
-              When you want to ensure that business revenue is moved discreetly,
-              our Covert officers can provide this service whilst providing the
-              safety and security of your staff and customers and ensuring they
-              are not exposed to unnecessary risks associated with movement of
-              assets.
+              Some businesses and organisations prefer to utilise covert cash
+              and valuables transport services where the presence of security
+              may be confronting (for example, at schools or multicultural
+              centres), or for the movement of high value or sensitive items. We
+              utilise dedicated unmarked vehicles and provide unmarked attire
+              for our security officers conducting covert cash and valuables
+              transport services.
+            </p>
+            <p className="text-md text-white pb-2">
+              In most cases, our security officers are legally required to
+              display their security licence for covert cash and valuables
+              transport services. In unique circumstances where the display of a
+              security licence may be inappropriate, we can work with your
+              business to find alternative solutions (including, where
+              appropriate, applying for a commissioner’s exemption to the legal
+              requirement to display a security licence).
             </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-2">
               Armed Cash Movement
             </h3>
             <p className="text-md text-white pb-2">
-              Visual presence is a powerful tool in deterring unwanted
-              behaviour. Backed up by the ability to defend your assets our
-              Armed guards are trained to a high standard and will ensure the
-              security of your assets.
-            </p>
-            <p className="text-md text-white pb-2">
-              Please contact us for a confidential discussion on how we can
-              provide solutions for your business needs.
+              We can provide armed cash and valuables transport services to
+              clients who require a strong visual security presence during the
+              transport process. Our armed guards are fully qualified and
+              licensed, and complete regular professional development activities
+              to ensure that firearms are used safely and in accordance with
+              industry best practice at all times.
             </p>
           </div>
         </div>

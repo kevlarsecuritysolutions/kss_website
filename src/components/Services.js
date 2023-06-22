@@ -94,7 +94,7 @@ const Services = () => {
   return (
     <div>
       <section
-        className="relative bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden overflow-y-hidden"
+        className="relative bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden overflow-y-hidden"
         id="services"
       >
         <div className="hidden xl:block absolute right-0">
@@ -118,7 +118,7 @@ const Services = () => {
                 y2="563.801"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#002A45" />
+                <stop stop-color="#001a2f" />
                 <stop offset="1" stop-color="#03070A" />
               </linearGradient>
             </defs>
@@ -145,8 +145,8 @@ const Services = () => {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(654.128 277.861) scale(654.128 277.861)"
               >
-                <stop stop-color="#002A45" />
-                <stop offset="0.34" stop-color="#001522" />
+                <stop stop-color="#001a2f" />
+                <stop offset="0.34" stop-color="#00111e" />
                 <stop offset="1" stop-color="#03070A" />
               </radialGradient>
             </defs>
@@ -174,7 +174,7 @@ const Services = () => {
                 y2="0"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#002A45" />
+                <stop stop-color="#001a2f" />
                 <stop offset="1" stop-color="#03070A" />
               </linearGradient>
             </defs>
@@ -202,7 +202,7 @@ const Services = () => {
                 y2="508.5"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#002A45" />
+                <stop stop-color="#001a2f" />
                 <stop offset="1" stop-color="#03070A" />
               </linearGradient>
             </defs>
@@ -229,13 +229,13 @@ const Services = () => {
                 y2="-0.000244141"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#071017" />
+                <stop stop-color="#03070A" />
                 <stop offset="1" stop-color="#03070A" />
               </linearGradient>
             </defs>
           </svg>
         </div>
-        <div className="py-24 relative z-10">
+        <div className="py-12 lg:py-24 relative z-10">
           <div className=" max-w-7xl mx-auto grid grid-cols-1 px-4">
             <div className="pb-24 max-w-5xl sm:text-left">
               <div className="h-1 my-4 bg-white w-12"></div>
@@ -244,12 +244,74 @@ const Services = () => {
               </h2>
               <p className="text-white text-lg pb-4">
                 We have earned a reputation as a market leader in providing a
-                wide range of security services including vehicle-based security
-                patrols, 24 hour alarm / duress response, static guards, armed
-                cash-in-transit and Automatic Teller Machine first-line response
-                and maintenance, event security, concierge guard services, risk
-                assessments.
+                wide range of security services including:
               </p>
+              <ul className="text-lg text-white py-4 pb-8 list-disc pl-4 lg:pl-8">
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/security-patrols"
+                  >
+                    Vehicle-based security patrols
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/alarm-response"
+                  >
+                    24 hour alarm / duress response
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/static-guards"
+                  >
+                    Static guards
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/crowd-control"
+                  >
+                    Event security
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/concierge-and-site-entry-officers"
+                  >
+                    Concierge guard services
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/risk-assessments"
+                  >
+                    Risk assessments
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/cash-in-transit"
+                  >
+                    Armed and unarmed cash-in-transit services
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link
+                    className="text-kss-text-dark hover:underline"
+                    to="/services/technical-services"
+                  >
+                    Automatic Teller Machine first line response and maintenance
+                  </Link>
+                </li>
+              </ul>
               <p className="text-white text-lg pb-4">
                 We set ourselves apart by providing services which are
                 responsive and flexible to our clients’ needs, and security
@@ -264,10 +326,10 @@ const Services = () => {
                 standards.
               </p>
               <p className="text-white text-lg pb-4">
-                Our industry-leading use of technology, including secure
-                tablet-based information storage, Fleetmatics demonstrates our
-                commitment to using the latest and best practice protocols in
-                our own operations and services, and in our advice and
+                Our industry-leading use of technology, including security
+                tablet-based information storage and Fleetmatics demonstrates
+                our commitment to using the latest and best practice protocols
+                in our own operations and services, and in our advice and
                 recommendations to our clients.
               </p>
             </div>
@@ -275,7 +337,7 @@ const Services = () => {
           <div className="mx-auto flex flex-col max-w-7xl gap-8 pb-12">
             <Link
               to="services/static-guards"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center overflow-hidden p-2">
                 <StaticImage
@@ -289,16 +351,18 @@ const Services = () => {
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  There are a wide range of reasons why businesses and
-                  individuals may need to hire static guards, whether on a
-                  regular basis or for fixed periods. We can provide static
-                  guards for almost any purpose.
+                  Our static guards are highly trained with a particular focus
+                  on verbal de-escalation, customer service and threat detection
+                  skills. This diverse skillset ensures that our static guards
+                  can assist in a variety of roles including overnight asset
+                  protection, retail theft deterrence and sensitive events such
+                  as employment terminations or community consultation meetings.
                 </p>
               </div>
             </Link>
             <Link
-              to="services/site-entry"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
+              to="services/concierge-and-site-entry-officers"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -308,17 +372,204 @@ const Services = () => {
               </div>
               <div className="col-span-5 flex flex-col">
                 <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Site Entry / Gate House
+                  Concierge & Site Entry Officers
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  Kevlar Security Solutions can provide stringent access control
-                  to your premises, whilst managing visitors efficiently,
-                  politely and with respect.
+                  We provide tailored concierge and site entry security services
+                  to accommodate for a range of site-specific requirements
+                  including issuing and updating site access [cards/FOBs],
+                  greeting and assisting important guests, conducting drug and
+                  alcohol testing, and comprehensive record-keeping
+                  administration within proprietary IT systems.
                 </p>
               </div>
             </Link>
             <Link
+              to="services/cash-in-transit"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/5KZrumT2CaCtic1cfsvRE0/6adf86506f4af406d7b390023838a8e6/kss_website_20_22-1.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Cash in transit services
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  Our cash in transit services provide peace of mind and
+                  eliminate risk by removing the need for employees to transport
+                  cash between their workplace and a bank branch. Our
+                  experienced and trusted cash-in-transit team provide cash
+                  deposit and change delivery services to numerous businesses in
+                  the greater Hobart area, and offer options for armed, unarmed,
+                  overt and covert services based on business preferences.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/security-patrols"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6LSuXjDHJqtxK3xsujTwyo/dbbcc5c3f581a9224307e001a23f28c7/kss_website2022-129.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Security Patrols
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  We have the largest vehicle-based security patrol operation in
+                  Tasmania, with a fleet of up to eight vehicles operating at
+                  any given time. Our reputation for providing reliable,
+                  flexible and comprehensive security patrol services is second
+                  to none.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/alarm-response"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://downloads.ctfassets.net/lfrbwr0lmnkj/46WJBhbNTCib46p3XaUD4M/8c85bce22711040e8db1143782540b4b/kss_website_2022-70.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Alarm / Duress Response
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  Our large vehicle-based security patrol operation enables us
+                  to provide the fastest possible alarm response timeframes to
+                  every corner of the greater Hobart area, and to accommodate
+                  for long-range alarm attendances without impacting service
+                  provision for other clients. We also have a multi-layered
+                  on-call management structure which ensures that even the most
+                  complex issues are handled by suitably qualified and
+                  experienced security personnel 24 hours per day, 365 days per
+                  year.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/crowd-control"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Crowd Control / Event Security
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  We have a highly experienced team of crowd control and event
+                  security officers, supervisors and managers who specialise in
+                  providing security services at a range of events and venues.
+                  Our team regularly works with law enforcement, government
+                  agencies and event managers to provide advice and expertise in
+                  the planning and execution of large scale multi-day public
+                  events, high profile and high risk events, and concerts and
+                  sporting events.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/body-guard-services"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Bodyguard Services
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  Our close personal protection services are provided only by
+                  our most experienced professional security officers who can
+                  quickly adapt and overcome unexpected issues using sound
+                  professional judgement. We ensure that our bodyguarding and
+                  close personal protection services are meticulously planned,
+                  discreet and designed to accommodate for the individual needs
+                  of our clients.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/technical-services"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Technical Services
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  We are a trusted provider of specialist technical security
+                  services for business, government and individual clients
+                  throughout Tasmania. We pride ourselves on our ability to
+                  provide innovative and tailored technical security solutions
+                  incorporating the latest technological advancements and
+                  best-practice system design, delivery and maintenance
+                  services.
+                </p>
+              </div>
+            </Link>
+            <Link
+              to="services/risk-assessments"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+            >
+              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
+                <StaticImage
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7dqQJKVb6Ya1oc6UfiVc69/b4d0fa784cc8a56720127c61d61c5ec7/kss_website2022-39.jpg"
+                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                />
+              </div>
+              <div className="col-span-5 flex flex-col">
+                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
+                  Risk Assessments
+                </h3>
+                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
+                <p className="text-kss-text-dark">
+                  Our highly qualified management team broad range of expertise
+                  places us in the unique position to be able to provide
+                  comprehensive risk assessments covering all aspects of
+                  government, business or personal site security. Our
+                  recommendations are guided by industry best-practice,
+                  extensive knowledge and experience, and matters relevant to
+                  each client including budget, source of technology and level
+                  of risk / protection required.
+                </p>
+              </div>
+            </Link>
+            {/* <Link
               to="services/concierge-guards"
               className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
             >
@@ -339,243 +590,74 @@ const Services = () => {
                   additional level of protection.
                 </p>
               </div>
-            </Link>
-            <Link
-              to="services/cash-in-transit"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/5KZrumT2CaCtic1cfsvRE0/6adf86506f4af406d7b390023838a8e6/kss_website_20_22-1.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
+            </Link> */}
+          </div>
+        </div>
+        <div className="max-w-7xl px-4 pb-24 lg:pb-32 mx-auto relative z-10">
+          <p className="text-2xl text-white pb-12 font-semibold">
+            We work closely with the Tasmanian Government to provide leading
+            security services to the following departments
+          </p>
+          <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-center">
+            <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
+              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" />
+            </div>
+            <div className="lg:hidden w-full pb-12 ">
+              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div to="/services/static-guards" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department for Education, Children and Young People
+                  </h4>
+                </div>
               </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Cash in transit services
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  Many businesses, both large and small, are required to
-                  transport cash to and from their banking institution.
-                  Unfortunately, staff members transporting cash to and from a
-                  business are at risk of both targeted attacks or random
-                  opportunistic thefts and violence. Our armed cash-in-transit
-                  service provides business owners with peace of mind, both for
-                  the welfare of their staff, and the protection of their
-                  hard-earned money.
-                </p>
+              <div to="/services/static-guards" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department of Police, Fire & Emergency Management
+                  </h4>
+                </div>
               </div>
-            </Link>
-            <Link
-              to="services/security-patrols"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6LSuXjDHJqtxK3xsujTwyo/dbbcc5c3f581a9224307e001a23f28c7/kss_website2022-129.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
+              <div to="/services/site-entry" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department of Health
+                  </h4>
+                </div>
               </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Security Patrols
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  We specialise in providing vehicle-based security patrols and
-                  have the largest security patrol car operation in Tasmania.
-                  These patrols are conducted our carbon neutral, high
-                  visibility patrol vehicles. The specific security patrol
-                  services that we offer to our clients are extremely flexible
-                  and customised to each individual client’s security needs.
-                </p>
+              <div to="/services/static-guards" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department of Parks, Wildlife and Environment
+                  </h4>
+                </div>
               </div>
-            </Link>
-            <Link
-              to="services/alarm-response"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://downloads.ctfassets.net/lfrbwr0lmnkj/46WJBhbNTCib46p3XaUD4M/8c85bce22711040e8db1143782540b4b/kss_website_2022-70.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
+              <div to="/services/site-entry" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department of Treasury and Finance
+                  </h4>
+                </div>
               </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Alarm / Duress Response
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  Kevlar Security Solutions Pty Ltd currently provides 24 hour
-                  alarm response services for over 600 sites in Southern
-                  Tasmania. We also provide duress response services for many of
-                  our clients. All alarms are responded to immediately upon our
-                  drivers receiving notification that the alarm has been
-                  activated from the relevant alarm monitoring centre. We aim to
-                  ensure that all alarms are responded to within 30 minutes (in
-                  accordance with the Australian Standard (AS/NZS 4421:2011)).
-                </p>
+              <div to="/services/site-entry" className="flex gap-4 group">
+                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                <div className="flex flex-col">
+                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                    Department of State Growth
+                  </h4>
+                </div>
               </div>
-            </Link>
-            <Link
-              to="services/crowd-control"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
-              </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Crowd Control / Event Security
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  We have vast experience in providing crowd control and related
-                  security service for a wide range of events and venues
-                  including large scale multi-day public events, high profile
-                  and high risk events, concerts and sporting events, events at
-                  pubs and clubs and private functions.
-                </p>
-              </div>
-            </Link>
-            <Link
-              to="services/body-guard-services"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
-              </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Body Guard Services
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  Kevlar Security Solutions can provide close personal
-                  protection, asset / valuables protection services.
-                </p>
-              </div>
-            </Link>
-            <Link
-              to="services/technical-services"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
-              </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Technical Services
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  We have experience in Alarm Monitoring, Installation,
-                  Servicing & Repair, Structured Data Networking, Access Control
-                  Solutions, Upgrade and Integrations and CCTV Installations.
-                </p>
-              </div>
-            </Link>
-            <Link
-              to="services/risk-assessments"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition"
-            >
-              <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
-                <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7dqQJKVb6Ya1oc6UfiVc69/b4d0fa784cc8a56720127c61d61c5ec7/kss_website2022-39.jpg"
-                  className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
-                />
-              </div>
-              <div className="col-span-5 flex flex-col">
-                <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Risk Assessments & analysis
-                </h3>
-                <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
-                <p className="text-kss-text-dark">
-                  Many businesses require risk assessments to be completed in
-                  order to identify security flows, vulnerabilities, staff
-                  safety risks and risks to members of the public. We specialise
-                  in providing comprehensive and cost-effective risk assessments
-                  for businesses, private residences, individuals, and events.
-                </p>
-              </div>
-            </Link>
+            </div>
           </div>
         </div>
       </section>
-      {/* <section className="bg-gray-100" id="clients">
-        <div className="mx-auto max-w-5xl pb-36">
-          <div className="px-4 max-w-3xl sm:text-left pt-24">
-            <h2 className="text-4xl xl:text-5xl text-kss-text font-heading font-bold pb-4 xl:pb-8 tracking-tight">
-              Work with Kevlar
-            </h2>
-            <p className="mt-2 text-lg text-kss-text">
-              We have built our reputation as a leading employer in the
-              Tasmanian security industry, offering flexibility, career
-              development opportunities and an enterprise agreement with a
-              variety of benefits.
-            </p>
-          </div>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-8 px-12 lg:px-4">
-            <Link
-              to="/employment/information"
-              className="bg-gma-bg pb-4 shadow-xl transition"
-            >
-              <div className="h-60 md:h-48">
-                <StaticImage
-                  src="../assets/images/employment-half.png"
-                  className="object-cover h-full w-full"
-                  placeholder="BLURRED"
-                />
-              </div>
-
-              <h3 className="pt-4 h-24 px-4">
-                Find out if a career in security is right for you.
-              </h3>
-            </Link>
-            <Link
-              to="/employment/expression-of-interest"
-              className="bg-gma-bg pb-4 shadow-xl transition"
-            >
-              <div className="h-60 md:h-48">
-                <StaticImage
-                  src="../assets/images/employment-left.png"
-                  className="object-cover h-full w-full"
-                  placeholder="BLURRED"
-                />
-              </div>
-
-              <h3 className="pt-4 h-24 px-4">
-                Express your interest in joinging the Kevlar Security team.
-              </h3>
-            </Link>
-            <Link
-              to={`/coming-soon`}
-              className="bg-gma-bg pb-4 shadow-xl transition"
-            >
-              <div className="h-60 md:h-48">
-                <StaticImage
-                  src="../assets/images/employment-right.png"
-                  className="object-cover h-full w-full"
-                  placeholder="BLURRED"
-                />
-              </div>
-
-              <h3 className="pt-4 h-24 px-4">Explore current openings.</h3>
-            </Link>
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };

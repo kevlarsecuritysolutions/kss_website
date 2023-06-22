@@ -22,12 +22,27 @@ const StaticGuards = () => {
               STATIC GUARDS
             </h2>
             <p className="text-md text-white pb-4">
-              There are a wide range of reasons why businesses and individuals
-              may need to hire static guards, whether on a regular basis or for
-              fixed periods.
+              Our static guard services are highly flexible and can be utilised
+              by government, business and individuals in a range of
+              circumstances. The most common types of services that we provide
+              include:
             </p>
+            <ul className="text-md text-white list-disc pl-4 pb-4">
+              <li>
+                <p>Loss Prevention</p>
+              </li>
+              <li>
+                <p>Overnight Property Protection</p>
+              </li>
+              <li>
+                <p>Anti-social Behaviour deterrence</p>
+              </li>
+              <li>
+                <p>Staff Safety</p>
+              </li>
+            </ul>
             <p className="text-md text-white pb-4">
-              We can provide static guards for almost any purpose.
+              Learn more about our static guard services below or contact us to find out which of our services would best suit your security needs. 
             </p>
             <div className="flex">
               <Link
@@ -56,59 +71,77 @@ const StaticGuards = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Regular Concierge or visitor monitoring Services
-            </h3>
-            <p className="text-md text-white pb-2">
-              We have extensive experience in providing concierge and reception
-              security services.
-            </p>
-            <p className="text-md text-white pb-2">
-              We believe that the key to providing exceptional security services
-              is ensuring that all our security personnel have the right
-              experience, skills and aptitude for the work that they do.
-            </p>
-            <p className="text-md text-white pb-2">
-              Accordingly, we ensure that all our concierge staff hold
-              monitoring room security licence endorsements so that they can
-              operate CCTV and access control systems in association with their
-              concierge duties.
-            </p>
-            <p className="text-md text-white pb-2">
-              We also offer additional value-added services to our clients,
-              including specialised duress and hold-up training (suitable for
-              concierge and client-facing reception roles), welfare checks for
-              overnight or high-risk work and security risk assessments.
-            </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
-              Last Minute overnight property protection
-            </h3>
-            <p className="text-md text-white pb-2">
-              For example, where windows or fencing is damaged, or alarm systems
-              are malfunctioning and repairs cannot be arranged until the next
-              business day
-            </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-2">
               Loss Prevention
             </h3>
             <p className="text-md text-white pb-2">
-              An essential business function that helps companies minimise risk,
-              prevent theft and increase the overall safety of the company.
+              Loss prevention security officers are particularly important for
+              the retail sector, providing a visible deterrent for would-be
+              thieves and a dedicated “observe and report” response to any
+              suspicious behaviour. Our static guards are trained in verbal
+              de-escalation techniques to dramatically decrease the risk of
+              customers, staff or our officers from having to engage in any
+              physical interactions.
+            </p>
+            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+              Overnight Property Protection
+            </h3>
+            <p className="text-md text-white pb-2">
+              Both businesses and individuals may encounter situations where a
+              static guard is required to assist with protection of property
+              where security infrastructure has been compromised. Our static
+              guards can assist with protecting infrastructure and equipment at
+              construction sites, preventing access to unsecure buildings and
+              reporting suspicious or anti-social behaviour in real-time.
             </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-2">
               Anti-social behaviour deterrence
             </h3>
             <p className="text-md text-white pb-2">
-              Whilst we do prefer to receive notice of any planned static guard
-              requirements, we know that unfortunate and unpredictable
-              situations can arise for any business. Accordingly, we pride
-              ourselves on being able to arrange for static guards to attend
-              sites within the Hobart area and close suburbs in less than 1 hour
-              after we receive notification of your static guard requirements.
+              There are many situations where anti-social or threatening
+              behaviour may arise, and this can lead to fear and uncertainty for
+              staff, customers and other members of the public. Our static
+              guards can provide a comforting presence and subtle deterrent for
+              any anti-social or threatening behaviour in a range of situations
+              including:
             </p>
+            <ul className="text-md pb-2 text-white list-disc pl-4">
+              <li>
+                <p>
+                  Accompanying staff members to their vehicles at the end of a
+                  work day
+                </p>
+              </li>
+              <li>
+                <p>
+                  Attending community meetings where topics may generate tense
+                  or emotional responses
+                </p>
+              </li>
+              <li>
+                <p>
+                  Preventing unauthorised individuals from attending
+                  invitation-only events
+                </p>
+              </li>
+              <li>
+                <p>
+                  Providing a visible presence at locations which have recently
+                  experienced concerning behaviour or incidents
+                </p>
+              </li>
+            </ul>
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Staff Safety
+            </h3>
             <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager can provide advice and a quote for
-              our static guard services to suit your needs.
+              Our static guards are highly trained with a particular focus on
+              verbal de-escalation, customer service and threat detection
+              skills. This diverse skillset ensures that our static guards can
+              assist in a variety of roles including retail theft deterrence,
+              overnight asset protection, and situations where tension and
+              conflict may arise such as employment terminations or community
+              consultation meetings.
             </p>
           </div>
         </div>

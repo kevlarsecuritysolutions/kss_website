@@ -23,7 +23,7 @@ const SecurityPatrols = () => {
             </h2>
             <p className="text-md text-white pb-2">
               We specialise in providing vehicle-based security patrols and have
-              the largest security patrol car operation in Tasmania. These
+              the largest security patrol car operation in Tasmania. Security
               patrols are conducted our carbon neutral, high visibility patrol
               vehicles. The specific security patrol services that we offer to
               our clients are extremely flexible and customised to each
@@ -31,12 +31,10 @@ const SecurityPatrols = () => {
             </p>
             <p className="text-md text-white pb-2">
               We tailor our contract durations, and the day(s), times and types
-              of services we provide to suit each client's needs.
-            </p>
-            <p className="text-md text-white pb-2">
-              For example, our services can be provided on an ongoing basis, or
-              for a specific period of time only, such as a set number of days
-              during the Christmas / New Year break, or during a family holiday.
+              of services we provide to suit each client's needs. For example,
+              our services can be provided on an ongoing basis, or for a
+              specific period of time only, such as a set number of days during
+              the Christmas / New Year break, or during a family holiday.
             </p>
             <p className="text-md text-white pb-2">
               The type of services that we provide can also be varied for each
@@ -64,7 +62,7 @@ const SecurityPatrols = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative overflow-hidden aspect-video lg:aspect-auto mx-4 lg:mx-0">
+          <div className="relative overflow-hidden aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3TgYgiJQgqqWj4TYMNxUZa/a15177b7e3fd64e8aa1aac4cb8885f7f/kss_website2022-148.jpg"
               className="!object-cover !absolute !-bottom-24 !lg:inset-0"
@@ -88,33 +86,22 @@ const SecurityPatrols = () => {
               responsible for looking after keys to your building.
             </p>
             <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Random Night-Time Patrols
+            Random Night-Time Patrols
             </h3>
             <p className="text-md text-white pb-2">
-              Many businesses and home-owners are concerned about the increase
-              in petty crime, and the resulting need to protect premises,
-              infrastructure and personal property from this risk.
+            Many businesses and home-owners are concerned about the increase in petty crime, and the resulting need to protect premises, infrastructure and personal property from this risk.
             </p>
             <p className="text-md text-white pb-2">
-              Our high-visibility and randomly timed night-time patrols provide
-              a deterrent for would-be lawbreakers and loiterers, and can also
-              provide regular checks to ensure that buildings, infrastructure
-              and property remains secure during the night.
+            Our high-visibility and randomly timed night-time patrols provide a deterrent for would-be lawbreakers and loiterers, and can also provide regular checks to ensure that buildings, infrastructure and property remains secure during the night.
             </p>
             <p className="text-md text-white pb-2">
-              We also provide and install high-visibility signage free of charge
-              to all of our clients, providing a constant visual deterrent, and
-              displaying our 24 hour response number to enable members of the
-              public to report any suspicious activities.
+            We also provide and install high-visibility signage free of charge to all of our clients, providing a constant visual deterrent, and displaying our 24 hour response number to enable members of the public to report any suspicious activities.
             </p>
             <p className="text-md text-white pb-2">
-              The work that we do during our night time patrols can be tailored
-              to each business’ individual security needs and concerns.
+            The work that we do during our night time patrols can be tailored to each business’ individual security needs and concerns.
             </p>
             <p className="text-md text-white pb-2">
-              The timing of our patrols can be completely random, randomly timed
-              within set time spans (e.g. completed at any time between 1:00am
-              and 4:00am), or during specific timeframes each night.
+            The timing of our patrols can be completely random, randomly timed within set time spans (e.g. completed at any time between 1:00am and 4:00am), or during specific timeframes each night.
             </p>
             <h2 className="text-white font-bold text-lg pb-2 pt-8">
               We can also provide the following compliance and reporting options
@@ -134,11 +121,6 @@ const SecurityPatrols = () => {
                 <li>Electronic tagging</li>
               </ul>
             </div>
-            <p className="text-md text-white pb-2">
-              Our CEO and Operations Manager will undertake an assessment of
-              your business or home, and provide you with advice and quotes for
-              tailored security patrol services to suit your needs.
-            </p>
           </div>
         </div>
       </section>

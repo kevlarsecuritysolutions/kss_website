@@ -43,7 +43,7 @@ const Clients = () => {
   };
 
   return (
-    <section className="bg-gray-100 pb-12 py-12 lg:py-24" id="clients">
+    <section className="bg-gray-100 pb-12 py-12 lg:py-24">
       <div className="max-w-7xl mx-auto">
         {/* <div className="flex flex-col pt-12 pb-12 px-4">
           <div className="max-w-3xl sm:text-left">
@@ -158,72 +158,7 @@ const Clients = () => {
           </div>
         </Slider> */}
 
-        <div className="max-w-7xl px-4 lg:pb-12">
-          <p className="mt-12 text-lg text-kss-text pb-4 font-semibold">
-            We work closely with the Tasmanian Government to provide leading
-            security services to the following departments
-          </p>
-          <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-center">
-            <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/Kf81SPCxFj4zPmORKqANk/e6d89c56d2d9dee1a65a259764e3dceb/C4_1-removebg-preview.png" />
-            </div>
-            <div className="lg:hidden w-full pb-12 ">
-              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6iPr67RWU5cjw3g27KRAiU/646a00b97c6d24e10ca5cd3e4b6186c7/Tas-Gov-logo__2_.png" />
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department for Education, Children and Young People
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department of Police, Fire & Emergency Management
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department of Health
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department of Parks, Wildlife and Environment
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department of Treasury and Finance
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[3px] max-w-[3px] rounded-xl bg-black"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text font-semibold text-lg">
-                    Department of State Growth
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col pt-24 px-4">
+        <div className="flex flex-col pt-12 px-4">
           <div className="max-w-3xl sm:text-left">
             <div className="h-1 my-4 bg-kss-text w-12"></div>
             <h2 className="text-3xl xl:text-4xl text-kss-text font-bold pb-8 uppercase">
@@ -231,19 +166,40 @@ const Clients = () => {
             </h2>
             <div className="max-w-5xl">
               <p className="mt-2 text-lg text-kss-text pb-4">
-                We have earned a reputation as a market leader in providing a
-                wide range of security services including vehicle-based security
-                patrols, 24 hour alarm / duress response, static guards, armed
-                cash-in-transit and Automatic Teller Machine first-line response
-                and maintenance, event security, concierge guard services, risk
-                assessments.
+                Our commitment to the highest level of compliance and
+                performance is demonstrated by our ISO accreditations for
+                Quality Management Systems (ISO 9001) and Occupational Health &
+                Safety Management Systems (ISO 45001).
               </p>
               <p className="mt-2 text-lg text-kss-text">
-                We set ourselves apart by providing services which are
-                responsive and flexible to our clients’ needs, and security
-                personnel who are highly trained, reliable and skilled in a wide
-                range of security and related roles.
+                We are audited and assessed annually to ensure ongoing
+                compliance.
               </p>
+              <p className="mt-2 text-lg text-kss-text">
+                In addition to our ISO compliances, we have voluntarily adopted
+                a variety of policies and practices to demonstrate our
+                commitment to best practice business operation, including:
+              </p>
+              <ul className="py-4 text-lg text-kss-text list-disc pl-4 lg:pl-8">
+                <li className="py-1">
+                  <p>Modern slavery and supply chain integrity policy</p>
+                </li>
+                <li className="py-1">
+                  <p>
+                    Use of comprehensive visa and work rights compliance checks
+                    and tracking software
+                  </p>
+                </li>
+                <li className="py-1">
+                  <p>Data breach response plan</p>
+                </li>
+                <li className="py-1">
+                  <p>Environmental impact policy</p>
+                </li>
+                <li className="py-1">
+                  <p>Equity and diversity policy</p>
+                </li>
+              </ul>
             </div>
           </div>
 

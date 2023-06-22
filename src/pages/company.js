@@ -56,6 +56,17 @@ const Company = () => {
               using the latest and best practice protocols in our operations and
               services, and in our advice and recommendations to our clients.
             </p>
+            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+              Acknowledgement of Country
+            </h3>
+            <p className="text-md text-white pb-2">
+              We acknowledge the Lutruwita (Tasmania) Traditional Custodians and
+              their ancestral lands. We pay our respects to their elders, both
+              past, present, and emerging, and extend our appreciation for their
+              ongoing connection to the land, waters, and culture. We recognize
+              their custodianship and value their contributions to our community
+              and our broader society.
+            </p>
           </div>
           <div className="relative mx-4 mb-6 lg:mx-0 lg:mb-0">
             <StaticImage
@@ -67,7 +78,11 @@ const Company = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="hidden xl:block relative overflow-hidden">
             {" "}
-            <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg" className="!inset-0 !bottom-0 !top-0 !absolute" objectPosition="50% 75%"/>
+            <StaticImage
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1RRoRFQyNDMA2IzrwJjl2J/fc41d9d79f212ae7fc30e870191c1113/kss_website2022-135.jpg"
+              className="!inset-0 !bottom-0 !top-0 !absolute"
+              objectPosition="50% 75%"
+            />
           </div>
           <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">

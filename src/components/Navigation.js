@@ -7,13 +7,6 @@ import {
   Disclosure,
 } from "@headlessui/react";
 import {
-  MenuIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-  UserIcon,
-  XIcon,
-} from "@heroicons/react/outline";
-import {
   UserAvatar,
   Search,
   Menu,
@@ -323,7 +316,7 @@ const Navigation = () => {
                                 </div>
                               </Link>
                               <Link
-                                to="/services/site-entry"
+                                to="/services/concierge-and-site-entry-officers"
                                 className="flex gap-4 group pb-2"
                                 onClick={() => {
                                   setOpen(false);
@@ -332,29 +325,11 @@ const Navigation = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Site Entry / Gate House
+                                    Concierge & Site Entry Officers
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     We can provide stringent access control to
                                     your premises.
-                                  </p>
-                                </div>
-                              </Link>
-                              <Link
-                                to="/services/concierge-guards"
-                                className="flex gap-4 group pb-2"
-                                onClick={() => {
-                                  setOpen(false);
-                                }}
-                              >
-                                <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                <div className="flex flex-col">
-                                  <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Concierge Guards
-                                  </h4>
-                                  <p className="text-kss-text text-md">
-                                    Concierge security officers are assigned to
-                                    give support to guests and visitors.
                                   </p>
                                 </div>
                               </Link>
@@ -404,7 +379,7 @@ const Navigation = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Alarm Duress / Response
+                                    Alarm / Duress Response
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     24 hour alarm response services for over 600
@@ -465,6 +440,25 @@ const Navigation = () => {
                                     Alarm monitoring, installation, servicing
                                     and repair. Structured data networking,
                                     access control solutions.
+                                  </p>
+                                </div>
+                              </Link>
+                              <Link
+                                to="/services/risk-assessments"
+                                className="flex gap-4 group pb-2"
+                                onClick={() => {
+                                  setOpen(false);
+                                }}
+                              >
+                                <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                <div className="flex flex-col">
+                                  <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
+                                    Risk Assessments
+                                  </h4>
+                                  <p className="text-kss-text text-md">
+                                    Offering thorough, affordable risk
+                                    assessments for businesses, homes,
+                                    individuals and events.
                                   </p>
                                 </div>
                               </Link>
@@ -686,14 +680,14 @@ const Navigation = () => {
         <header
           className={
             color
-              ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#002340] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
-              : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#002340] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
+              ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#001a2f] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
+              : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#001a2f] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
           }
           style={
             open && !color
               ? {
                   backgroundImage:
-                    "linear-gradient(to top, #000000, #002340, #002340)",
+                    "linear-gradient(to top, #000000, #001a2f, #001a2f)",
                 }
               : {}
           }
@@ -787,6 +781,22 @@ const Navigation = () => {
                                       </p>
                                     </AnchorLink> */}
                                       <div className="flex flex-col gap-8">
+                                        <AnchorLink
+                                          to="/#services"
+                                          className="flex gap-4 group"
+                                        >
+                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                          <div className="flex flex-col">
+                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                              View All Services
+                                            </h4>
+                                            <p className="text-kss-text text-xs">
+                                              We have earned a reputation as a
+                                              market leader in providing a wide
+                                              range of security services
+                                            </p>
+                                          </div>
+                                        </AnchorLink>
                                         <Link
                                           to="/services/static-guards"
                                           className="flex gap-4 group"
@@ -803,37 +813,21 @@ const Navigation = () => {
                                             </p>
                                           </div>
                                         </Link>
+                                      </div>
+                                      <div className="flex flex-col gap-8">
                                         <Link
-                                          to="/services/site-entry"
+                                          to="/services/concierge-and-site-entry-officers"
                                           className="flex gap-4 group"
                                         >
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Site Entry / Gate House
+                                              Concierge & Site Entry Officers
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Stringent access control to your
                                               premises, whilst managing visitors
                                               efficiently.
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
-                                      <div className="flex flex-col gap-8">
-                                        <Link
-                                          to="/services/concierge-guards"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Concierge Guards
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Supporting guests and visitors,
-                                              whilst providing the company an
-                                              additional level of protection.
                                             </p>
                                           </div>
                                         </Link>
@@ -945,7 +939,7 @@ const Navigation = () => {
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Risk Assessments & Analysis
+                                              Risk Assessments
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Offering thorough, affordable risk
@@ -1057,13 +1051,15 @@ const Navigation = () => {
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
-                                              <StaticImage
-                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
-                                                className="!w-full !absolute !bottom-0"
-                                                objectFit="scale-down"
-                                                loading="eager"
-                                              />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/1hT3H7kBkUPZw54iX6wsnY/2c671c22300ac9f49f1fa27fc267ee08/kss_website2022-141.jpg"
+                                                  className="!w-full !absolute !bottom-0"
+                                                  objectFit="scale-down"
+                                                  loading="eager"
+                                                />
+                                              </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               KSS are your Tassie owned and
@@ -1079,13 +1075,15 @@ const Navigation = () => {
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
-                                              <StaticImage
-                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/7oBsXku2unNUJNZCGnbh3l/be1c669d78ab1de0c937796393699570/kss_website2022-110.jpg"
-                                                className="!w-full !absolute !bottom-0"
-                                                objectFit="scale-down"
-                                                loading="eager"
-                                              />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7oBsXku2unNUJNZCGnbh3l/be1c669d78ab1de0c937796393699570/kss_website2022-110.jpg"
+                                                  className="!w-full !absolute !bottom-0"
+                                                  objectFit="scale-down"
+                                                  loading="eager"
+                                                />
+                                              </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               Our fleet of security patrol
@@ -1100,11 +1098,16 @@ const Navigation = () => {
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <StaticImage
-                                              src="../assets/images/sign.jpg"
-                                              className="!mb-2 !h-40 !group-hover:opacity-90"
-                                              loading="eager"
-                                            />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="../assets/images/sign.jpg"
+                                                  className="!w-full !absolute !-bottom-12"
+                                                  objectFit="contain"
+                                                  loading="eager"
+                                                />
+                                              </div>
+                                            </div>
                                             <p className="text-kss-text text-sm">
                                               Currently servicing more than 1800
                                               sites across Tasmania.
@@ -1191,7 +1194,7 @@ const Navigation = () => {
                                             </h4>
                                             <p className="text-kss-text text-sm">
                                               Search positions and express your
-                                              interest in joing the team.
+                                              interest in joining the team.
                                             </p>
                                           </div>
                                         </Link>
@@ -1202,14 +1205,17 @@ const Navigation = () => {
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
-                                              <StaticImage
-                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
-                                                className="!w-full !absolute !bottom-0"
-                                                objectFit="scale-down"
-                                                loading="eager"
-                                              />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
+                                                  className="!w-full !absolute !bottom-0"
+                                                  objectFit="scale-down"
+                                                  loading="eager"
+                                                />
+                                              </div>
                                             </div>
+
                                             <p className="text-kss-text text-sm">
                                               Join the fastest growing security
                                               team in Tasmania.
@@ -1219,17 +1225,19 @@ const Navigation = () => {
                                       </div>
                                       <div className="flex flex-col justify-between">
                                         <Link
-                                          to="employment/information"
+                                          to="/employment/information"
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
-                                              <StaticImage
-                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
-                                                className="!w-full !absolute !bottom-0"
-                                                objectFit="scale-down"
-                                                loading="eager"
-                                              />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
+                                                  className="!w-full !absolute !bottom-0"
+                                                  objectFit="scale-down"
+                                                  loading="eager"
+                                                />
+                                              </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               A leading employer in the
@@ -1240,18 +1248,21 @@ const Navigation = () => {
                                       </div>
                                       <div className="flex flex-col justify-between">
                                         <Link
-                                          to="employment/information"
+                                          to="/employment/information"
                                           className="flex gap-4 group pb-2"
                                         >
                                           <div className="flex flex-col">
-                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative">
-                                              <StaticImage
-                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-                                                className="!w-full !absolute !bottom-0"
-                                                objectFit="scale-down"
-                                                loading="eager"
-                                              />
+                                            <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                              <div className=" relative w-full h-36 mx-2 overflow-hidden">
+                                                <StaticImage
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
+                                                  className="!w-full !absolute !bottom-0"
+                                                  objectFit="scale-down"
+                                                  loading="eager"
+                                                />
+                                              </div>
                                             </div>
+
                                             <p className="text-kss-text text-sm">
                                               Upskill with ongoing support and
                                               employee training
@@ -1325,16 +1336,10 @@ const Navigation = () => {
                             onClick={() => setOpen(false)}
                           >
                             {" "}
-                            <svg
-                              className="fill-white h-8 w-8 block"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
-                            </svg>
+                            <Close
+                              className="block h-8 w-8"
+                              aria-hidden="true"
+                            />
                           </button>
                         ) : (
                           <button
@@ -1342,16 +1347,10 @@ const Navigation = () => {
                             className="-ml-2 p-2 rounded-md text-white lg:hidden"
                             onClick={() => setOpen(true)}
                           >
-                            <svg
-                              className="fill-white h-8 w-8"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
-                            </svg>
+                            <Menu
+                              className="block h-8 w-8"
+                              aria-hidden="true"
+                            />
                           </button>
                         )}
                       </div>

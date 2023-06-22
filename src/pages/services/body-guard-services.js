@@ -22,8 +22,12 @@ const BodyGuard = () => {
               BODYGUARD SERVICES
             </h2>
             <p className="text-md text-white pb-4">
-              Kevlar Security Solutions can provide close personal protection,
-              asset / valuables protection services.
+              Close personal protection is a critical area that requires
+              meticulous planning and delicate execution. Our experienced
+              security officers utilise their extensive skills and professional
+              judgment to promote the safety of protected persons whilst also
+              remaining sensitive to the location and circumstances surrounding
+              the need for protection.
             </p>
             <div className="flex">
               <Link
@@ -53,7 +57,7 @@ const BodyGuard = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            {/* <h3 className="text-white text-xl font-semibold pt-2 pb-2">
               Personal Protection
             </h3>
             <p className="text-md text-white pb-2">
@@ -73,6 +77,30 @@ const BodyGuard = () => {
             <p className="text-md text-white pb-2">
               Please use our contact page if you are interested in seeking out
               more information about the services we can deliver.
+            </p> */}
+            <p className="text-md text-white pb-4">
+              Our close personal protection services are frequently utilised by
+              insurance, property management and legal industry professionals
+              when attending meetings or site visits as part of contentious and
+              emotionally charged cases.
+            </p>
+            <p className="text-md text-white pb-4">
+              In addition to providing physical protection where required, our
+              experienced close personal protection officers have exceptional
+              verbal de-escalation skills which can be used to substantially
+              reduce the likelihood of a physical altercation.
+            </p>
+            <p className="text-md text-white pb-4">
+              Our security officers can also provide comprehensive incident
+              reports and witness statements for use in legal proceedings where
+              required.
+            </p>
+            <p className="text-md text-white pb-4">
+              We can also provide chauffeur and personal protection services for
+              political figures and company executives encountering protesters,
+              in-home service providers such as medical professionals, and
+              celebrities or dignitaries who may encounter over-enthusiastic
+              fans.
             </p>
           </div>
         </div>

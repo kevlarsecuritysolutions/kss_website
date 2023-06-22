@@ -22,19 +22,14 @@ const AlarmResponse = () => {
               ALARM / DURESS RESPONSE
             </h2>
             <p className="text-md text-white pb-4">
-              Kevlar Security Solutions Pty Ltd currently provides 24 hour alarm
-              response services for over 600 sites in Southern Tasmania. We also
-              provide duress response services for many of our clients.
+              Kevlar Security Solutions provides a 24 hour alarm and duress
+              response services at more than 5000 sites throughout Tasmania.
             </p>
             <p className="text-md text-white pb-4">
-              All alarms are responded to immediately upon our drivers receiving
-              notification that the alarm has been activated from the relevant
-              alarm monitoring centre.
-            </p>
-            <p className="text-md text-white pb-4">
-              We aim to ensure that all alarms are responded to within 30
-              minutes (in accordance with the Australian Standard (AS/NZS
-              4421:2011)).
+              With up to eight security response vehicles operating at any one
+              time, we are able to respond to any incidents in a timely manner
+              and in compliance with the Australian Standard for alarm response
+              times (AS/NZS 4421:2011).
             </p>
             <div className="flex">
               <Link
@@ -63,42 +58,40 @@ const AlarmResponse = () => {
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <p className="text-md text-white pb-2">
-              Alarm activations can come at the most inconvenient time. Kevlar
-              Security Solutions will function as an intermediary so you can
-              spend more of your time focusing on your business and leaving the
-              security of your site to security professionals. We are always
-              expanding our patrol operation, currently the largest in Tasmania
-              we have five cars operating 365 days of the year (24/7) in
-              Southern Tasmania alone.
+            <p className="text-md text-white pb-4">
+              If you already have an installed and monitored alarm system, we
+              can work with your existing monitoring service to provide fast,
+              cost-effective and professional response services for your home or
+              business alarm system.
             </p>
-            <p className="text-md text-white pb-2">
-              To keep you informed about the security of your asset &/or
-              business our team of Security Officers are trained to provide
-              accurate and timely reports. Alarms are a cornerstone of ensuring
-              your peace of mind when away from your asset. Our drivers will
-              action an alarm immediately providing response in accordance with
-              AS/NZS 4421:2011, and we will tailor a solution that is suitable
-              for your requirements.
+            <p className="text-md text-white pb-4">
+              For businesses and homes that do not currently have an alarm
+              system installed, or where a system upgrade is required, we can
+              provide a complete security package which includes procuring,
+              installing, monitoring and responding to your alarm system. Please
+              see our <Link to="/services/technical-services" className="text-kss-text-dark underline hover:text-white">Technical Services</Link> page for more information.
             </p>
-            <p className="text-md text-white pb-2">
-              Duress Response is also tailored to suit a variety of clients,
-              with our officers trained in stand-alone and team responses,
-              offering services to businesses and individuals. Business is
-              offered the assistance of a security officer in a confronting
-              situation, non-compliant customer or even a disgruntled employee.
-              Individuals can choose from a range of services including
-              residential response to medical responses, our team are qualified
-              to provide a variety of services as required.
+            <p className="text-md text-white pb-4">
+              Alongside our physical attendance at any alarm or duress response,
+              we ensure that each attendance is documented and reported for
+              later follow up, and that pre-approved action patterns are
+              followed to ensure that any issues are escalated as required.
             </p>
-            <p className="text-md text-white pb-2">
-              All services are documented and reporting available, compliance
-              for incident reports to be written and reviewed by our senior
-              officers.
+            <p className="text-md text-white pb-4">
+              We will work with you to determine the most appropriate action
+              patterns for your site, which may involve contacting designated
+              staff out-of-hours, providing less urgent reports via phone or
+              email during business hours, or providing electronic attendance
+              reports on a daily, weekly or monthly basis.
             </p>
-            <p className="text-md text-white pb-2">
-              Please use our contact page if you are interested in seeking out
-              more information about the services we can deliver.
+            <p className="text-md text-white pb-4">
+              Our security officers are also trained to identify patterns of
+              false alarms and suspected technical issues and provide this
+              feedback to management. Our management team can then notify you of
+              any these issues, take action (on your instructions) to assess and
+              rectify any issues, and ultimately ensure that your security
+              system fully functional and not incurring excessive costs for
+              false alarm attendances.
             </p>
           </div>
         </div>

@@ -174,7 +174,7 @@ const Footer = () => {
         </Dialog>
       </Transition.Root>
 
-      <section className="bg-gradient-to-b from-[#002034] to-[#03070a] overflow-x-hidden pt-8">
+      <section className="bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden pt-8">
         <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-7xl mx-auto py-8">
           <Link to="/" className="flex gap-2 justify-center lg:justify-start">
             <StaticImage
@@ -252,18 +252,18 @@ const Footer = () => {
             <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
               GPO Box 550, HOBART 7001
             </Link>
-            <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <a href="tel:0408303603" target="blank" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Phone: 0408 303 603
-            </Link>
-            <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
+            </a>
+            <a href="mailto:info@kevlarsecuritysolutions.com.au" target="blank" className="text-kss-text-dark hover:text-white text-sm pb-2">
               Email: info@kevlarsecuritysolutions.com.au
-            </Link>
+            </a>
           </div>
         </div>
         <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl border-t border-gray-50/40 ">
           <div class="mt-2 md:mt-0 md:order-1">
             <p class="text-xs py-2 tracking-tight text-kss-text-dark">
-              &copy; 2022 Kevlar Security Solutions Pty Ltd. All rights
+              &copy; 2023 Kevlar Security Solutions Pty Ltd. All rights
               reserved. | Master Licence No. 19859 | ABN:{" "}
               <a
                 className="hover:underline"

@@ -45,7 +45,7 @@ const NewClientsBar = () => {
     ],
   };
   return (
-    <section className="bg-white py-6 relative overflow-hidden">
+    <section className="bg-[#f6f6f6] py-6 relative overflow-hidden" id="clients">
       <div className="hidden xl:block absolute -left-[650px] -bottom-[375px]">
         <svg
           className=""
