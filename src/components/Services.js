@@ -229,7 +229,7 @@ const Services = () => {
                 y2="-0.000244141"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#03070A" />
+                <stop stop-color="#020b12" />
                 <stop offset="1" stop-color="#03070A" />
               </linearGradient>
             </defs>
