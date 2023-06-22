@@ -201,10 +201,10 @@ const Footer = () => {
                 Services
               </AnchorLink>
               <AnchorLink
-                to="/#clients"
+                to="/company"
                 className="text-kss-text-dark hover:text-white text-sm pb-2"
               >
-                Clients
+                Company
               </AnchorLink>
               <button
                 onClick={() => setOpen(true)}
