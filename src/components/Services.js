@@ -249,7 +249,7 @@ const Services = () => {
               <ul className="text-lg text-white py-4 pb-8 list-disc pl-4 lg:pl-8">
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/security-patrols"
                   >
                     Vehicle-based security patrols
@@ -257,7 +257,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/alarm-response"
                   >
                     24 hour alarm / duress response
@@ -265,7 +265,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/static-guards"
                   >
                     Static guards
@@ -273,7 +273,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/crowd-control"
                   >
                     Event security
@@ -281,7 +281,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/concierge-and-site-entry-officers"
                   >
                     Concierge guard services
@@ -289,7 +289,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/risk-assessments"
                   >
                     Risk assessments
@@ -297,7 +297,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/cash-in-transit"
                   >
                     Armed and unarmed cash-in-transit services
@@ -305,7 +305,7 @@ const Services = () => {
                 </li>
                 <li className="py-1">
                   <Link
-                    className="text-kss-text-dark hover:underline"
+                    className="text-white hover:underline"
                     to="/services/technical-services"
                   >
                     Automatic Teller Machine first line response and maintenance

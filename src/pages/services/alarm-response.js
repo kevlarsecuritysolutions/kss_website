@@ -26,6 +26,16 @@ const AlarmResponse = () => {
               response services at more than 5000 sites throughout Tasmania.
             </p>
             <p className="text-md text-white pb-4">
+              Our large vehicle-based security patrol operation enables us to
+              provide the fastest possible alarm response timeframes to every
+              corner of the greater Hobart area, and to accommodate for
+              long-range alarm attendances without impacting service provision
+              for other clients. We also have a multi-layered on-call management
+              structure which ensures that even the most complex issues are
+              handled by suitably qualified and experienced security personnel
+              24 hours per day, 365 days per year.
+            </p>
+            <p className="text-md text-white pb-4">
               With up to eight security response vehicles operating at any one
               time, we are able to respond to any incidents in a timely manner
               and in compliance with the Australian Standard for alarm response
@@ -69,7 +79,14 @@ const AlarmResponse = () => {
               system installed, or where a system upgrade is required, we can
               provide a complete security package which includes procuring,
               installing, monitoring and responding to your alarm system. Please
-              see our <Link to="/services/technical-services" className="text-kss-text-dark underline hover:text-white">Technical Services</Link> page for more information.
+              see our{" "}
+              <Link
+                to="/services/technical-services"
+                className="text-kss-text-dark underline hover:text-white"
+              >
+                Technical Services
+              </Link>{" "}
+              page for more information.
             </p>
             <p className="text-md text-white pb-4">
               Alongside our physical attendance at any alarm or duress response,

@@ -68,6 +68,7 @@ const SiteEntry = () => {
             </div>
           </div>
           <div className="hidden lg:block relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7F36QEDok9yBSQVkoTbAek/d39ebe2bc0ab2ad7374dccbefc09c932/kss_website2022-55.jpg"
@@ -78,7 +79,7 @@ const SiteEntry = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="mx-4 lg:mx-0 relative aspect-video lg:aspect-auto">
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/fak4CdMb7aFraHvA4ogbw/6c54e62dee26beda24ad0c32f91e6d10/kss_website2022-96.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
               className="!object-cover !absolute !inset-0"
             />
           </div>

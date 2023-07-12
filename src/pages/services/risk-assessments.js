@@ -22,6 +22,15 @@ const RiskAssessment = () => {
               RISK ASSESSMENTS
             </h2>
             <p className="text-md text-white pb-4">
+              Our highly qualified management team broad range of expertise
+              places us in the unique position to be able to provide
+              comprehensive risk assessments covering all aspects of government,
+              business or personal site security. Our recommendations are guided
+              by industry best-practice, extensive knowledge and experience, and
+              matters relevant to each client including budget, source of
+              technology and level of risk / protection required.
+            </p>
+            <p className="text-md text-white pb-4">
               Many businesses require risk assessments to be completed in order
               to identify security flaws, vulnerabilities, staff safety risks
               and risks to members of the public.
@@ -55,10 +64,10 @@ const RiskAssessment = () => {
             </div>
           </div>
           <div className="hidden lg:block relative">
-            {" "}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>{" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
-              className="!absolute !bottom-0"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
         </div>

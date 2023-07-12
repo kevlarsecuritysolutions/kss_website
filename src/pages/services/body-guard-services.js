@@ -22,12 +22,12 @@ const BodyGuard = () => {
               BODYGUARD SERVICES
             </h2>
             <p className="text-md text-white pb-4">
-              Close personal protection is a critical area that requires
-              meticulous planning and delicate execution. Our experienced
-              security officers utilise their extensive skills and professional
-              judgment to promote the safety of protected persons whilst also
-              remaining sensitive to the location and circumstances surrounding
-              the need for protection.
+              Our close personal protection services are provided only by our
+              most experienced professional security officers who can quickly
+              adapt and overcome unexpected issues using sound professional
+              judgement. We ensure that our bodyguarding and close personal
+              protection services are meticulously planned, discreet and
+              designed to accommodate for the individual needs of our clients.
             </p>
             <div className="flex">
               <Link

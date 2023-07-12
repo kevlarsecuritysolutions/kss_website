@@ -93,7 +93,7 @@ const NavigationLight = () => {
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
                             Stay up to date with Kevlar Security Solutions on
-                            Facebook
+                            Facebook.
                           </p>
                         </div>
                       </div>
@@ -497,7 +497,7 @@ const NavigationLight = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Work with Kevlar Form
+                                    Work with KSS
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Search positions and express your interest
@@ -537,7 +537,7 @@ const NavigationLight = () => {
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Stay up to date with Kevlar Security
-                                    Solutions on Facebook
+                                    Solutions on Facebook.
                                   </p>
                                 </div>
                               </a>
@@ -1094,13 +1094,13 @@ const NavigationLight = () => {
                                             <p className="text-kss-text text-sm">
                                               Proudly Tasmanian owned and
                                               operated, specialising in the
-                                              provision of physical security
-                                              services.
+                                              provision of physical and
+                                              technical security services
                                             </p>
                                           </div>
                                         </Link>
-                                        <Link
-                                          to="/company"
+                                        <AnchorLink
+                                          to="/company/#environment"
                                           className="flex gap-4 group"
                                         >
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
@@ -1111,10 +1111,10 @@ const NavigationLight = () => {
                                             <p className="text-kss-text text-sm">
                                               We are committed to reducing our
                                               impact on the environment and
-                                              climate wherever possible.
+                                              climate.
                                             </p>
                                           </div>
-                                        </Link>
+                                        </AnchorLink>
                                       </div>
                                       <div className="flex flex-col justify-between">
                                         <Link
@@ -1133,9 +1133,9 @@ const NavigationLight = () => {
                                               </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
-                                              KSS are your Tassie owned and
+                                              KSS are your Tasmanian owned and
                                               operated security service
-                                              professionals
+                                              specialists
                                             </p>
                                           </div>
                                         </Link>
@@ -1261,7 +1261,7 @@ const NavigationLight = () => {
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Work With Kevlar
+                                              Work With KSS
                                             </h4>
                                             <p className="text-kss-text text-sm">
                                               Search positions and express your
@@ -1303,7 +1303,7 @@ const NavigationLight = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
@@ -1326,7 +1326,7 @@ const NavigationLight = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"

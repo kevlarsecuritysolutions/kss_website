@@ -44,7 +44,7 @@ const EmploymentInformation = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
-              CAREERS WITH KEVLAR
+              CAREERS WITH KSS
             </h2>
             <p className="text-md text-white pb-4">
               We believe that the key to providing exceptional security services
@@ -79,13 +79,6 @@ const EmploymentInformation = () => {
               our employees’ desire to engage in ongoing training and
               professional development.
             </p>
-            <p className="text-md text-white pb-4">
-              Our industry-leading use of technology, including secure
-              tablet-based information storage, GPS tracking, and our own
-              customised technology systems, demonstrates our commitment to
-              using the latest and best practice protocols in our operations and
-              services, and in our advice and recommendations to our clients.
-            </p>
           </div>
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
@@ -104,17 +97,17 @@ const EmploymentInformation = () => {
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-8">
             <h2 className="text-white font-bold text-3xl pb-8">
-              INTERESTED IN JOINING THE KEVLAR TEAM?
+              INTERESTED IN JOINING OUR TEAM?
             </h2>
             <p className="text-md text-white pb-4">
               Use the link below to search available positions and to register
               your interest in joining the KSS team.
             </p>
-            <div className="flex justify-center items-center max-w-lg mx-auto pt-24 items-center">
-              <div className="w-24">
+            <div className="flex items-center max-w-lg pt-20 items-center">
+              <Link to="/employment/expression-of-interest" className="w-24">
                 <StaticImage src="../../assets/images/employment-icon.png" className="object-fit"/>
-              </div>
-              <div className="!h-36 !w-[1px] !bg-white !mx-20 "></div>
+              </Link>
+              <div className="!h-36 !w-[2px] !bg-white !mx-20 "></div>
               <Link
                 to="/employment/expression-of-interest"
                 className="flex gap-2 items-center bg-transparent hover:bg-white hover:text-black border-white border transition text-white text-sm h-12 w-48 px-4 justify-center"

@@ -87,7 +87,7 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
+                      <div className=" w-full flex items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
                       </div>
                       <div className="">
@@ -100,7 +100,7 @@ const Navigation = () => {
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
                             Stay up to date with Kevlar Security Solutions on
-                            Facebook
+                            Facebook.
                           </p>
                         </div>
                       </div>
@@ -111,8 +111,12 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" />
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -136,8 +140,12 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" />
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -161,8 +169,12 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" />
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -185,8 +197,12 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" />
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -211,8 +227,12 @@ const Navigation = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" />
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -510,7 +530,7 @@ const Navigation = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Work with Kevlar Form
+                                    Work with KSS
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Search positions and express your interest
@@ -550,7 +570,7 @@ const Navigation = () => {
                                   </h4>
                                   <p className="text-kss-text text-md">
                                     Stay up to date with Kevlar Security
-                                    Solutions on Facebook
+                                    Solutions on Facebook.
                                   </p>
                                 </div>
                               </a>
@@ -1023,13 +1043,13 @@ const Navigation = () => {
                                             <p className="text-kss-text text-sm">
                                               Proudly Tasmanian owned and
                                               operated, specialising in the
-                                              provision of physical security
-                                              services.
+                                              provision of physical and
+                                              technical security services
                                             </p>
                                           </div>
                                         </Link>
-                                        <Link
-                                          to="/company"
+                                        <AnchorLink
+                                          to="/company/#environment"
                                           className="flex gap-4 group"
                                         >
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
@@ -1040,10 +1060,10 @@ const Navigation = () => {
                                             <p className="text-kss-text text-sm">
                                               We are committed to reducing our
                                               impact on the environment and
-                                              climate wherever possible.
+                                              climate.
                                             </p>
                                           </div>
-                                        </Link>
+                                        </AnchorLink>
                                       </div>
                                       <div className="flex flex-col justify-between">
                                         <Link
@@ -1062,9 +1082,9 @@ const Navigation = () => {
                                               </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
-                                              KSS are your Tassie owned and
+                                              KSS are your Tasmanian owned and
                                               operated security service
-                                              professionals
+                                              specialists
                                             </p>
                                           </div>
                                         </Link>
@@ -1190,7 +1210,7 @@ const Navigation = () => {
                                           <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                           <div className="flex flex-col">
                                             <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Work With Kevlar
+                                              Work With KSS
                                             </h4>
                                             <p className="text-kss-text text-sm">
                                               Search positions and express your
@@ -1232,7 +1252,7 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
@@ -1255,7 +1275,7 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"

@@ -11,11 +11,10 @@ import SEO from "../components/Seo";
 const Company = () => {
   return (
     <Layout>
-      <SEO title="Company Information" slug="/company" />
+      <SEO title="Company" slug="/company" />
 
       <section
         className="bg-gradient-to-bl from-[#002034] to-black"
-        id="environment"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
@@ -23,10 +22,12 @@ const Company = () => {
               COMPANY PROFILE
             </h2>
             <p className="text-md text-white pb-4">
-              Kevlar Security Solutions is a proudly Tasmanian owned and
-              operated company specialising in the provision of physical
-              security services, including concierge, security patrol, alarm
-              response, alarm system monitoring and static guard services.
+              <strong>Kevlar Security Solutions</strong> is a proudly Tasmanian
+              owned and operated company specialising in the provision of
+              physical and technical security services including vehicle-based
+              patrol and alarm response, static and event security officers, and
+              technical installations for homes and large multi-site
+              enterprises.
             </p>
             <p className="text-md text-white pb-4">
               We have built a strong reputation as one of Tasmania’s most
@@ -84,7 +85,7 @@ const Company = () => {
               objectPosition="50% 75%"
             />
           </div>
-          <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
+          <div className="bg-gradient-to-bl from-[#A8CE00] to-[#03070A] px-4 lg:pl-24 lg:pr-24 pt-24 pb-24" id="environment">
             <h2 className="text-white font-bold text-3xl pb-8">
               KEVLAR'S COMMITMENT TO THE ENVIRONMENT
             </h2>
@@ -102,7 +103,7 @@ const Company = () => {
               environment and climate as much as possible, and have taken the
               following steps to achieve this:
             </p>
-            <div className="max-w-xl mx-auto pt-4 px-4">
+            <div className="max-w-xl mx-auto pt-4">
               <div className="relative border border-white py-8 pl-12 bg-[#516400]">
                 <div className="bg-white rounded-full absolute w-12 bottom-4 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />

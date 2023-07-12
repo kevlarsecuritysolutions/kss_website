@@ -62,7 +62,7 @@ const Contact = () => {
                   </a>
                 </dd>
               </div>
-              <div className="mt-3">
+              <div className="mt-6">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <Email
@@ -199,7 +199,7 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Brief description of services
+                    Brief description of your enquiry
                   </label>
                   <div className="mt-1">
                     <textarea

@@ -54,10 +54,10 @@ const Form = () => {
         <section className="bg-gray-100 pb-12">
           <div className="max-w-5xl mx-auto pt-24 pb-12 px-4">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-12 pb-4">
-              Join the Kevlar Team
+              Join the KSS Team
             </h2>
             <p className="mt-4 text-lg leading-6 text-gray-500">
-              We are always on the look out for the newest members of the team.
+              We are always on the lookout for new members to join the KSS team
             </p>
             <p className="mt-4 text-lg leading-6 text-gray-500">
               Complete all required fields below and we will contact you should
@@ -254,7 +254,7 @@ const Form = () => {
                 <div className="pt-8">
                   <div>
                     <h3 className="text-xl font-semibold leading-6 text-gray-900 pb-4">
-                      Credentials / Certifications
+                      Experience / Qualifications
                     </h3>
                   </div>
                   <div className="sm:col-span-6">
@@ -262,7 +262,7 @@ const Form = () => {
                       htmlFor="cover-photo"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Upload your current CV
+                      Upload your current CV and copies of your qualifications
                     </label>
                     {file ? (
                       <div>
@@ -286,7 +286,6 @@ const Form = () => {
                               type="file"
                               className="sr-only"
                               onChange={handleFileChange}
-                              
                             />
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
@@ -380,7 +379,25 @@ const Form = () => {
                         <option>Yes</option>
                         <option>No</option>
                       </select>
-                      {noCert ? <div  className="pt-2"><p className="text-red-500">To Work in the security Industry a Security Licence is required. Please see <a href="https://asset-training.com.au/" className="underline hover:opacity-75" target='blank'>this link</a> to engage a local training provider</p></div> : <></>}
+                      {noCert ? (
+                        <div className="pt-2">
+                          <p className="text-red-500">
+                            To work in the security industry, you must complete
+                            a Certificate II in Security Operations and obtain a
+                            Security Licence. Please visit{" "}
+                            <a
+                              href="https://asset-training.com.au/"
+                              className="underline hover:opacity-75"
+                              target="blank"
+                            >
+                              this link
+                            </a>{" "}
+                            to engage a local training provider
+                          </p>
+                        </div>
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   </div>
                   <div className="mt-6">
@@ -407,7 +424,7 @@ const Form = () => {
                               htmlFor="drivers-licence"
                               className="font-medium text-gray-700"
                             >
-                              Active Drivers License
+                              Current Drivers License
                             </label>
                           </div>
                         </div>
@@ -425,7 +442,7 @@ const Form = () => {
                               htmlFor="white-card"
                               className="font-medium text-gray-700"
                             >
-                              White Card in Construction
+                              Construction White Card
                             </label>
                           </div>
                         </div>
@@ -479,7 +496,7 @@ const Form = () => {
                               htmlFor="firearms-licence"
                               className="font-medium text-gray-700"
                             >
-                              Firearms License
+                              Firearms Licence
                             </label>
                           </div>
                         </div>
@@ -490,7 +507,7 @@ const Form = () => {
                         Additional Information
                       </legend>
                       <p className="mt-4 text-lg leading-6 text-gray-500 mb-4">
-                        Please include additional qualifications/ training that
+                        Please include additional qualifications / training that
                         you have completed that may be relevant to the position
                       </p>
                       <div className="sm:col-span-4">
@@ -580,7 +597,7 @@ const Form = () => {
                     <button
                       type="submit"
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-                      disabled= {noCert}
+                      disabled={noCert}
                     >
                       Submit
                     </button>

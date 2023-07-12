@@ -22,6 +22,14 @@ const StaticGuards = () => {
               STATIC GUARDS
             </h2>
             <p className="text-md text-white pb-4">
+              Our static guards are highly trained with a particular focus on
+              verbal de-escalation, customer service and threat detection
+              skills. This diverse skillset ensures that our static guards can
+              assist in a variety of roles including overnight asset protection,
+              retail theft deterrence and sensitive events such as employment
+              terminations or community consultation meetings.
+            </p>
+            <p className="text-md text-white pb-4">
               Our static guard services are highly flexible and can be utilised
               by government, business and individuals in a range of
               circumstances. The most common types of services that we provide
@@ -42,7 +50,9 @@ const StaticGuards = () => {
               </li>
             </ul>
             <p className="text-md text-white pb-4">
-              Learn more about our static guard services below or contact us to find out which of our services would best suit your security needs. 
+              Learn more about our static guard services below or contact us to
+              find out which of our services would best suit your security
+              needs.
             </p>
             <div className="flex">
               <Link
@@ -131,7 +141,7 @@ const StaticGuards = () => {
                 </p>
               </li>
             </ul>
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            {/* <h3 className="text-white text-xl font-semibold pt-2 pb-2">
               Staff Safety
             </h3>
             <p className="text-md text-white pb-2">
@@ -142,7 +152,7 @@ const StaticGuards = () => {
               overnight asset protection, and situations where tension and
               conflict may arise such as employment terminations or community
               consultation meetings.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>

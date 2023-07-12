@@ -22,9 +22,12 @@ const TechnicalServices = () => {
               TECHNICAL SERVICES
             </h2>
             <p className="text-md text-white pb-4">
-              We have experience in Alarm Monitoring, Installation, Servicing &
-              Repair, Structured Data Networking, Access Control Solutions,
-              Upgrade and Integrations and CCTV Installations.
+              We are a trusted provider of specialist technical security
+              services for business, government and individual clients
+              throughout Tasmania. We pride ourselves on our ability to provide
+              innovative and tailored technical security solutions incorporating
+              the latest technological advancements and best-practice system
+              design, delivery and maintenance services.
             </p>
             <div className="flex">
               <Link
@@ -37,6 +40,7 @@ const TechnicalServices = () => {
             </div>
           </div>
           <div className="hidden lg:block relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 z-10"></div>
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/g7aewvLNihfNqjmqzVcAe/08c8279d7dc1c3f4ffd5aae8d01b6081/kss_website2022-44.jpg"
@@ -79,7 +83,7 @@ const TechnicalServices = () => {
               wholesalers enabling us to source any Australian approved alarm
               system or component. We also stock some of the most popular brands
               and models of security alarm systems (including Integriti, Hills,
-              Inception, TCOM), meaning that we can install or replace alarm
+              Inception and TCOM), meaning that we can install or replace alarm
               systems quickly and easily in an emergency.
             </p>
             <p className="text-md text-white pb-2">
@@ -196,7 +200,7 @@ const TechnicalServices = () => {
             </p>
             <p className="text-md text-white pb-2">
               We also offer a wide range of video intercom solutions for
-              building entry and Site Access requirements
+              building entry and site access requirements
             </p>
           </div>
         </div>

@@ -22,15 +22,13 @@ const CrowdControl = () => {
               CROWD CONTROL / EVENT SECURITY
             </h2>
             <p className="text-md text-white">
-              We have significant experience in providing crowd control and
-              related security services for a wide range of events and venues
-              including large scale multi-day public events, high profile and
-              high risk events, concerts and sporting events, events at pubs and
-              clubs and private functions.
-            </p>
-            <p className="text-md text-white">
-              Our experienced team can assist you with every stage of your next
-              event.
+              We have a highly experienced team of crowd control and event
+              security officers, supervisors and managers who specialise in
+              providing security services at a range of events and venues. Our
+              team regularly works with law enforcement, government agencies and
+              event managers to provide advice and expertise in the planning and
+              execution of large scale multi-day public events, high profile and
+              high risk events, and concerts and sporting events.
             </p>
             <div className="flex">
               <Link

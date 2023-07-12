@@ -37,8 +37,13 @@ const Footer = () => {
               >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl sm:p-6">
                   <div className="grid grid-cols-2 gap-4">
-                    <a href="https://www.facebook.com/ksshobart/" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
+                    <a
+                      href="https://www.facebook.com/ksshobart/"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" w-full flex items-center justify-center">
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
                       </div>
                       <div className="">
@@ -51,33 +56,52 @@ const Footer = () => {
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
                             Stay up to date with Kevlar Security Solutions on
-                            Facebook
+                            Facebook.
                           </p>
                         </div>
                       </div>
                     </a>
-                    <a href="http://securityalarmshobart.com.au/" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/5QirSErq7Qv3NxHN3O3Hkk/614c37b52766e2e9dc33b6fa315cdf7b/golden-electronics.png" />
+                    <a
+                      href="https://asset-training.com.au/"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
                           as="h3"
                           className="text-lg font-medium leading-6 text-gray-900"
                         >
-                          Golden Electronics
+                          Asset Training
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            Golden Electronics is Tasmania's longest established
-                            A grade ASIAL accredited monitoring centre.
+                            Asset Training is committed to providing nationally
+                            recognised, contemporary and industry-led training
+                            to our Tasmanian community and beyond.
                           </p>
                         </div>
                       </div>
                     </a>
-                    <a href="https://www.asial.com.au/" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" />
+                    <a
+                      href="https://www.asial.com.au/"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -95,9 +119,18 @@ const Footer = () => {
                       </div>
                     </a>
 
-                    <a href="https://carbonneutral.com.au/" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" />
+                    <a
+                      href="https://carbonneutral.com.au/"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -114,9 +147,18 @@ const Footer = () => {
                         </div>
                       </div>
                     </a>
-                    <a href="https://crimestoppers.com.au/" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" />
+                    <a
+                      href="https://crimestoppers.com.au/"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -135,9 +177,18 @@ const Footer = () => {
                         </div>
                       </div>
                     </a>
-                    <a href="https://www.facebook.com/Tas.Police" target="blank" className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300">
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" />
+                    <a
+                      href="https://www.facebook.com/Tas.Police"
+                      target="blank"
+                      className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
+                      loading="eager"
+                    >
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -175,7 +226,7 @@ const Footer = () => {
       </Transition.Root>
 
       <section className="bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden pt-8">
-        <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-7xl mx-auto py-8">
+        <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto py-8">
           <Link to="/" className="flex gap-2 justify-center lg:justify-start">
             <StaticImage
               src="../assets/images/kss-logo-white.png"
@@ -245,22 +296,30 @@ const Footer = () => {
           <div className="flex justify-center hidden lg:flex">
             <StaticImage
               src="../assets/images/accreditations-color.png"
-              className="!w-60 !h-10"
+              className="!w-80 !h-14"
             />
           </div>
           <div className="hidden lg:flex flex flex-col">
             <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
               GPO Box 550, HOBART 7001
             </Link>
-            <a href="tel:0408303603" target="blank" className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <a
+              href="tel:0408303603"
+              target="blank"
+              className="text-kss-text-dark hover:text-white text-sm pb-2"
+            >
               Phone: 0408 303 603
             </a>
-            <a href="mailto:info@kevlarsecuritysolutions.com.au" target="blank" className="text-kss-text-dark hover:text-white text-sm pb-2">
+            <a
+              href="mailto:info@kevlarsecuritysolutions.com.au"
+              target="blank"
+              className="text-kss-text-dark hover:text-white text-sm pb-2"
+            >
               Email: info@kevlarsecuritysolutions.com.au
             </a>
           </div>
         </div>
-        <div className=" flex items-center mx-4 lg:mx-auto max-w-7xl border-t border-gray-50/40 ">
+        <div className=" flex items-center mx-4 lg:mx-auto max-w-screen-2xl border-t border-gray-50/40 ">
           <div class="mt-2 md:mt-0 md:order-1">
             <p class="text-xs py-2 tracking-tight text-kss-text-dark">
               &copy; 2023 Kevlar Security Solutions Pty Ltd. All rights

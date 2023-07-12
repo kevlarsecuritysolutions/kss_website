@@ -30,10 +30,10 @@ const SecurityPatrols = () => {
               individual client’s security needs.
             </p>
             <p className="text-md text-white pb-2">
-              We tailor our contract durations, and the day(s), times and types
+              We tailor our contract durations and the day(s), times and types
               of services we provide to suit each client's needs. For example,
               our services can be provided on an ongoing basis, or for a
-              specific period of time only, such as a set number of days during
+              specific period of time only - such as a set number of days during
               the Christmas / New Year break, or during a family holiday.
             </p>
             <p className="text-md text-white pb-2">
@@ -95,13 +95,10 @@ const SecurityPatrols = () => {
             Our high-visibility and randomly timed night-time patrols provide a deterrent for would-be lawbreakers and loiterers, and can also provide regular checks to ensure that buildings, infrastructure and property remains secure during the night.
             </p>
             <p className="text-md text-white pb-2">
-            We also provide and install high-visibility signage free of charge to all of our clients, providing a constant visual deterrent, and displaying our 24 hour response number to enable members of the public to report any suspicious activities.
+            We also provide and install high-visibility signage free of charge for all our clients. Our signage provides a constant visual deterrent and displays our 24 hour response number to enable members of the public to report any suspicious activities. 
             </p>
             <p className="text-md text-white pb-2">
-            The work that we do during our night time patrols can be tailored to each business’ individual security needs and concerns.
-            </p>
-            <p className="text-md text-white pb-2">
-            The timing of our patrols can be completely random, randomly timed within set time spans (e.g. completed at any time between 1:00am and 4:00am), or during specific timeframes each night.
+            The work that we do during our night time patrols and the timing of patrols can be tailored to each business’ individual security needs and concerns. Our services can include full internal site walk throughs, external visual checks and physical access point checks, and patrols can be completed at set times, random times, or between a set window (e.g. between 1am and 4am). 
             </p>
             <h2 className="text-white font-bold text-lg pb-2 pt-8">
               We can also provide the following compliance and reporting options
