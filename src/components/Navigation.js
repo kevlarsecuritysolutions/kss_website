@@ -1098,7 +1098,7 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7oBsXku2unNUJNZCGnbh3l/be1c669d78ab1de0c937796393699570/kss_website2022-110.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/ldwIjC787tH8viiAMEEDe/2e97a4a884753ecba3e7d9eaeece98ae/kss_website2022-151.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
@@ -1108,6 +1108,7 @@ const Navigation = () => {
                                             <p className="text-kss-text text-sm">
                                               Our fleet of security patrol
                                               vehicles are 100% carbon neutral
+                                              via carbon offsets.
                                             </p>
                                           </div>
                                         </Link>
@@ -1129,8 +1130,9 @@ const Navigation = () => {
                                               </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
-                                              Currently servicing more than 1800
-                                              sites across Tasmania.
+                                              Currently servicing more than 3000
+                                              sites for 300 clients across
+                                              Tasmania.
                                             </p>
                                           </div>
                                         </Link>
@@ -1228,7 +1230,7 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/5lKSBZF68FWUafuPhRBJ3h/b014ee488693b0da60f12f3ffc095109/kss_website2022-149.jpg"
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
@@ -1275,8 +1277,8 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3PVbzHry1cedjGMuqRYwcZ/de8a0e5dc6d0be043f1fe02ccef6785a/kss_website2022-54.jpg"
-                                                  className="!w-full !absolute !bottom-0"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/3TgYgiJQgqqWj4TYMNxUZa/a15177b7e3fd64e8aa1aac4cb8885f7f/kss_website2022-148.jpg"
+                                                  className="!w-full !absolute !-bottom-16"
                                                   objectFit="scale-down"
                                                   loading="eager"
                                                 />

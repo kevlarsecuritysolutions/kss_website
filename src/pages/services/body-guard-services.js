@@ -40,9 +40,10 @@ const BodyGuard = () => {
             </div>
           </div>
           <div className="hidden lg:block relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
             {" "}
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1JX6LQAEqp0YkkGwoRwNEn/604a6eeef7e481b490b60982dd89dbe9/AdobeStock_171861728.jpeg"
               className="!absolute !bottom-0"
               objectPosition="50% 40%"
             />

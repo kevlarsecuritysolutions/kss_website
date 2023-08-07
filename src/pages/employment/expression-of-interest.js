@@ -384,15 +384,14 @@ const Form = () => {
                           <p className="text-red-500">
                             To work in the security industry, you must complete
                             a Certificate II in Security Operations and obtain a
-                            Security Licence. Please visit{" "}
+                            Security Licence. KSS Recommends{" "}
                             <a
                               href="https://asset-training.com.au/"
                               className="underline hover:opacity-75"
                               target="blank"
                             >
-                              this link
+                              Asset Training
                             </a>{" "}
-                            to engage a local training provider
                           </p>
                         </div>
                       ) : (
@@ -496,7 +495,7 @@ const Form = () => {
                               htmlFor="firearms-licence"
                               className="font-medium text-gray-700"
                             >
-                              Firearms Licence
+                              Security Firearms Licence
                             </label>
                           </div>
                         </div>

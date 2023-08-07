@@ -256,11 +256,11 @@ const NewClientsBar = () => {
                 loading="eager"
               />
             </div>
-            <div className="px-6  flex justify-center items-center h-36 w-36 relative">
+            <div className="px-6 flex justify-center items-center h-36 w-36 relative">
               <StaticImage
                 className=""
-                src="https://images.ctfassets.net/lfrbwr0lmnkj/79bLyCzUD0boZUHQP6B7Ih/95e88bbab4f5167c27d6b8b3afb4f471/Hutchinson.png"
-                alt="Hutchinson Builders"
+                src="https://images.ctfassets.net/lfrbwr0lmnkj/6NhghJyNzAP06LbVBaqKes/8aac53a50649d941b96ba2bfbe55e3c9/Hutchinson.png"
+                alt="Hutchinson"
                 loading="eager"
               />
             </div>

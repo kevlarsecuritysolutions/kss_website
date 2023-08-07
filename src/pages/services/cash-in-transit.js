@@ -63,6 +63,7 @@ const ArmedCash = () => {
             </div>
           </div>
           <div className="hidden lg:block relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
             {" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/2fUxlGvGXIsFuOPs5LRSdr/23b3d37b343e97d2f48ffab099cd42f7/kss_website2022-85.jpg"

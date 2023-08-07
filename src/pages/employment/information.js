@@ -81,17 +81,18 @@ const EmploymentInformation = () => {
             </p>
           </div>
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/Y3C1W7kZUmJJ28ZBCaAzU/bf6e31299bbf5f7ff61368ab05e8a83c/kss_website2022-183.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/1jASCyhnGjgyOmdOBYSh1H/ebbf2fb4d4b39a61f742369e00c83610/kss_website2022-115.jpg"
               className="!object-cover !absolute !inset-0"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="hidden lg:block">
+        <div className="mx-4 lg:mx-0 relative aspect-video lg:aspect-auto overflow-hidden">
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XArIvIszZ9ijW2aTIbdmX/20735b6ef60f32cc2f36e3c0a25c7f82/kss_website2022-170.jpg"
-              className=""
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
+              className="!absolute !-bottom-12"
             />
           </div>
 

@@ -175,7 +175,7 @@ const BackToTopBtn = () => {
                             htmlFor="message"
                             className="block text-sm font-medium text-kss-text"
                           >
-                            Brief description of required services:
+                            Brief description of your enquiry:
                           </label>
                           <div className="mt-1">
                             <textarea

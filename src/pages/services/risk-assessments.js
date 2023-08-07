@@ -74,7 +74,7 @@ const RiskAssessment = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="relative aspect-video lg:aspect-auto mx-4 lg:mx-0">
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/3XMf968JXrYhnAHmvvkI0q/ca1384e267d431e923273fe56b411b5a/kss_website2022-50.jpg"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
               className="!object-cover !absolute !inset-0"
             />
           </div>

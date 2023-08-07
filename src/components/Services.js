@@ -237,6 +237,79 @@ const Services = () => {
         </div>
         <div className="py-12 lg:py-24 relative z-10">
           <div className=" max-w-7xl mx-auto grid grid-cols-1 px-4">
+            <div className="max-w-7xl px-4 pb-24 lg:pb-32 mx-auto relative z-10">
+              <p className="text-lg lg:text-2xl text-white pb-6 lg:pb-12 font-semibold">
+                We work closely with the Tasmanian Government to provide leading
+                security services to the following departments
+              </p>
+              <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-center">
+                <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
+                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" />
+                </div>
+                <div className="lg:hidden w-full pb-12 ">
+                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" />
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  <div
+                    to="/services/static-guards"
+                    className="flex gap-4 group"
+                  >
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department for Education, Children and Young People
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    to="/services/static-guards"
+                    className="flex gap-4 group"
+                  >
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department of Police, Fire & Emergency Management
+                      </h4>
+                    </div>
+                  </div>
+                  <div to="/services/site-entry" className="flex gap-4 group">
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department of Health
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    to="/services/static-guards"
+                    className="flex gap-4 group"
+                  >
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department of Parks, Wildlife and Environment
+                      </h4>
+                    </div>
+                  </div>
+                  <div to="/services/site-entry" className="flex gap-4 group">
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department of Treasury and Finance
+                      </h4>
+                    </div>
+                  </div>
+                  <div to="/services/site-entry" className="flex gap-4 group">
+                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                    <div className="flex flex-col">
+                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
+                        Department of State Growth
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="pb-24 max-w-5xl sm:text-left">
               <div className="h-1 my-4 bg-white w-12"></div>
               <h2 className="text-3xl xl:text-4xl text-white font-bold pb-8 uppercase">
@@ -366,7 +439,7 @@ const Services = () => {
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
-                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7F36QEDok9yBSQVkoTbAek/d39ebe2bc0ab2ad7374dccbefc09c932/kss_website2022-55.jpg"
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/2LIsUFugKAMq1hx6T9kUum/b5e6435f27f000b8184da1be3650ac75/kss_website2022-184.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
                 />
               </div>
@@ -591,70 +664,6 @@ const Services = () => {
                 </p>
               </div>
             </Link> */}
-          </div>
-        </div>
-        <div className="max-w-7xl px-4 pb-24 lg:pb-32 mx-auto relative z-10">
-          <p className="text-2xl text-white pb-12 font-semibold">
-            We work closely with the Tasmanian Government to provide leading
-            security services to the following departments
-          </p>
-          <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-center">
-            <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" />
-            </div>
-            <div className="lg:hidden w-full pb-12 ">
-              <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" />
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department for Education, Children and Young People
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department of Police, Fire & Emergency Management
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department of Health
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/static-guards" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department of Parks, Wildlife and Environment
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department of Treasury and Finance
-                  </h4>
-                </div>
-              </div>
-              <div to="/services/site-entry" className="flex gap-4 group">
-                <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                <div className="flex flex-col">
-                  <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                    Department of State Growth
-                  </h4>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

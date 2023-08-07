@@ -54,7 +54,7 @@ const AlarmResponse = () => {
           <div className="hidden lg:block relative">
             {" "}
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/4Wrdg0tWWOwmptxYjAKiPq/194f31f75aa596f1a57ea2e921b08439/kss_website2022-2.jpg"
+              src="https://downloads.ctfassets.net/lfrbwr0lmnkj/VZSaIjQOBjY1wQmRgmh6F/86d57c823f4cbdd3f94de9f71129e60f/kss_website_2022-70.jpg"
               className="!absolute !bottom-0 !object-cover !w-full !h-full"
               objectPosition="50% 70%"
             />

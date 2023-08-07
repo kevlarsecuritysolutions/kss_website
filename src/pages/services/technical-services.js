@@ -83,7 +83,7 @@ const TechnicalServices = () => {
               wholesalers enabling us to source any Australian approved alarm
               system or component. We also stock some of the most popular brands
               and models of security alarm systems (including Integriti, Hills,
-              Inception and TCOM), meaning that we can install or replace alarm
+              Inception and Tecom), meaning that we can install or replace alarm
               systems quickly and easily in an emergency.
             </p>
             <p className="text-md text-white pb-2">
@@ -187,7 +187,7 @@ const TechnicalServices = () => {
             <p className="text-md text-white pb-2">
               We have the expertise to install and maintain a range of access
               control systems, including from trusted brands such as Integriti,
-              Inception and TCOM. The access control systems we install can
+              Inception and Tecom. The access control systems we install can
               include a variety of standard or add-on features including
               time-based access restrictions, audit and muster reports,
               biometric authentication and NFC technologies.

@@ -23,7 +23,7 @@ const SiteEntry = () => {
             <p className="text-md text-white pb-4">
               We provide tailored concierge and site entry security services to
               accommodate for a range of site-specific requirements including
-              issuing and updating site access [cards/FOBs], greeting and
+              issuing and updating site access cards, greeting and
               assisting important guests, conducting drug and alcohol testing,
               and comprehensive record-keeping administration within proprietary
               IT systems.
@@ -71,8 +71,8 @@ const SiteEntry = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
             {" "}
             <StaticImage
-              src="https://images.ctfassets.net/lfrbwr0lmnkj/7F36QEDok9yBSQVkoTbAek/d39ebe2bc0ab2ad7374dccbefc09c932/kss_website2022-55.jpg"
-              className="!absolute !-bottom-60"
+              src="https://images.ctfassets.net/lfrbwr0lmnkj/2LIsUFugKAMq1hx6T9kUum/b5e6435f27f000b8184da1be3650ac75/kss_website2022-184.jpg"
+              className="!object-cover !absolute !inset-0"
             />
           </div>
         </div>
