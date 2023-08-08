@@ -83,9 +83,16 @@ const Footer = () => {
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            Asset Training is committed to providing nationally
-                            recognised, contemporary and industry-led training
-                            to our Tasmanian community and beyond.
+                            To work in the security industry, you must complete
+                            a Certificate II in Security Operations and obtain a
+                            Security Licence. KSS Recommends{" "}
+                            <a
+                              href="https://asset-training.com.au/"
+                              className="underline hover:opacity-75"
+                              target="blank"
+                            >
+                              Asset Training
+                            </a>{" "}
                           </p>
                         </div>
                       </div>
@@ -284,19 +291,19 @@ const Footer = () => {
               >
                 Terms & Conditions
               </a>
-              <a
+              <Link
                 target="blank"
-                href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                to="/privacy-policy"
                 className="text-kss-text-dark hover:text-white text-sm pb-2"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center hidden lg:flex">
             <StaticImage
               src="../assets/images/accreditations-color.png"
-              className="!w-80 !h-14"
+              className="!w-full !h-auto !max-h-[65px]"
             />
           </div>
           <div className="hidden lg:flex flex flex-col">

@@ -242,14 +242,14 @@ const Services = () => {
                 We work closely with the Tasmanian Government to provide leading
                 security services to the following departments
               </p>
-              <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-center">
+              <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-start lg:items-center">
                 <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
                   <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" />
                 </div>
                 <div className="lg:hidden w-full pb-12 ">
                   <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" />
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="grid justify-start grid-cols-1 lg:grid-cols-3 gap-8">
                   <div
                     to="/services/static-guards"
                     className="flex gap-4 group"
@@ -631,7 +631,7 @@ const Services = () => {
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  Our highly qualified management team broad range of expertise
+                  Our highly qualified management teams broad range of expertise
                   places us in the unique position to be able to provide
                   comprehensive risk assessments covering all aspects of
                   government, business or personal site security. Our

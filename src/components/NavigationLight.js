@@ -116,9 +116,16 @@ const NavigationLight = () => {
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            Asset Training is committed to providing nationally
-                            recognised, contemporary and industry-led training
-                            to our Tasmanian community and beyond.
+                            To work in the security industry, you must complete
+                            a Certificate II in Security Operations and obtain a
+                            Security Licence. KSS Recommends{" "}
+                            <a
+                              href="https://asset-training.com.au/"
+                              className="underline hover:opacity-75"
+                              target="blank"
+                            >
+                              Asset Training
+                            </a>{" "}
                           </p>
                         </div>
                       </div>
@@ -303,8 +310,8 @@ const NavigationLight = () => {
                                     Static Guards
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    We can provide static guards at affordable
-                                    prices for almost any purpose.
+                                    Our static guards are highly trained with a
+                                    particular focus on verbal de-escalation...
                                   </p>
                                 </div>
                               </Link>
@@ -321,8 +328,8 @@ const NavigationLight = () => {
                                     Concierge & Site Entry Officers
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    We can provide stringent access control to
-                                    your premises.
+                                    We provide tailored concierge and site entry
+                                    security services to accommodate...
                                   </p>
                                 </div>
                               </Link>
@@ -339,8 +346,8 @@ const NavigationLight = () => {
                                     Cash in Transit Services
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Our armed cash-in-transit service provides
-                                    business owners with peace of mind.
+                                    Our cash in transit services provide peace
+                                    of mind and eliminate risk...
                                   </p>
                                 </div>
                               </Link>
@@ -357,8 +364,8 @@ const NavigationLight = () => {
                                     Security Patrols
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    We have the largest security patrol car
-                                    operation in Tasmania.
+                                    We have the largest vehicle-based security
+                                    patrol operation in Tasmania...
                                   </p>
                                 </div>
                               </Link>
@@ -375,8 +382,9 @@ const NavigationLight = () => {
                                     Alarm / Duress Response
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    24 hour alarm response services for over 600
-                                    sites in Southern Tasmania.
+                                    Our large vehicle-based security patrol
+                                    operation enables us to provide the
+                                    fastest...
                                   </p>
                                 </div>
                               </Link>
@@ -393,9 +401,8 @@ const NavigationLight = () => {
                                     Crowd Control / Event Security
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    high profile and high risk events, concerts
-                                    and sporting events, events at pubs and
-                                    clubs and private functions.
+                                    We have a highly experienced team of crowd
+                                    control and event security officers...
                                   </p>
                                 </div>
                               </Link>
@@ -412,8 +419,8 @@ const NavigationLight = () => {
                                     Bodyguard Services
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Close and personal protection, asset
-                                    /valuables protection services.
+                                    Our close personal protection services are
+                                    provided only by our most experienced...
                                   </p>
                                 </div>
                               </Link>
@@ -430,9 +437,8 @@ const NavigationLight = () => {
                                     Technical Services
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Alarm monitoring, installation, servicing
-                                    and repair. Structured data networking,
-                                    access control solutions.
+                                    We are a trusted provider of specialist
+                                    technical security services for business...
                                   </p>
                                 </div>
                               </Link>
@@ -449,9 +455,9 @@ const NavigationLight = () => {
                                     Risk Assessments
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Offering thorough, affordable risk
-                                    assessments for businesses, homes,
-                                    individuals and events.
+                                    Our highly qualified management teams broad
+                                    range of expertise places us in the
+                                    unique...
                                   </p>
                                 </div>
                               </Link>
@@ -551,11 +557,18 @@ const NavigationLight = () => {
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                     Asset Training
                                   </h4>
-                                  <p className="text-kss-text text-md">
-                                    Asset Training is committed to providing
-                                    nationally recognised, contemporary and
-                                    industry-led training to our Tasmanian
-                                    community and beyond.
+                                  <p className="text-sm text-gray-500">
+                                    To work in the security industry, you must
+                                    complete a Certificate II in Security
+                                    Operations and obtain a Security Licence.
+                                    KSS Recommends{" "}
+                                    <a
+                                      href="https://asset-training.com.au/"
+                                      className="underline hover:opacity-75"
+                                      target="blank"
+                                    >
+                                      Asset Training
+                                    </a>{" "}
                                   </p>
                                 </div>
                               </a>
@@ -788,6 +801,12 @@ const NavigationLight = () => {
                           </p>
                         </div>
                       </Link>
+                      <div className="flex justify-center hidden lg:flex pl-6">
+                        <StaticImage
+                          src="../assets/images/accreditations-color.png"
+                          className="!w-52 !h-10"
+                        />
+                      </div>
                     </div>
 
                     <div className="hidden h-full lg:flex">
@@ -878,9 +897,9 @@ const NavigationLight = () => {
                                               Static Guards
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              We can provide static guards at
-                                              affordable prices for almost any
-                                              purpose.
+                                              Our static guards are highly
+                                              trained with a particular focus on
+                                              verbal de-escalation...
                                             </p>
                                           </div>
                                         </Link>
@@ -896,9 +915,9 @@ const NavigationLight = () => {
                                               Concierge & Site Entry Officers
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              Stringent access control to your
-                                              premises, whilst managing visitors
-                                              efficiently.
+                                              We provide tailored concierge and
+                                              site entry security services to
+                                              accommodate...
                                             </p>
                                           </div>
                                         </Link>
@@ -912,9 +931,9 @@ const NavigationLight = () => {
                                               Cash In Transit
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              Our armed cash-in-transit service
-                                              provides business owners with
-                                              peace of mind.
+                                              Our cash in transit services
+                                              provide peace of mind and
+                                              eliminate risk...
                                             </p>
                                           </div>
                                         </Link>
@@ -930,8 +949,9 @@ const NavigationLight = () => {
                                               Security Patrols
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              We have the largest security
-                                              patrol car operation in Tasmania.
+                                              We have the largest vehicle-based
+                                              security patrol operation in
+                                              Tasmania...
                                             </p>
                                           </div>
                                         </Link>
@@ -945,9 +965,9 @@ const NavigationLight = () => {
                                               Alarm / Duress Response
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              24 hour alarm response services
-                                              for over 600 sites in Southern
-                                              Tasmania.
+                                              Our large vehicle-based security
+                                              patrol operation enables us to
+                                              provide the fastest...
                                             </p>
                                           </div>
                                         </Link>
@@ -963,9 +983,9 @@ const NavigationLight = () => {
                                               Crowd Control / Event Security
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              High-profile and high-risk events,
-                                              concerts, sporting events, pubs,
-                                              clubs, and private functions.
+                                              We have a highly experienced team
+                                              of crowd control and event
+                                              security officers...
                                             </p>
                                           </div>
                                         </Link>
@@ -979,9 +999,9 @@ const NavigationLight = () => {
                                               Bodyguard Services
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              Providing close and personal
-                                              protection, asset / valuables
-                                              protection services.
+                                              Our close personal protection
+                                              services are provided only by our
+                                              most experienced...
                                             </p>
                                           </div>
                                         </Link>
@@ -997,9 +1017,9 @@ const NavigationLight = () => {
                                               Technical Services
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              Alarm monitoring, installation,
-                                              servicing, networking, access
-                                              control, upgrades, CCTV.
+                                              We are a trusted provider of
+                                              specialist technical security
+                                              services for business...
                                             </p>
                                           </div>
                                         </Link>
@@ -1013,9 +1033,9 @@ const NavigationLight = () => {
                                               Risk Assessments
                                             </h4>
                                             <p className="text-kss-text text-xs">
-                                              Offering thorough, affordable risk
-                                              assessments for businesses, homes,
-                                              individuals, and events.
+                                              Our highly qualified management
+                                              teams broad range of expertise
+                                              places us in the unique...
                                             </p>
                                           </div>
                                         </Link>
@@ -1182,7 +1202,7 @@ const NavigationLight = () => {
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               Currently servicing more than 3000
-                                              sites for 300 clients across
+                                              sites for over 300 clients across
                                               Tasmania.
                                             </p>
                                           </div>
