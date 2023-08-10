@@ -587,18 +587,19 @@ const NavigationLight = () => {
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                     Asset Training
                                   </h4>
-                                  <p className="text-sm text-gray-500">
+                                  <p className="text-sm text-kss-text">
                                     To work in the security industry, you must
-                                    complete a Certificate II in Security
-                                    Operations and obtain a Security Licence.
-                                    KSS Recommends{" "}
+                                    first complete a Certificate II in Security
+                                    Operations (CPPSEC20218). KSS recommends
                                     <a
                                       href="https://asset-training.com.au/"
-                                      className="underline hover:opacity-75"
+                                      className="underline hover:opacity-75 pl-1"
                                       target="blank"
                                     >
                                       Asset Training
                                     </a>{" "}
+                                    as Tasmania’s leading provider of nationally
+                                    recognised security training.
                                   </p>
                                 </div>
                               </a>

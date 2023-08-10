@@ -106,7 +106,7 @@ const SecurityPatrols = () => {
               We can also provide the following compliance and reporting options
               to our clients:
             </h2>
-            <div className="flex flex-col lg:flex-row items-center gap-12 px-4 lg:px-0 py-8">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-12 px-4 lg:px-0 py-4">
               <div className="w-32 h-32 hidden lg:block relative">
                 <StaticImage
                   src="../../assets/images/key-points-check.png"

@@ -597,7 +597,7 @@ const Navigation = () => {
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                     Asset Training
                                   </h4>
-                                  <p className="text-red-500">
+                                  <p className="text-sm text-kss-text">
                             To work in the security industry, you must first
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
