@@ -60,7 +60,7 @@ const CrowdControl = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               In the planning stage of your event, our management team can
               advise and assist you with the preparation of event security plans
               and provide a formal risk assessment where required. This includes
@@ -68,17 +68,17 @@ const CrowdControl = () => {
               matters and co-ordinating the involvement of emergency management
               and other relevant agencies.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               On the day of your event, we can provide a team of highly skilled
               staff members including security officers, first aid officers,
               traffic control officers and supervisory staff as needed.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our dedicated crowd control team completes regular in-house
               training sessions to ensure that critical skillsets are developed
               and maintained. Some of these skillsets include:
             </p>
-            <ul className="text-md pb-2 text-white list-disc pl-4">
+            <ul className="text-md pb-4 text-white list-disc pl-4">
               <li>Verbal de-escalation techniques</li>
               <li>
                 Best practice physical response techniques, including

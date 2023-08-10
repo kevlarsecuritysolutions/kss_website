@@ -52,7 +52,10 @@ const Form = () => {
   return (
     <>
       <NavigationLight />
-      <SEO title="Join the KSS Team" slug="/employment/expression-of-interest"/>
+      <SEO
+        title="Join the KSS Team"
+        slug="/employment/expression-of-interest"
+      />
       <main>
         <section className="bg-gray-100 pb-12">
           <div className="max-w-5xl mx-auto pt-24 pb-12 px-4">
@@ -283,7 +286,7 @@ const Form = () => {
                               <path fill="none" d="M0 0h24v24H0z" />
                               <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
                             </svg>
-                        
+
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
                               onClick={handleRemoveFile}
@@ -379,16 +382,18 @@ const Form = () => {
                       {noCert ? (
                         <div className="pt-2">
                           <p className="text-red-500">
-                            To work in the security industry, you must complete
-                            a Certificate II in Security Operations and obtain a
-                            Security Licence. KSS Recommends{" "}
+                            To work in the security industry, you must first
+                            complete a Certificate II in Security Operations
+                            (CPPSEC20218). KSS recommends
                             <a
                               href="https://asset-training.com.au/"
-                              className="underline hover:opacity-75"
+                              className="underline hover:opacity-75 pl-1"
                               target="blank"
                             >
                               Asset Training
-                            </a>{" "}
+                            </a> {" "}
+                            as Tasmania’s leading provider of nationally
+                            recognised security training.
                           </p>
                         </div>
                       ) : (
@@ -547,12 +552,12 @@ const Form = () => {
                     <p className="text-base text-gray-500">
                       By selecting this, you agree to the{" "}
                       <Link
-                          to="/privacy-policy"
-                          target="blank"
-                          className="font-medium text-gray-700 underline"
-                        >
-                          Privacy Policy
-                        </Link>{" "}
+                        to="/privacy-policy"
+                        target="blank"
+                        className="font-medium text-gray-700 underline"
+                      >
+                        Privacy Policy
+                      </Link>{" "}
                       and{" "}
                       <a
                         href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"

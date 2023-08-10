@@ -89,13 +89,13 @@ const AlarmSystemMonitoring = () => {
             <h2 className="text-white font-bold text-2xl pb-8 pt-8">
               The NBN and your alarm system
             </h2>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               The NBN network utilises technology that is not compatible with
               many existing alarm systems. It is therefore essential to contact
               us before moving to the NBN to check whether your existing alarm
               system can be connected through the NBN network.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               If your alarm system utilises older technology that is not
               compatible with the NBN, we can provide you with advice and
               recommendations for ensuring that your home or business remains
@@ -105,12 +105,12 @@ const AlarmSystemMonitoring = () => {
             <h2 className="text-white font-bold text-2xl pb-8 pt-8">
               4G Alarm System Installation and Upgrades
             </h2>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We can now provide our clients wit the latest 4G alarm monitoring
               technology, including Permaconn, Multipath and SCSI Direct
               Wireless 4G systems.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Contact us for a free, no obligation quote to upgrade your alarm
               system.
             </p>

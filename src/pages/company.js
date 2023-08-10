@@ -55,10 +55,10 @@ const Company = () => {
               using the latest and best practice protocols in our operations and
               services, and in our advice and recommendations to our clients.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-4">
               Acknowledgement of Country
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We acknowledge the Traditional Custodians of the land on which we
               work, the Palawa people of Lutruwita (Tasmania). We recognise and
               celebrate their deep spiritual connection to Country, and their

@@ -30,10 +30,7 @@ const StaticGuards = () => {
               terminations or community consultation meetings.
             </p>
             <p className="text-md text-white pb-4">
-              Our static guard services are highly flexible and can be utilised
-              by government, business and individuals in a range of
-              circumstances. The most common types of services that we provide
-              include:
+              Our static guard services can be utilised by government, business and individuals in a range of circumstances:
             </p>
             <ul className="text-md text-white list-disc pl-4 pb-4">
               <li>
@@ -83,10 +80,10 @@ const StaticGuards = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Loss Prevention
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Loss prevention security officers are particularly important for
               the retail sector, providing a visible deterrent for would-be
               thieves and a dedicated “observe and report” response to any
@@ -95,10 +92,10 @@ const StaticGuards = () => {
               customers, staff or our officers from having to engage in any
               physical interactions.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Overnight Property Protection
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Both businesses and individuals may encounter situations where a
               static guard is required to assist with protection of property
               where security infrastructure has been compromised. Our static
@@ -106,10 +103,10 @@ const StaticGuards = () => {
               construction sites, preventing access to unsecure buildings and
               reporting suspicious or anti-social behaviour in real-time.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Anti-social behaviour deterrence
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               There are many situations where anti-social or threatening
               behaviour may arise, and this can lead to fear and uncertainty for
               staff, customers and other members of the public. Our static
@@ -117,7 +114,7 @@ const StaticGuards = () => {
               any anti-social or threatening behaviour in a range of situations
               including:
             </p>
-            <ul className="text-md pb-2 text-white list-disc pl-4">
+            <ul className="text-md pb-4 text-white list-disc pl-4">
               <li>
                 <p>
                   Accompanying staff members to their vehicles at the end of a

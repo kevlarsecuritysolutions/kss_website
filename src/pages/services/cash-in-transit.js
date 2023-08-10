@@ -81,20 +81,20 @@ const ArmedCash = () => {
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-4">
               Overt Services
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We utilise highly visible security vehicles and uniformed security
               officers to provide overt cash transport services. Overt services
               are often preferred for cash transport services in shopping
               centres and other public places, as the visibility and attention
               acts as a strong deterrent for opportunistic thieves.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Covert Services
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Some businesses and organisations prefer to utilise covert cash
               and valuables transport services where the presence of security
               may be confronting (for example, at schools or multicultural
@@ -103,7 +103,7 @@ const ArmedCash = () => {
               for our security officers conducting covert cash and valuables
               transport services.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               In most cases, our security officers are legally required to
               display their security licence for covert cash and valuables
               transport services. In unique circumstances where the display of a
@@ -112,10 +112,10 @@ const ArmedCash = () => {
               appropriate, applying for a commissioner’s exemption to the legal
               requirement to display a security licence).
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Armed Cash Movement
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We can provide armed cash and valuables transport services to
               clients who require a strong visual security presence during the
               transport process. Our armed guards are fully qualified and

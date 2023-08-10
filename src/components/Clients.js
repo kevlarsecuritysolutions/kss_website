@@ -165,22 +165,22 @@ const Clients = () => {
               Compliance Standards
             </h2>
             <div className="max-w-5xl">
-              <p className="mt-2 text-lg text-kss-text pb-4">
+              <p className="text-lg text-kss-text pb-4">
                 Our commitment to the highest level of compliance and
                 performance is demonstrated by our ISO accreditations for
                 Quality Management Systems (ISO 9001) and Occupational Health &
                 Safety Management Systems (ISO 45001).
               </p>
-              <p className="mt-2 text-lg text-kss-text">
+              <p className="text-lg text-kss-text pb-4">
                 We are audited and assessed annually to ensure ongoing
                 compliance.
               </p>
-              <p className="mt-2 text-lg text-kss-text">
+              <p className="pb-4 text-lg text-kss-text">
                 In addition to our ISO compliances, we have voluntarily adopted
                 a variety of policies and practices to demonstrate our
                 commitment to best practice business operation, including:
               </p>
-              <ul className="py-4 text-lg text-kss-text list-disc pl-4 lg:pl-8">
+              <ul className="pb-4 text-lg text-kss-text list-disc pl-4 lg:pl-8">
                 <li className="py-1">
                   <p>Modern slavery and supply chain integrity policy</p>
                 </li>

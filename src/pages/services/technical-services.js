@@ -59,28 +59,28 @@ const TechnicalServices = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
-              Alarm System Installation, Servicing and Monitoring
+            <h3 className="text-white text-xl font-semibold pt-2 pb-4">
+              Alarm Installation and Service
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Security Alarm systems are an essential tool for detecting and
               preventing criminal activity in both commercial and residential
               properties.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               However, it can be challenging to choose the most appropriate
               alarm system, as there can be extensive variations in features,
               upgrade options, quality, manufacturing location and pricing
               between different brands and models.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our experienced security technicians have studied, installed, used
               and reviewed the latest updates for all major brands of both
               commercial and residential alarm systems, ensuring that they can
               recommend the best possible alarm system for every one of our
               clients.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We have extensive connections with electronic security system
               wholesalers enabling us to source any Australian approved alarm
               system or component. We also stock some of the most popular brands
@@ -88,7 +88,10 @@ const TechnicalServices = () => {
               Inception and Tecom), meaning that we can install or replace alarm
               systems quickly and easily in an emergency.
             </p>
-            <p className="text-md text-white pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
+              Monitoring
+            </h3>
+            <p className="text-md text-white pb-4">
               Our alarm monitoring services are provided through Golden
               Electronics which operates a Tasmanian based ASIAL accredited A
               Grade control room. The control room utilises the latest
@@ -97,21 +100,21 @@ const TechnicalServices = () => {
               verification services in addition to alarm system monitoring
               services.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               The control room also utilises a dual redundancy power failure
               protocol, ensuring that monitoring services are maintained even
               during severe weather and other critical infrastructure failure
               events.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our automated reporting can be adapted to suit the needs of our
               clients, including frequency of reports, report content and level
               of technical detail.
             </p>
-            {/* <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            {/* <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Alarm servicing and repair
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               If you are migrating your service or have been with us for years,
               we will provide an annual alarm service and all repair work to
               keep you up to date with industry best practice and Australian
@@ -119,10 +122,10 @@ const TechnicalServices = () => {
               database so that we contact you when you are due for your next
               service.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Structured Data networking
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We can design, install, upgrade, and commission all types of wired
               or wireless data networks, this includes residential commercial
               and industrial solutions to meet your business needs that conforms
@@ -132,34 +135,34 @@ const TechnicalServices = () => {
               that may be required to service your needs, please contact us for
               further information.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Access control solutions
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We have extensive experience in developing custom access control
               solutions to meet your business needs, from Automatic gates to
               Secure line for foyer entries and biometric solutions that keep
               your property secure and provide real time Status of staffing,
               contractors, and visitor logs.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Upgrades and integrations
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We can assist in the expansion or upgrade of your existing system.
               Providing expertise in all facets of technology and help develop a
               cost-effective solution that meets with your business objectives.
             </p> */}
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               CCTV Surveillance Systems
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               CCTV systems are a powerful security tool, providing the
               opportunity for immediate assessment of on-site issues,
               accountability for staff, and a strong deterrent against
               unauthorised access.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our security technicians have extensive knowledge and experience
               in working with a range of CCTV solutions, and can provide advice
               on the most appropriate CCTV options for homes or businesses by
@@ -167,26 +170,26 @@ const TechnicalServices = () => {
               budget and integration options for existing security
               infrastructure.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We can also provide advice and quotes for upgrading older CCTV
               systems, and training and troubleshooting for existing CCTV
               systems.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We offer a range of permanent and temporary CCTV solutions for
               various applications such as monitoring crowd behaviour,
               environmental monitoring and construction site access monitoring.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Electronic Access Control
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Access control systems are a critical component in any business
               security system, allowing businesses to manage entry and access
               permissions, and providing internal and external accountability
               and control for access to secure areas.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We have the expertise to install and maintain a range of access
               control systems, including from trusted brands such as Integriti,
               Inception and Tecom. The access control systems we install can
@@ -194,13 +197,13 @@ const TechnicalServices = () => {
               time-based access restrictions, audit and muster reports,
               biometric authentication and NFC technologies.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               All access control options can be integrated with new or existing
               security infrastructure to provide a comprehensive, customised
               solution to suit any business, from small offices to large
               industrial complexes.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We also offer a wide range of video intercom solutions for
               building entry and site access requirements
             </p>

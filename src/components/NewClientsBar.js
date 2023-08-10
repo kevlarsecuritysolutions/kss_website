@@ -45,7 +45,10 @@ const NewClientsBar = () => {
     ],
   };
   return (
-    <section className="bg-[#f6f6f6] py-6 relative overflow-hidden" id="clients">
+    <section
+      className="bg-[#f6f6f6] py-6 relative overflow-hidden"
+      id="clients"
+    >
       <div className="hidden xl:block absolute -left-[650px] -bottom-[375px]">
         <svg
           className=""
@@ -159,9 +162,8 @@ const NewClientsBar = () => {
               <h2 className="text-3xl xl:text-3xl text-kss-text font-bold pb-2 uppercase">
                 Our Clients
               </h2>
-              <p className="mt-2 text-sm text-kss-text pb-4 pr-20">
-                We have more than 150 clients, and service more than 1800 sites
-                in Tasmania.
+              <p className="mt-2 text-sm text-kss-text pb-4 pr-20 z-20 relative">
+                We service more than 3000 sites for over 300 clients across Tasmania.
               </p>
             </div>
           </div>

@@ -87,36 +87,36 @@ const SiteEntry = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 py-24 lg:py-36">
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Customer Service
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Concierge security officers are often positioned at the front
               entrance of client sites, meaning that our concierge officer is
               responsible for ensuring that clients and important visitors
               receive an outstanding first impression.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               As a result, we select and train our concierge security officers
               carefully to ensure that they are well-presented and have
               exceptional front-facing customer service and communication
               skills.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We have a range of uniform options to suit each individual
               business, or our staff can wear your business’ uniform so that
               they seamlessly integrate with the rest of your team.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Technology / IT Skills
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our concierge and site security officers all have advanced level
               computer skills, ensuring that they can quickly learn and master
               your proprietary and industry specific software packages to
               perform required duties.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We also ensure that all concierge and site security officers have
               a thorough understanding of security-specific software packages
               including Titan, Gallagher and Honeywell. This enables our
@@ -124,33 +124,33 @@ const SiteEntry = () => {
               set up security access for authorised persons and provide on-site
               expertise to authorised users.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Mining / Site Entry & Access Control (SEAC)
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We have a dedicated team of SEAC officers who are trained and
               experienced in providing site entry security services at mining
               and other high-risk industry sites, including specialised site
               induction and site entry procedures.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our SEAC officer team members receive extensive specialised
               training allowing them to perform various critical duties
               associated with site entry security, including additional training
               in drug and alcohol testing, emergency first aid, workplace health
               and safety and risk identification and escalation.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Complementary Skills
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our concierge and site entry officers have a variety of additional
               skills which can be incorporated into their daily duties to
               provide additional business support and value for money for our
               clients. Some of the additional duties and skills that our
               concierge and site entry officers provide include:
             </p>
-            <ul className="text-md pb-2 text-white list-disc pl-4">
+            <ul className="text-md pb-4 text-white list-disc pl-4">
               <li>
                 <p>Tracking incoming / outgoing deliveries</p>
               </li>
@@ -166,18 +166,18 @@ const SiteEntry = () => {
                 <p>General administrative duties</p>
               </li>
             </ul>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We understand that every business is different and may benefit
               from a different set of complementary skills within a concierge or
               site entry role.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Two of the critical attributes which we require from our concierge
               and site entry security officers are an ability to adapt to
               different roles and a passion for ongoing learning and
               professional development.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Accordingly, we are keen to work with clients to identify
               additional complementary skills and associated training
               opportunities which would be of value to both our clients and our

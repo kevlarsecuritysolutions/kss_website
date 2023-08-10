@@ -127,17 +127,19 @@ const Navigation = () => {
                           Asset Training
                         </Dialog.Title>
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
-                            To work in the security industry, you must complete
-                            a Certificate II in Security Operations and obtain a
-                            Security Licence. KSS Recommends{" "}
+                        <p className="text-sm text-gray-500">
+                            To work in the security industry, you must first
+                            complete a Certificate II in Security Operations
+                            (CPPSEC20218). KSS recommends
                             <a
                               href="https://asset-training.com.au/"
-                              className="underline hover:opacity-75"
+                              className="underline hover:opacity-75 pl-1"
                               target="blank"
                             >
                               Asset Training
-                            </a>{" "}
+                            </a> {" "}
+                            as Tasmania’s leading provider of nationally
+                            recognised security training.
                           </p>
                         </div>
                       </div>
@@ -487,7 +489,7 @@ const Navigation = () => {
                                     Risk Assessments
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Our highly qualified management teams broad
+                                    Our highly qualified management team's broad
                                     range of expertise places us in the
                                     unique...
                                   </p>
@@ -595,19 +597,20 @@ const Navigation = () => {
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
                                     Asset Training
                                   </h4>
-                                  <p className="text-sm text-gray-500">
-                                    To work in the security industry, you must
-                                    complete a Certificate II in Security
-                                    Operations and obtain a Security Licence.
-                                    KSS Recommends{" "}
-                                    <a
-                                      href="https://asset-training.com.au/"
-                                      className="underline hover:opacity-75"
-                                      target="blank"
-                                    >
-                                      Asset Training
-                                    </a>{" "}
-                                  </p>
+                                  <p className="text-red-500">
+                            To work in the security industry, you must first
+                            complete a Certificate II in Security Operations
+                            (CPPSEC20218). KSS recommends
+                            <a
+                              href="https://asset-training.com.au/"
+                              className="underline hover:opacity-75 pl-1"
+                              target="blank"
+                            >
+                              Asset Training
+                            </a> {" "}
+                            as Tasmania’s leading provider of nationally
+                            recognised security training.
+                          </p>
                                 </div>
                               </a>
                               <a
@@ -755,13 +758,13 @@ const Navigation = () => {
                           </p>
                         </div>
                       </Link>
-                      <div className="flex justify-center hidden lg:flex pl-6">
+                      {/* <div className="flex justify-center hidden lg:flex pl-6">
                         <StaticImage
                           src="../assets/images/accreditations-color.png"
                           className="!w-52 !h-10"
                           alt="accreditations & certificates"
                         />
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="hidden h-full lg:flex">
@@ -989,7 +992,7 @@ const Navigation = () => {
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Our highly qualified management
-                                              teams broad range of expertise
+                                              team's broad range of expertise
                                               places us in the unique...
                                             </p>
                                           </div>

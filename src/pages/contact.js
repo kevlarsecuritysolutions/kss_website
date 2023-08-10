@@ -27,7 +27,7 @@ const Contact = () => {
               <h2 className="text-3xl font-bold tracking-tight text-kss-text sm:text-4xl">
                 Contact KSS
               </h2>
-              <p className="mt-4 pb-2 text-lg leading-6 text-kss-text">
+              <p className="mt-4 pb-4 text-lg leading-6 text-kss-text">
                 We provide security services 24 hours per day, every day of the
                 year. This means that you can contact us any time to discuss
                 your security needs.

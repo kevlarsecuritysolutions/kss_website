@@ -325,7 +325,7 @@ const Services = () => {
                 We have earned a reputation as a market leader in providing a
                 wide range of security services including:
               </p>
-              <ul className="text-lg text-white py-4 pb-8 list-disc pl-4 lg:pl-8">
+              <ul className="text-lg text-white pb-4 list-disc pl-4 lg:pl-8">
                 <li className="py-1">
                   <Link
                     className="text-white hover:underline"
@@ -646,7 +646,7 @@ const Services = () => {
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  Our highly qualified management teams broad range of expertise
+                  Our highly qualified management team's broad range of expertise
                   places us in the unique position to be able to provide
                   comprehensive risk assessments covering all aspects of
                   government, business or personal site security. Our

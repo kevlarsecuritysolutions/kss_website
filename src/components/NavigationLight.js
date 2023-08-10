@@ -80,8 +80,11 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="facebook logo"/>
+                      <div className=" w-full flex items-center justify-center">
+                        <StaticImage
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png"
+                          alt="go to facebook"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -104,8 +107,13 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" alt="go to asset training"/>
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
+                          alt="go to asset training"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -116,16 +124,18 @@ const NavigationLight = () => {
                         </Dialog.Title>
                         <div className="mt-2">
                           <p className="text-sm text-gray-500">
-                            To work in the security industry, you must complete
-                            a Certificate II in Security Operations and obtain a
-                            Security Licence. KSS Recommends{" "}
+                            To work in the security industry, you must first
+                            complete a Certificate II in Security Operations
+                            (CPPSEC20218). KSS recommends
                             <a
                               href="https://asset-training.com.au/"
-                              className="underline hover:opacity-75"
+                              className="underline hover:opacity-75 pl-1"
                               target="blank"
                             >
                               Asset Training
                             </a>{" "}
+                            as Tasmania’s leading provider of nationally
+                            recognised security training.
                           </p>
                         </div>
                       </div>
@@ -136,8 +146,13 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" alt="go to asial"/>
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png"
+                          alt="go to asial"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -161,8 +176,13 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" alt="go to carbon neutral"/>
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png"
+                          alt="go to carbon neutral"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -185,8 +205,13 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" alt="go to crime stoppers"/>
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png"
+                          alt="go to crime stoppers"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -211,8 +236,13 @@ const NavigationLight = () => {
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
                     >
-                      <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" alt="go to tasmanian police"/>
+                      <div className=" flex items-center h-36 justify-center">
+                        <StaticImage
+                          className="h-36 w-36"
+                          objectFit="contain"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png"
+                          alt="go to tasmanian police"
+                        />
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -455,7 +485,7 @@ const NavigationLight = () => {
                                     Risk Assessments
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Our highly qualified management teams broad
+                                    Our highly qualified management team's broad
                                     range of expertise places us in the
                                     unique...
                                   </p>
@@ -801,13 +831,13 @@ const NavigationLight = () => {
                           </p>
                         </div>
                       </Link>
-                      <div className="flex justify-center hidden lg:flex pl-6">
+                      {/* <div className="flex justify-center hidden lg:flex pl-6">
                         <StaticImage
                           src="../assets/images/accreditations-color.png"
                           className="!w-52 !h-10"
                           alt="accreditations & certificates"
                         />
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="hidden h-full lg:flex">
@@ -1035,7 +1065,7 @@ const NavigationLight = () => {
                                             </h4>
                                             <p className="text-kss-text text-xs">
                                               Our highly qualified management
-                                              teams broad range of expertise
+                                              team's broad range of expertise
                                               places us in the unique...
                                             </p>
                                           </div>

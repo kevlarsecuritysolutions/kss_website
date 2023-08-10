@@ -23,7 +23,7 @@ const AlarmResponse = () => {
             </h2>
             <p className="text-md text-white pb-4">
               Kevlar Security Solutions provides a 24 hour alarm and duress
-              response services at more than 5000 sites throughout Tasmania.
+              response services at more than 3000 sites throughout Tasmania.
             </p>
             <p className="text-md text-white pb-4">
               Our large vehicle-based security patrol operation enables us to

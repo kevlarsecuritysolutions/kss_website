@@ -21,7 +21,7 @@ const SecurityPatrols = () => {
             <h2 className="text-white font-bold text-3xl pb-8">
               SECURITY PATROLS
             </h2>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We specialise in providing vehicle-based security patrols and have
               the largest security patrol car operation in Tasmania. Security
               patrols are conducted our carbon neutral, high visibility patrol
@@ -29,14 +29,14 @@ const SecurityPatrols = () => {
               our clients are extremely flexible and customised to each
               individual client’s security needs.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We tailor our contract durations and the day(s), times and types
               of services we provide to suit each client's needs. For example,
               our services can be provided on an ongoing basis, or for a
               specific period of time only - such as a set number of days during
               the Christmas / New Year break, or during a family holiday.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               The type of services that we provide can also be varied for each
               day of the week. For example, some businesses may not require
               unlock and lockup services on weekends, while other business may
@@ -71,10 +71,10 @@ const SecurityPatrols = () => {
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-4">
               Lock-up and Un-lock Services
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our lock-up and un-lock services are very popular with both small
               and large business. We can provide that “just-in-case” check that
               your building is secure with a patrol conducted in the early
@@ -82,27 +82,27 @@ const SecurityPatrols = () => {
               at all, by providing regular time-specific patrols each day at the
               close of business.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               A combined service involving a close of business lock-up and an
               early morning un-lock can even remove the need for staff to be
               responsible for looking after keys to your building.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-2 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-2 pb-4">
             Random Night-Time Patrols
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
             Many businesses and home-owners are concerned about the increase in petty crime, and the resulting need to protect premises, infrastructure and personal property from this risk.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
             Our high-visibility and randomly timed night-time patrols provide a deterrent for would-be lawbreakers and loiterers, and can also provide regular checks to ensure that buildings, infrastructure and property remains secure during the night.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
             We also provide and install high-visibility signage free of charge for all our clients. Our signage provides a constant visual deterrent and displays our 24 hour response number to enable members of the public to report any suspicious activities. 
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
             The work that we do during our night time patrols and the timing of patrols can be tailored to each business’ individual security needs and concerns. Our services can include full internal site walk throughs, external visual checks and physical access point checks, and patrols can be completed at set times, random times, or between a set window (e.g. between 1am and 4am). 
             </p>
-            <h2 className="text-white font-bold text-lg pb-2 pt-8">
+            <h2 className="text-white font-bold text-lg pb-4 pt-8">
               We can also provide the following compliance and reporting options
               to our clients:
             </h2>

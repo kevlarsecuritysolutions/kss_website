@@ -22,7 +22,7 @@ const RiskAssessment = () => {
               RISK ASSESSMENTS
             </h2>
             <p className="text-md text-white pb-4">
-              Our highly qualified management team broad range of expertise
+              Our highly qualified management team's broad range of expertise
               places us in the unique position to be able to provide
               comprehensive risk assessments covering all aspects of government,
               business or personal site security. Our recommendations are guided
@@ -82,16 +82,16 @@ const RiskAssessment = () => {
           </div>
 
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Event Risk Assessments
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our risk assessors have significant experience in the assessment,
               planning and execution of both small and large-scale events,
               including political, cultural and internationally significant
               events with unique security needs.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               We regularly liaise with police, counter-terrorism experts,
               emergency services, community safety groups and other stakeholders
               as part of our risk assessment and event security planning
@@ -99,10 +99,10 @@ const RiskAssessment = () => {
               and allows us to plan the security operation to work seamlessly
               with these services during the course of the event.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Regular Security Audits
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Even when security systems and protocols are compliant with
               Australian standards and industry best practice, it is critical to
               regularly review their effectiveness and suitability. Staff
@@ -110,29 +110,29 @@ const RiskAssessment = () => {
               issues can all lead to serious flaws within even the best security
               systems and protocols.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               To address these potential risks, we offer our clients a security
               audit service which can be provided on a regular basis once we
               have conducted an initial assessment and developed an audit matrix
               for ongoing compliance.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               These regular on-site audits or “spot-checks” can be conducted at
               times and intervals most suitable to your business needs, and will
               follow the initially developed audit matrix to identify and
               address security flaws and provide reliable data for assessing any
               ongoing trends and issues.
             </p>
-            <h3 className="text-white text-xl font-semibold pt-4 pb-2">
+            <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Internal Risks and Loss Prevention
             </h3>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Businesses can sometimes experience “internal” security issues,
               particularly where they engage high numbers of contracted or
               temporary workers. These issues are often difficult both to
               identify and mitigate.
             </p>
-            <p className="text-md text-white pb-2">
+            <p className="text-md text-white pb-4">
               Our risk assessors are experienced in identifying, assessing and
               addressing internal risks, and can provide a comprehensive action
               plan which promotes trust and unity within workforces while also
