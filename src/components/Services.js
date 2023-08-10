@@ -244,11 +244,16 @@ const Services = () => {
               </p>
               <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-start lg:items-center">
                 <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" alt="tasgov logo"/>
-                
+                  <StaticImage
+                    src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png"
+                    alt="tasgov logo"
+                  />
                 </div>
                 <div className="lg:hidden w-full pb-12 ">
-                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" alt="tasgov logo" />
+                  <StaticImage
+                    src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png"
+                    alt="tasgov logo"
+                  />
                 </div>
                 <div className="grid justify-start grid-cols-1 lg:grid-cols-3 gap-8">
                   <div
@@ -288,7 +293,7 @@ const Services = () => {
                     <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                     <div className="flex flex-col">
                       <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of Parks, Wildlife and Environment
+                        Department of Natural Resources and Environment
                       </h4>
                     </div>
                   </div>
