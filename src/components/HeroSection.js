@@ -17,7 +17,7 @@ const HeroSection = () => {
         <StaticImage
           className="!h-full !w-full !object-cover"
           src="https://images.ctfassets.net/lfrbwr0lmnkj/5qUBREtADDhinVjjNYgEW/5ef4274ff9149c1198e5cadd4545e583/kss_website2022-113.jpg"
-          alt="Kevlar Security Solutions Fleet"
+          alt="Kevlar Security Solutions"
         />
         <div className="absolute inset-0 bg-black/50 lg:bg-black/0 lg:bg-gradient-to-tr lg:from-black/60  lg:to-black/20 mix-blend-multiply" />
       </div>

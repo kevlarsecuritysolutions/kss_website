@@ -13,7 +13,7 @@ import SEO from "../../components/Seo";
 const ArmedCash = () => {
   return (
     <Layout>
-      <SEO title="Armed Cash in Transit" slug="/services/armed-cash" />
+      <SEO title="Cash in Transit" slug="/services/cash-in-transit" />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -68,6 +68,7 @@ const ArmedCash = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/2fUxlGvGXIsFuOPs5LRSdr/23b3d37b343e97d2f48ffab099cd42f7/kss_website2022-85.jpg"
               className="!absolute !-bottom-48"
+              alt="cash in transit services"
             />
           </div>
         </div>
@@ -76,6 +77,7 @@ const ArmedCash = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/7mMwKwV9x2NrdssWHbhIv2/20b61b759a629bebcf5fca6da31c0832/kss_website2022-62.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="cash in transit services"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

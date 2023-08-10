@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "gatsby";
 import Layout from "../../components/Layout";
 import { Switch } from "@headlessui/react";
 import NavigationLight from "../../components/NavigationLight";
 import Footer from "../../components/Footer";
 import BackToTopBtn from "../../components/BackToTopBtn";
 import { Checkmark, Close } from "@carbon/icons-react";
+import SEO from "../../components/Seo";
 
 import { useForm } from "@formspree/react";
 
@@ -50,6 +52,7 @@ const Form = () => {
   return (
     <>
       <NavigationLight />
+      <SEO title="Join the KSS Team" slug="/employment/expression-of-interest"/>
       <main>
         <section className="bg-gray-100 pb-12">
           <div className="max-w-5xl mx-auto pt-24 pb-12 px-4">
@@ -68,6 +71,7 @@ const Form = () => {
             <form
               className="space-y-8 divide-y divide-gray-200"
               onSubmit={handleSubmit}
+              enctype="multipart/form-data"
             >
               <div className="space-y-8 divide-y divide-gray-200">
                 <div className="pt-8">
@@ -279,14 +283,7 @@ const Form = () => {
                               <path fill="none" d="M0 0h24v24H0z" />
                               <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
                             </svg>
-                            <input
-                              required
-                              id="resume"
-                              name="resume"
-                              type="file"
-                              className="sr-only"
-                              onChange={handleFileChange}
-                            />
+                        
                             <p className="text-xs text-gray-500">{file.name}</p>
                             <button
                               onClick={handleRemoveFile}
@@ -345,7 +342,7 @@ const Form = () => {
                   </div>
                   <div className="sm:col-span-4 pt-12">
                     <label
-                      htmlFor="escurity-licence-number"
+                      htmlFor="security-licence-number"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Tasmanian Security Licence Number
@@ -353,8 +350,8 @@ const Form = () => {
                     <div className="mt-1">
                       <input
                         required
-                        id="escurity-licence-number"
-                        name="escurity-licence-number"
+                        id="security-licence-number"
+                        name="security-licence-number"
                         type="text"
                         className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300"
                       />
@@ -362,7 +359,7 @@ const Form = () => {
                   </div>
                   <div className="sm:col-span-4 pt-12">
                     <label
-                      htmlFor="escurity-licence-number"
+                      htmlFor="security-licence-number"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Do you currently have a Certificate II in Security
@@ -549,13 +546,13 @@ const Form = () => {
                   <div className="ml-3">
                     <p className="text-base text-gray-500">
                       By selecting this, you agree to the{" "}
-                      <a
-                        href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
-                        target="blank"
-                        className="font-medium text-gray-700 underline"
-                      >
-                        Privacy Policy
-                      </a>{" "}
+                      <Link
+                          to="/privacy-policy"
+                          target="blank"
+                          className="font-medium text-gray-700 underline"
+                        >
+                          Privacy Policy
+                        </Link>{" "}
                       and{" "}
                       <a
                         href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"

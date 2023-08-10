@@ -46,6 +46,7 @@ const BodyGuard = () => {
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1JX6LQAEqp0YkkGwoRwNEn/604a6eeef7e481b490b60982dd89dbe9/AdobeStock_171861728.jpeg"
               className="!absolute !bottom-0"
               objectPosition="50% 40%"
+              alt="Bodyguard services"
             />
           </div>
         </div>
@@ -54,6 +55,7 @@ const BodyGuard = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/20v3Z6lC8rcBPGqigcImby/da423907d8e62f618e9f50ddee219fc5/kss_website2022-109.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="Bodyguard services"
             />
           </div>
 

@@ -57,6 +57,7 @@ const AlarmResponse = () => {
               src="https://downloads.ctfassets.net/lfrbwr0lmnkj/VZSaIjQOBjY1wQmRgmh6F/86d57c823f4cbdd3f94de9f71129e60f/kss_website_2022-70.jpg"
               className="!absolute !bottom-0 !object-cover !w-full !h-full"
               objectPosition="50% 70%"
+              alt="Alarm response"
             />
           </div>
         </div>
@@ -65,6 +66,7 @@ const AlarmResponse = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1kb4M0bBUNY5NcNLjuT16N/eda358fe18e5e4851842539bdfdeff80/kss_website2022-117.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="Alarm response"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

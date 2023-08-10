@@ -88,7 +88,7 @@ const Navigation = () => {
                       loading="eager"
                     >
                       <div className=" w-full flex items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="go to facebook"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -116,6 +116,7 @@ const Navigation = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
+                          alt="go to asset training"
                         />
                       </div>
                       <div className="">
@@ -152,6 +153,7 @@ const Navigation = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png"
+                          alt="go to asial"
                         />
                       </div>
                       <div className="">
@@ -181,6 +183,7 @@ const Navigation = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png"
+                          alt="go to carbon neutral"
                         />
                       </div>
                       <div className="">
@@ -209,6 +212,7 @@ const Navigation = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png"
+                          alt="go to crime stoppers"
                         />
                       </div>
                       <div className="">
@@ -239,6 +243,7 @@ const Navigation = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png"
+                          alt="go to tasmanian police"
                         />
                       </div>
                       <div className="">
@@ -737,9 +742,9 @@ const Navigation = () => {
                         <span className="sr-only">KSS</span>
                         <StaticImage
                           src="../assets/images/kss-logo-white.png"
-                          alt=""
                           className="!w-8 !h-auto"
                           loading="eager"
+                          alt="kss logo"
                         />
                         <div className="flex flex-col justify-start">
                           <p className="text-2xl text-white font-bold">
@@ -754,6 +759,7 @@ const Navigation = () => {
                         <StaticImage
                           src="../assets/images/accreditations-color.png"
                           className="!w-52 !h-10"
+                          alt="accreditations & certificates"
                         />
                       </div>
                     </div>
@@ -1098,6 +1104,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="tasmanian owned and operated"
                                                 />
                                               </div>
                                             </div>
@@ -1122,6 +1129,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="carbon neutral via carbon offsets"
                                                 />
                                               </div>
                                             </div>
@@ -1146,6 +1154,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !-bottom-12"
                                                   objectFit="contain"
                                                   loading="eager"
+                                                  alt="over 300 clients across tasmania"
                                                 />
                                               </div>
                                             </div>
@@ -1254,6 +1263,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="fastest growing security team in tasmania"
                                                 />
                                               </div>
                                             </div>
@@ -1278,6 +1288,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="leading employer in the security industry"
                                                 />
                                               </div>
                                             </div>
@@ -1301,6 +1312,7 @@ const Navigation = () => {
                                                   className="!w-full !absolute !-bottom-16"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="ongoing support and employee training"
                                                 />
                                               </div>
                                             </div>
@@ -1356,7 +1368,7 @@ const Navigation = () => {
                       <span className="sr-only">KSS</span>
                       <StaticImage
                         src="../assets/images/kss-logo-white.png"
-                        alt=""
+                        alt="kss logo"
                         className="!w-8 !h-auto"
                         loading="eager"
                       />

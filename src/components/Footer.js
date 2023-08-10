@@ -44,7 +44,7 @@ const Footer = () => {
                       loading="eager"
                     >
                       <div className=" w-full flex items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="go to facebook"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -72,6 +72,7 @@ const Footer = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
+                          alt="go to asset training"
                         />
                       </div>
                       <div className="">
@@ -108,6 +109,7 @@ const Footer = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png"
+                          alt="go to asial"
                         />
                       </div>
                       <div className="">
@@ -137,6 +139,7 @@ const Footer = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png"
+                          alt="go to carbon neutral"
                         />
                       </div>
                       <div className="">
@@ -165,6 +168,7 @@ const Footer = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png"
+                          alt="go to crime stoppers"
                         />
                       </div>
                       <div className="">
@@ -195,6 +199,7 @@ const Footer = () => {
                           className="h-36 w-36"
                           objectFit="contain"
                           src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png"
+                          alt="go to tasmanian police"
                         />
                       </div>
                       <div className="">
@@ -238,6 +243,7 @@ const Footer = () => {
             <StaticImage
               src="../assets/images/kss-logo-white.png"
               className="!w-10 !h-12"
+              alt="kss logo"
             />
             <div className="flex flex-col justify-start">
               <p className="text-2xl text-white">KEVLAR</p>
@@ -304,6 +310,7 @@ const Footer = () => {
             <StaticImage
               src="../assets/images/accreditations-color.png"
               className="!w-full !h-auto !max-h-[65px]"
+              alt="accreditations and certificates"
             />
           </div>
           <div className="hidden lg:flex flex flex-col">

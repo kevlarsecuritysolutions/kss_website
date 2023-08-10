@@ -4,12 +4,14 @@ import Layout from "../components/Layout";
 import NavigationLight from "../components/NavigationLight";
 import Footer from "../components/Footer";
 import BackToTopBtn from "../components/BackToTopBtn";
+import SEO from "../components/Seo";
 
 // markup
 const NotFoundPage = () => {
   return (
     <>
     <NavigationLight/>
+    <SEO title="404 | Page Not Found" slug="/404"/>
       <div className="min-h-screen bg-white px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
         <div className="mx-auto max-w-max">
           <main className="sm:flex">

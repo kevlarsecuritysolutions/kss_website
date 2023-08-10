@@ -81,7 +81,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="facebook logo"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -105,7 +105,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg" alt="go to asset training"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -137,7 +137,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/3fG8bMDRK2J18l4JX5vId1/b33dff432b13dec0407f0e6a988595cf/ASIAL.png" alt="go to asial"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -162,7 +162,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6VhBDUNmlYIjKWTfxgtBki/c90980272dfb6aaa826a2758cd126896/carbon-neutral.png" alt="go to carbon neutral"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -186,7 +186,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7mLYuHaqVhR5ml0oDInXm4/d766b5b15de06e08edd5db6a8163f552/crime-stoppers.png" alt="go to crime stoppers"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -212,7 +212,7 @@ const NavigationLight = () => {
                       loading="eager"
                     >
                       <div className=" flex h-36 w-36 items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/AgnnfzXYxczmnEWiBdP3Y/233c4af37b442c80c289dade55b394b2/TasPolice__1_.png" alt="go to tasmanian police"/>
                       </div>
                       <div className="">
                         <Dialog.Title
@@ -789,7 +789,7 @@ const NavigationLight = () => {
                         <span className="sr-only">KSS</span>
                         <StaticImage
                           src="../assets/images/kss-logo-white.png"
-                          alt=""
+                          alt="kss logo"
                           className="!w-8 !h-auto"
                         />
                         <div className="flex flex-col justify-start">
@@ -805,6 +805,7 @@ const NavigationLight = () => {
                         <StaticImage
                           src="../assets/images/accreditations-color.png"
                           className="!w-52 !h-10"
+                          alt="accreditations & certificates"
                         />
                       </div>
                     </div>
@@ -1149,6 +1150,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="Tasmanian owned & operated"
                                                 />
                                               </div>
                                             </div>
@@ -1173,6 +1175,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="100% carbon neutral"
                                                 />
                                               </div>
                                             </div>
@@ -1197,6 +1200,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !-bottom-12"
                                                   objectFit="contain"
                                                   loading="eager"
+                                                  alt="over 300 clients across tasmania"
                                                 />
                                               </div>
                                             </div>
@@ -1305,6 +1309,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="fastest growing security team in Tasmania"
                                                 />
                                               </div>
                                             </div>
@@ -1329,6 +1334,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !bottom-0"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="A leading employer in the security industry"
                                                 />
                                               </div>
                                             </div>
@@ -1352,6 +1358,7 @@ const NavigationLight = () => {
                                                   className="!w-full !absolute !-bottom-16"
                                                   objectFit="scale-down"
                                                   loading="eager"
+                                                  alt="ongoing support and employee training"
                                                 />
                                               </div>
                                             </div>
@@ -1406,7 +1413,7 @@ const NavigationLight = () => {
                       <span className="sr-only">KSS</span>
                       <StaticImage
                         src="../assets/images/kss-logo-white.png"
-                        alt=""
+                        alt="kss logo"
                         className="!w-8 !h-auto"
                       />
                       <div className="flex flex-col justify-start">

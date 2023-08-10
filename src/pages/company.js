@@ -71,6 +71,7 @@ const Company = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/ldwIjC787tH8viiAMEEDe/2e97a4a884753ecba3e7d9eaeece98ae/kss_website2022-151.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="We are committed to reducing our impact on the environment and climate"
             />
           </div>
         </div>
@@ -81,6 +82,7 @@ const Company = () => {
               src="https://images.ctfassets.net/lfrbwr0lmnkj/6ZI2WmJNt7a1bNusi9M1M8/4409be0f11a928d0f99714fdd4a5b805/kss_website2022-150.jpg"
               className="!inset-0 !bottom-0 !top-0 !absolute"
               objectPosition="50% 75%"
+              alt="We are committed to reducing our impact on the environment and climate"
             />
           </div>
           <div

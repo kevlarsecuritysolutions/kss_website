@@ -58,6 +58,7 @@ const SecurityPatrols = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/5lKSBZF68FWUafuPhRBJ3h/b014ee488693b0da60f12f3ffc095109/kss_website2022-149.jpg"
               className="!absolute !bottom-0 !object-cover !w-full !h-full"
+              alt="security patrols"
             />
           </div>
         </div>
@@ -66,6 +67,7 @@ const SecurityPatrols = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3TgYgiJQgqqWj4TYMNxUZa/a15177b7e3fd64e8aa1aac4cb8885f7f/kss_website2022-148.jpg"
               className="!object-cover !absolute !-bottom-24 !lg:inset-0"
+              alt="security patrols"
             />
           </div>
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 pb-24">

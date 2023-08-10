@@ -238,13 +238,13 @@ const Contact = () => {
                     <div className="ml-3">
                       <p className="text-base text-kss-text">
                         By selecting this, you agree to the{" "}
-                        <a
-                          href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                        <Link
+                          to="/privacy-policy"
                           target="blank"
                           className="font-medium text-gray-700 underline"
                         >
                           Privacy Policy
-                        </a>{" "}
+                        </Link>{" "}
                         and{" "}
                         <a
                           href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"

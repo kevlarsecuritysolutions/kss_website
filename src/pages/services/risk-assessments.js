@@ -68,6 +68,7 @@ const RiskAssessment = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="risk assessments"
             />
           </div>
         </div>
@@ -76,6 +77,7 @@ const RiskAssessment = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/710l8psox0VjvekQfGj3a1/fe918a16b6c87c20a86cffdb0b12fdca/kss_website2022-74.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="risk assessments"
             />
           </div>
 

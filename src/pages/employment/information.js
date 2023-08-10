@@ -5,37 +5,12 @@ import HeroAngle from "../../assets/svg/hero-angle2";
 import { Link } from "gatsby";
 
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
+import SEO from "../../components/Seo";
 
 const EmploymentInformation = () => {
   return (
     <Layout>
-      <section>
-        <section class="relative hidden">
-          <div class="absolute inset-x-0 bottom-0  bg-gray-100 "></div>
-          <div class="mx-auto">
-            <div class="relative overflow-hidden">
-              <div className="lg:block absolute -bottom-1 -left-[400px] z-10 w-[2000px] h-auto">
-                <HeroAngle className="w-full h-full" />
-              </div>
-              <div class="absolute inset-0 object-top z-1">
-                <StaticImage
-                  class="!h-full !w-full !object-cover"
-                  src="../../assets/images/employment-top.png"
-                  alt="Company"
-                />
-                <div class="absolute inset-0 "></div>
-              </div>
-              <div className="pt-36 pb-24 px-24">
-                <StaticImage
-                  className="!w-36 !z-10"
-                  src="../../assets/images/careers.png"
-                  alt="Crowd Control"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
+      <SEO title="Careers with KSS" slug="/employment/information"/>
 
       <section
         className="bg-gradient-to-bl from-[#002034] to-black"
@@ -85,14 +60,16 @@ const EmploymentInformation = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1jASCyhnGjgyOmdOBYSh1H/ebbf2fb4d4b39a61f742369e00c83610/kss_website2022-115.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="Careers with KSS"
             />
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="mx-4 lg:mx-0 relative aspect-video lg:aspect-auto overflow-hidden">
+        <div className="mx-4 lg:mx-0 hidden lg:block relative aspect-video lg:aspect-auto overflow-hidden">
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
               className="!absolute !-bottom-12"
+              alt="Careers with KSS"
             />
           </div>
 

@@ -73,6 +73,7 @@ const SiteEntry = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/2LIsUFugKAMq1hx6T9kUum/b5e6435f27f000b8184da1be3650ac75/kss_website2022-184.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="concierge and site entry officers"
             />
           </div>
         </div>
@@ -81,6 +82,7 @@ const SiteEntry = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1BL7qAM43cETZpyL1rwp5m/d69112dcac48093094bb31d0d9a41b5e/kss_website2022-187.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="concierge and site entry officers"
             />
           </div>
 

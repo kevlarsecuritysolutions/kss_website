@@ -244,10 +244,11 @@ const Services = () => {
               </p>
               <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-start lg:items-center">
                 <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" />
+                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png" alt="tasgov logo"/>
+                
                 </div>
                 <div className="lg:hidden w-full pb-12 ">
-                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" />
+                  <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png" alt="tasgov logo" />
                 </div>
                 <div className="grid justify-start grid-cols-1 lg:grid-cols-3 gap-8">
                   <div
@@ -416,6 +417,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/1Ik0iKyzN495Jeo7GCi5dD/136de41c3b9df91242eb1164328fc18e/kss_website2022-24.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -441,6 +443,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/2LIsUFugKAMq1hx6T9kUum/b5e6435f27f000b8184da1be3650ac75/kss_website2022-184.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -466,6 +469,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/5KZrumT2CaCtic1cfsvRE0/6adf86506f4af406d7b390023838a8e6/kss_website_20_22-1.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -492,6 +496,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/6LSuXjDHJqtxK3xsujTwyo/dbbcc5c3f581a9224307e001a23f28c7/kss_website2022-129.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -516,6 +521,7 @@ const Services = () => {
                 <StaticImage
                   src="https://downloads.ctfassets.net/lfrbwr0lmnkj/46WJBhbNTCib46p3XaUD4M/8c85bce22711040e8db1143782540b4b/kss_website_2022-70.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -544,6 +550,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/ssPbjgLfUggiWKkgUNRae/cd9b8b15397e2d0dd6f77ed17d34621e/kss_website2022-65.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -571,6 +578,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/3YFjdd2kxKLW7o8Abis3m1/72d30fc60dbe674c55e9d8c47b0b464f/kss_website2022-159.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -597,6 +605,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">
@@ -623,6 +632,7 @@ const Services = () => {
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/7dqQJKVb6Ya1oc6UfiVc69/b4d0fa784cc8a56720127c61d61c5ec7/kss_website2022-39.jpg"
                   className="!absolute !mx-auto !left-2 !right-2 !top-2 !bottom-2"
+                  alt="We have earned a reputation as a market leader in providing a wide range of security services"
                 />
               </div>
               <div className="col-span-5 flex flex-col">

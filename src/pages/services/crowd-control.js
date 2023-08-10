@@ -46,6 +46,7 @@ const CrowdControl = () => {
               src="https://images.ctfassets.net/lfrbwr0lmnkj/3i8PYnvufHA6hNJEyfL236/e7c047f41a4af559e0367716441ba6a7/kss22-12.jpg"
               className="!absolute !bottom-0 !object-cover !w-full !h-full"
               objectPosition="50% 75%"
+              alt="crowd control"
             />
           </div>
         </div>
@@ -54,6 +55,7 @@ const CrowdControl = () => {
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/1hva8STcoKuWTQQbIBw0FQ/e661534513ec9b61eca1d75b69dfed84/kss22-11.jpg"
               className="!object-cover !absolute !inset-0"
+              alt="crowd control"
             />
           </div>
 

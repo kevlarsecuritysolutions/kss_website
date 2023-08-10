@@ -20,7 +20,7 @@ const Feedback = () => {
     <>
       <NavigationLight />
       <main>
-        <SEO title="Contact" slug="/contact" />
+        <SEO title="Feedback" slug="/feedback" />
         <div className="bg-gray-100 py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24 lg:pt-36">
           <div className="relative mx-auto max-w-screen-2xl lg:grid lg:grid-cols-5">
             <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
@@ -183,13 +183,13 @@ const Feedback = () => {
                     <div className="ml-3">
                       <p className="text-base text-kss-text">
                         By selecting this, you agree to the{" "}
-                        <a
-                          href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                        <Link
+                          to="/privacy-policy"
                           target="blank"
                           className="font-medium text-gray-700 underline"
                         >
                           Privacy Policy
-                        </a>{" "}
+                        </Link>{" "}
                         and{" "}
                         <a
                           href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
