@@ -5,6 +5,8 @@ import React from "react";
 
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Phone, Email } from "@carbon/icons-react";
+import { LocationCompany } from "@carbon/icons-react";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -244,17 +246,36 @@ const Footer = () => {
 
       <section className="bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden pt-8">
         <div className="grid grid-cols-1 px-4 lg:grid-cols-4 gap-12 max-w-screen-2xl mx-auto py-8">
-          <Link to="/" className="flex gap-2 justify-center lg:justify-start">
-            <StaticImage
-              src="../assets/images/kss-logo-white.png"
-              className="!w-10 !h-12"
-              alt="kss logo"
-            />
-            <div className="flex flex-col justify-start">
-              <p className="text-2xl text-white">KEVLAR</p>
-              <p className="text-sm text-white -mt-2">SECURITY SOLUTIONS</p>
+          <div className="flex flex-col gap-4">
+            <Link to="/" className="flex gap-2 justify-center lg:justify-start">
+              <StaticImage
+                src="../assets/images/kss-logo-white.png"
+                className="!w-10 !h-12"
+                alt="kss logo"
+              />
+              <div className="flex flex-col justify-start">
+                <p className="text-2xl text-white">KEVLAR</p>
+                <p className="text-sm text-white -mt-2">SECURITY SOLUTIONS</p>
+              </div>
+            </Link>
+            <div className="flex justify-center lg:justify-start px-4 gap-6 pb-4">
+              <a href="0408303603" target="blank">
+                <Phone className="h-6 w-6 text-white" />
+              </a>
+              <a
+                href="mailto:info@kevlarsecuritysolutions.com.au"
+                target="blank"
+              >
+                <Email className="h-6 w-6 text-white" />
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Kevlar+Security+Solutions+Pty+Ltd/@-42.8435445,147.2880071,17z/data=!3m1!4b1!4m5!3m4!1s0xaa6e74954dbad463:0x5fed1effc80b79a2!8m2!3d-42.8435678!4d147.290211"
+                target="blank"
+              >
+                <LocationCompany className="h-6 w-6 text-white" />
+              </a>
             </div>
-          </Link>
+          </div>
           <div className="hidden lg:grid grid grid-cols-2">
             <div className="flex flex-col">
               <Link
@@ -311,14 +332,14 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center hidden lg:flex">
+          <div className="flex justify-center hidden lg:flex lg:col-span-2">
             <StaticImage
               src="../assets/images/accreditations-color.png"
-              className="!w-full !h-auto !max-h-[65px]"
+              className="!px-4"
               alt="accreditations and certificates"
             />
           </div>
-          <div className="hidden lg:flex flex flex-col">
+          {/* <div className="hidden lg:flex flex flex-col">
             <Link className="text-kss-text-dark hover:text-white text-sm pb-2">
               GPO Box 550, HOBART 7001
             </Link>
@@ -336,7 +357,7 @@ const Footer = () => {
             >
               Email: info@kevlarsecuritysolutions.com.au
             </a>
-          </div>
+          </div> */}
         </div>
         <div className=" flex items-center mx-4 lg:mx-auto max-w-screen-2xl border-t border-gray-50/40 ">
           <div class="mt-2 md:mt-0 md:order-1">

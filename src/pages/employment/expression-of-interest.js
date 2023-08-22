@@ -21,7 +21,7 @@ const Form = () => {
   const [dragOver, setDragOver] = useState(false);
 
   const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
+    setFile(event.target.files);
   };
 
   const handleRemoveFile = () => {
@@ -43,11 +43,13 @@ const Form = () => {
 
   const handleDrop = (event) => {
     event.preventDefault();
-    setFile(event.dataTransfer.files[0]);
+    setFile(event.dataTransfer.files);
     setDragOver(false);
   };
 
   const [noCert, handleNoCert] = useState(false);
+
+  console.log(file);
 
   return (
     <>
@@ -271,41 +273,27 @@ const Form = () => {
                     >
                       Upload your current CV and copies of your qualifications
                     </label>
-                    {file ? (
-                      <div>
-                        {" "}
-                        <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed ">
-                          <div className="space-y-1 text-center">
-                            <svg
-                              className="mx-auto h-12 w-12 fill-gray-400"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 24 24"
-                              width="24"
-                              height="24"
-                            >
-                              <path fill="none" d="M0 0h24v24H0z" />
-                              <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
-                            </svg>
-
-                            <p className="text-xs text-gray-500">{file.name}</p>
-                            <button
-                              onClick={handleRemoveFile}
-                              className="text-xs text-red-400 hover:text-red-500"
-                            >
-                              remove
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      <div
-                        className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed "
-                        onDragEnter={handleDragEnter}
-                        onDragLeave={handleDragLeave}
-                        onDragOver={handleDragOver}
-                        onDrop={handleDrop}
-                      >
-                        <div className="space-y-1 text-center">
+                    <input type="file" multiple id="resume" name="resume" className="pt-4"/>
+                    {/* <div
+                      className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed "
+                      onDragEnter={handleDragEnter}
+                      onDragLeave={handleDragLeave}
+                      onDragOver={handleDragOver}
+                      onDrop={handleDrop}
+                    >
+                      <div className="space-y-1 text-center">
+                        {file ? (
+                          <svg
+                            className="mx-auto h-12 w-12 fill-gray-400"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M9 2.003V2h10.998C20.55 2 21 2.455 21 2.992v18.016a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 20.993V8l6-5.997zM5.83 8H9V4.83L5.83 8zM11 4v5a1 1 0 0 1-1 1H5v10h14V4h-8z" />
+                          </svg>
+                        ) : (
                           <svg
                             className="mx-auto h-12 w-12 text-gray-400"
                             stroke="currentColor"
@@ -320,28 +308,52 @@ const Form = () => {
                               strokeLinejoin="round"
                             />
                           </svg>
-                          <div className="flex text-sm text-gray-600">
-                            <label
-                              htmlFor="resume"
-                              className="relative cursor-pointer bg-white  font-medium text-kss-blue hover:text-kss-blue focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-kss-blue"
+                        )}
+
+                        <div className="flex text-sm text-gray-600">
+                          <label
+                            htmlFor="resume"
+                            className="relative cursor-pointer bg-white  font-medium text-kss-blue hover:text-kss-blue focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-kss-blue"
+                          >
+                            <span>Upload a file</span>
+                            <input
+                              id="resume"
+                              name="resume"
+                              type="file"
+                              multiple
+                              className="sr-only"
+                              onChange={handleFileChange}
+                            />
+                          </label>
+                          <p className="pl-1">or drop your file here</p>
+                        </div>
+                        {file ? (
+                          <div>
+                            {" "}
+                            <p className="text-xs text-gray-500">
+                              {file[0].name}
+                            </p>
+                            {file[1] ? (
+                              <p className="text-xs text-gray-500">
+                                {file[1].name}
+                              </p>
+                            ) : (
+                              ""
+                            )}
+                            <button
+                              onClick={handleRemoveFile}
+                              className="text-xs text-red-400 hover:text-red-500"
                             >
-                              <span>Upload a file</span>
-                              <input
-                                id="resume"
-                                name="resume"
-                                type="file"
-                                className="sr-only"
-                                onChange={handleFileChange}
-                              />
-                            </label>
-                            <p className="pl-1">or drag and drop</p>
+                              remove
+                            </button>{" "}
                           </div>
+                        ) : (
                           <p className="text-xs text-gray-500">
                             PNG, JPG, PDF, DOC up to 10MB
                           </p>
-                        </div>
+                        )}
                       </div>
-                    )}
+                    </div> */}
                   </div>
                   <div className="sm:col-span-4 pt-12">
                     <label
@@ -391,7 +403,7 @@ const Form = () => {
                               target="blank"
                             >
                               Asset Training
-                            </a> {" "}
+                            </a>{" "}
                             as Tasmania’s leading provider of nationally
                             recognised security training.
                           </p>
@@ -597,7 +609,7 @@ const Form = () => {
                     {" "}
                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                      className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black disabled:pointer-events-none disabled:bg-opacity-80"
                       disabled={noCert}
                     >
                       Submit
