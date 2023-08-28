@@ -39,12 +39,9 @@ const Contact = () => {
                     className="h-6 w-6 flex-shrink-0 text-gray-400"
                     aria-hidden="true"
                   />
-                  <a
-                    href="tel:0408303603"
-                    className="ml-3 text-kss-text text-lg"
-                  >
+                  <div className="ml-3 text-kss-text text-lg">
                     GPO Box 550 Hobart, 7001
-                  </a>
+                  </div>
                 </dd>
               </div>
               <div className="mt-6">
@@ -55,10 +52,10 @@ const Contact = () => {
                     aria-hidden="true"
                   />
                   <a
-                    href="tel:0408303603"
+                    href="tel:0362082777"
                     className="ml-3 text-kss-text text-lg"
                   >
-                    0408 303 603
+                    (03) 6208 2777
                   </a>
                 </dd>
               </div>
@@ -283,7 +280,7 @@ const Contact = () => {
                     <div>
                       {" "}
                       <button
-                        disabled = {agreed === false}
+                        disabled={agreed === false}
                         type="submit"
                         className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black disabled:pointer-events-none disabled:bg-opacity-80"
                       >

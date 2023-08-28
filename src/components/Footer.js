@@ -259,7 +259,7 @@ const Footer = () => {
               </div>
             </Link>
             <div className="flex justify-center lg:justify-start px-4 gap-6 pb-4">
-              <a href="0408303603" target="blank">
+              <a href="tel:0362082777" target="blank">
                 <Phone className="h-6 w-6 text-white" />
               </a>
               <a
