@@ -28,7 +28,7 @@
     "gatsby-plugin-react-helmet": "^5.19.0",
     "gatsby-plugin-sharp": "^5.12.0",
     "gatsby-plugin-sitemap": "^5.19.0",
-    "gatsby-source-filesystem": "^4.19.0",
+    "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-sharp": "^5.12.0",
     "node": "^20.5.1",
     "react": "^18.2.0",
