@@ -12,6 +12,7 @@ import SEO from "../components/Seo";
 import HeroSection from "../components/HeroSection";
 import Clients from "../components/Clients";
 import NewClientsBar from "../components/NewClientsBar";
+import Slider from "../components/Slider";
 const Home = () => {
   return (
     <Layout>

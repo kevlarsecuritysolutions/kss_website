@@ -37,7 +37,7 @@ const Footer = () => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl sm:p-6">
+                      <Dialog.Panel className="relative transform overflow-hidden rounded-md bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl sm:p-6">
                   <div className="grid grid-cols-2 gap-4">
                     <a
                       href="https://www.facebook.com/ksshobart/"
@@ -46,22 +46,13 @@ const Footer = () => {
                       loading="eager"
                     >
                       <div className=" w-full flex items-center justify-center">
-                        <StaticImage
-                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png"
-                          alt="go to facebook"
-                        />
+                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="go to facebook"/>
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Find Us On Facebook
-                        </Dialog.Title>
+
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
-                            Stay up to date with Kevlar Security Solutions on
-                            Facebook.
+                          <p className="text-sm text-gray-500 text-center">
+                          Find us on Facebook to stay up to date with our latest news and events.
                           </p>
                         </div>
                       </div>
@@ -81,14 +72,9 @@ const Footer = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Asset Training
-                        </Dialog.Title>
+
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                        <p className="text-sm text-gray-500 text-center">
                             To work in the security industry, you must first
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
@@ -98,7 +84,7 @@ const Footer = () => {
                               target="blank"
                             >
                               Asset Training
-                            </a>{" "}
+                            </a> {" "}
                             as Tasmania’s leading provider of nationally
                             recognised security training.
                           </p>
@@ -120,14 +106,9 @@ const Footer = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          ASIAL
-                        </Dialog.Title>
+                        
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Kevlar Security Solutions Pty Ltd is a member of the
                             Australian Security Industry Association Limited.
                           </p>
@@ -150,14 +131,9 @@ const Footer = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Carbon Neutral
-                        </Dialog.Title>
+                      
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             We're proudly offsetting our fleet vehicle carbon
                             emmissions through Carbon Neutral Pty Ltd.
                           </p>
@@ -179,14 +155,9 @@ const Footer = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Crime Stoppers
-                        </Dialog.Title>
+                      
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Crime Stoppers is an integral part of policing with
                             the information gathered and supplied by the
                             community essential to crime fighting and crime
@@ -210,14 +181,9 @@ const Footer = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Tasmania Police
-                        </Dialog.Title>
+                    
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Tasmania Police aims to reduce the impact of crime,
                             improve the level of public safety and traffic law
                             compliance, and enhance emergency management and
@@ -258,7 +224,10 @@ const Footer = () => {
                 <p className="text-sm text-white -mt-2">SECURITY SOLUTIONS</p>
               </div>
             </Link>
-            <div className="flex justify-center lg:justify-start px-4 gap-6 pb-4">
+            <div className="hidden lg:flex justify-start">
+              <p className="text-kss-text-dark text-sm pb-2">Contact us during business hours 0800-1600 Monday to Friday on <a className="hover:text-white underline" href="tel:0362082777">(03) 6208 2777</a> </p>
+            </div>
+            <div className="flex justify-center lg:hidden px-4 gap-6 pb-4">
               <a href="tel:0362082777" target="blank">
                 <Phone className="h-6 w-6 text-white" />
               </a>

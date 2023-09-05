@@ -56,16 +56,32 @@ const Company = () => {
               services, and in our advice and recommendations to our clients.
             </p>
             <h3 className="text-white text-xl font-semibold pt-2 pb-4">
-              Acknowledgement of Country
+              Compliance Standards
             </h3>
             <p className="text-md text-white pb-4">
-              We acknowledge the Traditional Custodians of the land on which we
-              work, the Palawa people of Lutruwita (Tasmania). We recognise and
-              celebrate their deep spiritual connection to Country, and their
-              strength, resilience and contribution to our community. We pay our
-              respects to all Aboriginal and Torres Strait Islander cultures,
-              and to all Elders, past and present.
+              Our commitment to the highest level of compliance and performance
+              is demonstrated by our ISO accreditations for Quality Management
+              Systems (ISO 9001) and Occupational Health & Safety Management
+              Systems (ISO 45001).
             </p>
+            <p className="text-md text-white pb-4">
+              We are audited and assessed annually to ensure ongoing compliance.
+            </p>
+            <p className="text-md text-white pb-4">
+              In addition to our ISO compliances, we have voluntarily adopted a
+              variety of policies and practices to demonstrate our commitment to
+              best practice business operation, including:
+            </p>
+            <ul className="text-md pb-4 text-white list-disc pl-4">
+              <li>Modern slavery and supply chain integrity policy</li>
+              <li>
+                Use of comprehensive visa and work rights compliance checks and
+                tracking software
+              </li>
+              <li>Data breach response plan</li>
+              <li>Environmental impact policy</li>
+              <li>Equity and diversity policy</li>
+            </ul>
           </div>
           <div className="relative mx-4 mb-6 lg:mx-0 lg:mb-0">
             <StaticImage
@@ -106,7 +122,7 @@ const Company = () => {
               environment and climate as much as possible, and have taken the
               following steps to achieve this:
             </p>
-            <div className="max-w-xl mx-auto pt-4">
+            <div className="max-w-xl mx-auto pt-4 px-2">
               <div className="relative border border-white py-8 pl-12 bg-[#516400]">
                 <div className="bg-white rounded-full absolute w-12 bottom-4 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />
@@ -131,7 +147,7 @@ const Company = () => {
                 </div>
                 <p className="text-white text-md">
                   We are developing electronic patrol sheets and alarm response
-                  dockets so our patrol vehivle operation will be completely
+                  dockets so our patrol vehicle operation will be completely
                   paper-free.
                 </p>
               </div>

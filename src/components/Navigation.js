@@ -91,16 +91,10 @@ const Navigation = () => {
                         <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="go to facebook"/>
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Find Us On Facebook
-                        </Dialog.Title>
+
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
-                            Stay up to date with Kevlar Security Solutions on
-                            Facebook.
+                          <p className="text-sm text-gray-500 text-center">
+                          Find us on Facebook to stay up to date with our latest news and events.
                           </p>
                         </div>
                       </div>
@@ -120,14 +114,9 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Asset Training
-                        </Dialog.Title>
+
                         <div className="mt-2">
-                        <p className="text-sm text-gray-500">
+                        <p className="text-sm text-gray-500 text-center">
                             To work in the security industry, you must first
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
@@ -159,14 +148,9 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          ASIAL
-                        </Dialog.Title>
+                        
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Kevlar Security Solutions Pty Ltd is a member of the
                             Australian Security Industry Association Limited.
                           </p>
@@ -189,14 +173,9 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Carbon Neutral
-                        </Dialog.Title>
+                      
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             We're proudly offsetting our fleet vehicle carbon
                             emmissions through Carbon Neutral Pty Ltd.
                           </p>
@@ -218,14 +197,9 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Crime Stoppers
-                        </Dialog.Title>
+                      
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Crime Stoppers is an integral part of policing with
                             the information gathered and supplied by the
                             community essential to crime fighting and crime
@@ -249,14 +223,9 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        <Dialog.Title
-                          as="h3"
-                          className="text-lg font-medium leading-6 text-gray-900"
-                        >
-                          Tasmania Police
-                        </Dialog.Title>
+                    
                         <div className="mt-2">
-                          <p className="text-sm text-gray-500">
+                          <p className="text-sm text-gray-500 text-center">
                             Tasmania Police aims to reduce the impact of crime,
                             improve the level of public safety and traffic law
                             compliance, and enhance emergency management and
@@ -841,7 +810,7 @@ const Navigation = () => {
                                             <p className="text-kss-text text-xs">
                                               We have earned a reputation as a
                                               market leader in providing a wide
-                                              range of security services
+                                              range of security services.
                                             </p>
                                           </div>
                                         </AnchorLink>
@@ -1073,7 +1042,7 @@ const Navigation = () => {
                                               Proudly Tasmanian owned and
                                               operated, specialising in the
                                               provision of physical and
-                                              technical security services
+                                              technical security services.
                                             </p>
                                           </div>
                                         </Link>
@@ -1112,9 +1081,9 @@ const Navigation = () => {
                                               </div>
                                             </div>
                                             <p className="text-kss-text text-sm">
-                                              KSS are your Tasmanian owned and
+                                              KSS is your Tasmanian owned and
                                               operated security service
-                                              specialists
+                                              specialist.
                                             </p>
                                           </div>
                                         </Link>
@@ -1233,7 +1202,7 @@ const Navigation = () => {
                                             <p className="text-kss-text text-sm">
                                               We have built our reputation as a
                                               leading employer in the Tasmanian
-                                              security industry
+                                              security industry.
                                             </p>
                                           </div>
                                         </Link>
@@ -1297,7 +1266,7 @@ const Navigation = () => {
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               A leading employer in the
-                                              Tasmanian security industry
+                                              Tasmanian security industry.
                                             </p>
                                           </div>
                                         </Link>
@@ -1322,7 +1291,7 @@ const Navigation = () => {
 
                                             <p className="text-kss-text text-sm">
                                               Upskill with ongoing support and
-                                              employee training
+                                              employee training.
                                             </p>
                                           </div>
                                         </Link>

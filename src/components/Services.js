@@ -15,6 +15,8 @@ import jacksons from "../assets/images/jacksons.png";
 import kalisProperty from "../assets/images/kalis-property.png";
 import { StaticImage } from "gatsby-plugin-image";
 
+import { ArrowRight } from "@carbon/icons-react";
+
 const services = [
   {
     name: "Security Patrols",
@@ -235,93 +237,167 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="py-12 lg:py-24 relative z-10">
-          <div className=" max-w-7xl mx-auto grid grid-cols-1 px-4">
-            <div className="max-w-7xl px-4 pb-24 lg:pb-32 mx-auto relative z-10">
-              <p className="text-lg lg:text-2xl text-white pb-6 lg:pb-12 font-semibold">
-                We work closely with the Tasmanian Government to provide leading
-                security services to the following departments
-              </p>
-              <div className="flex flex-col lg:flex-row pt-12 lg:gap-12 items-start lg:items-center">
-                <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-                  <StaticImage
-                    src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png"
-                    alt="tasgov logo"
-                  />
-                </div>
-                <div className="lg:hidden w-full pb-12 ">
-                  <StaticImage
-                    src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png"
-                    alt="tasgov logo"
-                  />
-                </div>
-                <div className="grid justify-start grid-cols-1 lg:grid-cols-3 gap-8">
-                  <div
-                    to="/services/static-guards"
-                    className="flex gap-4 group"
-                  >
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department for Education, Children and Young People
-                      </h4>
+        <div className="py-12 lg:py-36 relative z-10">
+          <div className=" max-w-screen-2xl mx-auto grid grid-cols-1 px-4">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 px-4 pb-12 mx-auto relative z-10">
+              <div className="grid-cols-1 xl:border-r border-kss-text-dark/60 lg:pr-12">
+                <div className="flex flex-col">
+                  {/* <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
+                    <StaticImage
+                      src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png"
+                      alt="tasgov logo"
+                    />
+                  </div> */}
+                  <div className="pb-4">
+                    <div className="flex justify-start items-center h-36 w-full relative">
+                      <StaticImage
+                        src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png"
+                        alt="tasgov logo"
+                      />
                     </div>
                   </div>
-                  <div
-                    to="/services/static-guards"
-                    className="flex gap-4 group"
-                  >
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of Police, Fire & Emergency Management
-                      </h4>
+
+                  <p className="text-lg text-white pb-4 font-medium">
+                    As a wholly Tasmanian owned business, we are proud to
+                    provide our very own government departments with the highest
+                    quality security services.
+                  </p>
+                  <p className="text-lg text-white pb-4 lg:pb-12 font-medium">
+                    We are a trusted provider of security services for a range
+                    of Tasmanian Government Departments including:
+                  </p>
+                  <div className="grid justify-start grid-cols-1 lg:grid-cols-2 gap-y-6">
+                    <div className="flex gap-4 group">
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department for Education, Children and Young People
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                  <div to="/services/site-entry" className="flex gap-4 group">
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of Health
-                      </h4>
+                    <div
+                      to="/services/static-guards"
+                      className="flex gap-4 group"
+                    >
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department of Police, Fire & Emergency Management
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                  <div
-                    to="/services/static-guards"
-                    className="flex gap-4 group"
-                  >
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of Natural Resources and Environment
-                      </h4>
+                    <div
+                      to="/services/static-guards"
+                      className="flex gap-4 group"
+                    >
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department of Natural Resources and Environment
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                  <div to="/services/site-entry" className="flex gap-4 group">
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of Treasury and Finance
-                      </h4>
+                    <div to="/services/site-entry" className="flex gap-4 group">
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department of Treasury and Finance
+                        </h4>
+                      </div>
                     </div>
-                  </div>
-                  <div to="/services/site-entry" className="flex gap-4 group">
-                    <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
-                    <div className="flex flex-col">
-                      <h4 className="text-kss-text-dark font-semibold text-md lg:text-lg">
-                        Department of State Growth
-                      </h4>
+                    <div to="/services/site-entry" className="flex gap-4 group">
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department of Health
+                        </h4>
+                      </div>
+                    </div>
+                    <div to="/services/site-entry" className="flex gap-4 group">
+                      <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
+                      <div className="flex flex-col">
+                        <h4 className="text-kss-text-dark text-md font-semibold">
+                          Department of State Growth
+                        </h4>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div className="grid-cols-1 lg:pl-12">
+                <div className="flex flex-col">
+                  <div className="flex justify-start items-center gap-8 pb-4">
+                    <div className="flex justify-center items-center h-36 w-36 relative">
+                      <StaticImage
+                        src="../assets/images/logos/ISO9001-logo.png"
+                        alt="ISO9001"
+                      />
+                    </div>
+                    <div className="flex justify-center items-center h-36 w-36 relative">
+                      <StaticImage
+                        src="../assets/images/logos/ISO45001-logo.png"
+                        alt="ISO45001"
+                      />
+                    </div>
+                    <div className="flex justify-center items-center h-36 w-36 relative">
+                      <StaticImage
+                        src="../assets/images/logos/JAS-logo.png"
+                        alt="ISO9001"
+                      />
+                    </div>
+                  </div>
+                  <p className="text-lg text-white pb-8 font-medium">
+                    Our commitment to the highest level of compliance and
+                    performance is demonstrated by our ISO accreditations for
+                    Quality Management Systems (ISO 9001) and Occupational
+                    Health & Safety Management Systems (ISO 45001).
+                  </p>
+                  <div className="pb-2">
+                    <div className="flex justify-start items-center gap-8 pb-4">
+                      <div className="flex justify-center items-center h-36 w-36 relative">
+                        <StaticImage
+                          src="../assets/images/logos/ASIAL-logo.png"
+                          alt="asial bronze member"
+                        />
+                      </div>
+                      <div className="flex justify-center items-center h-36 w-36 relative">
+                        <StaticImage
+                          src="../assets/images/logos/Carbon-logo.png"
+                          alt="ISO45001"
+                        />
+                      </div>
+                      <div className="flex justify-center items-center h-36 w-36 relative">
+                        <StaticImage
+                          src="../assets/images/100-tas-logo.png"
+                          alt="ISO9001"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-lg text-white pb-4 font-medium">
+                    In addition to our ISO compliances, we have voluntarily
+                    adopted a variety of policies and practices to demonstrate
+                    our commitment to best practice business operation.
+                  </p>
+                </div>
+              </div>
             </div>
+            <div className="flex justify-center pb-24">
+              <Link
+                to="/company"
+                className="flex gap-2 items-center bg-transparent hover:bg-white border-white border-2 transition text-white hover:text-black text-sm font-semibold py-3 px-6 lg:px-10"
+              >
+                {" "}
+                Learn more about KSS <ArrowRight className="h-5 w-5" />
+              </Link>
+            </div>
+
             <div className="pb-24 max-w-5xl sm:text-left">
               <div className="h-1 my-4 bg-white w-12"></div>
-              <h2 className="text-3xl xl:text-4xl text-white font-bold pb-8 uppercase">
+              <h2 className="text-3xl xl:text-4xl text-white font-bold pb-0 uppercase">
                 Our Services Set Us Apart
               </h2>
-              <p className="text-white text-lg pb-4">
+              {/* <p className="text-white text-lg pb-4">
                 We have earned a reputation as a market leader in providing a
                 wide range of security services including:
               </p>
@@ -410,13 +486,13 @@ const Services = () => {
                 our commitment to using the latest and best practice protocols
                 in our own operations and services, and in our advice and
                 recommendations to our clients.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="mx-auto flex flex-col max-w-7xl gap-8 pb-12">
             <Link
               to="services/static-guards"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center overflow-hidden p-2">
                 <StaticImage
@@ -442,7 +518,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/concierge-and-site-entry-officers"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -468,7 +544,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/cash-in-transit"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -495,7 +571,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/security-patrols"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -520,7 +596,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/alarm-response"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -549,7 +625,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/crowd-control"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -577,7 +653,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/body-guard-services"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -604,7 +680,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/technical-services"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -631,7 +707,7 @@ const Services = () => {
             </Link>
             <Link
               to="services/risk-assessments"
-              className="flex flex-col lg:grid lg:grid-cols-6 gap-12 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
+              className="flex flex-col lg:grid lg:grid-cols-6 gap-8 pb-12 px-4 pt-4 transition hover:bg-[#001a2f80]"
             >
               <div className="relative col-span-1 bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] w-full aspect-video lg:aspect-square flex justify-center items-center">
                 <StaticImage
@@ -646,9 +722,9 @@ const Services = () => {
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  Our highly qualified management team's broad range of expertise
-                  places us in the unique position to be able to provide
-                  comprehensive risk assessments covering all aspects of
+                  Our highly qualified management team's broad range of
+                  expertise places us in the unique position to be able to
+                  provide comprehensive risk assessments covering all aspects of
                   government, business or personal site security. Our
                   recommendations are guided by industry best-practice,
                   extensive knowledge and experience, and matters relevant to
