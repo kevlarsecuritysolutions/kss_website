@@ -152,7 +152,7 @@ const Clients = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="max-w-3xl sm:text-left">
           <div className="h-1 my-4 bg-kss-text w-12"></div>
-          <h2 className="text-3xl xl:text-3xl text-kss-text font-bold pb-2 uppercase">
+          <h2 className="text-xl xl:text-3xl text-kss-text font-bold pb-2 uppercase">
             Acknowledgement of Country
           </h2>
         </div>

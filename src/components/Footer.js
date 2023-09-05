@@ -287,7 +287,7 @@ const Footer = () => {
               </Link>
               <a
                 target="blank"
-                href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
+                href="/terms.pdf"
                 className="text-kss-text-dark hover:text-white text-sm pb-2"
               >
                 Terms & Conditions

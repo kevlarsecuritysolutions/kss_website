@@ -21,7 +21,7 @@ const HeroSection = () => {
         />
         <div className="absolute inset-0 bg-black/50 lg:bg-black/0 lg:bg-gradient-to-tr lg:from-black/60  lg:to-black/20 mix-blend-multiply" />
       </div>
-      <div className="max-w-screen-2xl px-4 mx-auto relative pt-24 pb-6 lg:pt-36 lg:pb-24 z-[20]">
+      <div className="max-w-screen-2xl px-4 mx-auto relative pt-12 pb-6 lg:pt-36 lg:pb-24 z-[20]">
         <div className="h-1 my-4 bg-white w-12"></div>
         <h1 className=" text-4xl xl:text-5xl font-bold tracking-tight">
           <span className="block text-white uppercase xl:max-w-xl">

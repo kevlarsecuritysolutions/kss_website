@@ -60,7 +60,7 @@ const Form = () => {
       />
       <main>
         <section className="bg-gray-100 pb-12">
-          <div className="max-w-5xl mx-auto pt-24 pb-12 px-4">
+          <div className="max-w-5xl mx-auto pt-12 xl:pt-24 pb-12 px-4">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-12 pb-4">
               Join the KSS Team
             </h2>

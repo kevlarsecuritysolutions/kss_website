@@ -239,8 +239,8 @@ const Services = () => {
         </div>
         <div className="py-12 lg:py-36 relative z-10">
           <div className=" max-w-screen-2xl mx-auto grid grid-cols-1 px-4">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 px-4 pb-12 mx-auto relative z-10">
-              <div className="grid-cols-1 xl:border-r border-kss-text-dark/60 lg:pr-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 pb-12 mx-auto relative z-10">
+              <div className="grid-cols-1 xl:border-r border-kss-text-dark/60 lg:pr-12 pb-12">
                 <div className="flex flex-col">
                   {/* <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
                     <StaticImage
@@ -257,12 +257,12 @@ const Services = () => {
                     </div>
                   </div>
 
-                  <p className="text-lg text-white pb-4 font-medium">
+                  <p className="text-md lg:text-lg text-white pb-4 font-medium">
                     As a wholly Tasmanian owned business, we are proud to
                     provide our very own government departments with the highest
                     quality security services.
                   </p>
-                  <p className="text-lg text-white pb-4 lg:pb-12 font-medium">
+                  <p className="text-md lg:text-lg text-white pb-8 lg:pb-12 font-medium">
                     We are a trusted provider of security services for a range
                     of Tasmanian Government Departments including:
                   </p>
@@ -346,7 +346,7 @@ const Services = () => {
                       />
                     </div>
                   </div>
-                  <p className="text-lg text-white pb-8 font-medium">
+                  <p className="text-md lg:text-lg text-white pb-8 font-medium">
                     Our commitment to the highest level of compliance and
                     performance is demonstrated by our ISO accreditations for
                     Quality Management Systems (ISO 9001) and Occupational
@@ -374,7 +374,7 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-                  <p className="text-lg text-white pb-4 font-medium">
+                  <p className="text-md lg:text-lg text-white pb-4 font-medium">
                     In addition to our ISO compliances, we have voluntarily
                     adopted a variety of policies and practices to demonstrate
                     our commitment to best practice business operation.
@@ -397,11 +397,11 @@ const Services = () => {
               <h2 className="text-3xl xl:text-4xl text-white font-bold pb-0 uppercase">
                 Our Services Set Us Apart
               </h2>
-              {/* <p className="text-white text-lg pb-4">
+              {/* <p className="text-white text-md lg:text-lg pb-4">
                 We have earned a reputation as a market leader in providing a
                 wide range of security services including:
               </p>
-              <ul className="text-lg text-white pb-4 list-disc pl-4 lg:pl-8">
+              <ul className="text-md lg:text-lg text-white pb-4 list-disc pl-4 lg:pl-8">
                 <li className="py-1">
                   <Link
                     className="text-white hover:underline"
@@ -467,20 +467,20 @@ const Services = () => {
                   </Link>
                 </li>
               </ul>
-              <p className="text-white text-lg pb-4">
+              <p className="text-white text-md lg:text-lg pb-4">
                 We set ourselves apart by providing services which are
                 responsive and flexible to our clients’ needs, and security
                 personnel who are highly trained, reliable and skilled in a wide
                 range of security and related roles.
               </p>
-              <p className="text-white text-lg pb-4">
+              <p className="text-white text-md lg:text-lg pb-4">
                 We pride ourselves on ensuring that our services are responsive,
                 cost-effective and flexible. We conduct regular client services
                 reviews to ensure that our services are continuing to meet our
                 clients’ needs and incorporate the latest industry best practice
                 standards.
               </p>
-              <p className="text-white text-lg pb-4">
+              <p className="text-white text-md lg:text-lg pb-4">
                 Our industry-leading use of technology, including security
                 tablet-based information storage and Fleetmatics demonstrates
                 our commitment to using the latest and best practice protocols

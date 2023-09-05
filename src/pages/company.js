@@ -15,7 +15,7 @@ const Company = () => {
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="px-4 lg:pl-24 lg:pr-24 pt-36 pb-24">
+          <div className="px-4 lg:pl-24 lg:pr-24 pt-24 xl:pt-36 pb-24">
             <h2 className="text-white font-bold text-3xl pb-8">
               COMPANY PROFILE
             </h2>

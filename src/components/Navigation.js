@@ -690,8 +690,8 @@ const Navigation = () => {
         <header
           className={
             color
-              ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#001a2f] bg-size-200 bg-pos-0 fixed w-full z-[1000] transition-all"
-              : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#001a2f] bg-size-200 bg-pos-100 fixed w-full z-[1000] transition-all"
+              ? "top-0 h-auto bg-gradient-to-t from-transparent via-black to-[#001a2f] bg-size-200 bg-pos-0 fixed w-full z-[50] transition-all"
+              : "top-0 h-auto bg-gradient-to-t from-transparent via-transparent via-black to-[#001a2f] bg-size-200 bg-pos-100 fixed w-full z-[50] transition-all"
           }
           style={
             open && !color
@@ -710,7 +710,7 @@ const Navigation = () => {
                   <div className="h-16 flex items-center justify-between">
                     {/* Logo (lg+) */}
                     <div className="relative hidden lg:flex lg:items-center z-[1000]">
-                      <Link to="/" className="flex items-center gap-4">
+                      <Link to="/" className="flex items-center gap-4 z-[100]">
                         <span className="sr-only">KSS</span>
                         <StaticImage
                           src="../assets/images/kss-logo-white.png"
