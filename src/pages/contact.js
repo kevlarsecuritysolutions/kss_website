@@ -234,23 +234,14 @@ const Contact = () => {
                     </div>
                     <div className="ml-3">
                       <p className="text-base text-kss-text">
-                        By selecting this, you agree to the{" "}
+                        By submitting this form, you agree to the terms outlined in our{" "}
                         <Link
                           to="/privacy-policy"
                           target="blank"
                           className="font-medium text-gray-700 underline"
                         >
-                          Privacy Policy
+                          Privacy Policy.
                         </Link>{" "}
-                        and{" "}
-                        <a
-                          href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
-                          target="blank"
-                          className="font-medium text-gray-700 underline"
-                        >
-                          Terms of Use
-                        </a>
-                        .
                       </p>
                     </div>
                   </div>

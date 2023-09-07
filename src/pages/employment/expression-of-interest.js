@@ -273,7 +273,13 @@ const Form = () => {
                     >
                       Upload your current CV and copies of your qualifications
                     </label>
-                    <input type="file" multiple id="resume" name="resume" className="pt-4"/>
+                    <input
+                      type="file"
+                      multiple
+                      id="resume"
+                      name="resume"
+                      className="pt-4"
+                    />
                     {/* <div
                       className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed "
                       onDragEnter={handleDragEnter}
@@ -561,24 +567,16 @@ const Form = () => {
                     </Switch>
                   </div>
                   <div className="ml-3">
-                    <p className="text-base text-gray-500">
-                      By selecting this, you agree to the{" "}
+                    <p className="text-base text-kss-text">
+                      By submitting this form, you agree to the terms outlined
+                      in our{" "}
                       <Link
                         to="/privacy-policy"
                         target="blank"
                         className="font-medium text-gray-700 underline"
                       >
-                        Privacy Policy
+                        Privacy Policy.
                       </Link>{" "}
-                      and{" "}
-                      <a
-                        href="https://assets.ctfassets.net/lfrbwr0lmnkj/3m0WHtRL8hkn1smxmlVSUP/61e35e80c092c5b877c66bdfbb5c0ee6/terms.pdf"
-                        target="blank"
-                        className="font-medium text-gray-700 underline"
-                      >
-                        Cookie Policy
-                      </a>
-                      .
                     </p>
                   </div>
                 </div>

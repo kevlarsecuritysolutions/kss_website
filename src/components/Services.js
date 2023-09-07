@@ -535,7 +535,7 @@ const Services = () => {
                 <p className="text-kss-text-dark">
                   We provide tailored concierge and site entry security services
                   to accommodate for a range of site-specific requirements
-                  including issuing and updating site access [cards/FOBs],
+                  including issuing and updating site access cards,
                   greeting and assisting important guests, conducting drug and
                   alcohol testing, and comprehensive record-keeping
                   administration within proprietary IT systems.
