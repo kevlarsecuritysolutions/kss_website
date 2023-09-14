@@ -95,10 +95,7 @@ const clients = [
 const Services = () => {
   return (
     <div>
-      <section
-        className="relative bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden overflow-y-hidden"
-        id="services"
-      >
+      <section className="relative bg-gradient-to-b from-[#001a2f] to-[#03070a] overflow-x-hidden overflow-y-hidden">
         <div className="hidden xl:block absolute right-0">
           <svg
             width="1402"
@@ -239,38 +236,33 @@ const Services = () => {
         </div>
         <div className="py-12 lg:py-36 relative z-10">
           <div className=" max-w-screen-2xl mx-auto grid grid-cols-1 px-4">
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 pb-12 mx-auto relative z-10">
-              <div className="grid-cols-1 xl:border-r border-kss-text-dark/60 lg:pr-12 pb-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-0 pb-12 mx-auto relative z-10 xl:pb-36">
+              <div className="grid-cols-1 xl:border-r border-kss-text-dark/60 lg:pr-12">
                 <div className="flex flex-col">
-                  {/* <div className="hidden lg:flex items-center h-52 w-52 lg:h-full lg:w-auto">
-                    <StaticImage
-                      src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png"
-                      alt="tasgov logo"
-                    />
-                  </div> */}
-                  <div className="pb-4">
-                    <div className="flex justify-start items-center h-36 w-full relative">
+                  <div className="pb-4 flex justify-center">
+                    {/* <div className="hidden lg:flex items-center h-52 w-52">
+                      <StaticImage
+                        src="https://images.ctfassets.net/lfrbwr0lmnkj/6Ugh94GJdepOdHdI3sU7MU/fb816719b3173907bc26ab1e1e0190c5/tasgov-logo-mono.png"
+                        alt="tasgov logo"
+                      />
+                    </div> */}
+                    <div className="flex justify-start items-center w-[400px] h-[145px] relative">
                       <StaticImage
                         src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png"
                         alt="tasgov logo"
                       />
                     </div>
                   </div>
-
-                  <p className="text-md lg:text-lg text-white pb-4 font-medium">
-                    As a wholly Tasmanian owned business, we are proud to
-                    provide our very own government departments with the highest
-                    quality security services.
+                  <p className="text-md lg:text-lg text-white pb-6 lg:pb-12 font-medium">
+                    As a wholly Tasmanian owned business, we are proud to be a
+                    trusted provider of security services to a range of
+                    Tasmanian Government Departments, including:
                   </p>
-                  <p className="text-md lg:text-lg text-white pb-8 lg:pb-12 font-medium">
-                    We are a trusted provider of security services for a range
-                    of Tasmanian Government Departments including:
-                  </p>
-                  <div className="grid justify-start grid-cols-1 lg:grid-cols-2 gap-y-6">
+                  <div className="grid justify-start grid-cols-1 pb-6 xl:pb-0 lg:grid-cols-2 gap-y-6 xl:gap-y-8">
                     <div className="flex gap-4 group">
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department for Education, Children and Young People
                         </h4>
                       </div>
@@ -281,7 +273,7 @@ const Services = () => {
                     >
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department of Police, Fire & Emergency Management
                         </h4>
                       </div>
@@ -292,7 +284,7 @@ const Services = () => {
                     >
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department of Natural Resources and Environment
                         </h4>
                       </div>
@@ -300,7 +292,7 @@ const Services = () => {
                     <div to="/services/site-entry" className="flex gap-4 group">
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department of Treasury and Finance
                         </h4>
                       </div>
@@ -308,7 +300,7 @@ const Services = () => {
                     <div to="/services/site-entry" className="flex gap-4 group">
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department of Health
                         </h4>
                       </div>
@@ -316,17 +308,26 @@ const Services = () => {
                     <div to="/services/site-entry" className="flex gap-4 group">
                       <div className="min-w-[1px] max-w-[1px] rounded-xl bg-gradient-to-b from-kss-text-dark to-transparent"></div>
                       <div className="flex flex-col">
-                        <h4 className="text-kss-text-dark text-md font-semibold">
+                        <h4 className="text-white text-md font-semibold">
                           Department of State Growth
                         </h4>
                       </div>
                     </div>
                   </div>
+                  <div className="hidden xl:flex justify-center pt-12">
+                    <Link
+                      to="/company"
+                      className="flex gap-2 items-center bg-transparent hover:bg-white border-white border-2 transition text-white hover:text-black text-sm font-semibold py-3 px-6 lg:px-10"
+                    >
+                      {" "}
+                      Learn more about KSS <ArrowRight className="h-5 w-5" />
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="grid-cols-1 lg:pl-12">
                 <div className="flex flex-col">
-                  <div className="flex justify-start items-center gap-8 pb-4">
+                  <div className="flex justify-center items-center gap-8 pb-4">
                     <div className="flex justify-center items-center h-36 w-36 relative">
                       <StaticImage
                         src="../assets/images/logos/ISO9001-logo.png"
@@ -353,7 +354,7 @@ const Services = () => {
                     Health & Safety Management Systems (ISO 45001).
                   </p>
                   <div className="pb-2">
-                    <div className="flex justify-start items-center gap-8 pb-4">
+                    <div className="flex justify-center items-center gap-8 pb-4">
                       <div className="flex justify-center items-center h-36 w-36 relative">
                         <StaticImage
                           src="../assets/images/logos/ASIAL-logo.png"
@@ -368,21 +369,24 @@ const Services = () => {
                       </div>
                       <div className="flex justify-center items-center h-36 w-36 relative">
                         <StaticImage
-                          src="../assets/images/100-tas-logo.png"
+                          src="../assets/images/tas-logo-green.png"
                           alt="ISO9001"
                         />
                       </div>
                     </div>
                   </div>
-                  <p className="text-md lg:text-lg text-white pb-4 font-medium">
-                    In addition to our ISO compliances, we have voluntarily
-                    adopted a variety of policies and practices to demonstrate
-                    our commitment to best practice business operation.
+                  <p className="text-md lg:text-lg text-white font-medium">
+                    The Australian Security Industry Association Ltd (ASIAL) is
+                    the national peak body for security organisations and
+                    professionals in Australia. Membership is a mark of
+                    distinction within the Security Industry that demonstrates
+                    our commitment to compliance and access to leading industry
+                    practices throughout all areas of security.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex justify-center pb-24">
+            <div className="flex xl:hidden justify-center pb-24">
               <Link
                 to="/company"
                 className="flex gap-2 items-center bg-transparent hover:bg-white border-white border-2 transition text-white hover:text-black text-sm font-semibold py-3 px-6 lg:px-10"
@@ -392,16 +396,16 @@ const Services = () => {
               </Link>
             </div>
 
-            <div className="pb-24 max-w-5xl sm:text-left">
+            <div className="pb-24 max-w-5xl sm:text-left" id="services">
               <div className="h-1 my-4 bg-white w-12"></div>
-              <h2 className="text-3xl xl:text-4xl text-white font-bold pb-0 uppercase">
+              <h2 className="text-3xl xl:text-4xl text-white font-bold pb-4 xl:pb-8 uppercase">
                 Our Services Set Us Apart
               </h2>
-              {/* <p className="text-white text-md lg:text-lg pb-4">
+              <p className="text-white text-md lg:text-lg pb-4">
                 We have earned a reputation as a market leader in providing a
                 wide range of security services including:
               </p>
-              <ul className="text-md lg:text-lg text-white pb-4 list-disc pl-4 lg:pl-8">
+              {/* <ul className="text-md lg:text-lg text-white pb-4 list-disc pl-4 lg:pl-8">
                 <li className="py-1">
                   <Link
                     className="text-white hover:underline"
@@ -466,8 +470,8 @@ const Services = () => {
                     Automatic Teller Machine first line response and maintenance
                   </Link>
                 </li>
-              </ul>
-              <p className="text-white text-md lg:text-lg pb-4">
+              </ul> */}
+              {/* <p className="text-white text-md lg:text-lg pb-4">
                 We set ourselves apart by providing services which are
                 responsive and flexible to our clients’ needs, and security
                 personnel who are highly trained, reliable and skilled in a wide
@@ -535,10 +539,10 @@ const Services = () => {
                 <p className="text-kss-text-dark">
                   We provide tailored concierge and site entry security services
                   to accommodate for a range of site-specific requirements
-                  including issuing and updating site access cards,
-                  greeting and assisting important guests, conducting drug and
-                  alcohol testing, and comprehensive record-keeping
-                  administration within proprietary IT systems.
+                  including issuing and updating site access cards, greeting and
+                  assisting important guests, conducting drug and alcohol
+                  testing, and comprehensive record-keeping administration
+                  within proprietary IT systems.
                 </p>
               </div>
             </Link>

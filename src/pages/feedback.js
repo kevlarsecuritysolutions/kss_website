@@ -49,6 +49,7 @@ const Feedback = () => {
                 method="POST"
                 className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
               >
+                  <input type="hidden" id="form-type" name="form-type" value="feedback"/>
                 <div>
                   <label
                     htmlFor="first-name"
@@ -224,7 +225,7 @@ const Feedback = () => {
                         type="submit"
                         className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black disabled:pointer-events-none disabled:bg-opacity-80"
                       >
-                        Thank you for your feedback
+                        Provide feedback
                       </button>
                     </div>
                   )}
@@ -241,7 +242,7 @@ const Feedback = () => {
                           </div>
                           <div className="ml-3">
                             <p className="text-sm font-medium text-white">
-                              Your submission has been received
+                              Your submission has been received. Thank you for your feedback.
                             </p>
                           </div>
                           <div className="ml-auto pl-3">

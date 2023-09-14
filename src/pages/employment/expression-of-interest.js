@@ -65,7 +65,7 @@ const Form = () => {
               Join the KSS Team
             </h2>
             <p className="mt-4 text-lg leading-6 text-gray-500">
-              We are always on the lookout for new members to join the KSS team
+              We are always on the lookout for new members to join the KSS team.
             </p>
             <p className="mt-4 text-lg leading-6 text-gray-500">
               Complete all required fields below and we will contact you should
@@ -443,7 +443,7 @@ const Form = () => {
                               htmlFor="drivers-licence"
                               className="font-medium text-gray-700"
                             >
-                              Current Drivers License
+                              Current Driver Licence
                             </label>
                           </div>
                         </div>

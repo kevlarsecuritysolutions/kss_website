@@ -68,7 +68,7 @@ const Navigation = () => {
             <div className="fixed inset-0 bg-black bg-opacity-30 transition-opacity" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-[2000] overflow-y-auto">
+          <div className="fixed inset-0 z-[2000]">
             <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
               <Transition.Child
                 as={Fragment}
@@ -88,13 +88,16 @@ const Navigation = () => {
                       loading="eager"
                     >
                       <div className=" w-full flex items-center justify-center">
-                        <StaticImage src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png" alt="go to facebook"/>
+                        <StaticImage
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/7oCyHoNOtF0RuIEsUnUCdJ/9a57264df3c0391d0c115be282fd6217/facebook.png"
+                          alt="go to facebook"
+                        />
                       </div>
                       <div className="">
-
                         <div className="mt-2">
                           <p className="text-sm text-gray-500 text-center">
-                          Find us on Facebook to stay up to date with our latest news and events.
+                            Find us on Facebook to stay up to date with our
+                            latest news and events.
                           </p>
                         </div>
                       </div>
@@ -114,9 +117,8 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-
                         <div className="mt-2">
-                        <p className="text-sm text-gray-500 text-center">
+                          <p className="text-sm text-gray-500 text-center">
                             To work in the security industry, you must first
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
@@ -126,7 +128,7 @@ const Navigation = () => {
                               target="blank"
                             >
                               Asset Training
-                            </a> {" "}
+                            </a>{" "}
                             as Tasmania’s leading provider of nationally
                             recognised security training.
                           </p>
@@ -148,7 +150,6 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                        
                         <div className="mt-2">
                           <p className="text-sm text-gray-500 text-center">
                             Kevlar Security Solutions Pty Ltd is a member of the
@@ -173,7 +174,6 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                      
                         <div className="mt-2">
                           <p className="text-sm text-gray-500 text-center">
                             We're proudly offsetting our fleet vehicle carbon
@@ -197,7 +197,6 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                      
                         <div className="mt-2">
                           <p className="text-sm text-gray-500 text-center">
                             Crime Stoppers is an integral part of policing with
@@ -223,7 +222,6 @@ const Navigation = () => {
                         />
                       </div>
                       <div className="">
-                    
                         <div className="mt-2">
                           <p className="text-sm text-gray-500 text-center">
                             Tasmania Police aims to reduce the impact of crime,
@@ -567,19 +565,19 @@ const Navigation = () => {
                                     Asset Training
                                   </h4>
                                   <p className="text-sm text-kss-text">
-                            To work in the security industry, you must first
-                            complete a Certificate II in Security Operations
-                            (CPPSEC20218). KSS recommends
-                            <a
-                              href="https://asset-training.com.au/"
-                              className="underline hover:opacity-75 pl-1"
-                              target="blank"
-                            >
-                              Asset Training
-                            </a> {" "}
-                            as Tasmania’s leading provider of nationally
-                            recognised security training.
-                          </p>
+                                    To work in the security industry, you must
+                                    first complete a Certificate II in Security
+                                    Operations (CPPSEC20218). KSS recommends
+                                    <a
+                                      href="https://asset-training.com.au/"
+                                      className="underline hover:opacity-75 pl-1"
+                                      target="blank"
+                                    >
+                                      Asset Training
+                                    </a>{" "}
+                                    as Tasmania’s leading provider of nationally
+                                    recognised security training.
+                                  </p>
                                 </div>
                               </a>
                               <a
@@ -1082,8 +1080,8 @@ const Navigation = () => {
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               KSS is your Tasmanian owned and
-                                              operated security service
-                                              specialist.
+                                              operated provider of security
+                                              services.
                                             </p>
                                           </div>
                                         </Link>

@@ -1151,8 +1151,8 @@ const NavigationLight = () => {
                                             </div>
                                             <p className="text-kss-text text-sm">
                                               KSS is your Tasmanian owned and
-                                              operated security service
-                                              specialist.
+                                              operated provider of security
+                                              services.
                                             </p>
                                           </div>
                                         </Link>

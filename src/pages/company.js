@@ -58,6 +58,44 @@ const Company = () => {
             <h3 className="text-white text-xl font-semibold pt-2 pb-4">
               Compliance Standards
             </h3>
+            <div className="grid grid-cols-3 lg:flex lg:justify-start items-center gap-4 pt-4 pb-8">
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/logos/ISO9001-logo.png"
+                  alt="ISO9001"
+                />
+              </div>
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/logos/ISO45001-logo.png"
+                  alt="ISO45001"
+                />
+              </div>
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/logos/JAS-logo.png"
+                  alt="ISO9001"
+                />
+              </div>
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/logos/ASIAL-logo.png"
+                  alt="asial bronze member"
+                />
+              </div>
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/logos/Carbon-logo.png"
+                  alt="ISO45001"
+                />
+              </div>
+              <div className="flex justify-center items-center h-24 w-24 relative">
+                <StaticImage
+                  src="../assets/images/tas-logo-green.png"
+                  alt="ISO9001"
+                />
+              </div>
+            </div>
             <p className="text-md text-white pb-4">
               Our commitment to the highest level of compliance and performance
               is demonstrated by our ISO accreditations for Quality Management
@@ -109,8 +147,8 @@ const Company = () => {
               KEVLAR'S COMMITMENT TO THE ENVIRONMENT
             </h2>
             <p className="text-md text-white pb-4">
-              Kevlar Security Solutions Pty Ltd is concerned about the damage
-              caused to our environment and climate by carbon emissions.
+              Kevlar Security Solutions is concerned about the damage caused to
+              our environment and climate by carbon emissions.
             </p>
             <p className="text-md text-white pb-4">
               Carbon emissions are unfortunately difficult to avoid for security
@@ -123,42 +161,42 @@ const Company = () => {
               following steps to achieve this:
             </p>
             <div className="max-w-xl mx-auto pt-4 px-2">
-              <div className="relative border border-white py-8 pl-12 bg-[#516400]">
+              <div className="relative border border-white py-8 pl-10 bg-[#516400]">
                 <div className="bg-white rounded-full absolute w-12 bottom-4 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />
                 </div>
-                <p className="text-white text-md">
+                <p className="text-white text-md px-2">
                   All of our security patrol vehicles are completely carbon
                   neutral.
                 </p>
               </div>
-              <div className="relative border border-white py-8 pl-12 bg-[#738e00]">
+              <div className="relative border border-white py-8 pl-10 bg-[#738e00]">
                 <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />
                 </div>
-                <p className="text-white text-md">
-                  Our offices utilise solar power and always aim to purchase
-                  biodiverse reforestation carbon offsets.
+                <p className="text-white text-md px-2">
+                  Our office utilises solar power and always aims to purchase
+                  energy-efficient office equipment.
                 </p>
               </div>
-              <div className="relative border border-white py-8 pl-12 bg-[#516400]">
+              <div className="relative border border-white py-8 pl-10 bg-[#516400]">
                 <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />
                 </div>
-                <p className="text-white text-md">
+                <p className="text-white text-md px-2">
                   We are developing electronic patrol sheets and alarm response
                   dockets so our patrol vehicle operation will be completely
                   paper-free.
                 </p>
               </div>
-              <div className="relative border border-white py-8 pl-12 bg-[#738e00]">
+              <div className="relative border border-white py-8 pl-10 bg-[#738e00]">
                 <div className="bg-white rounded-full absolute w-12 bottom-8 -left-6">
                   <CheckIcon className="text-[#8dc73f]" />
                 </div>
-                <p className="text-white text-md">
-                  Our offices endeavour to always use recycled products such as
-                  toner cartridges, coffee pods and textiles (e.g. old
-                  uniforms).
+                <p className="text-white text-md px-2">
+                  Our office has made arrangements for recycling frequently used
+                  products such as toner cartridges, coffee pods and textiles
+                  (e.g. old uniforms).
                 </p>
               </div>
             </div>

@@ -40,8 +40,7 @@ const TechnicalServices = () => {
             </div>
           </div>
           <div className="hidden lg:block relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 z-10"></div>
-            {" "}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 z-10"></div>{" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/g7aewvLNihfNqjmqzVcAe/08c8279d7dc1c3f4ffd5aae8d01b6081/kss_website2022-44.jpg"
               className="!absolute !bottom-0"
@@ -84,9 +83,9 @@ const TechnicalServices = () => {
               We have extensive connections with electronic security system
               wholesalers enabling us to source any Australian approved alarm
               system or component. We also stock some of the most popular brands
-              and models of security alarm systems (including Integriti, Hills,
-              Inception and Tecom), meaning that we can install or replace alarm
-              systems quickly and easily in an emergency.
+              and models of security alarm systems (including TECOM, Hills,
+              Integriti and Inception), meaning that we can install or replace
+              alarm systems quickly and easily in an emergency.
             </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-4">
               Monitoring
@@ -191,8 +190,8 @@ const TechnicalServices = () => {
             </p>
             <p className="text-md text-white pb-4">
               We have the expertise to install and maintain a range of access
-              control systems, including from trusted brands such as Integriti,
-              Inception and Tecom. The access control systems we install can
+              control systems, including from trusted brands such as Dahua,
+              Hikvision and Hanwha. The access control systems we install can
               include a variety of standard or add-on features including
               time-based access restrictions, audit and muster reports,
               biometric authentication and NFC technologies.
