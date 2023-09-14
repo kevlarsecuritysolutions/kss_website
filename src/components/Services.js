@@ -246,7 +246,7 @@ const Services = () => {
                         alt="tasgov logo"
                       />
                     </div> */}
-                    <div className="flex justify-start items-center w-[400px] h-[145px] relative">
+                    <div className="flex justify-start items-center h-36 w-auto xl:w-[400px] xl:h-[145px] relative">
                       <StaticImage
                         src="https://images.ctfassets.net/lfrbwr0lmnkj/1hYo1rzJFFnb4u8ODrOcwS/4acbcca56c429cb7ce625d8020b6d712/tasgov-logo-horiz.png"
                         alt="tasgov logo"
@@ -314,7 +314,7 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="hidden xl:flex justify-center pt-12">
+                  <div className="hidden xl:flex justify-center pt-14">
                     <Link
                       to="/company"
                       className="flex gap-2 items-center bg-transparent hover:bg-white border-white border-2 transition text-white hover:text-black text-sm font-semibold py-3 px-6 lg:px-10"
@@ -401,7 +401,7 @@ const Services = () => {
               <h2 className="text-3xl xl:text-4xl text-white font-bold pb-4 xl:pb-8 uppercase">
                 Our Services Set Us Apart
               </h2>
-              <p className="text-white text-md lg:text-lg pb-4">
+              <p className="text-white text-md lg:text-lg">
                 We have earned a reputation as a market leader in providing a
                 wide range of security services including:
               </p>
