@@ -83,8 +83,7 @@ const TechnicalServices = () => {
               We have extensive connections with electronic security system
               wholesalers enabling us to source any Australian approved alarm
               system or component. We also stock some of the most popular brands
-              and models of security alarm systems (including TECOM, Hills,
-              Integriti and Inception), meaning that we can install or replace
+              and models of security alarm systems (including Hills, Bosch & Paradox), meaning that we can install or replace
               alarm systems quickly and easily in an emergency.
             </p>
             <h3 className="text-white text-xl font-semibold pt-4 pb-4">
@@ -163,7 +162,7 @@ const TechnicalServices = () => {
             </p>
             <p className="text-md text-white pb-4">
               Our security technicians have extensive knowledge and experience
-              in working with a range of CCTV solutions, and can provide advice
+              in working with a range of CCTV solutions (including Honeywell, Axis, Hanwha Wisenet to name a few), and can provide advice
               on the most appropriate CCTV options for homes or businesses by
               taking into account factors such as lighting, remote access needs,
               budget and integration options for existing security
@@ -190,8 +189,7 @@ const TechnicalServices = () => {
             </p>
             <p className="text-md text-white pb-4">
               We have the expertise to install and maintain a range of access
-              control systems, including from trusted brands such as Dahua,
-              Hikvision and Hanwha. The access control systems we install can
+              control systems, including from trusted brands such as Tecom, Integriti and Inception. The access control systems we install can
               include a variety of standard or add-on features including
               time-based access restrictions, audit and muster reports,
               biometric authentication and NFC technologies.
