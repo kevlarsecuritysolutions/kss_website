@@ -40,7 +40,7 @@ const services = [
     icon: alarmSystemMonitoring,
   },
   {
-    name: "Cash in transit services",
+    name: "Cash in transit / Valuable Cargo",
     link: "services/cash-in-transit",
     description:
       "Many businesses, both large and small, are required to transport cash to and from their banking institution. Unfortunately, staff members transporting cash to and from a business are at risk of both targeted attacks or random opportunistic thefts and violence. Our armed cash-in-transit service provides business owners with peace of mind, both for the welfare of their staff, and the protection of their hard-earned money.",
@@ -559,13 +559,13 @@ const Services = () => {
               </div>
               <div className="col-span-5 flex flex-col">
                 <h3 className="text-white uppercase text-2xl lg:text-3xl font-bold pb-4 lg:pb-0">
-                  Cash in transit services
+                  Cash in transit / Valuable cargo
                 </h3>
                 <div className="hidden lg:block h-1 bg-gradient-to-r from-[#17415c] via-[#646464] to-[#003d64] mt-4 mb-8"></div>
                 <p className="text-kss-text-dark">
-                  Our cash in transit services provide peace of mind and
-                  eliminate risk by removing the need for employees to transport
-                  cash between their workplace and a bank branch. Our
+                  Our cash in transit / valuable cargo services provide peace of
+                  mind and eliminate risk by removing the need for employees to
+                  transport cash between their workplace and a bank branch. Our
                   experienced and trusted cash-in-transit team provide cash
                   deposit and change delivery services to numerous businesses in
                   the greater Hobart area, and offer options for armed, unarmed,
