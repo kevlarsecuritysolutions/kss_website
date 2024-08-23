@@ -344,11 +344,12 @@ const Navigation = () => {
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Cash in Transit Services
+                                    Cash in Transit / Valuable Cargo Services
                                   </h4>
                                   <p className="text-kss-text text-md">
-                                    Our cash in transit services provide peace
-                                    of mind and eliminate risk...
+                                    Our cash in transit / valuable cargo
+                                    services provide peace of mind and eliminate
+                                    risk...
                                   </p>
                                 </div>
                               </Link>
@@ -782,189 +783,173 @@ const Navigation = () => {
                                       aria-hidden="true"
                                     />
 
-                                    <div className="relative bg-white p-6 pb-2 grid grid-cols-5 gap-2">
-                                      {/* <AnchorLink
-                                      to="/#services"
-                                      className="bg-gradient-to-br from-kss-blue to-black flex flex-col items-center justify-center h-[225px] w-60 p-4"
-                                    >
-                                      <StaticImage
-                                        src="../assets/images/services.png"
-                                        className="w-36 mb-2"
-                                      />
-                                      <p className="text-white text-md">
-                                        View all Services
-                                      </p>
-                                    </AnchorLink> */}
-                                      <div className="flex flex-col gap-8">
-                                        <AnchorLink
-                                          to="/#services"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              View All Services
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              We have earned a reputation as a
-                                              market leader in providing a wide
-                                              range of security services.
-                                            </p>
-                                          </div>
-                                        </AnchorLink>
-                                        <Link
-                                          to="/services/static-guards"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Static Guards
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Our static guards are highly
-                                              trained with a particular focus on
-                                              verbal de-escalation...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
-                                      <div className="flex flex-col gap-8">
-                                        <Link
-                                          to="/services/concierge-and-site-entry-officers"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Concierge & Site Entry Officers
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              We provide tailored concierge and
-                                              site entry security services to
-                                              accommodate...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                        <Link
-                                          to="/services/cash-in-transit"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Cash In Transit
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Our cash in transit services
-                                              provide peace of mind and
-                                              eliminate risk...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
-                                      <div className="flex flex-col gap-8">
-                                        <Link
-                                          to="/services/security-patrols"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Security Patrols
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              We have the largest vehicle-based
-                                              security patrol operation in
-                                              Tasmania...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                        <Link
-                                          to="/services/alarm-response"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Alarm / Duress Response
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Our large vehicle-based security
-                                              patrol operation enables us to
-                                              provide the fastest...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
-                                      <div className="flex flex-col gap-8">
-                                        <Link
-                                          to="/services/crowd-control"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Crowd Control / Event Security
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              We have a highly experienced team
-                                              of crowd control and event
-                                              security officers...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                        <Link
-                                          to="/services/body-guard-services"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Bodyguard Services
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Our close personal protection
-                                              services are provided only by our
-                                              most experienced...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
-                                      <div className="flex flex-col gap-8">
-                                        <Link
-                                          to="/services/technical-services"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Technical Services
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              We are a trusted provider of
-                                              specialist technical security
-                                              services for business...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                        <Link
-                                          to="/services/risk-assessments"
-                                          className="flex gap-4 group"
-                                        >
-                                          <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
-                                          <div className="flex flex-col">
-                                            <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
-                                              Risk Assessments
-                                            </h4>
-                                            <p className="text-kss-text text-xs">
-                                              Our highly qualified management
-                                              team's broad range of expertise
-                                              places us in the unique...
-                                            </p>
-                                          </div>
-                                        </Link>
-                                      </div>
+                                    <div className="relative bg-white p-6 pb-2 grid grid-cols-5 gap-y-4 gap-x-4">
+                                      <AnchorLink
+                                        to="/#services"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            View All Services
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            We have earned a reputation as a
+                                            market leader in providing a wide
+                                            range of security services.
+                                          </p>
+                                        </div>
+                                      </AnchorLink>
+                                      <Link
+                                        to="/services/concierge-and-site-entry-officers"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Concierge & Site Entry Officers
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            We provide tailored concierge and
+                                            site entry security services to
+                                            accommodate...
+                                          </p>
+                                        </div>
+                                      </Link>
+
+                                      <Link
+                                        to="/services/security-patrols"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Security Patrols
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            We have the largest vehicle-based
+                                            security patrol operation in
+                                            Tasmania...
+                                          </p>
+                                        </div>
+                                      </Link>
+                                      <Link
+                                        to="/services/crowd-control"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Crowd Control / Event Security
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            We have a highly experienced team of
+                                            crowd control and event security
+                                            officers...
+                                          </p>
+                                        </div>
+                                      </Link>
+                                      <Link
+                                        to="/services/technical-services"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Technical Services
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            We are a trusted provider of
+                                            specialist technical security
+                                            services for business...
+                                          </p>
+                                        </div>
+                                      </Link>
+                                      <Link
+                                        to="/services/static-guards"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Static Guards
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            Our static guards are highly trained
+                                            with a particular focus on verbal
+                                            de-escalation...
+                                          </p>
+                                        </div>
+                                      </Link>
+
+                                      <Link
+                                        to="/services/cash-in-transit"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Cash In Transit / Valuable Cargo
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            Our cash in transit / valuable cargo
+                                            services provide peace of mind and
+                                            eliminate risk...
+                                          </p>
+                                        </div>
+                                      </Link>
+
+                                      <Link
+                                        to="/services/alarm-response"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Alarm / Duress Response
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            Our large vehicle-based security
+                                            patrol operation enables us to
+                                            provide the fastest...
+                                          </p>
+                                        </div>
+                                      </Link>
+
+                                      <Link
+                                        to="/services/body-guard-services"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Bodyguard Services
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            Our close personal protection
+                                            services are provided only by our
+                                            most experienced...
+                                          </p>
+                                        </div>
+                                      </Link>
+
+                                      <Link
+                                        to="/services/risk-assessments"
+                                        className="flex gap-4 group"
+                                      >
+                                        <div className="min-w-[3px] max-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
+                                        <div className="flex flex-col">
+                                          <h4 className="text-kss-text font-semibold text-lg group-hover:text-black">
+                                            Risk Assessments
+                                          </h4>
+                                          <p className="text-kss-text text-xs">
+                                            Our highly qualified management
+                                            team's broad range of expertise
+                                            places us in the unique...
+                                          </p>
+                                        </div>
+                                      </Link>
+
                                       <div className="col-span-5 flex justify-end pt-4">
                                         <Link
                                           to="/contact"

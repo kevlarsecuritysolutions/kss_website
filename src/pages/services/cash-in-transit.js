@@ -51,6 +51,51 @@ const ArmedCash = () => {
               or other items to be transported and various other factors. Learn
               more about our specific Cash in Transit services below.
             </p>
+            <h2 className="mt-12 text-white font-bold text-3xl pb-8">
+              VALUABLE CARGO
+            </h2>
+            <p className="text-md text-white pb-4">
+              For the secure storage and transport of high-value goods. Whether
+              you need to safeguard gold, precious metals, jewellery, medicinal
+              drugs, artwork, or tobacco, our team ensures your items are
+              protected every step of the way.
+            </p>
+            <p className="text-md text-white pb-4">
+              With a strong network across Tasmania and resource partners
+              throughout Australia, we can securely deliver your valuable goods
+              to any location nationwide. We understand the unique risks
+              involved in transporting these items and are committed to
+              providing the highest level of security and care.
+            </p>
+            <p className="text-md text-white pb-4">
+              Our expertise covers a wide range of valuable goods, including:
+            </p>
+            <ul className="text-md text-white list-disc pl-4 pb-4">
+              <li>
+                <p>Gold and other precious metals</p>
+              </li>
+              <li>
+                <p>Jewellery</p>
+              </li>
+              <li>
+                <p>Medicinal drugs</p>
+              </li>
+              <li>
+                <p>Artwork</p>
+              </li>
+            </ul>
+            <p className="text-md text-white pb-4">
+              At Kevlar Security Solutions, we know that each client has unique
+              needs. That’s why we offer customised pricing on a case-by-case
+              basis, ensuring you receive a tailored solution that meets your
+              specific requirements.
+            </p>
+            <p className="text-md text-white pb-4">
+              Rely on Kevlar Security Solutions for unmatched security,
+              reliability, and professionalism. Our advanced security measures
+              and strict protocols guarantee the safe storage and transport of
+              your valuable goods across Tasmania and to its final destination.
+            </p>
 
             <div className="flex">
               <Link
@@ -63,11 +108,10 @@ const ArmedCash = () => {
             </div>
           </div>
           <div className="hidden lg:block relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>
-            {" "}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 z-10"></div>{" "}
             <StaticImage
               src="https://images.ctfassets.net/lfrbwr0lmnkj/2fUxlGvGXIsFuOPs5LRSdr/23b3d37b343e97d2f48ffab099cd42f7/kss_website2022-85.jpg"
-              className="!absolute !-bottom-48"
+              className="!absolute !bottom-0"
               alt="cash in transit services"
             />
           </div>
