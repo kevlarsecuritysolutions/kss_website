@@ -91,13 +91,13 @@ const TechnicalServices = () => {
               Monitoring
             </h3>
             <p className="text-md text-white pb-4">
-              Our alarm monitoring services are provided through Golden
-              Electronics which operates a Tasmanian based ASIAL accredited A
-              Grade control room. The control room utilises the latest
-              monitoring room technology, allowing us to provide our clients
-              with record storage and archiving, reporting, and still image
-              verification services in addition to alarm system monitoring
-              services.
+              Our alarm monitoring services are provided through ASIAL
+              accredited A Grade control room. The control room utilises the
+              latest monitoring room technology, allowing us to provide our
+              clients with record storage and archiving, reporting, and still
+              image verification services in addition to alarm system monitoring
+              services. Kevlar Security, having its own monitoring, provides a
+              single solution for all Security needs.
             </p>
             <p className="text-md text-white pb-4">
               The control room also utilises a dual redundancy power failure
