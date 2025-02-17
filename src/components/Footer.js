@@ -70,8 +70,8 @@ const Footer = () => {
                         <StaticImage
                           className="h-36 w-36"
                           objectFit="contain"
-                          src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
-                          alt="go to asset training"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/5j5bXMkMmEwCpyU8U86Yt6/537cd8c1d85af78873e65a1916852f0f/athena-training.png"
+                          alt="go to athena training"
                         />
                       </div>
                       <div className="">
@@ -81,11 +81,11 @@ const Footer = () => {
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
                             <a
-                              href="https://asset-training.com.au/"
+                              href="https://www.athenatraining.com.au/"
                               className="underline hover:opacity-75 pl-1"
                               target="blank"
                             >
-                              Asset Training
+                              Athena Training
                             </a>{" "}
                             as Tasmania’s leading provider of nationally
                             recognised security training.

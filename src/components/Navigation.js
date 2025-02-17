@@ -103,7 +103,7 @@ const Navigation = () => {
                       </div>
                     </a>
                     <a
-                      href="https://asset-training.com.au/"
+                      href="https://www.athenatraining.com.au/"
                       target="blank"
                       className="pt-4 border border-gray-200 rounded-md p-2 hover:border-gray-300"
                       loading="eager"
@@ -112,8 +112,8 @@ const Navigation = () => {
                         <StaticImage
                           className="h-36 w-36"
                           objectFit="contain"
-                          src="https://images.ctfassets.net/lfrbwr0lmnkj/4LVkxZLDN5fdHZncZFJaVO/2ee3e324095b92cbb451c95a792a7a27/Asset-training-logo.jpg"
-                          alt="go to asset training"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/5j5bXMkMmEwCpyU8U86Yt6/537cd8c1d85af78873e65a1916852f0f/athena-training.png"
+                          alt="go to athena training"
                         />
                       </div>
                       <div className="">
@@ -123,11 +123,11 @@ const Navigation = () => {
                             complete a Certificate II in Security Operations
                             (CPPSEC20218). KSS recommends
                             <a
-                              href="https://asset-training.com.au/"
+                              href="https://www.athenatraining.com.au/"
                               className="underline hover:opacity-75 pl-1"
                               target="blank"
                             >
-                              Asset Training
+                              Athena Training
                             </a>{" "}
                             as Tasmania’s leading provider of nationally
                             recognised security training.
@@ -556,25 +556,25 @@ const Navigation = () => {
                                 </div>
                               </a>
                               <a
-                                href="http://asset-training.com.au/"
+                                href="https://www.athenatraining.com.au/"
                                 target="blank"
                                 className="flex gap-4 group pb-2"
                               >
                                 <div className="min-w-[3px] rounded-xl bg-gradient-to-t to-kss-blue via-black from-kss-blue bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500"></div>
                                 <div className="flex flex-col">
                                   <h4 className="text-kss-text font-semibold text-xl group-hover:text-black">
-                                    Asset Training
+                                    Athena Training
                                   </h4>
                                   <p className="text-sm text-kss-text">
                                     To work in the security industry, you must
                                     first complete a Certificate II in Security
                                     Operations (CPPSEC20218). KSS recommends
                                     <a
-                                      href="https://asset-training.com.au/"
+                                      href="https://www.athenatraining.com.au/"
                                       className="underline hover:opacity-75 pl-1"
                                       target="blank"
                                     >
-                                      Asset Training
+                                      Athena Training
                                     </a>{" "}
                                     as Tasmania’s leading provider of nationally
                                     recognised security training.
@@ -748,7 +748,7 @@ const Navigation = () => {
                                       open
                                         ? "border-none text-white font-semibold"
                                         : "border-transparent text-white hover:text-white",
-                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0 "
+                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0 ",
                                     )}
                                   >
                                     Services <ChevronDown />
@@ -975,7 +975,7 @@ const Navigation = () => {
                                       open
                                         ? "border-none text-white font-semibold"
                                         : "border-transparent text-white hover:text-white",
-                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0"
+                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0",
                                     )}
                                   >
                                     Company <ChevronDown />
@@ -1136,7 +1136,7 @@ const Navigation = () => {
                                       open
                                         ? "border-none text-white font-semibold"
                                         : "border-transparent text-white hover:text-white",
-                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0"
+                                      "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 focus-visible:outline-0",
                                     )}
                                   >
                                     Careers <ChevronDown />
@@ -1293,7 +1293,7 @@ const Navigation = () => {
                               open
                                 ? "border-none text-white font-semibold"
                                 : "border-transparent text-white hover:text-white",
-                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 ",
                             )}
                           >
                             Links
@@ -1304,7 +1304,7 @@ const Navigation = () => {
                               open
                                 ? "border-none text-white font-semibold"
                                 : "border-transparent text-white hover:text-white",
-                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 "
+                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-lg transition-all font-medium border-b-2 -mb-px pt-px flex items-center gap-2 ",
                             )}
                           >
                             Contact
