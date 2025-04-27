@@ -326,8 +326,8 @@ const Footer = () => {
               </div>
               <div className="flex justify-center items-center h-28 w-28 relative">
                 <StaticImage
-                  src="../assets/images/logos/ASIAL-logo.png"
-                  alt="asial bronze member"
+                  src="https://images.ctfassets.net/lfrbwr0lmnkj/1qOAlsBUTbTALtexwyKgYL/0e624abb4d86cbcda5a286cfc0514a8d/Silver_Member__1_.png"
+                  alt="asial silver member"
                 />
               </div>
               <div className="flex justify-center items-center h-28 w-28 relative">
