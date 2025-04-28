@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { useForm } from "@formspree/react";
@@ -14,6 +14,7 @@ function classNames(...classes) {
 const TechnicalServices = () => {
   const [state, handleSubmit] = useForm("mnqynzap");
   const [agreed, setAgreed] = useState(false);
+  const [isMobile, setIsMobile] = useState(true); // Default to mobile for SSR
 
   // Carousel functionality
   const [activeSlide, setActiveSlide] = useState({
@@ -22,6 +23,27 @@ const TechnicalServices = () => {
     accessControl: 0,
     siteCameras: 0,
   });
+
+  // Handle responsive layout
+  useEffect(() => {
+    // Check if we're on the client side
+    if (typeof window !== "undefined") {
+      // Set initial state
+      setIsMobile(window.innerWidth < 1024); // 1024px is lg breakpoint
+
+      // Add resize listener
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 1024);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      // Clean up
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
 
   const handleAnchorClick = (e) => {
     e.preventDefault();
@@ -64,8 +86,8 @@ const TechnicalServices = () => {
     }));
   };
 
-  // Carousel button component
-  const CarouselButton = ({ variant = "outline", onClick, direction }) => {
+  // Carousel button component with fixed positioning
+  const CarouselButton = ({ onClick, direction }) => {
     // Define explicit positioning styles for each button type
     const positionStyle =
       direction === "prev"
@@ -502,304 +524,622 @@ const TechnicalServices = () => {
           </div>
         </div>
 
+        {/* CCTV SECTION - Using Explicit DOM Structure for Order */}
         <div
           id="cctv"
           className="grid grid-cols-1 pb-24 lg:grid-cols-2 lg:pb-0"
         >
-          <div className="relative order-2 mx-4 aspect-video h-full lg:order-1 lg:mx-0 lg:block lg:aspect-auto">
-            <div className="relative h-full w-full">
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 0 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/B-1.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="CCTV surveillance system"
-                />
-              </div>
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 1 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/B-2.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="CCTV monitoring station"
-                />
+          {isMobile ? (
+            <>
+              {/* Content first on mobile */}
+              <div className="px-4 pb-12 pt-24 lg:pb-24 lg:pl-24 lg:pr-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  State-of-the-Art CCTV Surveillance
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  CCTV systems are a powerful security tool, providing the
+                  opportunity for immediate assessment of on-site issues,
+                  accountability for staff, and a strong deterrent against
+                  unauthorised access.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  Our security technicians have extensive knowledge and
+                  experience in working with a range of CCTV solutions, and can
+                  provide advice on the most appropriate CCTV options for homes
+                  or businesses by taking into account factors such as lighting,
+                  remote access needs, budget and integration options for
+                  existing security infrastructure.
+                </p>
+
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Systems from Honeywell, Axis, Hanwha Wisenet and more
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Remote viewing via mobile devices and computers
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Permanent and temporary solutions available
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      System upgrades, training and troubleshooting available
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Explore CCTV Solutions
+                  <ArrowRight className="h-5 w-5" />
+                </a>
               </div>
 
-              <CarouselButton
-                direction="prev"
-                onClick={() => prevSlide("cctv")}
-              />
-              <CarouselButton
-                direction="next"
-                onClick={() => nextSlide("cctv")}
-              />
-            </div>
-          </div>
+              {/* Image second on mobile */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/B-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV surveillance system"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/B-2.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV monitoring station"
+                    />
+                  </div>
 
-          <div className="order-1 px-4 pb-12 pt-24 lg:order-2 lg:pb-24 lg:pl-24 lg:pr-24">
-            <div className="order-1 lg:order-2">
-              <h2 className="mb-6 text-3xl font-bold uppercase text-white">
-                State-of-the-Art CCTV Surveillance
-              </h2>
-              <p className="mb-6 text-gray-300">
-                CCTV systems are a powerful security tool, providing the
-                opportunity for immediate assessment of on-site issues,
-                accountability for staff, and a strong deterrent against
-                unauthorised access.
-              </p>
-              <p className="mb-6 text-gray-300">
-                Our security technicians have extensive knowledge and experience
-                in working with a range of CCTV solutions, and can provide
-                advice on the most appropriate CCTV options for homes or
-                businesses by taking into account factors such as lighting,
-                remote access needs, budget and integration options for existing
-                security infrastructure.
-              </p>
-
-              <div className="mb-8 space-y-4">
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Systems from Honeywell, Axis, Hanwha Wisenet and more
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Remote viewing via mobile devices and computers
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Permanent and temporary solutions available
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    System upgrades, training and troubleshooting available
-                  </p>
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("cctv")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("cctv")}
+                  />
                 </div>
               </div>
-              <a
-                href="#contact"
-                onClick={handleAnchorClick}
-                className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
-              >
-                Explore CCTV Solutions
-                <ArrowRight className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+            </>
+          ) : (
+            <>
+              {/* Image first on desktop */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/B-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV surveillance system"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.cctv === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/B-2.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV monitoring station"
+                    />
+                  </div>
+
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("cctv")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("cctv")}
+                  />
+                </div>
+              </div>
+
+              {/* Content second on desktop */}
+              <div className="px-4 pb-12 pt-24 lg:pb-24 lg:pl-24 lg:pr-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  State-of-the-Art CCTV Surveillance
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  CCTV systems are a powerful security tool, providing the
+                  opportunity for immediate assessment of on-site issues,
+                  accountability for staff, and a strong deterrent against
+                  unauthorised access.
+                </p>{" "}
+                <p className="mb-6 text-gray-300">
+                  CCTV systems are a powerful security tool, providing the
+                  opportunity for immediate assessment of on-site issues,
+                  accountability for staff, and a strong deterrent against
+                  unauthorised access.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  Our security technicians have extensive knowledge and
+                  experience in working with a range of CCTV solutions, and can
+                  provide advice on the most appropriate CCTV options for homes
+                  or businesses by taking into account factors such as lighting,
+                  remote access needs, budget and integration options for
+                  existing security infrastructure.
+                </p>
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Systems from Honeywell, Axis, Hanwha Wisenet and more
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Remote viewing via mobile devices and computers
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Permanent and temporary solutions available
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      System upgrades, training and troubleshooting available
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Explore CCTV Solutions
+                  <ArrowRight className="h-5 w-5" />
+                </a>
+              </div>
+            </>
+          )}
         </div>
 
+        {/* ACCESS CONTROL SECTION - Using Explicit DOM Structure for Order */}
         <div
           id="access-control"
           className="grid grid-cols-1 lg:grid-cols-2 lg:pb-0"
         >
-          <div className="px-4 pb-24 lg:pl-24 lg:pr-24 lg:pt-24">
-            <div>
-              <h2 className="mb-6 text-3xl font-bold uppercase text-white">
-                Secure Access Control Systems
-              </h2>
-              <p className="mb-6 text-gray-300">
-                Access control systems are a critical component in any business
-                security system, allowing businesses to manage entry and access
-                permissions, and providing internal and external accountability
-                and control for secure areas.
-              </p>
-              <p className="mb-6 text-gray-300">
-                We have the expertise to install and maintain a range of access
-                control systems, including from trusted brands such as Tecom,
-                Integriti and Inception. The access control systems we install
-                can include a variety of standard or add-on features customised
-                to your needs.
-              </p>
+          {isMobile ? (
+            <>
+              {/* Content first on mobile */}
+              <div className="px-4 pb-24 lg:pl-24 lg:pr-24 lg:pt-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  Secure Access Control Systems
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  Access control systems are a critical component in any
+                  business security system, allowing businesses to manage entry
+                  and access permissions, and providing internal and external
+                  accountability and control for secure areas.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  We have the expertise to install and maintain a range of
+                  access control systems, including from trusted brands such as
+                  Tecom, Integriti and Inception. The access control systems we
+                  install can include a variety of standard or add-on features
+                  customised to your needs.
+                </p>
 
-              <div className="mb-8 space-y-4">
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Time-based access restrictions and permissions
+                    </p>
                   </div>
-                  <p className="text-gray-300">
-                    Time-based access restrictions and permissions
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Audit and muster reports for accountability
+                    </p>
                   </div>
-                  <p className="text-gray-300">
-                    Audit and muster reports for accountability
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Biometric authentication and NFC technologies
+                    </p>
                   </div>
-                  <p className="text-gray-300">
-                    Biometric authentication and NFC technologies
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Video intercom solutions for building entry
+                    </p>
                   </div>
-                  <p className="text-gray-300">
-                    Video intercom solutions for building entry
-                  </p>
                 </div>
-              </div>
-              <a
-                href="#contact"
-                onClick={handleAnchorClick}
-                className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
-              >
-                Discover Access Control Options
-                <ArrowRight className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
-          <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
-            <div className="relative h-full w-full">
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 0 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/D-3.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="Access control panel"
-                />{" "}
-              </div>
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 1 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/C-1.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="Access control card reader"
-                />
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Discover Access Control Options
+                  <ArrowRight className="h-5 w-5" />
+                </a>
               </div>
 
-              <CarouselButton
-                direction="prev"
-                onClick={() => prevSlide("accessControl")}
-              />
-              <CarouselButton
-                direction="next"
-                onClick={() => nextSlide("accessControl")}
-              />
-            </div>
-          </div>
+              {/* Image second on mobile */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-3.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Access control panel"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/C-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Access control card reader"
+                    />
+                  </div>
+
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("accessControl")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("accessControl")}
+                  />
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              {/* Content first on desktop */}
+              <div className="px-4 pb-24 lg:pl-24 lg:pr-24 lg:pt-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  Secure Access Control Systems
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  Access control systems are a critical component in any
+                  business security system, allowing businesses to manage entry
+                  and access permissions, and providing internal and external
+                  accountability and control for secure areas.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  We have the expertise to install and maintain a range of
+                  access control systems, including from trusted brands such as
+                  Tecom, Integriti and Inception. The access control systems we
+                  install can include a variety of standard or add-on features
+                  customised to your needs.
+                </p>
+
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Time-based access restrictions and permissions
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Audit and muster reports for accountability
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Biometric authentication and NFC technologies
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Video intercom solutions for building entry
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Discover Access Control Options
+                  <ArrowRight className="h-5 w-5" />
+                </a>
+              </div>
+
+              {/* Image second on desktop */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-3.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Access control panel"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.accessControl === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/C-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Access control card reader"
+                    />
+                  </div>
+
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("accessControl")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("accessControl")}
+                  />
+                </div>
+              </div>
+            </>
+          )}
         </div>
 
+        {/* SITE CAMERAS SECTION - Using Explicit DOM Structure for Order */}
         <div id="site-cameras" className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="relative order-2 mx-4 aspect-video h-full lg:order-1 lg:mx-0 lg:block lg:aspect-auto">
-            <div className="relative h-full w-full">
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 0 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/D-1.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="Site camera installation"
-                />
-              </div>
-              <div
-                className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 1 ? "opacity-100" : "opacity-0"}`}
-              >
-                <StaticImage
-                  src="../../assets/images/D-2.jpg"
-                  className="!h-full !w-full !object-cover"
-                  alt="CCTV pole with cameras"
-                />
+          {isMobile ? (
+            <>
+              {/* Content first on mobile */}
+              <div className="px-4 pb-24 pt-24 lg:pl-24 lg:pr-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  Advanced Site Cameras & CCTV Poles
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  Kevlar Security Solutions offers cutting-edge surveillance
+                  solutions tailored to various security needs. Our Site Cameras
+                  integrate with leading brands like Hikvision, Dahua, Axis,
+                  Hanwha (Wisenet), Avigilon, and Idis, ensuring top-tier
+                  performance and reliability.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  Our solar/wireless security camera systems deliver 24/7
+                  visibility, reducing theft and crime risk. Ideal for events,
+                  construction sites, and temporary security needs with
+                  comprehensive coverage and easy relocation options.
+                </p>
+
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Remote viewing via mobile devices and computers
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      AI-powered analysis for people counting and traffic
+                      patterns
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Facial recognition and vehicle registration detection
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Solar-powered and wireless for maximum flexibility
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Learn About Site Camera Solutions
+                  <ArrowRight className="h-5 w-5" />
+                </a>
               </div>
 
-              <CarouselButton
-                direction="prev"
-                onClick={() => prevSlide("siteCameras")}
-              />
-              <CarouselButton
-                direction="next"
-                onClick={() => nextSlide("siteCameras")}
-              />
-            </div>
-          </div>
+              {/* Image second on mobile */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Site camera installation"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-2.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV pole with cameras"
+                    />
+                  </div>
 
-          <div className="order-1 px-4 pb-24 pt-24 lg:order-2 lg:pl-24 lg:pr-24">
-            <div className="order-1 lg:order-2">
-              <h2 className="mb-6 text-3xl font-bold uppercase text-white">
-                Advanced Site Cameras & CCTV Poles
-              </h2>
-              <p className="mb-6 text-gray-300">
-                Kevlar Security Solutions offers cutting-edge surveillance
-                solutions tailored to various security needs. Our Site Cameras
-                integrate with leading brands like Hikvision, Dahua, Axis,
-                Hanwha (Wisenet), Avigilon, and Idis, ensuring top-tier
-                performance and reliability.
-              </p>
-              <p className="mb-6 text-gray-300">
-                Our solar/wireless security camera systems deliver 24/7
-                visibility, reducing theft and crime risk. Ideal for events,
-                construction sites, and temporary security needs with
-                comprehensive coverage and easy relocation options.
-              </p>
-
-              <div className="mb-8 space-y-4">
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Remote viewing via mobile devices and computers
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    AI-powered analysis for people counting and traffic patterns
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Facial recognition and vehicle registration detection
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
-                    <Checkmark className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-gray-300">
-                    Solar-powered and wireless for maximum flexibility
-                  </p>
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("siteCameras")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("siteCameras")}
+                  />
                 </div>
               </div>
-              <a
-                href="#contact"
-                onClick={handleAnchorClick}
-                className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
-              >
-                Learn About Site Camera Solutions
-                <ArrowRight className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+            </>
+          ) : (
+            <>
+              {/* Image first on desktop */}
+              <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
+                <div className="relative h-full w-full">
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 0 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-1.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="Site camera installation"
+                    />
+                  </div>
+                  <div
+                    className={`absolute inset-0 transition-opacity duration-500 ${activeSlide.siteCameras === 1 ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <StaticImage
+                      src="../../assets/images/D-2.jpg"
+                      className="!h-full !w-full !object-cover"
+                      alt="CCTV pole with cameras"
+                    />
+                  </div>
+
+                  <CarouselButton
+                    direction="prev"
+                    onClick={() => prevSlide("siteCameras")}
+                  />
+                  <CarouselButton
+                    direction="next"
+                    onClick={() => nextSlide("siteCameras")}
+                  />
+                </div>
+              </div>
+
+              {/* Content second on desktop */}
+              <div className="px-4 pb-24 pt-24 lg:pl-24 lg:pr-24">
+                <h2 className="mb-6 text-3xl font-bold uppercase text-white">
+                  Advanced Site Cameras & CCTV Poles
+                </h2>
+                <p className="mb-6 text-gray-300">
+                  Kevlar Security Solutions offers cutting-edge surveillance
+                  solutions tailored to various security needs. Our Site Cameras
+                  integrate with leading brands like Hikvision, Dahua, Axis,
+                  Hanwha (Wisenet), Avigilon, and Idis, ensuring top-tier
+                  performance and reliability.
+                </p>
+                <p className="mb-6 text-gray-300">
+                  Our solar/wireless security camera systems deliver 24/7
+                  visibility, reducing theft and crime risk. Ideal for events,
+                  construction sites, and temporary security needs with
+                  comprehensive coverage and easy relocation options.
+                </p>
+
+                <div className="mb-8 space-y-4">
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Remote viewing via mobile devices and computers
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      AI-powered analysis for people counting and traffic
+                      patterns
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Facial recognition and vehicle registration detection
+                    </p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="mr-3 mt-1 rounded-full bg-blue-500/20 p-1">
+                      <Checkmark className="h-4 w-4 text-blue-400" />
+                    </div>
+                    <p className="text-gray-300">
+                      Solar-powered and wireless for maximum flexibility
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#contact"
+                  onClick={handleAnchorClick}
+                  className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  Learn About Site Camera Solutions
+                  <ArrowRight className="h-5 w-5" />
+                </a>
+              </div>
+            </>
+          )}
         </div>
 
         {/* FAQ SECTION */}
@@ -1030,7 +1370,7 @@ const TechnicalServices = () => {
                     name="agreed-terms"
                     value={agreed}
                   >
-                    <span className="sr-only">Agree to policies</span>
+                    <span className="sr-only">Agree to policies</span>{" "}
                     <span
                       aria-hidden="true"
                       className={classNames(
