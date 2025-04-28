@@ -53,7 +53,7 @@ const TechnicalServices = () => {
     const sectionImages = {
       alarms: 2,
       cctv: 2,
-      accessControl: 3,
+      accessControl: 2,
       siteCameras: 2,
     };
 
@@ -66,10 +66,17 @@ const TechnicalServices = () => {
 
   // Carousel button component
   const CarouselButton = ({ variant = "outline", onClick, direction }) => {
+    // Define explicit positioning styles for each button type
+    const positionStyle =
+      direction === "prev"
+        ? { left: "0.5rem", right: "auto" }
+        : { right: "0.5rem", left: "auto" };
+
     return (
       <button
         onClick={onClick}
-        className={`absolute ${direction === "prev" ? "left-2" : "right-2"} top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/50 p-2 text-white opacity-75 transition hover:bg-black/70 hover:opacity-100`}
+        style={positionStyle} // Use inline styles for critical positioning
+        className={`absolute top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/50 p-2 text-white opacity-75 transition hover:bg-black/70 hover:opacity-100`}
         aria-label={direction === "prev" ? "Previous slide" : "Next slide"}
       >
         {direction === "prev" ? (
