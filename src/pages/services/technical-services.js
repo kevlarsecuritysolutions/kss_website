@@ -451,7 +451,7 @@ const TechnicalServices = () => {
                     <Checkmark className="h-4 w-4 text-blue-400" />
                   </div>
                   <p className="text-gray-300">
-                    Expertise with Hills, Bosch, Paradox and more
+                    Expertise with Paradox, Ajax, Hills, Bosch, Paradox and more
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -694,7 +694,8 @@ const TechnicalServices = () => {
                       <Checkmark className="h-4 w-4 text-blue-400" />
                     </div>
                     <p className="text-gray-300">
-                      Systems from Honeywell, Axis, Hanwha Wisenet and more
+                      Systems from Hikvision, IDIS, Axis, Hanwha Wisenet and
+                      more
                     </p>
                   </div>
                   <div className="flex items-start">
@@ -756,7 +757,7 @@ const TechnicalServices = () => {
                 <p className="mb-6 text-gray-300">
                   We have the expertise to install and maintain a range of
                   access control systems, including from trusted brands such as
-                  Tecom, Integriti and Inception. The access control systems we
+                  TECOM, Integriti and Inception. The access control systems we
                   install can include a variety of standard or add-on features
                   customised to your needs.
                 </p>
@@ -854,7 +855,7 @@ const TechnicalServices = () => {
                 <p className="mb-6 text-gray-300">
                   We have the expertise to install and maintain a range of
                   access control systems, including from trusted brands such as
-                  Tecom, Integriti and Inception. The access control systems we
+                  TECOM, Integriti and Inception. The access control systems we
                   install can include a variety of standard or add-on features
                   customised to your needs.
                 </p>

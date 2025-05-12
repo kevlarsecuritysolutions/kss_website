@@ -1239,8 +1239,8 @@ const Navigation = () => {
                                             <div className="mb-2 h-40 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
                                               <div className=" relative w-full h-36 mx-2 overflow-hidden">
                                                 <StaticImage
-                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/6aER9jOd5sjtZTqA64i0U0/16c7477b135ff2d453852057bc848cdf/kss_website2022-33.jpg"
-                                                  className="!w-full !absolute !bottom-0"
+                                                  src="https://images.ctfassets.net/lfrbwr0lmnkj/7KaNa4XRrd0DQaqrXcYL7c/df4cf6a9bd05d91d05962ff1f58b18ae/kss_website2022-59.jpg"
+                                                  className="!w-full !absolute !-bottom-36"
                                                   objectFit="scale-down"
                                                   loading="eager"
                                                   alt="leading employer in the security industry"
