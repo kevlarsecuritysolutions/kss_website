@@ -1,27 +1,35 @@
 import React from "react";
 import Layout from "../components/Layout";
-import NavigationLight from "../components/NavigationLight";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import SEO from "../components/Seo";
 
 const Privacy = () => {
   return (
     <>
-      <NavigationLight />
+      <Navigation />
       <SEO title="Privacy Policy" slug="/privacy-policy" />
-      <section className="bg-gray-200">
-        <div className="max-w-7xl text-kss-text mx-auto pt-36 pb-24">
-          <h1 className="text-4xl font-semibold pb-2">Privacy Policy</h1>
+      <section className="bg-gradient-to-bl from-[#002034] to-black">
+        <div className="max-w-7xl text-gray-300 mx-auto pt-36 pb-24 px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-semibold pb-2 text-white">
+            Privacy Policy
+          </h1>
           <p className="font-semibold pb-12">Last updated: August 08, 2023</p>
-          <h2 className="text-3xl font-semibold py-6">Interpretation and Definitions</h2>
-          <h3 className="text-2xl font-semibold pb-6">Interpretation</h3>
+          <h2 className="text-3xl font-semibold py-6 text-white">
+            Interpretation and Definitions
+          </h2>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Interpretation
+          </h3>
           <p className="pb-4">
             The words of which the initial letter is capitalized have meanings
             defined under the following conditions. The following definitions
             shall have the same meaning regardless of whether they appear in
             singular or in plural.
           </p>
-          <h3 className="text-2xl font-semibold pb-6">Definitions</h3>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Definitions
+          </h3>
           <p className="pb-4">For the purposes of this Privacy Policy:</p>
           <ul className="list-disc pl-4 lg:pl-8">
             <li className="pb-4">
@@ -118,9 +126,15 @@ const Privacy = () => {
               </p>
             </li>
           </ul>
-          <h2 className="py-6 text-3xl font-semibold">Collecting and Using Your Personal Data</h2>
-          <h3 className="text-2xl font-semibold pb-6">Types of Data Collected</h3>
-          <h3 className="text-xl font-semibold pb-6">Personal Data</h3>
+          <h2 className="py-6 text-3xl font-semibold text-white">
+            Collecting and Using Your Personal Data
+          </h2>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Types of Data Collected
+          </h3>
+          <h3 className="text-xl font-semibold pb-6 text-white">
+            Personal Data
+          </h3>
           <p className="pb-4">
             While using Our Service, We may ask You to provide Us with certain
             personally identifiable information that can be used to contact or
@@ -141,8 +155,10 @@ const Privacy = () => {
               <p>Usage Data</p>
             </li>
           </ul>
-          <h3 className="text-xl font-semibold pb-6">Usage Data</h3>
-          <p className="pb-4">Usage Data is collected automatically when using the Service.</p>
+          <h3 className="text-xl font-semibold pb-6 text-white">Usage Data</h3>
+          <p className="pb-4">
+            Usage Data is collected automatically when using the Service.
+          </p>
           <p className="pb-4">
             Usage Data may include information such as Your Device's Internet
             Protocol address (e.g. IP address), browser type, browser version,
@@ -163,7 +179,9 @@ const Privacy = () => {
             visit our Service or when You access the Service by or through a
             mobile device.
           </p>
-          <h3 className="text-xl font-semibold pb-6">Tracking Technologies and Cookies</h3>
+          <h3 className="text-xl font-semibold pb-6 text-white">
+            Tracking Technologies and Cookies
+          </h3>
           <p className="pb-4">
             We use Cookies and similar tracking technologies to track the
             activity on Our Service and store certain information. Tracking
@@ -257,8 +275,12 @@ const Privacy = () => {
             regarding cookies, please visit our Cookies Policy or the Cookies
             section of our Privacy Policy.
           </p>
-          <h3 className="text-2xl font-semibold pb-6">Use of Your Personal Data</h3>
-          <p className="pb-4">The Company may use Personal Data for the following purposes:</p>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Use of Your Personal Data
+          </h2>
+          <p className="pb-4">
+            The Company may use Personal Data for the following purposes:
+          </p>
           <ul className="list-disc pl-4 lg:pl-8">
             <li className="pb-4">
               <p>
@@ -369,7 +391,9 @@ const Privacy = () => {
               information for any other purpose with Your consent.
             </li>
           </ul>
-          <h3 className="text-2xl font-semibold pb-6">Retention of Your Personal Data</h3>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Retention of Your Personal Data
+          </h2>
           <p className="pb-4">
             The Company will retain Your Personal Data only for as long as is
             necessary for the purposes set out in this Privacy Policy. We will
@@ -385,7 +409,9 @@ const Privacy = () => {
             improve the functionality of Our Service, or We are legally
             obligated to retain this data for longer time periods.
           </p>
-          <h3 className="text-2xl font-semibold pb-6">Transfer of Your Personal Data</h3>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Transfer of Your Personal Data
+          </h2>
           <p className="pb-4">
             Your information, including Personal Data, is processed at the
             Company's operating offices and in any other places where the
@@ -407,7 +433,9 @@ const Privacy = () => {
             place including the security of Your data and other personal
             information.
           </p>
-          <h3 className="text-2xl font-semibold pb-6">Delete Your Personal Data</h3>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Security of Your Personal Data
+          </h2>
           <p className="pb-4">
             You have the right to delete or request that We assist in deleting
             the Personal Data that We have collected about You.
@@ -427,29 +455,39 @@ const Privacy = () => {
             Please note, however, that We may need to retain certain information
             when we have a legal obligation or lawful basis to do so.
           </p>
-          <h3 className="text-2xl font-semibold pb-6">Disclosure of Your Personal Data</h3>
-          <h3 className="text-xl font-semibold pb-6">Business Transactions</h3>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Disclosure of Your Personal Data
+          </h2>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Business Transactions
+          </h3>
           <p className="pb-4">
             If the Company is involved in a merger, acquisition or asset sale,
             Your Personal Data may be transferred. We will provide notice before
             Your Personal Data is transferred and becomes subject to a different
             Privacy Policy.
           </p>
-          <h3 className="text-xl font-semibold pb-6">Law enforcement</h3>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Law enforcement
+          </h3>
           <p className="pb-4">
             Under certain circumstances, the Company may be required to disclose
             Your Personal Data if required to do so by law or in response to
             valid requests by public authorities (e.g. a court or a government
             agency).
           </p>
-          <h3 className="text-xl font-semibold pb-6">Other legal requirements</h3>
+          <h3 className="text-2xl font-semibold pb-6 text-white">
+            Other legal requirements
+          </h3>
           <p className="pb-4">
             The Company may disclose Your Personal Data in the good faith belief
             that such action is necessary to:
           </p>
           <ul className="list-disc pl-4 lg:pl-8">
             <li className="pb-4">Comply with a legal obligation</li>
-            <li className="pb-4">Protect and defend the rights or property of the Company</li>
+            <li className="pb-4">
+              Protect and defend the rights or property of the Company
+            </li>
             <li className="pb-4">
               Prevent or investigate possible wrongdoing in connection with the
               Service
@@ -459,7 +497,9 @@ const Privacy = () => {
             </li>
             <li className="pb-4">Protect against legal liability</li>
           </ul>
-          <h3 className="text-2xl font-semibold pb-6">Security of Your Personal Data</h3>
+          <h3 className="text-2xl font-semibold pb-6">
+            Security of Your Personal Data
+          </h3>
           <p className="pb-4">
             The security of Your Personal Data is important to Us, but remember
             that no method of transmission over the Internet, or method of
@@ -467,7 +507,9 @@ const Privacy = () => {
             commercially acceptable means to protect Your Personal Data, We
             cannot guarantee its absolute security.
           </p>
-          <h2 className="text-3xl font-semibold pb-6">Children's Privacy</h2>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Children's Privacy
+          </h2>
           <p className="pb-4">
             Our Service does not address anyone under the age of 13. We do not
             knowingly collect personally identifiable information from anyone
@@ -483,7 +525,9 @@ const Privacy = () => {
             require Your parent's consent before We collect and use that
             information.
           </p>
-          <h2 className="text-3xl font-semibold pb-6">Links to Other Websites</h2>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Links to Other Websites
+          </h2>
           <p className="pb-4">
             Our Service may contain links to other websites that are not
             operated by Us. If You click on a third party link, You will be
@@ -495,7 +539,9 @@ const Privacy = () => {
             content, privacy policies or practices of any third party sites or
             services.
           </p>
-          <h2 className="text-3xl font-semibold pb-6">Changes to this Privacy Policy</h2>
+          <h2 className="text-3xl font-semibold pb-6 text-white">
+            Changes to this Privacy Policy
+          </h2>
           <p className="pb-4">
             We may update Our Privacy Policy from time to time. We will notify
             You of any changes by posting the new Privacy Policy on this page.
@@ -510,7 +556,7 @@ const Privacy = () => {
             changes. Changes to this Privacy Policy are effective when they are
             posted on this page.
           </p>
-          <h2 className="text-3xl font-semibold pb-6">Contact Us</h2>
+          <h2 className="text-3xl font-semibold pb-6 text-white">Contact Us</h2>
           <p className="pb-4">
             If you have any questions about this Privacy Policy, You can contact
             us:

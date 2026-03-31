@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import { Email, Phone, Checkmark, Close, Location } from "@carbon/icons-react";
 import SEO from "../components/Seo";
-import NavigationLight from "../components/NavigationLight";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import BackToTopBtn from "../components/BackToTopBtn";
 import { useForm } from "@formspree/react";
@@ -18,16 +18,20 @@ const Contact = () => {
   const [agreed, setAgreed] = useState(false);
   return (
     <>
-      <NavigationLight />
+      <Navigation />
       <main>
-        <SEO title="Contact Kevlar Security Solutions Tasmania" description="Get expert security advice, fast quotes, or emergency assistance from Tasmania's trusted security professionals." slug="/contact" />
-        <div className="bg-gray-100 py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24 lg:pt-36">
+        <SEO
+          title="Contact Kevlar Security Solutions Tasmania"
+          description="Get expert security advice, fast quotes, or emergency assistance from Tasmania's trusted security professionals."
+          slug="/contact"
+        />
+        <div className="bg-gradient-to-bl from-[#002034] to-black py-16 overflow-hidden sm:px-6 lg:px-8 lg:py-24 lg:pt-36 min-h-screen">
           <div className="relative mx-auto max-w-screen-2xl lg:grid lg:grid-cols-5">
-            <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
-              <h1 className="text-3xl font-bold tracking-tight text-kss-text sm:text-4xl">
+            <div className="py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 Contact KSS
               </h1>
-              <p className="mt-4 pb-4 text-lg leading-6 text-kss-text">
+              <p className="mt-4 pb-4 text-lg leading-6 text-gray-300">
                 We provide security services 24 hours per day, every day of the
                 year. This means that you can contact us any time to discuss
                 your security needs.
@@ -36,10 +40,10 @@ const Contact = () => {
                 <dt className="sr-only">Postal Address</dt>
                 <dd className="flex">
                   <Location
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
+                    className="h-6 w-6 flex-shrink-0 text-gray-500"
                     aria-hidden="true"
                   />
-                  <div className="ml-3 text-kss-text text-lg">
+                  <div className="ml-3 text-white text-lg">
                     GPO Box 550 Hobart, 7001
                   </div>
                 </dd>
@@ -48,12 +52,12 @@ const Contact = () => {
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <Phone
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
+                    className="h-6 w-6 flex-shrink-0 text-gray-500"
                     aria-hidden="true"
                   />
                   <a
                     href="tel:0362082777"
-                    className="ml-3 text-kss-text text-lg"
+                    className="ml-3 text-white text-lg hover:text-gray-300 transition-colors"
                   >
                     (03) 6208 2777
                   </a>
@@ -63,39 +67,39 @@ const Contact = () => {
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <Email
-                    className="h-6 w-6 flex-shrink-0 text-gray-400"
+                    className="h-6 w-6 flex-shrink-0 text-gray-500"
                     aria-hidden="true"
                   />
                   <a
                     href="mailto:info@kevlarsecuritysolutions.com.au"
-                    className="ml-3 text-kss-text text-lg"
+                    className="ml-3 text-white text-lg hover:text-gray-300 transition-colors"
                   >
                     info@kevlarsecuritysolutions.com.au
                   </a>
                 </dd>
               </div>
-              <p className="mt-6 text-base text-kss-text">
+              <p className="mt-6 text-base text-gray-300">
                 Looking for careers?{" "}
                 <Link
                   to="/employment/expression-of-interest"
-                  className="font-medium text-gray-700 underline"
+                  className="font-medium text-blue-400 hover:text-blue-300 underline"
                 >
                   View all job openings
                 </Link>
                 .
               </p>
-              <p className="mt-6 text-base text-kss-text">
+              <p className="mt-6 text-base text-gray-300">
                 We'd love to hear from you.{" "}
                 <Link
                   to="/feedback"
-                  className="font-medium text-gray-700 underline"
+                  className="font-medium text-blue-400 hover:text-blue-300 underline"
                 >
                   Provide feedback on our services
                 </Link>
                 .
               </p>
             </div>
-            <div className="bg-white shadow-xl py-12 px-4 sm:px-6 lg:col-span-3 lg:py-16 lg:px-8 xl:pl-12">
+            <div className="bg-transparent py-12 px-4 sm:px-6 lg:col-span-3 lg:py-16 lg:px-8 xl:pl-12">
               <form
                 onSubmit={handleSubmit}
                 method="POST"
@@ -104,7 +108,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     First name
                   </label>
@@ -115,14 +119,14 @@ const Contact = () => {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                     />
                   </div>
                 </div>
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     Last name
                   </label>
@@ -133,14 +137,14 @@ const Contact = () => {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="company"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     Company
                   </label>
@@ -150,14 +154,14 @@ const Contact = () => {
                       name="company"
                       id="company"
                       autoComplete="organization"
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     Email
                   </label>
@@ -168,14 +172,14 @@ const Contact = () => {
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="phone-number"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     Phone number
                   </label>
@@ -186,7 +190,7 @@ const Contact = () => {
                       name="phone-number"
                       id="phone-number"
                       autoComplete="tel"
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                       placeholder=""
                     />
                   </div>
@@ -194,7 +198,7 @@ const Contact = () => {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium text-gray-300"
                   >
                     Brief description of your enquiry
                   </label>
@@ -204,7 +208,7 @@ const Contact = () => {
                       id="message"
                       name="message"
                       rows={4}
-                      className="py-3 px-4 block w-full shadow-sm focus:ring-black focus:border-black border border-gray-300 "
+                      className="py-3 px-4 block w-full shadow-sm focus:ring-blue-400 focus:border-blue-400 border-white/30 border bg-transparent text-white"
                       defaultValue={""}
                     />
                   </div>
@@ -216,8 +220,8 @@ const Contact = () => {
                         checked={agreed}
                         onChange={setAgreed}
                         className={classNames(
-                          agreed ? "bg-black" : "bg-gray-200",
-                          "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                          agreed ? "bg-blue-500" : "bg-gray-700",
+                          "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900",
                         )}
                         name="agreed-terms"
                         value={agreed}
@@ -227,18 +231,19 @@ const Contact = () => {
                           aria-hidden="true"
                           className={classNames(
                             agreed ? "translate-x-5" : "translate-x-0",
-                            "inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"
+                            "inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200",
                           )}
                         />
                       </Switch>
                     </div>
                     <div className="ml-3">
-                      <p className="text-base text-kss-text">
-                        By submitting this form, you agree to the terms outlined in our{" "}
+                      <p className="text-base text-gray-300">
+                        By submitting this form, you agree to the terms outlined
+                        in our{" "}
                         <Link
                           to="/privacy-policy"
                           target="_blank"
-                          className="font-medium text-gray-700 underline"
+                          className="font-medium text-blue-400 hover:text-blue-300 underline"
                         >
                           Privacy Policy.
                         </Link>{" "}
@@ -252,7 +257,7 @@ const Contact = () => {
                       {" "}
                       <button
                         type="submit"
-                        className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                        className="w-full inline-flex items-center justify-center px-6 py-3 border border-white transition text-white bg-transparent hover:bg-white hover:text-black text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900"
                       >
                         <svg
                           className="fill-white animate-spin mr-2"
@@ -273,7 +278,7 @@ const Contact = () => {
                       <button
                         disabled={agreed === false}
                         type="submit"
-                        className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent  shadow-sm text-base font-medium text-white bg-black hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black disabled:pointer-events-none disabled:bg-opacity-80"
+                        className="w-full inline-flex items-center justify-center px-6 py-3 border-2 border-white transition text-white bg-transparent hover:bg-white hover:text-black text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900 disabled:opacity-50 disabled:pointer-events-none"
                       >
                         Talk to a Security Professional
                       </button>
@@ -282,11 +287,11 @@ const Contact = () => {
                   {state.succeeded ? (
                     <div className="w-full">
                       {" "}
-                      <div className="w-full my-4 bg-gradient-to-t from-black to-[#002340] p-4">
+                      <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
                         <div className="flex">
                           <div className="flex-shrink-0">
                             <Checkmark
-                              className="h-5 w-5 text-white"
+                              className="h-5 w-5 text-blue-400"
                               aria-hidden="true"
                             />
                           </div>
@@ -300,7 +305,7 @@ const Contact = () => {
                               <button
                                 type="button"
                                 onClick={() => window.location.reload(false)}
-                                className="inline-flex p-1.5 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black-50 focus:ring-black-600"
+                                className="inline-flex p-1.5 text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500"
                               >
                                 <span className="sr-only">Dismiss</span>
                                 <Close className="h-5 w-5" aria-hidden="true" />

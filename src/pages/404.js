@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
-import NavigationLight from "../components/NavigationLight";
+import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import BackToTopBtn from "../components/BackToTopBtn";
 import SEO from "../components/Seo";
@@ -10,7 +10,7 @@ import SEO from "../components/Seo";
 const NotFoundPage = () => {
   return (
     <>
-    <NavigationLight/>
+    <Navigation/>
     <SEO title="404 | Page Not Found" slug="/404"/>
       <div className="min-h-screen bg-white px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
         <div className="mx-auto max-w-max">

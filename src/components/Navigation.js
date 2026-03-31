@@ -26,7 +26,6 @@ import { Phone } from "@carbon/icons-react";
 import { ArrowRight } from "@carbon/icons-react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-import { getRecentPosts } from "../data/blog-posts";
 import Tassie from "../assets/svg/tasmania";
 import { ChevronUp } from "@carbon/icons-react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -1149,9 +1148,7 @@ const Navigation = () => {
                             )}
                           </Popover>
                           <Popover className="flex">
-                            {({ open: articlesOpen }) => {
-                              const recentPosts = getRecentPosts(4);
-                              return (
+                            {({ open: articlesOpen }) => (
                               <>
                                 <div className="relative flex">
                                   <Popover.Button
@@ -1194,32 +1191,99 @@ const Navigation = () => {
                                     />
                                     <div className="relative bg-white p-6 pb-2">
                                       <div className="grid grid-cols-4 gap-6 mb-0">
-                                        {recentPosts.map((post) => (
-                                          <Link
-                                            key={post.id}
-                                            to={`/articles/${post.slug}`}
-                                            className="flex flex-col group pb-2"
-                                          >
-                                            <div className="h-56 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
-                                              <div className="relative w-full h-52 mx-2 overflow-hidden">
-                                                <img
-                                                  src={post.featuredImage}
-                                                  alt={post.title}
-                                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                                                <div className="absolute bottom-0 left-0 right-0 p-2">
-                                                  <p className="text-white/60 text-[10px] font-medium mb-0.5">
-                                                    {new Date(post.publishedDate).toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" })}
-                                                  </p>
-                                                  <p className="text-white text-sm font-semibold leading-tight">
-                                                    {post.title}
-                                                  </p>
-                                                </div>
+
+                                        {/* Post 6 — 6 Mar 2026 */}
+                                        <Link
+                                          to="/articles/choosing-the-right-alarm-system-key-considerations-for-tasmanian-sites"
+                                          className="flex flex-col group pb-2"
+                                        >
+                                          <div className="h-56 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                            <div className="relative w-full h-52 mx-2 overflow-hidden">
+                                              <StaticImage
+                                                src="https://cdn.pixabay.com/photo/2015/09/26/19/16/alarm-959592_960_720.jpg"
+                                                alt="Choosing the Right Alarm System: Key Considerations for Tasmanian Sites"
+                                                className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+                                                imgClassName="object-cover"
+                                                layout="fullWidth"
+                                              />
+                                              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                                              <div className="absolute bottom-0 left-0 right-0 p-2">
+                                                <p className="text-white/60 text-[10px] font-medium mb-0.5">6 Mar 2026</p>
+                                                <p className="text-white text-sm font-semibold leading-tight">Choosing the Right Alarm System: Key Considerations for Tasmanian Sites</p>
                                               </div>
                                             </div>
-                                          </Link>
-                                        ))}
+                                          </div>
+                                        </Link>
+
+                                        {/* Post 5 — 7 Feb 2026 */}
+                                        <Link
+                                          to="/articles/how-fast-alarm-response-protects-tasmanian-businesses-from-major-loss"
+                                          className="flex flex-col group pb-2"
+                                        >
+                                          <div className="h-56 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                            <div className="relative w-full h-52 mx-2 overflow-hidden">
+                                              <StaticImage
+                                                src="https://downloads.ctfassets.net/lfrbwr0lmnkj/VZSaIjQOBjY1wQmRgmh6F/86d57c823f4cbdd3f94de9f71129e60f/kss_website_2022-70.jpg"
+                                                alt="How Fast Alarm Response Protects Tasmanian Businesses from Major Loss"
+                                                className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+                                                imgClassName="object-cover"
+                                                layout="fullWidth"
+                                              />
+                                              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                                              <div className="absolute bottom-0 left-0 right-0 p-2">
+                                                <p className="text-white/60 text-[10px] font-medium mb-0.5">7 Feb 2026</p>
+                                                <p className="text-white text-sm font-semibold leading-tight">How Fast Alarm Response Protects Tasmanian Businesses from Major Loss</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </Link>
+
+                                        {/* Post 4 — 9 Jan 2026 */}
+                                        <Link
+                                          to="/articles/enhancing-event-safety-crowd-control-and-bodyguard-services-explained"
+                                          className="flex flex-col group pb-2"
+                                        >
+                                          <div className="h-56 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                            <div className="relative w-full h-52 mx-2 overflow-hidden">
+                                              <StaticImage
+                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/3i8PYnvufHA6hNJEyfL236/e7c047f41a4af559e0367716441ba6a7/kss22-12.jpg"
+                                                alt="Enhancing Event Safety: Crowd Control and Bodyguard Services Explained"
+                                                className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+                                                imgClassName="object-cover"
+                                                layout="fullWidth"
+                                              />
+                                              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                                              <div className="absolute bottom-0 left-0 right-0 p-2">
+                                                <p className="text-white/60 text-[10px] font-medium mb-0.5">9 Jan 2026</p>
+                                                <p className="text-white text-sm font-semibold leading-tight">Enhancing Event Safety: Crowd Control and Bodyguard Services Explained</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </Link>
+
+                                        {/* Post 3 — 5 Dec 2025 */}
+                                        <Link
+                                          to="/articles/technical-security-innovations-the-latest-advancements-for-tasmanian-enterprises"
+                                          className="flex flex-col group pb-2"
+                                        >
+                                          <div className="h-56 group-hover:opacity-90 overflow-hidden relative bg-gradient-to-tr from-[#034065] via-[#5C5242] to-[#000E17] rounded-sm flex items-center justify-center">
+                                            <div className="relative w-full h-52 mx-2 overflow-hidden">
+                                              <StaticImage
+                                                src="https://images.ctfassets.net/lfrbwr0lmnkj/5xbhWNvVSTBjiIZRr7zBRS/0b6344cb67a6ec66904a626d2ac82b19/B-2.jpg"
+                                                alt="Technical Security Innovations: The Latest Advancements for Tasmanian Enterprises"
+                                                className="w-full h-full group-hover:scale-105 transition-transform duration-300"
+                                                imgClassName="object-cover"
+                                                layout="fullWidth"
+                                              />
+                                              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                                              <div className="absolute bottom-0 left-0 right-0 p-2">
+                                                <p className="text-white/60 text-[10px] font-medium mb-0.5">5 Dec 2025</p>
+                                                <p className="text-white text-sm font-semibold leading-tight">Technical Security Innovations: The Latest Advancements for Tasmanian Enterprises</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </Link>
+
                                       </div>
                                       <div className="flex justify-end pt-1 pb-1">
                                         <Link
@@ -1234,8 +1298,7 @@ const Navigation = () => {
                                   </Popover.Panel>
                                 </Transition>
                               </>
-                              );
-                            }}
+                            )}
                           </Popover>
                           <Popover className="flex">
                             {({ open }) => (
