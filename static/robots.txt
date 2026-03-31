@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /404
+
+Sitemap: https://kevlarsecuritysolutions.com.au/sitemap/sitemap-index.xml
