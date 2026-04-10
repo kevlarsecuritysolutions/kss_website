@@ -357,8 +357,8 @@ const Services = () => {
                     <div className="flex justify-center items-center gap-8 pb-4">
                       <div className="flex justify-center items-center h-36 w-36 relative">
                         <StaticImage
-                          src="../assets/images/logos/ASIAL-logo.png"
-                          alt="asial bronze member"
+                          src="https://images.ctfassets.net/lfrbwr0lmnkj/1qOAlsBUTbTALtexwyKgYL/0e624abb4d86cbcda5a286cfc0514a8d/Silver_Member__1_.png"
+                          alt="asial silver member"
                         />
                       </div>
                       <div className="flex justify-center items-center h-36 w-36 relative">

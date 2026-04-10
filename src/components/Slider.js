@@ -90,8 +90,8 @@ const Slider = () => {
         <div className="  flex justify-center items-center h-36 w-36 relative">
           <StaticImage
             className=""
-            src="https://images.ctfassets.net/lfrbwr0lmnkj/5zS9W16qsYi8C9eWzwvXSc/fc6a9be6132fc102d07c076bf10d390a/Blundstone.png"
-            alt="Blundstone"
+            src="https://images.ctfassets.net/lfrbwr0lmnkj/2gSfPJWs7FpibQLddekIQy/e8e2244334d2b6cf53318c8cff4be9f8/ninja-stadium.png"
+            alt="Ninja Stadium"
             loading="eager"
           />
         </div>
@@ -188,8 +188,8 @@ const Slider = () => {
         <div className="  flex justify-center items-center h-36 w-36 relative">
           <StaticImage
             className=""
-            src="https://images.ctfassets.net/lfrbwr0lmnkj/5zS9W16qsYi8C9eWzwvXSc/fc6a9be6132fc102d07c076bf10d390a/Blundstone.png"
-            alt="Blundstone"
+            src="https://images.ctfassets.net/lfrbwr0lmnkj/2gSfPJWs7FpibQLddekIQy/e8e2244334d2b6cf53318c8cff4be9f8/ninja-stadium.png"
+            alt="Ninja Stadium"
             loading="eager"
           />
         </div>
