@@ -123,34 +123,6 @@ const Services = () => {
             </defs>
           </svg>
         </div>
-        <div className="hidden xl:block absolute -bottom-32 right-0">
-          <svg
-            width="1309"
-            height="556"
-            viewBox="0 0 1309 556"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 555.722H1307.01L1308.26 0.000183105L0 555.722Z"
-              fill="url(#paint0_radial_8_122)"
-            />
-            <defs>
-              <radialGradient
-                id="paint0_radial_8_122"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(654.128 277.861) scale(654.128 277.861)"
-              >
-                <stop stopColor="#001a2f" />
-                <stop offset="0.34" stopColor="#00111e" />
-                <stop offset="1" stopColor="#03070A" />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
         <div className="hidden xl:block absolute top-[1200px] right-0">
           <svg
             className="w-[2200px] h-auto"

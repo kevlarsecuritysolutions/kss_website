@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 import HeroSection from "../components/HeroSection";
 import Services from "../components/Services";
+import EoM from "../components/EoM";
 import Clients from "../components/Clients";
 import NewClientsBar from "../components/NewClientsBar";
 
@@ -13,6 +14,7 @@ const Home = () => {
       <HeroSection/>
       <NewClientsBar/>
       <Services />
+      <EoM />
       <Clients/>
     </Layout>
   );
