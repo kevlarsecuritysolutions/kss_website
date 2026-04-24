@@ -14,8 +14,10 @@ const AlarmSystemMonitoring = () => {
   return (
     <Layout>
       <SEO
-        title="Alarm System Monitoring"
+        title="Alarm System Monitoring Tasmania | Kevlar Security"
+        description="24/7 alarm system monitoring for Tasmanian homes and businesses from our ASIAL accredited A Grade control room."
         slug="/services/alarm-system-monitoring"
+        schema={{ "@type": "Service", "name": "Alarm System Monitoring", "description": "24/7 alarm system monitoring for Tasmanian homes and businesses from our ASIAL accredited A Grade control room.", "serviceType": "Alarm System Monitoring Services" }}
       />
       <section className="relative hidden lg:block">
         <div className="absolute inset-x-0 bottom-0  bg-gray-100 "></div>

@@ -113,7 +113,12 @@ const TechnicalServices = () => {
 
   return (
     <Layout>
-      <SEO title="Technical Security Solutions Tasmania | Kevlar" description="Advanced CCTV, alarm systems and security tech installations designed for Tasmanian businesses and home security needs." slug="/services/technical-services" />
+      <SEO
+        title="Technical Security Solutions Tasmania | Kevlar"
+        description="Advanced CCTV, alarm systems and security tech installations designed for Tasmanian businesses and home security needs."
+        slug="/services/technical-services"
+        schema={{ "@type": "Service", "name": "Technical Security Solutions", "description": "Advanced CCTV, alarm systems and security tech installations designed for Tasmanian businesses and home security needs.", "serviceType": "Technical Security Services" }}
+      />
 
       {/* Hero Section */}
       <section className="relative py-12 xl:pt-32 xl:pb-0 shadow-xl overflow-hidden">
@@ -457,14 +462,13 @@ const TechnicalServices = () => {
                   </p>
                 </div>
               </div>
-              <a
-                href="#contact"
-                onClick={handleAnchorClick}
+              <Link
+                to="/services/alarm-systems/"
                 className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
               >
                 Learn More About Our Alarm Solutions
                 <ArrowRight className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -559,14 +563,13 @@ const TechnicalServices = () => {
                 </p>
               </div>
             </div>
-            <a
-              href="#contact"
-              onClick={handleAnchorClick}
+            <Link
+              to="/services/cctv-surveillance/"
               className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
             >
               Explore CCTV Solutions
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
 
           <div className="order-2 lg:order-1 relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
@@ -659,14 +662,13 @@ const TechnicalServices = () => {
                 </p>
               </div>
             </div>
-            <a
-              href="#contact"
-              onClick={handleAnchorClick}
+            <Link
+              to="/services/access-control/"
               className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
             >
               Discover Access Control Options
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
 
           <div className="relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">
@@ -757,14 +759,13 @@ const TechnicalServices = () => {
                 </p>
               </div>
             </div>
-            <a
-              href="#contact"
-              onClick={handleAnchorClick}
+            <Link
+              to="/services/site-cameras/"
               className="inline-flex items-center gap-2 border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
             >
               Learn About Site Camera Solutions
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
 
           <div className="order-2 lg:order-1 relative mx-4 aspect-video h-full lg:mx-0 lg:block lg:aspect-auto">

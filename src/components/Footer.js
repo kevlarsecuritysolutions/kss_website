@@ -232,7 +232,11 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex justify-center lg:hidden px-4 gap-6 pb-4">
-              <a href="tel:0362082777" target="_blank" rel="noopener noreferrer">
+              <a
+                href="tel:0362082777"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Phone className="h-6 w-6 text-white" />
               </a>
               <a
@@ -374,10 +378,9 @@ const Footer = () => {
           </div> */}
         </div>
         <div className=" flex items-center mx-4 lg:mx-auto max-w-screen-2xl border-t border-gray-50/40 ">
-          <div className="mt-2 md:mt-0 md:order-1">
+          <div className="mt-2 md:mt-0 md:order-1 flex flex-col lg:flex-row w-full justify-between">
             <p className="text-xs py-2 tracking-tight text-kss-text-dark">
-              &copy; 2026 Kevlar Security Solutions Pty Ltd. All rights
-              reserved. | Master Licence No. 19859 | ABN:{" "}
+              Licences: TAS 19859 | QLD 4858998 | NSW 000110339 | ABN:{" "}
               <a
                 className="hover:underline"
                 target="_blank"
@@ -386,6 +389,10 @@ const Footer = () => {
               >
                 51 154 971 641
               </a>
+            </p>
+            <p className="text-xs py-2 tracking-tight text-kss-text-dark">
+              &copy; 2026 Kevlar Security Solutions Pty Ltd. All rights
+              reserved.
             </p>
           </div>
         </div>

@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const RiskAssessment = () => {
   return (
     <Layout>
-      <SEO title="Security Risk Assessments Tasmania | Kevlar" description="Professional risk assessments for government, business and residential sites, tailored to your security budget and needs." slug="/services/risk-assessments" />
+      <SEO
+        title="Security Risk Assessments Tasmania | Kevlar"
+        description="Professional risk assessments for government, business and residential sites, tailored to your security budget and needs."
+        slug="/services/risk-assessments"
+        schema={{ "@type": "Service", "name": "Security Risk Assessments", "description": "Professional risk assessments for government, business and residential sites, tailored to your security budget and needs.", "serviceType": "Security Risk Assessment Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">

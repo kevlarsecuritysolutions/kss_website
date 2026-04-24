@@ -198,10 +198,10 @@ const EoM = () => {
               Employee of the Month
             </h2>
             <p className="text-white text-md lg:text-lg">
-              Kevlar Security has launched its Employee of the Year program,
-              including Employee of the Month, to properly celebrate the team
-              that keeps us safe and professional. Management may award multiple
-              winners where deserved.
+              KSS has launched its Employee of the Year program, including
+              Employee of the Month, to properly celebrate the team that keeps
+              us safe and professional. Management may award multiple winners
+              where deserved.
             </p>
           </div>
 

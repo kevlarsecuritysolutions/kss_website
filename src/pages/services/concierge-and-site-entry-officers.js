@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const SiteEntry = () => {
   return (
     <Layout>
-      <SEO title="Concierge & Site Entry Security | Kevlar Tasmania" description="Concierge and site entry officers deliver customer service, access control, drug testing and IT skills for secure Tasmanian premises." slug="/services/concierge-and-site-entry-officers" />
+      <SEO
+        title="Concierge & Site Entry Security | Kevlar Tasmania"
+        description="Concierge and site entry officers deliver customer service, access control, drug testing and IT skills for secure Tasmanian premises."
+        slug="/services/concierge-and-site-entry-officers"
+        schema={{ "@type": "Service", "name": "Concierge & Site Entry Officers", "description": "Concierge and site entry officers deliver customer service, access control, drug testing and IT skills for secure Tasmanian premises.", "serviceType": "Concierge and Site Entry Security Services" }}
+      />
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="px-4 lg:pl-24 lg:pr-24 pt-24 xl:pt-36 pb-24">

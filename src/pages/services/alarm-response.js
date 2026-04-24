@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const AlarmResponse = () => {
   return (
     <Layout>
-      <SEO title="Alarm Response & Monitoring Tasmania | Kevlar" description="Fastest alarm and duress response in Hobart and statewide, supported by 24/7 patrol fleet and security professionals." slug="/services/alarm-response" />
+      <SEO
+        title="Alarm Response & Monitoring Tasmania | Kevlar"
+        description="Fastest alarm and duress response in Hobart and statewide, supported by 24/7 patrol fleet and security professionals."
+        slug="/services/alarm-response"
+        schema={{ "@type": "Service", "name": "Alarm Response & Duress Response", "description": "Fastest alarm and duress response in Hobart and statewide, supported by 24/7 patrol fleet and security professionals.", "serviceType": "Alarm Response Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">

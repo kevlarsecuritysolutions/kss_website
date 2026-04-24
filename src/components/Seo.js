@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({title, description, image, slug, children}) => {
+const SEO = ({title, description, image, slug, schema, children}) => {
 
     const data = useStaticQuery(graphql`
         query {
@@ -27,10 +27,14 @@ const SEO = ({title, description, image, slug, children}) => {
     const siteUrl = data.site.siteMetadata.siteUrl;
     const metaDescription = description || data.site.siteMetadata.description;
     const ogImage = `${siteUrl}${image || data.social.publicURL}`;
-    const canonicalUrl = `${siteUrl}${slug}`;
+
+    // Always use a trailing slash so the canonical matches Gatsby's default served URL
+    const canonicalSlug = slug ? (slug.endsWith('/') ? slug : `${slug}/`) : '/';
+    const canonicalUrl = `${siteUrl}${canonicalSlug}`;
+
     const pageTitle = title;
 
-    const structuredData = {
+    const localBusinessData = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Kevlar Security Solutions",
@@ -51,6 +55,23 @@ const SEO = ({title, description, image, slug, children}) => {
             "https://www.facebook.com/ksshobart/"
         ]
     };
+
+    // Service schema: pages pass minimal fields; Seo.js injects url, provider, areaServed
+    const serviceData = schema ? {
+        "@context": "https://schema.org",
+        ...schema,
+        "url": canonicalUrl,
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Kevlar Security Solutions",
+            "url": siteUrl,
+        },
+        "areaServed": {
+            "@type": "State",
+            "name": "Tasmania",
+            "addressCountry": "AU"
+        }
+    } : null;
 
     return (
         <Helmet
@@ -76,10 +97,17 @@ const SEO = ({title, description, image, slug, children}) => {
             <meta name="twitter:description" content={metaDescription} />
             <meta name="twitter:image" content={ogImage} />
 
-            {/* Structured Data */}
+            {/* LocalBusiness Structured Data */}
             <script type="application/ld+json">
-                {JSON.stringify(structuredData)}
+                {JSON.stringify(localBusinessData)}
             </script>
+
+            {/* Service Structured Data */}
+            {serviceData && (
+                <script type="application/ld+json">
+                    {JSON.stringify(serviceData)}
+                </script>
+            )}
 
             {children}
         </Helmet>
@@ -91,6 +119,7 @@ SEO.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     slug: PropTypes.string,
+    schema: PropTypes.object,
     children: PropTypes.node,
 };
 

@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const SecurityPatrols = () => {
   return (
     <Layout>
-      <SEO title="Security Patrols Tasmania | Kevlar Security Solutions" description="Rapid-response vehicle patrols for Tasmanian businesses and government. Flexible coverage, instant alarm response, and reliable protection." slug="/services/security-patrols" />
+      <SEO
+        title="Security Patrols Tasmania | Kevlar Security Solutions"
+        description="Rapid-response vehicle patrols for Tasmanian businesses and government. Flexible coverage, instant alarm response, and reliable protection."
+        slug="/services/security-patrols"
+        schema={{ "@type": "Service", "name": "Security Patrols", "description": "Rapid-response vehicle patrols for Tasmanian businesses and government. Flexible coverage, instant alarm response, and reliable protection.", "serviceType": "Mobile Security Patrol Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">

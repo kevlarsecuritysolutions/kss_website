@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const BodyGuard = () => {
   return (
     <Layout>
-      <SEO title="Bodyguard & Personal Protection Tasmania | Kevlar" description="Discreet bodyguard services for VIPs and high-profile events, provided by Tasmania's most experienced security team." slug="/services/body-guard-services" />
+      <SEO
+        title="Bodyguard & Personal Protection Tasmania | Kevlar"
+        description="Discreet bodyguard services for VIPs and high-profile events, provided by Tasmania's most experienced security team."
+        slug="/services/body-guard-services"
+        schema={{ "@type": "Service", "name": "Bodyguard & Personal Protection Services", "description": "Discreet bodyguard services for VIPs and high-profile events, provided by Tasmania's most experienced security team.", "serviceType": "Bodyguard and Close Protection Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">

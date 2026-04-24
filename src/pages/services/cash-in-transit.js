@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const ArmedCash = () => {
   return (
     <Layout>
-      <SEO title="Cash in Transit Security Tasmania | Kevlar" description="Secure transport for cash and valuables. Armed, covert, and overt services help Tasmanian businesses manage financial risk." slug="/services/cash-in-transit" />
+      <SEO
+        title="Cash in Transit Security Tasmania | Kevlar"
+        description="Secure transport for cash and valuables. Armed, covert, and overt services help Tasmanian businesses manage financial risk."
+        slug="/services/cash-in-transit"
+        schema={{ "@type": "Service", "name": "Cash in Transit Security", "description": "Secure transport for cash and valuables. Armed, covert, and overt services help Tasmanian businesses manage financial risk.", "serviceType": "Cash in Transit Security Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">

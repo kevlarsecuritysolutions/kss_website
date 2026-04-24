@@ -13,7 +13,12 @@ import SEO from "../../components/Seo";
 const CrowdControl = () => {
   return (
     <Layout>
-      <SEO title="Event & Crowd Control Services Tasmania | Kevlar" description="Professional crowd control for events, concerts, festivals, plus expert planning and safety in Hobart, Launceston and statewide." slug="/services/crowd-control" />
+      <SEO
+        title="Event & Crowd Control Services Tasmania | Kevlar"
+        description="Professional crowd control for events, concerts, festivals, plus expert planning and safety in Hobart, Launceston and statewide."
+        slug="/services/crowd-control"
+        schema={{ "@type": "Service", "name": "Crowd Control & Event Security", "description": "Professional crowd control for events, concerts, festivals, plus expert planning and safety in Hobart, Launceston and statewide.", "serviceType": "Crowd Control and Event Security Services" }}
+      />
 
       <section className="bg-gradient-to-bl from-[#002034] to-black">
         <div className="grid grid-cols-1 lg:grid-cols-2">
