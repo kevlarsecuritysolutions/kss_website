@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { useForm } from "@formspree/react";
 import { Switch } from "@headlessui/react";
 import { ArrowLeft, ArrowRight, Checkmark, Close, ChevronDown, ChevronUp } from "@carbon/icons-react";
 import Layout from "../../components/Layout";
@@ -188,8 +187,39 @@ function FAQItem({ q, a, open, onToggle }) {
 /* ── Page ─────────────────────────────────────────────── */
 
 const AccessControl = () => {
-  const [state, handleSubmit] = useForm("mnqynzap");
   const [agreed, setAgreed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.target;
+    try {
+      const res = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: form['first-name'].value,
+          lastName: form['last-name'].value,
+          company: form['company'].value,
+          email: form['email'].value,
+          phone: form['phone-number'].value,
+          message: form['message'].value,
+          type: 'Access Control',
+        }),
+      });
+      if (res.ok) {
+        setSucceeded(true);
+        form.reset();
+        setAgreed(false);
+      }
+    } catch {
+      // no-op
+    } finally {
+      setSubmitting(false);
+    }
+  };
   const [openFaqs, setOpenFaqs] = useState({});
 
   const toggleFaq = (i) => setOpenFaqs((prev) => ({ ...prev, [i]: !prev[i] }));
@@ -544,7 +574,7 @@ const AccessControl = () => {
               </div>
             </div>
             <div className="sm:col-span-2">
-              {state.submitting ? (
+              {submitting ? (
                 <button
                   type="submit"
                   className="w-full inline-flex items-center justify-center px-6 py-3 border border-white transition text-white bg-transparent hover:bg-white hover:text-black text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900"
@@ -564,7 +594,7 @@ const AccessControl = () => {
                   Talk to a Security Professional
                 </button>
               )}
-              {state.succeeded && (
+              {succeeded && (
                 <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
                   <div className="flex">
                     <div className="flex-shrink-0">

@@ -8,16 +8,73 @@ import { Switch } from "@headlessui/react";
 import { Checkmark, Close } from "@carbon/icons-react";
 import SEO from "../../components/Seo";
 
-import { useForm } from "@formspree/react";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Form = () => {
   const [agreed, setAgreed] = useState(false);
-  const [state, handleSubmit] = useForm("xlekdlrp");
   const [noCert, handleNoCert] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+    const form = e.target;
+
+    const fileInput = form['resume'];
+    const attachments = [];
+    if (fileInput && fileInput.files.length > 0) {
+      for (const file of fileInput.files) {
+        const content = await new Promise((resolve) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result.split(',')[1]);
+          reader.readAsDataURL(file);
+        });
+        attachments.push({ filename: file.name, content });
+      }
+    }
+
+    try {
+      const res = await fetch('/.netlify/functions/expression-of-interest', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: form['first-name'].value,
+          lastName: form['last-name'].value,
+          email: form['email'].value,
+          phone: form['phone'].value,
+          streetAddress: form['street-address'].value,
+          city: form['city'].value,
+          locationState: form['state'].value,
+          postalCode: form['postal-code'].value,
+          securityLicenceNumber: form['security-licence-number'].value,
+          cert2: form['cert2'].value,
+          driversLicence: form['drivers-licence'].checked,
+          whiteCard: form['white-card'].checked,
+          wwvpCheck: form['wwvp-check'].checked,
+          trafficControl: form['traffic-control'].checked,
+          firearmsLicence: form['firearms-licence'].checked,
+          message: form['message'].value,
+          attachments,
+        }),
+      });
+      if (res.ok) {
+        setSucceeded(true);
+        form.reset();
+        setAgreed(false);
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
+    } catch {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -46,7 +103,6 @@ const Form = () => {
             <form
               className="space-y-10"
               onSubmit={handleSubmit}
-              encType="multipart/form-data"
             >
               {/* Personal Information */}
               <div>
@@ -336,7 +392,7 @@ const Form = () => {
 
               {/* Submit */}
               <div className="sm:col-span-2">
-                {state.submitting ? (
+                {submitting ? (
                   <button
                     type="submit"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-white transition text-white bg-transparent hover:bg-white hover:text-black text-base font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:ring-offset-gray-900"
@@ -362,7 +418,7 @@ const Form = () => {
                     Submit Application
                   </button>
                 )}
-                {state.succeeded && (
+                {succeeded && (
                   <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
                     <div className="flex">
                       <div className="flex-shrink-0">
@@ -386,6 +442,11 @@ const Form = () => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                )}
+                {error && (
+                  <div className="w-full mt-6 bg-gradient-to-r from-red-900/50 to-transparent border border-red-500/30 p-4">
+                    <p className="text-sm font-medium text-white">{error}</p>
                   </div>
                 )}
               </div>

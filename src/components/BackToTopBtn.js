@@ -16,8 +16,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Phone, Email } from "@carbon/icons-react";
 import { Link } from "gatsby";
 import { LocationCompany } from "@carbon/icons-react";
-import { useForm } from "@formspree/react";
-
 const services = [
   { name: "Ads", icon: <Bullhorn className="text-kss-text h-6 w-6" /> },
   { name: "Web", icon: <Screen className="text-kss-text h-6 w-6" /> },
@@ -28,7 +26,36 @@ const services = [
 const BackToTopBtn = () => {
   const [showButton, setShowButton] = useState(false);
   const [service, setService] = useState(services[2]);
-  const [state, handleSubmit] = useForm("mnqynzap");
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.target;
+    try {
+      const res = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form['name'].value,
+          company: form['company'].value,
+          email: form['email'].value,
+          phone: '',
+          message: form['message'].value,
+          type: 'General Enquiry',
+        }),
+      });
+      if (res.ok) {
+        setSucceeded(true);
+        form.reset();
+      }
+    } catch {
+      // fail silently — popover context makes error display awkward
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -190,7 +217,7 @@ const BackToTopBtn = () => {
                               defaultValue={""}
                             />
                           </div>
-                          {state.succeeded ? (
+                          {succeeded ? (
                             <div className="w-full">
                               {" "}
                               <div className="w-full my-4 bg-gradient-to-t from-black to-[#002340] p-4">
@@ -234,7 +261,7 @@ const BackToTopBtn = () => {
                           <Popover.Button className="w-1/2 text-center text-white hover:bg-opacity-80 py-3 bg-[#6f6f6f]">
                             Cancel
                           </Popover.Button>
-                          {state.submitting ? (
+                          {submitting ? (
                             <button
                               className="w-1/2 text-center flex items-center justify-center text-white hover:bg-opacity-80 py-3 bg-black"
                               type="submit"

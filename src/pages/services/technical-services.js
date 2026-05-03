@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { useForm } from "@formspree/react";
 import { Switch } from "@headlessui/react";
 import { ArrowRight, Checkmark, Close } from "@carbon/icons-react";
 import Layout from "../../components/Layout";
@@ -12,8 +11,39 @@ function classNames(...classes) {
 }
 
 const TechnicalServices = () => {
-  const [state, handleSubmit] = useForm("mnqynzap");
   const [agreed, setAgreed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    const form = e.target;
+    try {
+      const res = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: form['first-name'].value,
+          lastName: form['last-name'].value,
+          company: form['company'].value,
+          email: form['email'].value,
+          phone: form['phone-number'].value,
+          message: form['message'].value,
+          type: 'Technical Services',
+        }),
+      });
+      if (res.ok) {
+        setSucceeded(true);
+        form.reset();
+        setAgreed(false);
+      }
+    } catch {
+      // no-op
+    } finally {
+      setSubmitting(false);
+    }
+  };
   // Carousel functionality
   const [activeSlide, setActiveSlide] = useState({
     alarms: 0,
@@ -1055,7 +1085,7 @@ const TechnicalServices = () => {
               </div>
             </div>
             <div className="sm:col-span-2">
-              {state.submitting ? (
+              {submitting ? (
                 <div>
                   <button
                     type="submit"
@@ -1085,39 +1115,35 @@ const TechnicalServices = () => {
                   </button>
                 </div>
               )}
-              {state.succeeded ? (
-                <div className="w-full">
-                  <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
-                    <div className="flex">
-                      <div className="flex-shrink-0">
-                        <Checkmark
-                          className="h-5 w-5 text-blue-400"
-                          aria-hidden="true"
-                        />
-                      </div>
-                      <div className="ml-3">
-                        <p className="text-sm font-medium text-white">
-                          Your submission has been received. We'll be in touch
-                          shortly.
-                        </p>
-                      </div>
-                      <div className="ml-auto pl-3">
-                        <div className="-mx-1.5 -my-1.5">
-                          <button
-                            type="button"
-                            onClick={() => window.location.reload(false)}
-                            className="inline-flex p-1.5 text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500"
-                          >
-                            <span className="sr-only">Dismiss</span>
-                            <Close className="h-5 w-5" aria-hidden="true" />
-                          </button>
-                        </div>
+              {succeeded && (
+                <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <Checkmark
+                        className="h-5 w-5 text-blue-400"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-white">
+                        Your submission has been received. We'll be in touch
+                        shortly.
+                      </p>
+                    </div>
+                    <div className="ml-auto pl-3">
+                      <div className="-mx-1.5 -my-1.5">
+                        <button
+                          type="button"
+                          onClick={() => window.location.reload(false)}
+                          className="inline-flex p-1.5 text-white hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500"
+                        >
+                          <span className="sr-only">Dismiss</span>
+                          <Close className="h-5 w-5" aria-hidden="true" />
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-              ) : (
-                <></>
               )}
             </div>
           </form>

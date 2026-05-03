@@ -8,14 +8,48 @@ import SEO from "../components/Seo";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import BackToTopBtn from "../components/BackToTopBtn";
-import { useForm } from "@formspree/react";
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
 const Feedback = () => {
-  const [state, handleSubmit] = useForm("mnqynzap");
   const [agreed, setAgreed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [succeeded, setSucceeded] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+    const form = e.target;
+    try {
+      const res = await fetch('/.netlify/functions/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: form['first-name'].value,
+          lastName: form['last-name'].value,
+          company: form['company'].value,
+          email: form['email'].value,
+          phone: form['phone-number'].value,
+          message: form['message'].value,
+          type: 'Feedback',
+        }),
+      });
+      if (res.ok) {
+        setSucceeded(true);
+        form.reset();
+        setAgreed(false);
+      } else {
+        setError('Something went wrong. Please try again.');
+      }
+    } catch {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
   return (
     <>
       <Navigation />
@@ -202,7 +236,7 @@ const Feedback = () => {
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  {state.submitting ? (
+                  {submitting ? (
                     <div>
                       {" "}
                       <button
@@ -234,10 +268,8 @@ const Feedback = () => {
                       </button>
                     </div>
                   )}
-                  {state.succeeded ? (
-                    <div className="w-full">
-                      {" "}
-                      <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
+                  {succeeded && (
+                    <div className="w-full mt-6 bg-gradient-to-r from-blue-900/50 to-transparent border border-blue-500/30 p-4">
                         <div className="flex">
                           <div className="flex-shrink-0">
                             <Checkmark
@@ -263,11 +295,13 @@ const Feedback = () => {
                               </button>
                             </div>
                           </div>
-                        </div>
                       </div>
                     </div>
-                  ) : (
-                    <></>
+                  )}
+                  {error && (
+                    <div className="w-full mt-6 bg-gradient-to-r from-red-900/50 to-transparent border border-red-500/30 p-4">
+                      <p className="text-sm font-medium text-white">{error}</p>
+                    </div>
                   )}
                 </div>
               </form>
