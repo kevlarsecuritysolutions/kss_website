@@ -463,7 +463,7 @@ const TechnicalServices = () => {
                     <Checkmark className="h-4 w-4 text-blue-400" />
                   </div>
                   <p className="text-gray-300">
-                    Expertise with Paradox, Ajax, Hills, Bosch, Paradox and more
+                    Expertise with Gallagher, Ajax, Inner Range, Tecom, Paradox, Verkada, Bosch and more
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -565,7 +565,7 @@ const TechnicalServices = () => {
                   <Checkmark className="h-4 w-4 text-blue-400" />
                 </div>
                 <p className="text-gray-300">
-                  Systems from Honeywell, Axis, Hanwha Wisenet and more
+                  Systems from Axis, Hanwha, Hikvision, Idis, Ajax, Milestone, NX Witness, Ubiquiti, Verkada and more
                 </p>
               </div>
               <div className="flex items-start">
@@ -653,9 +653,7 @@ const TechnicalServices = () => {
             <p className="mb-6 text-gray-300">
               We have the expertise to install and maintain a range of
               access control systems, including from trusted brands such as
-              TECOM, Integriti and Inception. The access control systems we
-              install can include a variety of standard or add-on features
-              customised to your needs.
+              Salto, Gallagher, Verkada, Inner Range, Tecom, Yale and more
             </p>
 
             <div className="mb-8 space-y-4">
@@ -743,9 +741,9 @@ const TechnicalServices = () => {
             <p className="mb-6 text-gray-300">
               Kevlar Security Solutions offers cutting-edge surveillance
               solutions tailored to various security needs. Our Site Cameras
-              integrate with leading brands like Hikvision, Dahua, Axis,
-              Hanwha (Wisenet), Avigilon, and Idis, ensuring top-tier
-              performance and reliability.
+              are fully NDAA compliant with video-verified back-to-base
+              monitoring for prompt alarm responses and site security,
+              ensuring top-tier performance and reliability.
             </p>
             <p className="mb-6 text-gray-300">
               Our solar/wireless security camera systems deliver 24/7

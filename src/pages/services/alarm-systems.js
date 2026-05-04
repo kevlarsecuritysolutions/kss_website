@@ -15,7 +15,7 @@ function classNames(...classes) {
 const trustItems = [
   { label: "ASIAL Accredited",  sub: "A Grade Control Room" },
   { label: "24/7 Monitoring",   sub: "Always-on protection" },
-  { label: "All Major Brands",  sub: "Hills, Bosch, Paradox & more" },
+  { label: "All Major Brands",  sub: "Gallagher, Ajax, Inner Range & more" },
   { label: "Custom Reporting",  sub: "Image verification included" },
 ];
 
@@ -28,7 +28,7 @@ const features = [
   "Rapid deployment stock available for urgent situations",
 ];
 
-const brands = ["Paradox", "Ajax", "Hills", "Bosch", "Inner Range"];
+const brands = ["Gallagher", "Ajax", "Inner Range", "Tecom", "Paradox", "Verkada", "Bosch"];
 
 const capabilities = [
   { title: "Monitored Alarms",       desc: "Signals transmitted to our A Grade control room in real time with immediate response protocols" },

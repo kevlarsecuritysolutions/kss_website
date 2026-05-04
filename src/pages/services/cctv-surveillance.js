@@ -28,7 +28,7 @@ const features = [
   "System upgrades, operator training and ongoing support",
 ];
 
-const brands = ["Axis", "Hanwha Wisenet", "Hikvision", "Dahua", "Avigilon"];
+const brands = ["Axis", "Hanwha", "Hikvision", "Idis", "Ajax", "Milestone", "NX Witness", "Ubiquiti", "Verkada"];
 
 const capabilities = [
   { title: "Facial Recognition",   desc: "Identify known individuals and generate alerts on persons of interest" },

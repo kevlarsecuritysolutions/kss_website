@@ -62,9 +62,7 @@ exports.handler = async (event) => {
   try {
     await resend.emails.send({
       from: "Form Submission <webmaster@kevlarsecuritysolutions.com.au>",
-      // to: ['info@kevlarsecuritysolutions.com.au'],
       to: [
-        "jake@haruassembly.com",
         "info@kevlarsecuritysolutions.com.au",
         "gm@kevlarsecuritysolutions.com.au",
         "kyle@kevlarsecuritysolutions.com.au",

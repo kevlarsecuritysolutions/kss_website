@@ -28,7 +28,7 @@ const features = [
   "Integration with alarm, CCTV, and HR systems",
 ];
 
-const brands = ["TECOM", "Integriti", "Inception", "Gallagher", "HID Global", "Suprema"];
+const brands = ["Salto", "Gallagher", "Verkada", "Inner Range", "Tecom", "Yale"];
 
 const capabilities = [
   { title: "Smart Cards & Fobs",   desc: "RFID/NFC credentials issued to staff, contractors, and visitors with revocable access" },
@@ -334,7 +334,7 @@ const AccessControl = () => {
                 Control who enters, where, and when
               </h2>
               <p style={{ fontSize: 16, color: "#c3c9ce", lineHeight: 1.8, marginBottom: 36 }}>
-                Access control systems are a critical component of any business security strategy — managing not just entry, but internal movement, shift accountability, and emergency evacuation. We install and maintain systems from TECOM, Integriti, and Inception, designed and configured specifically for your environment.
+                Access control systems are a critical component of any business security strategy — managing not just entry, but internal movement, shift accountability, and emergency evacuation. We install and maintain systems from trusted brands such as Salto, Gallagher, Verkada, Inner Range, Tecom, Yale and more, designed and configured specifically for your environment.
               </p>
 
               <div className="mb-9 space-y-4">

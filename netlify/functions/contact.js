@@ -34,7 +34,7 @@ exports.handler = async (event) => {
   try {
     await resend.emails.send({
       from: "Form Submission <webmaster@kevlarsecuritysolutions.com.au>",
-      to: ["info@kevlarsecuritysolutions.com.au", "jake@haruassembly.com"],
+      to: ["info@kevlarsecuritysolutions.com.au"],
       replyTo: email,
       subject,
       html: `
