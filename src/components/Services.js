@@ -300,7 +300,7 @@ const Services = () => {
               <div className="grid-cols-1 lg:pl-12">
                 <div className="flex flex-col">
                   <div className="flex justify-center items-center gap-8 pb-4">
-                    <div className="flex justify-center items-center h-36 w-36 relative">
+                    {/* <div className="flex justify-center items-center h-36 w-36 relative">
                       <StaticImage
                         src="../assets/images/logos/ISO9001-logo.png"
                         alt="ISO9001"
@@ -309,6 +309,19 @@ const Services = () => {
                     <div className="flex justify-center items-center h-36 w-36 relative">
                       <StaticImage
                         src="../assets/images/logos/ISO45001-logo.png"
+                        alt="ISO45001"
+                      />
+                    </div>*/}
+
+                    <div className="flex justify-center items-center h-36 w-auto relative">
+                      <StaticImage
+                        src="../assets/images/logos/ISO-9001.png"
+                        alt="ISO45001"
+                      />
+                    </div>
+                    <div className="flex justify-center items-center h-36 w-auto relative">
+                      <StaticImage
+                        src="../assets/images/logos/ISO-45001.png"
                         alt="ISO45001"
                       />
                     </div>

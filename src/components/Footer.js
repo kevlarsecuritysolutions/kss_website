@@ -314,7 +314,19 @@ const Footer = () => {
           </div>
           <div className="flex justify-center hidden lg:flex lg:col-span-2">
             <div className="flex justify-center items-center gap-4">
+              <div className="flex justify-center items-center h-28 w-32 relative">
+                <StaticImage
+                  src="../assets/images/logos/ISO-9001.png"
+                  alt="ISO9001"
+                />
+              </div>
               <div className="flex justify-center items-center h-28 w-28 relative">
+                <StaticImage
+                  src="../assets/images/logos/ISO-45001.png"
+                  alt="ISO45001"
+                />
+              </div>
+              {/* <div className="flex justify-center items-center h-28 w-28 relative">
                 <StaticImage
                   src="../assets/images/logos/ISO9001-logo.png"
                   alt="ISO9001"
@@ -325,7 +337,7 @@ const Footer = () => {
                   src="../assets/images/logos/ISO45001-logo.png"
                   alt="ISO45001"
                 />
-              </div>
+              </div>*/}
               <div className="flex justify-center items-center h-28 w-28 relative">
                 <StaticImage
                   src="../assets/images/logos/JAS-logo.png"

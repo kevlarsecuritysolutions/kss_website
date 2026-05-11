@@ -63,15 +63,15 @@ const Company = () => {
               Compliance Standards
             </h3>
             <div className="grid grid-cols-3 lg:flex lg:justify-start items-center gap-4 pt-4 pb-8">
-              <div className="flex justify-center items-center h-24 w-24 relative">
+              <div className="flex justify-center items-center h-24 w-28 relative">
                 <StaticImage
-                  src="../assets/images/logos/ISO9001-logo.png"
+                  src="../assets/images/logos/ISO-9001.png"
                   alt="ISO9001"
                 />
               </div>
               <div className="flex justify-center items-center h-24 w-24 relative">
                 <StaticImage
-                  src="../assets/images/logos/ISO45001-logo.png"
+                  src="../assets/images/logos/ISO-45001.png"
                   alt="ISO45001"
                 />
               </div>
