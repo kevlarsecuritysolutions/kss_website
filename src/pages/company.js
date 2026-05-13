@@ -75,12 +75,12 @@ const Company = () => {
                   alt="ISO45001"
                 />
               </div>
-              <div className="flex justify-center items-center h-24 w-24 relative">
+              {/* <div className="flex justify-center items-center h-24 w-24 relative">
                 <StaticImage
                   src="../assets/images/logos/JAS-logo.png"
                   alt="ISO9001"
                 />
-              </div>
+              </div>*/}
               <div className="flex justify-center items-center h-24 w-24 relative">
                 <StaticImage
                   src="https://images.ctfassets.net/lfrbwr0lmnkj/1qOAlsBUTbTALtexwyKgYL/0e624abb4d86cbcda5a286cfc0514a8d/Silver_Member__1_.png"

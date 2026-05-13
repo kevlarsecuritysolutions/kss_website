@@ -325,12 +325,12 @@ const Services = () => {
                         alt="ISO45001"
                       />
                     </div>
-                    <div className="flex justify-center items-center h-36 w-36 relative">
+                    {/* <div className="flex justify-center items-center h-36 w-36 relative">
                       <StaticImage
                         src="../assets/images/logos/JAS-logo.png"
                         alt="ISO9001"
                       />
-                    </div>
+                    </div>*/}
                   </div>
                   <p className="text-md lg:text-lg text-white pb-8 font-medium">
                     Our commitment to the highest level of compliance and
