@@ -225,7 +225,8 @@ const Footer = () => {
             </Link>
             <div className="hidden lg:flex justify-start">
               <p className="text-kss-text-dark text-sm pb-2">
-                Contact us during business hours 0800-1600 Monday to Friday on{" "}
+                We provide security services 24 hours per day, every day of the
+                year. Contact us on:{" "}
                 <a className="hover:text-white underline" href="tel:0362082777">
                   (03) 6208 2777
                 </a>{" "}
